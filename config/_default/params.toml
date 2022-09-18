@@ -93,7 +93,7 @@ address = {street = "Patras Science Park, Platani Riou", city = "Patras", region
 coordinates = {latitude = "38.29746176070596", longitude = "21.810929483137127"}
 
 # Directions for visitors to locate you.
-directions = "1st Floor, Room A5"
+directions = "1st Floor, Room A4"
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
