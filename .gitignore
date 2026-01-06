@@ -3,3 +3,5 @@ resources/
 venv/
 .hugo_build.lock
 .DS_Store
+*.pyc
+__pycache__/
