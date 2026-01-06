@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Δρ. Ευάγγελος Βλάχος</title>
-    <link>//localhost:1313/el/</link>
-      <atom:link href="//localhost:1313/el/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/evlachos_website/el/</link>
+      <atom:link href="http://localhost:1313/evlachos_website/el/index.xml" rel="self" type="application/rss+xml" />
     <description>Δρ. Ευάγγελος Βλάχος</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>el-gr</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/evlachos_website/media/icon_hu_43cf117bf1a42c34.png</url>
       <title>Δρ. Ευάγγελος Βλάχος</title>
-      <link>//localhost:1313/el/</link>
+      <link>http://localhost:1313/evlachos_website/el/</link>
     </image>
     
     <item>
       <title>Αρχική</title>
-      <link>//localhost:1313/el/home/</link>
+      <link>http://localhost:1313/evlachos_website/el/home/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/el/home/</guid>
+      <guid>http://localhost:1313/evlachos_website/el/home/</guid>
       <description></description>
     </item>
     

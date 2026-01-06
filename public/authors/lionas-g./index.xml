@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lionas, G. | Dr. Evangelos Vlachos</title>
-    <link>//localhost:1313/authors/lionas-g./</link>
-      <atom:link href="//localhost:1313/authors/lionas-g./index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/evlachos_website/authors/lionas-g./</link>
+      <atom:link href="http://localhost:1313/evlachos_website/authors/lionas-g./index.xml" rel="self" type="application/rss+xml" />
     <description>Lionas, G.</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Sun, 01 Jan 2012 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/evlachos_website/media/icon_hu_43cf117bf1a42c34.png</url>
       <title>Lionas, G.</title>
-      <link>//localhost:1313/authors/lionas-g./</link>
+      <link>http://localhost:1313/evlachos_website/authors/lionas-g./</link>
     </image>
     
     <item>
       <title>Compressed Sensing Techniques for Decision Feedback Equalization of Sparse Wireless Channels</title>
-      <link>//localhost:1313/publication/vlachos-compressed-2012/</link>
+      <link>http://localhost:1313/evlachos_website/publication/vlachos-compressed-2012/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/publication/vlachos-compressed-2012/</guid>
+      <guid>http://localhost:1313/evlachos_website/publication/vlachos-compressed-2012/</guid>
       <description></description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fournaris, A. | Dr. Evangelos Vlachos</title>
-    <link>//localhost:1313/authors/fournaris-a./</link>
-      <atom:link href="//localhost:1313/authors/fournaris-a./index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/evlachos_website/authors/fournaris-a./</link>
+      <atom:link href="http://localhost:1313/evlachos_website/authors/fournaris-a./index.xml" rel="self" type="application/rss+xml" />
     <description>Fournaris, A.</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/evlachos_website/media/icon_hu_43cf117bf1a42c34.png</url>
       <title>Fournaris, A.</title>
-      <link>//localhost:1313/authors/fournaris-a./</link>
+      <link>http://localhost:1313/evlachos_website/authors/fournaris-a./</link>
     </image>
     
     <item>
       <title>Robust and Efficient Privacy Preservation in Industrial IoT via correlation completion and tracking</title>
-      <link>//localhost:1313/publication/lalos-robust-2019/</link>
+      <link>http://localhost:1313/evlachos_website/publication/lalos-robust-2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/publication/lalos-robust-2019/</guid>
+      <guid>http://localhost:1313/evlachos_website/publication/lalos-robust-2019/</guid>
       <description></description>
     </item>
     

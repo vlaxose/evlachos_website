@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chatzinotas, S. | Dr. Evangelos Vlachos</title>
-    <link>//localhost:1313/authors/chatzinotas-s./</link>
-      <atom:link href="//localhost:1313/authors/chatzinotas-s./index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/evlachos_website/authors/chatzinotas-s./</link>
+      <atom:link href="http://localhost:1313/evlachos_website/authors/chatzinotas-s./index.xml" rel="self" type="application/rss+xml" />
     <description>Chatzinotas, S.</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/evlachos_website/media/icon_hu_43cf117bf1a42c34.png</url>
       <title>Chatzinotas, S.</title>
-      <link>//localhost:1313/authors/chatzinotas-s./</link>
+      <link>http://localhost:1313/evlachos_website/authors/chatzinotas-s./</link>
     </image>
     
     <item>
       <title>Joint Bit Allocation and Hybrid Beamforming Optimization for Energy Efficient Millimeter Wave MIMO Systems</title>
-      <link>//localhost:1313/publication/kaushik-joint-2021/</link>
+      <link>http://localhost:1313/evlachos_website/publication/kaushik-joint-2021/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/publication/kaushik-joint-2021/</guid>
+      <guid>http://localhost:1313/evlachos_website/publication/kaushik-joint-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dynamic RF Chain Selection for Energy Efficient and Low Complexity Hybrid Beamforming in Millimeter Wave MIMO Systems</title>
-      <link>//localhost:1313/publication/kaushik-dynamic-2019/</link>
+      <link>http://localhost:1313/evlachos_website/publication/kaushik-dynamic-2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/publication/kaushik-dynamic-2019/</guid>
+      <guid>http://localhost:1313/evlachos_website/publication/kaushik-dynamic-2019/</guid>
       <description></description>
     </item>
     

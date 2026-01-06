@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kekatos, V. | Dr. Evangelos Vlachos</title>
-    <link>//localhost:1313/authors/kekatos-v./</link>
-      <atom:link href="//localhost:1313/authors/kekatos-v./index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/evlachos_website/authors/kekatos-v./</link>
+      <atom:link href="http://localhost:1313/evlachos_website/authors/kekatos-v./index.xml" rel="self" type="application/rss+xml" />
     <description>Kekatos, V.</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Tue, 01 Jan 2013 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/evlachos_website/media/icon_hu_43cf117bf1a42c34.png</url>
       <title>Kekatos, V.</title>
-      <link>//localhost:1313/authors/kekatos-v./</link>
+      <link>http://localhost:1313/evlachos_website/authors/kekatos-v./</link>
     </image>
     
     <item>
       <title>A decentralized approach to generalized power system state estimation</title>
-      <link>//localhost:1313/publication/kekatos-decentralized-2013/</link>
+      <link>http://localhost:1313/evlachos_website/publication/kekatos-decentralized-2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/publication/kekatos-decentralized-2013/</guid>
+      <guid>http://localhost:1313/evlachos_website/publication/kekatos-decentralized-2013/</guid>
       <description></description>
     </item>
     

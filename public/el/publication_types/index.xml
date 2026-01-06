@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publication_types | Δρ. Ευάγγελος Βλάχος</title>
-    <link>//localhost:1313/el/publication_types/</link>
-      <atom:link href="//localhost:1313/el/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/evlachos_website/el/publication_types/</link>
+      <atom:link href="http://localhost:1313/evlachos_website/el/publication_types/index.xml" rel="self" type="application/rss+xml" />
     <description>Publication_types</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>el-gr</language><copyright>© 2026 Evangelos Vlachos</copyright>
     <image>
-      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/evlachos_website/media/icon_hu_43cf117bf1a42c34.png</url>
       <title>Publication_types</title>
-      <link>//localhost:1313/el/publication_types/</link>
+      <link>http://localhost:1313/evlachos_website/el/publication_types/</link>
     </image>
     
   </channel>

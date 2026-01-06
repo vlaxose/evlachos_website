@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alexandropoulos, G. | Dr. Evangelos Vlachos</title>
-    <link>//localhost:1313/authors/alexandropoulos-g./</link>
-      <atom:link href="//localhost:1313/authors/alexandropoulos-g./index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/evlachos_website/authors/alexandropoulos-g./</link>
+      <atom:link href="http://localhost:1313/evlachos_website/authors/alexandropoulos-g./index.xml" rel="self" type="application/rss+xml" />
     <description>Alexandropoulos, G.</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/evlachos_website/media/icon_hu_43cf117bf1a42c34.png</url>
       <title>Alexandropoulos, G.</title>
-      <link>//localhost:1313/authors/alexandropoulos-g./</link>
+      <link>http://localhost:1313/evlachos_website/authors/alexandropoulos-g./</link>
     </image>
     
     <item>
       <title>Biconvex Optimization for Time-Domain Channel Estimation Under Dual-Wideband Fading Conditions</title>
-      <link>//localhost:1313/publication/vlachos-biconvex-2025/</link>
+      <link>http://localhost:1313/evlachos_website/publication/vlachos-biconvex-2025/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/publication/vlachos-biconvex-2025/</guid>
+      <guid>http://localhost:1313/evlachos_website/publication/vlachos-biconvex-2025/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Joint Localization and Channel Estimation for UAV-Assisted Millimeter Wave Communications</title>
-      <link>//localhost:1313/publication/alexandropoulos-joint-2020/</link>
+      <link>http://localhost:1313/evlachos_website/publication/alexandropoulos-joint-2020/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/publication/alexandropoulos-joint-2020/</guid>
+      <guid>http://localhost:1313/evlachos_website/publication/alexandropoulos-joint-2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wideband MIMO Channel Estimation for Hybrid Beamforming Millimeter Wave Systems via Random Spatial Sampling</title>
-      <link>//localhost:1313/publication/vlachos-wideband-2019/</link>
+      <link>http://localhost:1313/evlachos_website/publication/vlachos-wideband-2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/publication/vlachos-wideband-2019/</guid>
+      <guid>http://localhost:1313/evlachos_website/publication/vlachos-wideband-2019/</guid>
       <description></description>
     </item>
     
