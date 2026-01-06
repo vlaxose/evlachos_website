@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tselios, C. | Dr. Evangelos Vlachos</title>
+    <link>//localhost:1313/authors/tselios-c./</link>
+      <atom:link href="//localhost:1313/authors/tselios-c./index.xml" rel="self" type="application/rss+xml" />
+    <description>Tselios, C.</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <title>Tselios, C.</title>
+      <link>//localhost:1313/authors/tselios-c./</link>
+    </image>
+    
+    <item>
+      <title>Autonomous driving in 5G: Mitigating interference in OFDM-based vehicular communications</title>
+      <link>//localhost:1313/publication/vlachos-autonomous-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-autonomous-2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kaushik, A. | Dr. Evangelos Vlachos</title>
+    <link>//localhost:1313/authors/kaushik-a./</link>
+      <atom:link href="//localhost:1313/authors/kaushik-a./index.xml" rel="self" type="application/rss+xml" />
+    <description>Kaushik, A.</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <title>Kaushik, A.</title>
+      <link>//localhost:1313/authors/kaushik-a./</link>
+    </image>
+    
+    <item>
+      <title>Turning Interference into Diversity: Covariance-based Spatial Partitioning for Massive MIMO ISAC</title>
+      <link>//localhost:1313/publication/vlachos-turning-2025/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-turning-2025/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Towards 6G: Spectrally efficient joint radar and communication with radio frequency selection, interference and hardware impairments</title>
+      <link>//localhost:1313/publication/kaushik-towards-2022/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/kaushik-towards-2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joint Bit Allocation and Hybrid Beamforming Optimization for Energy Efficient Millimeter Wave MIMO Systems</title>
+      <link>//localhost:1313/publication/kaushik-joint-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/kaushik-joint-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Radio-frequency chain selection for energy and spectral efficiency maximization in hybrid beamforming under hardware imperfections</title>
+      <link>//localhost:1313/publication/vlachos-radio-frequency-2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-radio-frequency-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamic RF Chain Selection for Energy Efficient and Low Complexity Hybrid Beamforming in Millimeter Wave MIMO Systems</title>
+      <link>//localhost:1313/publication/kaushik-dynamic-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/kaushik-dynamic-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Energy Efficiency Maximization of Millimeter Wave Hybrid MIMO Systems with Low Resolution DACs</title>
+      <link>//localhost:1313/publication/kaushik-energy-2019-1/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/kaushik-energy-2019-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Energy Efficient ADC Bit Allocation and Hybrid Combining for Millimeter Wave MIMO Systems</title>
+      <link>//localhost:1313/publication/kaushik-energy-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/kaushik-energy-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficient Channel Estimation in Millimeter Wave Hybrid MIMO Systems with Low Resolution ADCs</title>
+      <link>//localhost:1313/publication/kaushik-efficient-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/kaushik-efficient-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Energy Efficient Transmitter with Low Resolution DACs for Massive MIMO with Partially Connected Hybrid Architecture</title>
+      <link>//localhost:1313/publication/vlachos-energy-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-energy-2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

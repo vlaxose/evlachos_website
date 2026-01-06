@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning | Dr. Evangelos Vlachos</title>
+    <link>//localhost:1313/tags/deep-learning/</link>
+      <atom:link href="//localhost:1313/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Deep Learning</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <title>Deep Learning</title>
+      <link>//localhost:1313/tags/deep-learning/</link>
+    </image>
+    
+    <item>
+      <title>FIRA-DAV</title>
+      <link>//localhost:1313/project/firadav/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/firadav/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Role:&lt;/strong&gt; Principal Investigator (PI).
+&lt;strong&gt;Funding:&lt;/strong&gt; Athena RC Internal PoC (10k€).&lt;/p&gt;
+&lt;p&gt;We developed a prototype database containing synchronized &lt;strong&gt;mmWave Radar&lt;/strong&gt; (TI IWR6843) and &lt;strong&gt;Camera&lt;/strong&gt; data. This dataset is used to train &lt;strong&gt;Deep Unfolding&lt;/strong&gt; networks and other Scientific ML models for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Object detection in adverse weather.&lt;/li&gt;
+&lt;li&gt;Sensor fusion for autonomous navigation.&lt;/li&gt;
+&lt;li&gt;[cite_start]Training lightweight AI models for embedded deployment[cite: 123].&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

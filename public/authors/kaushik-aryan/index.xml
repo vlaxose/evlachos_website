@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kaushik, Aryan | Dr. Evangelos Vlachos</title>
+    <link>//localhost:1313/authors/kaushik-aryan/</link>
+      <atom:link href="//localhost:1313/authors/kaushik-aryan/index.xml" rel="self" type="application/rss+xml" />
+    <description>Kaushik, Aryan</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <title>Kaushik, Aryan</title>
+      <link>//localhost:1313/authors/kaushik-aryan/</link>
+    </image>
+    
+    <item>
+      <title>Integrated Sensing and Communications for Future Wireless Networks: Principles, Advances and Key Enabling Technologies</title>
+      <link>//localhost:1313/publication/vlachos-integrated-2024/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-integrated-2024/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Covariance-Based Hybrid Beamforming for Spectrally Efficient Joint Radar-Communications</title>
+      <link>//localhost:1313/publication/vlachos-covariance-based-2023/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-covariance-based-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Subset Selection Based RIS-Aided Beamforming for Joint Radar-Communications</title>
+      <link>//localhost:1313/publication/vlachos-subset-2023/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-subset-2023/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Green Joint Radar-Communications: RF Selection with Low Resolution DACs and Hybrid Precoding</title>
+      <link>//localhost:1313/publication/kaushik-green-2022/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/kaushik-green-2022/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

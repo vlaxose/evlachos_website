@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Complete Research Portfolio | Dr. Evangelos Vlachos</title>
+    <link>//localhost:1313/project/</link>
+      <atom:link href="//localhost:1313/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Complete Research Portfolio</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <title>Complete Research Portfolio</title>
+      <link>//localhost:1313/project/</link>
+    </image>
+    
+    <item>
+      <title>EUSOME</title>
+      <link>//localhost:1313/project/eusome/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/eusome/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Role:&lt;/strong&gt; Principal Investigator (PI) for ISI/Athena RC.
+&lt;strong&gt;Funding:&lt;/strong&gt; &amp;gt;800k€ (Horizon Europe).&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;EUSOME&lt;/strong&gt; project establishes a &amp;ldquo;Living Lab&amp;rdquo; for Advanced Aerial Mobility (AAM). We focus on:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Cooperative Sensing:&lt;/strong&gt; Algorithms for UAV swarms to sense the environment collectively.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Digital Twins:&lt;/strong&gt; Real-time synchronization between physical drones and their digital counterparts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Experimental Validation:&lt;/strong&gt; Using the Aerial Networks Testbed at ISI.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This project bridges the gap between theoretical 6G control algorithms and real-world deployment.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>FIRA-DAV</title>
+      <link>//localhost:1313/project/firadav/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/firadav/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Role:&lt;/strong&gt; Principal Investigator (PI).
+&lt;strong&gt;Funding:&lt;/strong&gt; Athena RC Internal PoC (10k€).&lt;/p&gt;
+&lt;p&gt;We developed a prototype database containing synchronized &lt;strong&gt;mmWave Radar&lt;/strong&gt; (TI IWR6843) and &lt;strong&gt;Camera&lt;/strong&gt; data. This dataset is used to train &lt;strong&gt;Deep Unfolding&lt;/strong&gt; networks and other Scientific ML models for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Object detection in adverse weather.&lt;/li&gt;
+&lt;li&gt;Sensor fusion for autonomous navigation.&lt;/li&gt;
+&lt;li&gt;[cite_start]Training lightweight AI models for embedded deployment[cite: 123].&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SPLASH</title>
+      <link>//localhost:1313/project/splash/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/splash/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Role:&lt;/strong&gt; Principal Investigator (PI).
+&lt;strong&gt;Partner:&lt;/strong&gt; Hellenic U-Space Industry (HUSI).&lt;/p&gt;
+&lt;p&gt;SPLASH investigates the &lt;strong&gt;Co-design&lt;/strong&gt; of control and communication protocols for U-Space services. Key innovations include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[cite_start]&lt;strong&gt;ISAC Waveforms:&lt;/strong&gt; Using OTFS/FMCW for simultaneous radar sensing and data transmission[cite: 238].&lt;/li&gt;
+&lt;li&gt;[cite_start]&lt;strong&gt;GNSS Resilience:&lt;/strong&gt; Navigation solutions for GPS-denied environments using cooperative localization[cite: 233].&lt;/li&gt;
+&lt;li&gt;[cite_start]&lt;strong&gt;Risk Modeling:&lt;/strong&gt; New frameworks for UAV swarm safety assessment[cite: 239].&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

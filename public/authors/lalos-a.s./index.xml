@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lalos, A.S. | Dr. Evangelos Vlachos</title>
+    <link>//localhost:1313/authors/lalos-a.s./</link>
+      <atom:link href="//localhost:1313/authors/lalos-a.s./index.xml" rel="self" type="application/rss+xml" />
+    <description>Lalos, A.S.</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Tue, 01 Jan 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <title>Lalos, A.S.</title>
+      <link>//localhost:1313/authors/lalos-a.s./</link>
+    </image>
+    
+    <item>
+      <title>Galerkin projections-based ICI cancellation in OFDM systems with doubly selective channels</title>
+      <link>//localhost:1313/publication/vlachos-galerkin-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-galerkin-2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regularized MMSE ICI equalization for OFDM systems over doubly selective channels</title>
+      <link>//localhost:1313/publication/vlachos-regularized-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-regularized-2013/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stochastic Gradient Pursuit for Adaptive Equalization of Sparse Multipath Channels</title>
+      <link>//localhost:1313/publication/vlachos-stochastic-2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-stochastic-2012/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Industrial | Dr. Evangelos Vlachos</title>
+    <link>//localhost:1313/tags/industrial/</link>
+      <atom:link href="//localhost:1313/tags/industrial/index.xml" rel="self" type="application/rss+xml" />
+    <description>Industrial</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <title>Industrial</title>
+      <link>//localhost:1313/tags/industrial/</link>
+    </image>
+    
+    <item>
+      <title>SPLASH</title>
+      <link>//localhost:1313/project/splash/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/project/splash/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Role:&lt;/strong&gt; Principal Investigator (PI).
+&lt;strong&gt;Partner:&lt;/strong&gt; Hellenic U-Space Industry (HUSI).&lt;/p&gt;
+&lt;p&gt;SPLASH investigates the &lt;strong&gt;Co-design&lt;/strong&gt; of control and communication protocols for U-Space services. Key innovations include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[cite_start]&lt;strong&gt;ISAC Waveforms:&lt;/strong&gt; Using OTFS/FMCW for simultaneous radar sensing and data transmission[cite: 238].&lt;/li&gt;
+&lt;li&gt;[cite_start]&lt;strong&gt;GNSS Resilience:&lt;/strong&gt; Navigation solutions for GPS-denied environments using cooperative localization[cite: 233].&lt;/li&gt;
+&lt;li&gt;[cite_start]&lt;strong&gt;Risk Modeling:&lt;/strong&gt; New frameworks for UAV swarm safety assessment[cite: 239].&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

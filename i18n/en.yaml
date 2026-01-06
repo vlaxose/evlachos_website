@@ -1,0 +1,18 @@
+- id: pub_type_0
+  translation: Uncategorized
+- id: pub_type_1
+  translation: Conference Paper
+- id: pub_type_2
+  translation: Journal Article
+- id: pub_type_3
+  translation: Preprint
+- id: pub_type_4
+  translation: Technical Report
+- id: pub_type_5
+  translation: Book
+- id: pub_type_6
+  translation: Book Section
+- id: pub_type_7
+  translation: Thesis
+- id: pub_type_8
+  translation: Patent

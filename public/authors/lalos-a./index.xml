@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lalos, A. | Dr. Evangelos Vlachos</title>
+    <link>//localhost:1313/authors/lalos-a./</link>
+      <atom:link href="//localhost:1313/authors/lalos-a./index.xml" rel="self" type="application/rss+xml" />
+    <description>Lalos, A.</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <title>Lalos, A.</title>
+      <link>//localhost:1313/authors/lalos-a./</link>
+    </image>
+    
+    <item>
+      <title>Energy Efficient Transmission of 3D Meshes Over MMWave-Based Massive MIMO Systems</title>
+      <link>//localhost:1313/publication/lalos-energy-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/lalos-energy-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compressed Sensing for Efficient Encoding of Dense 3D Meshes Using Model-Based Bayesian Learning</title>
+      <link>//localhost:1313/publication/lalos-compressed-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/lalos-compressed-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compressed Sensing Techniques for Decision Feedback Equalization of Sparse Wireless Channels</title>
+      <link>//localhost:1313/publication/vlachos-compressed-2012/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-compressed-2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Greedy algorithms for sparse adaptive decision feedback equalization</title>
+      <link>//localhost:1313/publication/lalos-greedy-2011/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/lalos-greedy-2011/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

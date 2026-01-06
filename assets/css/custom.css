@@ -1,0 +1,31 @@
+/* --- Διόρθωση Μεγεθών Κειμένου --- */
+
+/* 1. Τίτλος στη σελίδα της δημοσίευσης (Single Page) */
+.page-type-publication h1 {
+  font-size: 1.75rem !important; /* Πολύ μικρότερο από το default */
+  line-height: 1.2 !important;
+  margin-bottom: 1rem !important;
+  color: #1565c0; /* Βάζουμε και λίγο χρώμα για να δούμε ότι δουλεύει */
+}
+
+/* 2. Τίτλοι στη λίστα (Card View) */
+.card-simple h3, 
+.card-simple h4, 
+.article-title {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+}
+
+/* 3. Μικρότερα Metadata (Συγγραφείς, Ημερομηνία) */
+.article-metadata {
+  font-size: 0.85rem !important;
+}
+
+/* 4. Στυλ για τα νέα sections (Intro/Conclusion) που θα βάλουμε */
+h2 {
+  font-size: 1.4rem !important;
+  margin-top: 1.5rem !important;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}

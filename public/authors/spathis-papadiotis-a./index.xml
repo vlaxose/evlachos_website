@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spathis-Papadiotis, A. | Dr. Evangelos Vlachos</title>
+    <link>//localhost:1313/authors/spathis-papadiotis-a./</link>
+      <atom:link href="//localhost:1313/authors/spathis-papadiotis-a./index.xml" rel="self" type="application/rss+xml" />
+    <description>Spathis-Papadiotis, A.</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <title>Spathis-Papadiotis, A.</title>
+      <link>//localhost:1313/authors/spathis-papadiotis-a./</link>
+    </image>
+    
+    <item>
+      <title>Distributed consolidation of highly-incomplete dynamic point clouds based on rank minimization</title>
+      <link>//localhost:1313/publication/vlachos-distributed-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-distributed-2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

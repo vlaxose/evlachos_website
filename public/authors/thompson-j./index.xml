@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thompson, J. | Dr. Evangelos Vlachos</title>
+    <link>//localhost:1313/authors/thompson-j./</link>
+      <atom:link href="//localhost:1313/authors/thompson-j./index.xml" rel="self" type="application/rss+xml" />
+    <description>Thompson, J.</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <title>Thompson, J.</title>
+      <link>//localhost:1313/authors/thompson-j./</link>
+    </image>
+    
+    <item>
+      <title>Towards 6G: Spectrally efficient joint radar and communication with radio frequency selection, interference and hardware impairments</title>
+      <link>//localhost:1313/publication/kaushik-towards-2022/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/kaushik-towards-2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Energy-Efficiency Maximization of Hybrid Massive MIMO Precoding With Random-Resolution DACs via RF Selection</title>
+      <link>//localhost:1313/publication/vlachos-energy-efficiency-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-energy-efficiency-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joint Bit Allocation and Hybrid Beamforming Optimization for Energy Efficient Millimeter Wave MIMO Systems</title>
+      <link>//localhost:1313/publication/kaushik-joint-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/kaushik-joint-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Radio-frequency chain selection for energy and spectral efficiency maximization in hybrid beamforming under hardware imperfections</title>
+      <link>//localhost:1313/publication/vlachos-radio-frequency-2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-radio-frequency-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wideband Channel Tracking for Millimeter Wave Massive Mimo Systems with Hybrid Beamforming Reception</title>
+      <link>//localhost:1313/publication/alexandropoulos-wideband-2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/alexandropoulos-wideband-2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamic RF Chain Selection for Energy Efficient and Low Complexity Hybrid Beamforming in Millimeter Wave MIMO Systems</title>
+      <link>//localhost:1313/publication/kaushik-dynamic-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/kaushik-dynamic-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Energy Efficiency Maximization of Millimeter Wave Hybrid MIMO Systems with Low Resolution DACs</title>
+      <link>//localhost:1313/publication/kaushik-energy-2019-1/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/kaushik-energy-2019-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Energy Efficient ADC Bit Allocation and Hybrid Combining for Millimeter Wave MIMO Systems</title>
+      <link>//localhost:1313/publication/kaushik-energy-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/kaushik-energy-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hybrid Beamforming with Random Analog Sampling for Wideband Channel Estimation in Millimeter Wave Massive MIMO Systems</title>
+      <link>//localhost:1313/publication/vlachos-hybrid-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-hybrid-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robust Estimator for Lens-based Hybrid MIMO with Low-Resolution Sampling</title>
+      <link>//localhost:1313/publication/vlachos-robust-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-robust-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adaptive Windowing for ICI Mitigation in Vehicular Communications</title>
+      <link>//localhost:1313/publication/vlachos-adaptive-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-adaptive-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dithered Beamforming for Channel Estimation in Mmwave-Based Massive Mimo</title>
+      <link>//localhost:1313/publication/vlachos-dithered-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-dithered-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficient Channel Estimation in Millimeter Wave Hybrid MIMO Systems with Low Resolution ADCs</title>
+      <link>//localhost:1313/publication/kaushik-efficient-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/kaushik-efficient-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Energy Efficient Transmitter with Low Resolution DACs for Massive MIMO with Partially Connected Hybrid Architecture</title>
+      <link>//localhost:1313/publication/vlachos-energy-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-energy-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Massive MIMO Channel Estimation for Millimeter Wave Systems via Matrix Completion</title>
+      <link>//localhost:1313/publication/vlachos-massive-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-massive-2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,10 @@
+{
+ "compilerOptions": {
+  "baseUrl": ".",
+  "paths": {
+   "*": [
+    "../_vendor/github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5/assets/*"
+   ]
+  }
+ }
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Moustakas, K. | Dr. Evangelos Vlachos</title>
+    <link>//localhost:1313/authors/moustakas-k./</link>
+      <atom:link href="//localhost:1313/authors/moustakas-k./index.xml" rel="self" type="application/rss+xml" />
+    <description>Moustakas, K.</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>//localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <title>Moustakas, K.</title>
+      <link>//localhost:1313/authors/moustakas-k./</link>
+    </image>
+    
+    <item>
+      <title>Energy Efficient Transmission of 3D Meshes Over MMWave-Based Massive MIMO Systems</title>
+      <link>//localhost:1313/publication/lalos-energy-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/lalos-energy-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Signal Processing on Static and Dynamic 3D Meshes: Sparse Representations and Applications</title>
+      <link>//localhost:1313/publication/lalos-signal-2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/lalos-signal-2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distributed consolidation of highly-incomplete dynamic point clouds based on rank minimization</title>
+      <link>//localhost:1313/publication/vlachos-distributed-2018/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-distributed-2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compressed Sensing for Efficient Encoding of Dense 3D Meshes Using Model-Based Bayesian Learning</title>
+      <link>//localhost:1313/publication/lalos-compressed-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/lalos-compressed-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Efficient graph-based matrix completion on incomplete animated models</title>
+      <link>//localhost:1313/publication/vlachos-efficient-2017/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publication/vlachos-efficient-2017/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

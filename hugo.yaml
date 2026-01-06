@@ -1,0 +1,121 @@
+# --- Γενικές Ρυθμίσεις ---
+baseURL: "/"
+title: Dr. Evangelos Vlachos
+copyright: '© 2026 Evangelos Vlachos'
+defaultContentLanguage: en
+enableGitInfo: false
+
+# --- Εμφάνιση (Classic Minimal) ---
+params:
+  appearance:
+    theme: minimal  # Επιστροφή στο κλασικό θέμα
+    font: minimal
+    mode: light     # light ή system
+
+  plugins_css:
+    - css/custom.css
+#  plugins_js:
+#    - js/fix_names.js
+
+  features:
+    math:
+      enable: true
+
+# --- Ρυθμίσεις HTML ---
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# --- Taxonomies (Φίλτρα) ---
+taxonomies:
+  tag: tags
+  category: categories
+  publication_type: publication_types
+  author: authors
+
+# --- Modules & Security ---
+module:
+  imports:
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5
+
+security:
+  funcs:
+    getenv:
+      - '^HUGO_'
+      - '^CI$'
+      - '^WC_'
+
+services:
+  googleAnalytics:
+    id: ""
+
+# --- Γλώσσες & Μενού ---
+languages:
+  en:
+    languageName: English
+    languageCode: en-us
+    weight: 1
+    title: Dr. Evangelos Vlachos
+    params:
+      publication_types:
+        '0': Uncategorized
+        '1': Conference Paper
+        '2': Journal Article
+        '3': Preprint
+        '4': Report
+        '5': Book
+        '6': Book Section
+        '7': Thesis
+        '8': Patent
+    menu:
+      main:
+        - name: Home
+          url: '/#about'
+          weight: 10
+        - name: Experience
+          url: '/#experience'
+          weight: 20
+        - name: Projects
+          url: '/project/'
+          weight: 30
+        - name: Publications
+          url: '/publication/'
+          weight: 40
+        - name: News
+          url: '/post/'
+          weight: 50
+
+  el:
+    languageName: Ελληνικά
+    languageCode: el-gr
+    weight: 2
+    title: Δρ. Ευάγγελος Βλάχος
+    params:
+      publication_types:
+        '0': Ακατηγοριοποίητο
+        '1': Άρθρο Συνεδρίου
+        '2': Άρθρο Περιοδικού
+        '3': Preprint
+        '4': Τεχνική Αναφορά
+        '5': Βιβλίο
+        '6': Κεφάλαιο Βιβλίου
+        '7': Διατριβή
+        '8': Πατέντα
+    menu:
+      main:
+        - name: Αρχική
+          url: '/#about'
+          weight: 10
+        - name: Εμπειρία
+          url: '/#experience'
+          weight: 20
+        - name: Έργα
+          url: '/project/'
+          weight: 30
+        - name: Δημοσιεύσεις
+          url: '/publication/'
+          weight: 40
+        - name: Νέα
+          url: '/post/'
+          weight: 50
