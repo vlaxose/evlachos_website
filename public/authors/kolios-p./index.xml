@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kolios, P. | Dr. Evangelos Vlachos</title>
-    <link>http://localhost:1313/evlachos_website/authors/kolios-p./</link>
-      <atom:link href="http://localhost:1313/evlachos_website/authors/kolios-p./index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/authors/kolios-p./</link>
+      <atom:link href="http://localhost:1313/authors/kolios-p./index.xml" rel="self" type="application/rss+xml" />
     <description>Kolios, P.</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/evlachos_website/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
       <title>Kolios, P.</title>
-      <link>http://localhost:1313/evlachos_website/authors/kolios-p./</link>
+      <link>http://localhost:1313/authors/kolios-p./</link>
     </image>
     
     <item>
       <title>Intelligent UAV Path Planning for Ergodic Rate Maximization of MIMO Multipath Channels</title>
-      <link>http://localhost:1313/evlachos_website/publication/vitale-intelligent-2025/</link>
+      <link>http://localhost:1313/publication/vitale-intelligent-2025/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vitale-intelligent-2025/</guid>
+      <guid>http://localhost:1313/publication/vitale-intelligent-2025/</guid>
       <description></description>
     </item>
     

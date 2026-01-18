@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Varvarigos, E. | Dr. Evangelos Vlachos</title>
-    <link>http://localhost:1313/evlachos_website/authors/varvarigos-e./</link>
-      <atom:link href="http://localhost:1313/evlachos_website/authors/varvarigos-e./index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/authors/varvarigos-e./</link>
+      <atom:link href="http://localhost:1313/authors/varvarigos-e./index.xml" rel="self" type="application/rss+xml" />
     <description>Varvarigos, E.</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/evlachos_website/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
       <title>Varvarigos, E.</title>
-      <link>http://localhost:1313/evlachos_website/authors/varvarigos-e./</link>
+      <link>http://localhost:1313/authors/varvarigos-e./</link>
     </image>
     
     <item>
       <title>Supervised energy disaggregation using dictionary-based modelling of appliance states</title>
-      <link>http://localhost:1313/evlachos_website/publication/mavrokefalidis-supervised-2016/</link>
+      <link>http://localhost:1313/publication/mavrokefalidis-supervised-2016/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/mavrokefalidis-supervised-2016/</guid>
+      <guid>http://localhost:1313/publication/mavrokefalidis-supervised-2016/</guid>
       <description></description>
     </item>
     

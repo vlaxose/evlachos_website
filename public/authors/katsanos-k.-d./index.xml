@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Katsanos, K. D. | Dr. Evangelos Vlachos</title>
-    <link>http://localhost:1313/evlachos_website/authors/katsanos-k.-d./</link>
-      <atom:link href="http://localhost:1313/evlachos_website/authors/katsanos-k.-d./index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/authors/katsanos-k.-d./</link>
+      <atom:link href="http://localhost:1313/authors/katsanos-k.-d./index.xml" rel="self" type="application/rss+xml" />
     <description>Katsanos, K. D.</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/evlachos_website/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
       <title>Katsanos, K. D.</title>
-      <link>http://localhost:1313/evlachos_website/authors/katsanos-k.-d./</link>
+      <link>http://localhost:1313/authors/katsanos-k.-d./</link>
     </image>
     
     <item>
       <title>Receiving RISs: Enabling Channel Estimation and Autonomous Configuration</title>
-      <link>http://localhost:1313/evlachos_website/publication/alexandropoulos-receiving-2025/</link>
+      <link>http://localhost:1313/publication/alexandropoulos-receiving-2025/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/alexandropoulos-receiving-2025/</guid>
+      <guid>http://localhost:1313/publication/alexandropoulos-receiving-2025/</guid>
       <description></description>
     </item>
     

@@ -2,77 +2,77 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vlachos, Evangelos | Dr. Evangelos Vlachos</title>
-    <link>http://localhost:1313/evlachos_website/authors/vlachos-evangelos/</link>
-      <atom:link href="http://localhost:1313/evlachos_website/authors/vlachos-evangelos/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/authors/vlachos-evangelos/</link>
+      <atom:link href="http://localhost:1313/authors/vlachos-evangelos/index.xml" rel="self" type="application/rss+xml" />
     <description>Vlachos, Evangelos</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/evlachos_website/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
       <title>Vlachos, Evangelos</title>
-      <link>http://localhost:1313/evlachos_website/authors/vlachos-evangelos/</link>
+      <link>http://localhost:1313/authors/vlachos-evangelos/</link>
     </image>
     
     <item>
       <title>Improving Wideband Massive MIMO Channel Estimation With UAV State-Space Information</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-improving-2025/</link>
+      <link>http://localhost:1313/publication/vlachos-improving-2025/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-improving-2025/</guid>
+      <guid>http://localhost:1313/publication/vlachos-improving-2025/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Integrated Sensing and Communications for Future Wireless Networks: Principles, Advances and Key Enabling Technologies</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-integrated-2024/</link>
+      <link>http://localhost:1313/publication/vlachos-integrated-2024/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-integrated-2024/</guid>
+      <guid>http://localhost:1313/publication/vlachos-integrated-2024/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Covariance-Based Hybrid Beamforming for Spectrally Efficient Joint Radar-Communications</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-covariance-based-2023/</link>
+      <link>http://localhost:1313/publication/vlachos-covariance-based-2023/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-covariance-based-2023/</guid>
+      <guid>http://localhost:1313/publication/vlachos-covariance-based-2023/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Subset Selection Based RIS-Aided Beamforming for Joint Radar-Communications</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-subset-2023/</link>
+      <link>http://localhost:1313/publication/vlachos-subset-2023/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-subset-2023/</guid>
+      <guid>http://localhost:1313/publication/vlachos-subset-2023/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ADMM-based Cooperative Control for Platooning of Connected and Autonomous Vehicles</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-admm-based-2022/</link>
+      <link>http://localhost:1313/publication/vlachos-admm-based-2022/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-admm-based-2022/</guid>
+      <guid>http://localhost:1313/publication/vlachos-admm-based-2022/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Green Joint Radar-Communications: RF Selection with Low Resolution DACs and Hybrid Precoding</title>
-      <link>http://localhost:1313/evlachos_website/publication/kaushik-green-2022/</link>
+      <link>http://localhost:1313/publication/kaushik-green-2022/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/kaushik-green-2022/</guid>
+      <guid>http://localhost:1313/publication/kaushik-green-2022/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Optimal MmWave Sensor Selection for Bearing-Only Localization in Smart Environments</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-optimal-2022/</link>
+      <link>http://localhost:1313/publication/vlachos-optimal-2022/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-optimal-2022/</guid>
+      <guid>http://localhost:1313/publication/vlachos-optimal-2022/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Quantum Computing-Assisted Channel Estimation for Massive MIMO mmWave Systems</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-quantum-2022/</link>
+      <link>http://localhost:1313/publication/vlachos-quantum-2022/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-quantum-2022/</guid>
+      <guid>http://localhost:1313/publication/vlachos-quantum-2022/</guid>
       <description></description>
     </item>
     

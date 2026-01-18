@@ -2,90 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/evlachos_website/el/home/</loc>
+    <loc>http://localhost:1313/el/home/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/evlachos_website/home/"
+                href="http://localhost:1313/home/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="el-gr"
-                href="http://localhost:1313/evlachos_website/el/home/"
+                href="http://localhost:1313/el/home/"
                 />
   </url><url>
-    <loc>http://localhost:1313/evlachos_website/el/</loc>
+    <loc>http://localhost:1313/el/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/evlachos_website/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="el-gr"
-                href="http://localhost:1313/evlachos_website/el/"
+                href="http://localhost:1313/el/"
                 />
   </url><url>
-    <loc>http://localhost:1313/evlachos_website/el/authors/</loc>
+    <loc>http://localhost:1313/el/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/evlachos_website/authors/"
+                href="http://localhost:1313/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="el-gr"
-                href="http://localhost:1313/evlachos_website/el/authors/"
+                href="http://localhost:1313/el/authors/"
                 />
   </url><url>
-    <loc>http://localhost:1313/evlachos_website/el/categories/</loc>
+    <loc>http://localhost:1313/el/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/evlachos_website/categories/"
+                href="http://localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="el-gr"
-                href="http://localhost:1313/evlachos_website/el/categories/"
+                href="http://localhost:1313/el/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/evlachos_website/el/publication_types/</loc>
+    <loc>http://localhost:1313/el/publication_types/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/evlachos_website/publication_types/"
+                href="http://localhost:1313/publication_types/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="el-gr"
-                href="http://localhost:1313/evlachos_website/el/publication_types/"
+                href="http://localhost:1313/el/publication_types/"
                 />
   </url><url>
-    <loc>http://localhost:1313/evlachos_website/el/tags/</loc>
+    <loc>http://localhost:1313/el/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/evlachos_website/tags/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="el-gr"
-                href="http://localhost:1313/evlachos_website/el/tags/"
+                href="http://localhost:1313/el/tags/"
                 />
   </url><url>
-    <loc>http://localhost:1313/evlachos_website/el/authors/admin/</loc>
+    <loc>http://localhost:1313/el/authors/admin/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/evlachos_website/authors/admin/"
+                href="http://localhost:1313/authors/admin/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="el-gr"
-                href="http://localhost:1313/evlachos_website/el/authors/admin/"
+                href="http://localhost:1313/el/authors/admin/"
                 />
   </url>
 </urlset>

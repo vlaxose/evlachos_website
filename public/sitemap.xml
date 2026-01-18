@@ -2,14 +2,14 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <sitemap>
-    <loc>http://localhost:1313/evlachos_website/en/sitemap.xml</loc>
+    <loc>http://localhost:1313/en/sitemap.xml</loc>
     
       <lastmod>2026-01-01T00:00:00+00:00</lastmod>
     
   </sitemap>
   
   <sitemap>
-    <loc>http://localhost:1313/evlachos_website/el/sitemap.xml</loc>
+    <loc>http://localhost:1313/el/sitemap.xml</loc>
     
       <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     

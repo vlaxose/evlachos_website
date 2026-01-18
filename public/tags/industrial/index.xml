@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Industrial | Dr. Evangelos Vlachos</title>
-    <link>http://localhost:1313/evlachos_website/tags/industrial/</link>
-      <atom:link href="http://localhost:1313/evlachos_website/tags/industrial/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/tags/industrial/</link>
+      <atom:link href="http://localhost:1313/tags/industrial/index.xml" rel="self" type="application/rss+xml" />
     <description>Industrial</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/evlachos_website/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
       <title>Industrial</title>
-      <link>http://localhost:1313/evlachos_website/tags/industrial/</link>
+      <link>http://localhost:1313/tags/industrial/</link>
     </image>
     
     <item>
       <title>SPLASH</title>
-      <link>http://localhost:1313/evlachos_website/project/splash/</link>
+      <link>http://localhost:1313/project/splash/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/project/splash/</guid>
+      <guid>http://localhost:1313/project/splash/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Role:&lt;/strong&gt; Principal Investigator (PI).
 &lt;strong&gt;Partner:&lt;/strong&gt; Hellenic U-Space Industry (HUSI).&lt;/p&gt;
 &lt;p&gt;SPLASH investigates the &lt;strong&gt;Co-design&lt;/strong&gt; of control and communication protocols for U-Space services. Key innovations include:&lt;/p&gt;

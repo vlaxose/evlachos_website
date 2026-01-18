@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Venetis, D. E. | Dr. Evangelos Vlachos</title>
-    <link>http://localhost:1313/evlachos_website/authors/venetis-d.-e./</link>
-      <atom:link href="http://localhost:1313/evlachos_website/authors/venetis-d.-e./index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/authors/venetis-d.-e./</link>
+      <atom:link href="http://localhost:1313/authors/venetis-d.-e./index.xml" rel="self" type="application/rss+xml" />
     <description>Venetis, D. E.</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/evlachos_website/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
       <title>Venetis, D. E.</title>
-      <link>http://localhost:1313/evlachos_website/authors/venetis-d.-e./</link>
+      <link>http://localhost:1313/authors/venetis-d.-e./</link>
     </image>
     
     <item>
       <title>A New Consensus-Driven Cooperative Localization Technique for UAV Swarms under Intermittent GPS</title>
-      <link>http://localhost:1313/evlachos_website/publication/venetis-new-2026/</link>
+      <link>http://localhost:1313/publication/venetis-new-2026/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/venetis-new-2026/</guid>
+      <guid>http://localhost:1313/publication/venetis-new-2026/</guid>
       <description></description>
     </item>
     

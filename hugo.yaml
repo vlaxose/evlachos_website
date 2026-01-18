@@ -68,22 +68,23 @@ languages:
         '6': Book Section
         '7': Thesis
         '8': Patent
+# Για τα Αγγλικά (en)
     menu:
       main:
         - name: Home
-          url: '/#about'
+          url: '#about'
           weight: 10
         - name: Experience
-          url: '/#experience'
+          url: '#experience'
           weight: 20
         - name: Projects
-          url: '/project/'
+          url: '#projects'      # Αλλαγή από /project/ σε #projects
           weight: 30
         - name: Publications
-          url: '/publication/'
+          url: '#featured'      # Αλλαγή από /publication/ σε #featured (συνήθως έτσι λέγεται το widget)
           weight: 40
         - name: News
-          url: '/post/'
+          url: '#posts'          # Αλλαγή από /post/ σε #news
           weight: 50
 
   el:
@@ -102,20 +103,21 @@ languages:
         '6': Κεφάλαιο Βιβλίου
         '7': Διατριβή
         '8': Πατέντα
+
+# Για τα Ελληνικά (el)
     menu:
       main:
         - name: Αρχική
-          url: '/#about'
+          url: '#about'
           weight: 10
         - name: Εμπειρία
-          url: '/#experience'
+          url: '#experience'
           weight: 20
         - name: Έργα
-          url: '/project/'
+          url: '#projects'
           weight: 30
         - name: Δημοσιεύσεις
-          url: '/publication/'
-          weight: 40
+          url: '#featured'
         - name: Νέα
-          url: '/post/'
+          url: '#posts'
           weight: 50

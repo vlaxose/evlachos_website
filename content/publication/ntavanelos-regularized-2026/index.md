@@ -6,6 +6,6 @@ authors: ['Ntavanelos, N.', 'Vlachos, E.']
 publication_types: ["1"]
 abstract: ""
 featured: false
-publication: "*Submitted to IEEE ICASSP*"
+publication: "To be Submitted"
 tags: ["Research", "6G", "UAVs"]
 ---

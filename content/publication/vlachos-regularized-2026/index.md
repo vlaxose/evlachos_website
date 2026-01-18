@@ -22,5 +22,5 @@ tags:
 - 6G
 - Beam Steering
 
-publication: "Submitted to *IEEE Control Systems Letters (L-CSS)*"
+publication: "To be Submitted"
 ---

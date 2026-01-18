@@ -2,157 +2,157 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2 | Dr. Evangelos Vlachos</title>
-    <link>http://localhost:1313/evlachos_website/publication_types/2/</link>
-      <atom:link href="http://localhost:1313/evlachos_website/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/publication_types/2/</link>
+      <atom:link href="http://localhost:1313/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/evlachos_website/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
       <title>2</title>
-      <link>http://localhost:1313/evlachos_website/publication_types/2/</link>
+      <link>http://localhost:1313/publication_types/2/</link>
     </image>
     
     <item>
       <title>Enabling Safe and Scalable UAV Swarms: ISAC Technology, GNSS Resilience, and Risk Modeling in U-space</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-enabling-2026/</link>
+      <link>http://localhost:1313/publication/vlachos-enabling-2026/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-enabling-2026/</guid>
+      <guid>http://localhost:1313/publication/vlachos-enabling-2026/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Regularized Distributed MPC for UAV Networks: Stabilizing Coupled Motion and Hybrid Beam Alignment</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-regularized-2026/</link>
+      <link>http://localhost:1313/publication/vlachos-regularized-2026/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-regularized-2026/</guid>
+      <guid>http://localhost:1313/publication/vlachos-regularized-2026/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Improving Wideband Massive MIMO Channel Estimation With UAV State-Space Information</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-improving-2025/</link>
+      <link>http://localhost:1313/publication/vlachos-improving-2025/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-improving-2025/</guid>
+      <guid>http://localhost:1313/publication/vlachos-improving-2025/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Turning Interference into Diversity: Covariance-based Spatial Partitioning for Massive MIMO ISAC</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-turning-2025/</link>
+      <link>http://localhost:1313/publication/vlachos-turning-2025/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-turning-2025/</guid>
+      <guid>http://localhost:1313/publication/vlachos-turning-2025/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Integrated Sensing and Communications for Future Wireless Networks: Principles, Advances and Key Enabling Technologies</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-integrated-2024/</link>
+      <link>http://localhost:1313/publication/vlachos-integrated-2024/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-integrated-2024/</guid>
+      <guid>http://localhost:1313/publication/vlachos-integrated-2024/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Towards 6G: Spectrally efficient joint radar and communication with radio frequency selection, interference and hardware impairments</title>
-      <link>http://localhost:1313/evlachos_website/publication/kaushik-towards-2022/</link>
+      <link>http://localhost:1313/publication/kaushik-towards-2022/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/kaushik-towards-2022/</guid>
+      <guid>http://localhost:1313/publication/kaushik-towards-2022/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Energy-Efficiency Maximization of Hybrid Massive MIMO Precoding With Random-Resolution DACs via RF Selection</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-energy-efficiency-2021/</link>
+      <link>http://localhost:1313/publication/vlachos-energy-efficiency-2021/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-energy-efficiency-2021/</guid>
+      <guid>http://localhost:1313/publication/vlachos-energy-efficiency-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Joint Bit Allocation and Hybrid Beamforming Optimization for Energy Efficient Millimeter Wave MIMO Systems</title>
-      <link>http://localhost:1313/evlachos_website/publication/kaushik-joint-2021/</link>
+      <link>http://localhost:1313/publication/kaushik-joint-2021/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/kaushik-joint-2021/</guid>
+      <guid>http://localhost:1313/publication/kaushik-joint-2021/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Radio-frequency chain selection for energy and spectral efficiency maximization in hybrid beamforming under hardware imperfections</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-radio-frequency-2020/</link>
+      <link>http://localhost:1313/publication/vlachos-radio-frequency-2020/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-radio-frequency-2020/</guid>
+      <guid>http://localhost:1313/publication/vlachos-radio-frequency-2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dynamic RF Chain Selection for Energy Efficient and Low Complexity Hybrid Beamforming in Millimeter Wave MIMO Systems</title>
-      <link>http://localhost:1313/evlachos_website/publication/kaushik-dynamic-2019/</link>
+      <link>http://localhost:1313/publication/kaushik-dynamic-2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/kaushik-dynamic-2019/</guid>
+      <guid>http://localhost:1313/publication/kaushik-dynamic-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Signal Processing on Static and Dynamic 3D Meshes: Sparse Representations and Applications</title>
-      <link>http://localhost:1313/evlachos_website/publication/lalos-signal-2019/</link>
+      <link>http://localhost:1313/publication/lalos-signal-2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/lalos-signal-2019/</guid>
+      <guid>http://localhost:1313/publication/lalos-signal-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wideband MIMO Channel Estimation for Hybrid Beamforming Millimeter Wave Systems via Random Spatial Sampling</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-wideband-2019/</link>
+      <link>http://localhost:1313/publication/vlachos-wideband-2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-wideband-2019/</guid>
+      <guid>http://localhost:1313/publication/vlachos-wideband-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Adaptive Windowing for ICI Mitigation in Vehicular Communications</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-adaptive-2018/</link>
+      <link>http://localhost:1313/publication/vlachos-adaptive-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-adaptive-2018/</guid>
+      <guid>http://localhost:1313/publication/vlachos-adaptive-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Distributed consolidation of highly-incomplete dynamic point clouds based on rank minimization</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-distributed-2018/</link>
+      <link>http://localhost:1313/publication/vlachos-distributed-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-distributed-2018/</guid>
+      <guid>http://localhost:1313/publication/vlachos-distributed-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Massive MIMO Channel Estimation for Millimeter Wave Systems via Matrix Completion</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-massive-2018/</link>
+      <link>http://localhost:1313/publication/vlachos-massive-2018/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-massive-2018/</guid>
+      <guid>http://localhost:1313/publication/vlachos-massive-2018/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Compressed Sensing for Efficient Encoding of Dense 3D Meshes Using Model-Based Bayesian Learning</title>
-      <link>http://localhost:1313/evlachos_website/publication/lalos-compressed-2017/</link>
+      <link>http://localhost:1313/publication/lalos-compressed-2017/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/lalos-compressed-2017/</guid>
+      <guid>http://localhost:1313/publication/lalos-compressed-2017/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Low-complexity OSIC equalization for OFDM-based Vehicular Communications</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-low-complexity-2016/</link>
+      <link>http://localhost:1313/publication/vlachos-low-complexity-2016/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-low-complexity-2016/</guid>
+      <guid>http://localhost:1313/publication/vlachos-low-complexity-2016/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Stochastic Gradient Pursuit for Adaptive Equalization of Sparse Multipath Channels</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-stochastic-2012/</link>
+      <link>http://localhost:1313/publication/vlachos-stochastic-2012/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-stochastic-2012/</guid>
+      <guid>http://localhost:1313/publication/vlachos-stochastic-2012/</guid>
       <description></description>
     </item>
     

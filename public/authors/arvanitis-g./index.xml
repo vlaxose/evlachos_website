@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Arvanitis, G. | Dr. Evangelos Vlachos</title>
-    <link>http://localhost:1313/evlachos_website/authors/arvanitis-g./</link>
-      <atom:link href="http://localhost:1313/evlachos_website/authors/arvanitis-g./index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/authors/arvanitis-g./</link>
+      <atom:link href="http://localhost:1313/authors/arvanitis-g./index.xml" rel="self" type="application/rss+xml" />
     <description>Arvanitis, G.</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/evlachos_website/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
       <title>Arvanitis, G.</title>
-      <link>http://localhost:1313/evlachos_website/authors/arvanitis-g./</link>
+      <link>http://localhost:1313/authors/arvanitis-g./</link>
     </image>
     
     <item>
       <title>Energy Efficient Transmission of 3D Meshes Over MMWave-Based Massive MIMO Systems</title>
-      <link>http://localhost:1313/evlachos_website/publication/lalos-energy-2019/</link>
+      <link>http://localhost:1313/publication/lalos-energy-2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/lalos-energy-2019/</guid>
+      <guid>http://localhost:1313/publication/lalos-energy-2019/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Signal Processing on Static and Dynamic 3D Meshes: Sparse Representations and Applications</title>
-      <link>http://localhost:1313/evlachos_website/publication/lalos-signal-2019/</link>
+      <link>http://localhost:1313/publication/lalos-signal-2019/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/lalos-signal-2019/</guid>
+      <guid>http://localhost:1313/publication/lalos-signal-2019/</guid>
       <description></description>
     </item>
     

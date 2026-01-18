@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Masouros, C. | Dr. Evangelos Vlachos</title>
-    <link>http://localhost:1313/evlachos_website/authors/masouros-c./</link>
-      <atom:link href="http://localhost:1313/evlachos_website/authors/masouros-c./index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/authors/masouros-c./</link>
+      <atom:link href="http://localhost:1313/authors/masouros-c./index.xml" rel="self" type="application/rss+xml" />
     <description>Masouros, C.</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/evlachos_website/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
       <title>Masouros, C.</title>
-      <link>http://localhost:1313/evlachos_website/authors/masouros-c./</link>
+      <link>http://localhost:1313/authors/masouros-c./</link>
     </image>
     
     <item>
       <title>Radio-frequency chain selection for energy and spectral efficiency maximization in hybrid beamforming under hardware imperfections</title>
-      <link>http://localhost:1313/evlachos_website/publication/vlachos-radio-frequency-2020/</link>
+      <link>http://localhost:1313/publication/vlachos-radio-frequency-2020/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/publication/vlachos-radio-frequency-2020/</guid>
+      <guid>http://localhost:1313/publication/vlachos-radio-frequency-2020/</guid>
       <description></description>
     </item>
     

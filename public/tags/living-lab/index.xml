@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Living Lab | Dr. Evangelos Vlachos</title>
-    <link>http://localhost:1313/evlachos_website/tags/living-lab/</link>
-      <atom:link href="http://localhost:1313/evlachos_website/tags/living-lab/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/tags/living-lab/</link>
+      <atom:link href="http://localhost:1313/tags/living-lab/index.xml" rel="self" type="application/rss+xml" />
     <description>Living Lab</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/evlachos_website/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
       <title>Living Lab</title>
-      <link>http://localhost:1313/evlachos_website/tags/living-lab/</link>
+      <link>http://localhost:1313/tags/living-lab/</link>
     </image>
     
     <item>
       <title>EUSOME</title>
-      <link>http://localhost:1313/evlachos_website/project/eusome/</link>
+      <link>http://localhost:1313/project/eusome/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/evlachos_website/project/eusome/</guid>
+      <guid>http://localhost:1313/project/eusome/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Role:&lt;/strong&gt; Principal Investigator (PI) for ISI/Athena RC.
 &lt;strong&gt;Funding:&lt;/strong&gt; &amp;gt;800k€ (Horizon Europe).&lt;/p&gt;
 &lt;p&gt;The &lt;strong&gt;EUSOME&lt;/strong&gt; project establishes a &amp;ldquo;Living Lab&amp;rdquo; for Advanced Aerial Mobility (AAM). We focus on:&lt;/p&gt;
