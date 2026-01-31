@@ -49,7 +49,8 @@ social:
     link: https://scholar.google.com/citations?user=YOUR_ID
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/in/evangelos-vlachos/
+    link: httpsOD://www.linkedin.com/in/evangelos-vlachos-b543103a/
+    
   - icon: github
     icon_pack: fab
     link: https://github.com/vlaxose
