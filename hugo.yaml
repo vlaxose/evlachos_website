@@ -21,6 +21,12 @@ params:
     math:
       enable: true
 
+  # Social Links (Added based on your request)
+  social:
+    - icon: linkedin
+      icon_pack: fab
+      link: https://www.linkedin.com/in/dr-evangelos-vlachos/
+
 # --- Ρυθμίσεις HTML ---
 markup:
   goldmark:
@@ -68,7 +74,7 @@ languages:
         '6': Book Section
         '7': Thesis
         '8': Patent
-# Για τα Αγγλικά (en)
+    # Για τα Αγγλικά (en)
     menu:
       main:
         - name: Home
@@ -78,13 +84,13 @@ languages:
           url: '#experience'
           weight: 20
         - name: Projects
-          url: '#projects'      # Αλλαγή από /project/ σε #projects
+          url: '/projects/'      # Corrected: Points to dedicated page
           weight: 30
         - name: Publications
-          url: '#featured'      # Αλλαγή από /publication/ σε #featured (συνήθως έτσι λέγεται το widget)
+          url: '#featured'
           weight: 40
         - name: News
-          url: '#posts'          # Αλλαγή από /post/ σε #news
+          url: '#posts'
           weight: 50
 
   el:
@@ -104,7 +110,7 @@ languages:
         '7': Διατριβή
         '8': Πατέντα
 
-# Για τα Ελληνικά (el)
+    # Για τα Ελληνικά (el)
     menu:
       main:
         - name: Αρχική
@@ -114,7 +120,7 @@ languages:
           url: '#experience'
           weight: 20
         - name: Έργα
-          url: '#projects'
+          url: '/projects/'      # Corrected: Points to dedicated page
           weight: 30
         - name: Δημοσιεύσεις
           url: '#featured'
