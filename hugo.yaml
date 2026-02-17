@@ -1,49 +1,41 @@
-# --- Γενικές Ρυθμίσεις ---
+# --- General Settings ---
 baseURL: "https://evlachos.space/"
 title: Dr. Evangelos Vlachos
-copyright: '© 2026 Evangelos Vlachos'
 defaultContentLanguage: en
 enableGitInfo: false
 
-# --- Εμφάνιση (Classic Minimal) ---
+# --- ⚠️ CRITICAL: The Theme Engine ---
+# Without this, the site will be blank
+module:
+  imports:
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5
+
+# --- Appearance (High Density / Fritz!Box Style) ---
 params:
   appearance:
-    theme: minimal  # Επιστροφή στο κλασικό θέμα
+    theme: classic
     font: minimal
-    mode: light     # light ή system
-
-  plugins_css:
-    - css/custom.css
-#  plugins_js:
-#    - js/fix_names.js
+    font_size: S      # Small font for technical dashboard look
+    mode: navy       # Force light mode
 
   features:
     math:
       enable: true
 
-  # Social Links (Added based on your request)
-  social:
-    - icon: linkedin
-      icon_pack: fab
-      link: https://www.linkedin.com/in/dr-evangelos-vlachos/
+  # Clean Footer
+  footer:
+    show_powered_by: false
+    blox_attribution: false
+    copyright:
+      notice: '© 2026 Dr. Evangelos Vlachos'
+      license:
+        enable: false
 
-# --- Ρυθμίσεις HTML ---
+# --- Rendering & Security ---
 markup:
   goldmark:
     renderer:
       unsafe: true
-
-# --- Taxonomies (Φίλτρα) ---
-taxonomies:
-  tag: tags
-  category: categories
-  publication_type: publication_types
-  author: authors
-
-# --- Modules & Security ---
-module:
-  imports:
-    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5
 
 security:
   funcs:
@@ -52,29 +44,9 @@ security:
       - '^CI$'
       - '^WC_'
 
-services:
-  googleAnalytics:
-    id: ""
-
-# --- Γλώσσες & Μενού ---
+# --- Menus ---
 languages:
   en:
-    languageName: English
-    languageCode: en-us
-    weight: 1
-    title: Dr. Evangelos Vlachos
-    params:
-      publication_types:
-        '0': Uncategorized
-        '1': Conference Paper
-        '2': Journal Article
-        '3': Preprint
-        '4': Report
-        '5': Book
-        '6': Book Section
-        '7': Thesis
-        '8': Patent
-    # Για τα Αγγλικά (en)
     menu:
       main:
         - name: Home
@@ -84,46 +56,8 @@ languages:
           url: '#experience'
           weight: 20
         - name: Projects
-          url: '/projects/'      # Corrected: Points to dedicated page
+          url: '/projects/'
           weight: 30
         - name: Publications
           url: '#featured'
           weight: 40
-        - name: News
-          url: '#posts'
-          weight: 50
-
-  el:
-    languageName: Ελληνικά
-    languageCode: el-gr
-    weight: 2
-    title: Δρ. Ευάγγελος Βλάχος
-    params:
-      publication_types:
-        '0': Ακατηγοριοποίητο
-        '1': Άρθρο Συνεδρίου
-        '2': Άρθρο Περιοδικού
-        '3': Preprint
-        '4': Τεχνική Αναφορά
-        '5': Βιβλίο
-        '6': Κεφάλαιο Βιβλίου
-        '7': Διατριβή
-        '8': Πατέντα
-
-    # Για τα Ελληνικά (el)
-    menu:
-      main:
-        - name: Αρχική
-          url: '#about'
-          weight: 10
-        - name: Εμπειρία
-          url: '#experience'
-          weight: 20
-        - name: Έργα
-          url: '/projects/'      # Corrected: Points to dedicated page
-          weight: 30
-        - name: Δημοσιεύσεις
-          url: '#featured'
-        - name: Νέα
-          url: '#posts'
-          weight: 50

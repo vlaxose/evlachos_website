@@ -22,7 +22,7 @@ bio: My research focuses on Cyber-Physical Systems, UAVs, and 6G networks, bridg
 
 # Interests
 interests:
-  - Joint Communication, Control, and Sensing (JC&S)
+  - Joint Communication, Control, and Sensing
   - Integrated Sensing and Communications (ISAC) & 6G
   - UAV Swarms & U-Space Resilience
   - Scientific Machine Learning (Deep Unfolding)
@@ -59,8 +59,10 @@ social:
 url_pdf: "uploads/resume.pdf"
 ---
 
-Dr. Evangelos Vlachos is a Tenured Researcher (Researcher C) at the Industrial Systems Institute (ISI) of ATHENA RC, specializing in Joint Communication, Control, and Sensing (JC&S).
+Dr. Evangelos Vlachos is a Tenured Researcher (Researcher C) at the Industrial Systems Institute (ISI) of ATHENA RC, where he leads a research group on Joint Communication, Control, and Sensing. His research interests include Integrated Sensing and Communications (ISAC), UAV swarm coordination and U-Space resilience, and Scientific Machine Learning (deep unfolding), with a focus on bridging fundamental research with real-world validation in 6G networks and Cyber-Physical Systems.
 
-Focusing on 6G networks and Cyber-Physical Systems, he aims to bridge fundamental research with practical applications by validating theoretical models in real-world environments.
+He has authored over 47 publications — including articles in IEEE Transactions on Wireless Communications, IEEE JSTSP, and Proceedings of the Royal Society A — accumulating more than 1,100 citations. His work on graph-based matrix completion received the World's FIRST 10K Platinum Best Paper Award in 2017.
 
-He has served as Principal Investigator (PI) in competitive research projects (such as EUSOME and SPLASH, securing >€850k in funding), while his published work includes 47 papers with more than 1,100 citations. He is currently a Visiting Researcher at the University of Sussex, with previous research experience at the University of Edinburgh and the University of Patras.
+As Principal Investigator, he has secured over €850,000 in competitive and industry funding, including the Horizon Europe Excellence Hub EUSOME and the industry project SPLASH. He maintains active collaborations with Hellenic U-Space Industry, Quantum Neural Technologies, and Hellenic Drones, and has previously collaborated with Huawei Technologies France.
+
+He is a member of the EURASIP Technical Area Committee on Signal Processing for Communications and Networking, and serves as a reviewer for major IEEE journals. He currently teaches at the University of Patras and holds a visiting position at the University of Sussex, with previous postdoctoral and lecturing experience at the University of Edinburgh.

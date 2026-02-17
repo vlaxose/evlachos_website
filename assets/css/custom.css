@@ -1,31 +1,52 @@
-/* --- Διόρθωση Μεγεθών Κειμένου --- */
+/* Import academic fonts: Merriweather for headings, Source Sans 3 for body */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
 
-/* 1. Τίτλος στη σελίδα της δημοσίευσης (Single Page) */
-.page-type-publication h1 {
-  font-size: 1.75rem !important; /* Πολύ μικρότερο από το default */
-  line-height: 1.2 !important;
-  margin-bottom: 1rem !important;
-  color: #1565c0; /* Βάζουμε και λίγο χρώμα για να δούμε ότι δουλεύει */
+/* Academic palette: warm ivory background, dark charcoal text */
+:root,
+body,
+html,
+.dark,
+.dark body,
+.home-section,
+section,
+header,
+nav,
+.navbar,
+footer {
+  background-color: #faf8f5 !important;
+  background: #faf8f5 !important;
+  color: #2d2d2d !important;
+  font-family: "Source Sans 3", sans-serif !important;
 }
 
-/* 2. Τίτλοι στη λίστα (Card View) */
-.card-simple h3, 
-.card-simple h4, 
-.article-title {
-  font-size: 1.1rem !important;
-  font-weight: 600 !important;
+/* Serif headings for academic feel */
+h1, h2, h3, h4, .section-heading h1 {
+  color: #1a1a2e !important;
+  font-family: "Merriweather", Georgia, serif !important;
+  font-weight: 700 !important;
 }
 
-/* 3. Μικρότερα Metadata (Συγγραφείς, Ημερομηνία) */
-.article-metadata {
-  font-size: 0.85rem !important;
+/* Academic dark blue links */
+a, .nav-link {
+  color: #1a3a5c !important;
+}
+a:hover, .nav-link:hover {
+  color: #2c5a8f !important;
 }
 
-/* 4. Στυλ για τα νέα sections (Intro/Conclusion) που θα βάλουμε */
-h2 {
-  font-size: 1.4rem !important;
-  margin-top: 1.5rem !important;
-  color: #333;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 0.5rem;
+/* Narrow content width to ~900px */
+.container,
+.container-xl,
+.universal-wrapper {
+  max-width: 900px !important;
+}
+
+/* Absolute removal of attribution and extra text */
+.powered-by,
+footer p:nth-child(2),
+.site-footer,
+.blox-attribution {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
 }
