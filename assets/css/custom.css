@@ -42,6 +42,12 @@ footer {
   color: #2d2d2d !important;
   font-family: "Source Sans 3", sans-serif !important;
   font-weight: 600 !important;
+  font-size: 0.95rem !important;
+}
+
+/* Navbar brand size */
+.navbar-brand {
+  font-size: 1.15rem !important;
 }
 
 .navbar .nav-link:hover,
@@ -67,6 +73,36 @@ h1, h2, h3, h4, .section-heading h1 {
   color: #1a1a2e !important;
   font-family: "Merriweather", Georgia, serif !important;
   font-weight: 700 !important;
+}
+
+/* About widget sidebar: tame font sizes */
+.portrait-title h2 {
+  font-size: 1.3rem !important;
+}
+
+.portrait-title h3 {
+  font-size: 0.9rem !important;
+}
+
+.col-md-7 .article-style,
+.biography-text {
+  font-size: 0.92rem !important;
+  line-height: 1.65 !important;
+}
+
+.ul-interests li,
+.ul-edu li {
+  font-size: 0.88rem !important;
+}
+
+.ul-interests .section-subheading,
+.ul-edu .section-subheading {
+  font-size: 0.85rem !important;
+}
+
+/* Section headings */
+.home-section .section-heading h1 {
+  font-size: 1.4rem !important;
 }
 
 /* Academic dark blue links (non-navbar) */

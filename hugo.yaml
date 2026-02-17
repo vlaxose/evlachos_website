@@ -15,7 +15,7 @@ params:
   appearance:
     theme: classic
     font: minimal
-    font_size: S      # Small font for technical dashboard look
+    font_size: M
     mode: light      # Force light mode
 
   features:
