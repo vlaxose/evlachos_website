@@ -5,9 +5,9 @@
     <link>http://localhost:1313/tags/uavs/</link>
       <atom:link href="http://localhost:1313/tags/uavs/index.xml" rel="self" type="application/rss+xml" />
     <description>UAVs</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en</language><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/media/icon_hu_2beab1606e98fa9.png</url>
       <title>UAVs</title>
       <link>http://localhost:1313/tags/uavs/</link>
     </image>
@@ -37,28 +37,20 @@
     </item>
     
     <item>
+      <title>EUSOME Horizon Europe project kicks off</title>
+      <link>http://localhost:1313/post/eusome-kickoff/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/eusome-kickoff/</guid>
+      <description>&lt;p&gt;The EUSOME project has officially started. This Horizon Europe Excellence Hub focuses on enabling autonomous aerial systems through operational methods and technological enhancements. Dr. Vlachos serves as Principal Investigator.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Biconvex Optimization for Time-Domain Channel Estimation Under Dual-Wideband Fading Conditions</title>
       <link>http://localhost:1313/publication/vlachos-biconvex-2025/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/vlachos-biconvex-2025/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>EUSOME</title>
-      <link>http://localhost:1313/project/eusome/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/eusome/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Role:&lt;/strong&gt; Principal Investigator (PI) for ISI/Athena RC.
-&lt;strong&gt;Funding:&lt;/strong&gt; &amp;gt;800k€ (Horizon Europe).&lt;/p&gt;
-&lt;p&gt;The &lt;strong&gt;EUSOME&lt;/strong&gt; project establishes a &amp;ldquo;Living Lab&amp;rdquo; for Advanced Aerial Mobility (AAM). We focus on:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Cooperative Sensing:&lt;/strong&gt; Algorithms for UAV swarms to sense the environment collectively.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Digital Twins:&lt;/strong&gt; Real-time synchronization between physical drones and their digital counterparts.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Experimental Validation:&lt;/strong&gt; Using the Aerial Networks Testbed at ISI.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;This project bridges the gap between theoretical 6G control algorithms and real-world deployment.&lt;/p&gt;
-</description>
     </item>
     
     <item>

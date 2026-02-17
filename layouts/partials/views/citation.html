@@ -1,0 +1,42 @@
+{{ $item := .item }}
+{{ $year := $item.Date.Format "2006" }}
+{{ $is_journal := eq (index $item.Params.publication_types 0) "2" }}
+
+<div class="pub-row">
+  <div class="pub-meta">
+    <span class="pub-type {{ if $is_journal }}pub-type-journal{{ else }}pub-type-conf{{ end }}">
+      {{ if $is_journal }}Journal{{ else }}Conf{{ end }}
+    </span>
+    <span class="pub-year">{{ $year }}</span>
+  </div>
+  <div class="pub-details">
+    <div class="pub-title-line">
+      <a href="{{ $item.RelPermalink }}" class="pub-title">{{ $item.Title }}</a>
+      {{ with $item.Params.doi }}
+        <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener" class="pub-badge">
+          {{ if hasPrefix . "10.1109/" }}IEEE{{ else }}DOI{{ end }}
+        </a>
+      {{ end }}
+      {{ $resource := $item.Resources.GetMatch "paper.pdf" }}
+      {{ with $resource }}
+        <a href="{{ .RelPermalink }}" target="_blank" rel="noopener" class="pub-badge">PDF</a>
+      {{ else }}
+        {{ with $item.Params.url_pdf }}
+          <a href="{{ . }}" target="_blank" rel="noopener" class="pub-badge">PDF</a>
+        {{ end }}
+      {{ end }}
+    </div>
+    <div class="pub-authors-line">
+      {{- range $index, $author := $item.Params.authors -}}
+        {{- if gt $index 0 }}, {{ end -}}{{ $author }}
+      {{- end -}}
+    </div>
+    <div class="pub-venue-line">
+      {{ if $item.Params.publication_short }}
+        {{- $item.Params.publication_short | markdownify -}}
+      {{ else if $item.Params.publication }}
+        {{- $item.Params.publication | markdownify -}}
+      {{ end }}
+    </div>
+  </div>
+</div>

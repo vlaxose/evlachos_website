@@ -1,7 +1,13 @@
+# Local virtual environments
+venv/
+.venv/
+env/
+
+# Hugo build folders
 public/
 resources/
-venv/
 .hugo_build.lock
+
+# Operating System files
 .DS_Store
-*.pyc
-__pycache__/
+Thumbs.db

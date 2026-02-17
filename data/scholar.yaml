@@ -1,0 +1,33 @@
+# Update these from your Google Scholar profile periodically
+total_citations: 1100
+h_index: 18
+i10_index: 27
+total_publications: 47
+last_updated: "2026-02"
+
+# Citations per year (update from Google Scholar bar chart)
+citations_per_year:
+  - year: 2014
+    count: 5
+  - year: 2015
+    count: 10
+  - year: 2016
+    count: 20
+  - year: 2017
+    count: 45
+  - year: 2018
+    count: 85
+  - year: 2019
+    count: 140
+  - year: 2020
+    count: 160
+  - year: 2021
+    count: 170
+  - year: 2022
+    count: 155
+  - year: 2023
+    count: 140
+  - year: 2024
+    count: 120
+  - year: 2025
+    count: 50

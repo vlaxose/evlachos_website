@@ -5,9 +5,9 @@
     <link>http://localhost:1313/</link>
       <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <description>Evangelos Vlachos</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en</language><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/media/icon_hu_2beab1606e98fa9.png</url>
       <title>Evangelos Vlachos</title>
       <link>http://localhost:1313/</link>
     </image>
@@ -45,28 +45,55 @@
     </item>
     
     <item>
+      <title>EUSOME Horizon Europe project kicks off</title>
+      <link>http://localhost:1313/post/eusome-kickoff/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/eusome-kickoff/</guid>
+      <description>&lt;p&gt;The EUSOME project has officially started. This Horizon Europe Excellence Hub focuses on enabling autonomous aerial systems through operational methods and technological enhancements. Dr. Vlachos serves as Principal Investigator.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>EUSOME: Excellence Hub for Advanced Air Mobility</title>
+      <link>http://localhost:1313/projects/eusome/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/eusome/</guid>
+      <description>&lt;h2 id=&#34;project-overview&#34;&gt;Project Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;EUSOME&lt;/strong&gt; (Enabling Autonomous Aerial Systems through Operational Methods and Technological Enhancements) is a 4-year European Excellence Hub project funded by the &lt;strong&gt;Horizon Europe&lt;/strong&gt; programme (Grant Agreement No. 101187121).&lt;/p&gt;
+&lt;p&gt;With a total budget of nearly &lt;strong&gt;€6 million&lt;/strong&gt;, the project aims to modernize the air mobility ecosystem in the Southeast Mediterranean region. It addresses regional challenges such as goods and people transportation, complex landscape surveillance, fire risk management, and traffic congestion monitoring through the integration of large drone systems and intelligent coordination technology.&lt;/p&gt;
+&lt;h2 id=&#34;core-pillars-of-innovation&#34;&gt;Core Pillars of Innovation&lt;/h2&gt;
+&lt;p&gt;The project is structured around four primary objectives to bridge the gap between technological capability and regional implementation:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Research &amp;amp; Innovation Infrastructure:&lt;/strong&gt; Establishing an open-access infrastructure to foster technological advancements in Autonomous Aerial Systems (AAS).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Regulatory Masterplan:&lt;/strong&gt; Developing a strategic plan for the regional adoption of &lt;strong&gt;EASA&lt;/strong&gt; (European Union Aviation Safety Agency) regulations on Advanced Air Mobility.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Thematic Innovation Hub (TIH):&lt;/strong&gt; A dedicated hub to explore market possibilities, consultancy services, and open-access policies for project outputs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mentoring &amp;amp; Outreach:&lt;/strong&gt; Building regional expertise through training programs and promoting public engagement to ensure societal acceptance of AAM technology.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;project-news--milestones&#34;&gt;Project News &amp;amp; Milestones&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;January 2025:&lt;/strong&gt; Official Project Kick-off Meeting held in Cyprus, bringing together all 16 partners to align on the first phase of the AAM roadmap.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;August 2025:&lt;/strong&gt; EUSOME featured at the Mediterranean Drone Forum, highlighting the regional masterplan for U-Space integration.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Future Milestone:&lt;/strong&gt; Establishment of the regional Thematic Innovation Hub (TIH) for cross-border consultancy.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;the-consortium&#34;&gt;The Consortium&lt;/h2&gt;
+&lt;p&gt;Coordinated by the &lt;strong&gt;KIOS Research and Innovation Center of Excellence&lt;/strong&gt; at the University of Cyprus, EUSOME unites a diverse team of 16 partners across Cyprus, Greece, Poland, and Serbia, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Research Institutions:&lt;/strong&gt; University of Cyprus (KIOS), Athena Research Center.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Civil Aviation Authorities:&lt;/strong&gt; Hellenic Civil Aviation Authority (HCAA), Civil Aviation Authority of Cyprus.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Industry Partners:&lt;/strong&gt; Aviomania Aircraft, N. Karaolides Designs, HDRONES.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Governmental &amp;amp; Public Bodies:&lt;/strong&gt; Ministry of Digital Governance (Greece), Ministry of Transport (Cyprus).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;This project has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement No 101187121.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Biconvex Optimization for Time-Domain Channel Estimation Under Dual-Wideband Fading Conditions</title>
       <link>http://localhost:1313/publication/vlachos-biconvex-2025/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/vlachos-biconvex-2025/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>EUSOME</title>
-      <link>http://localhost:1313/project/eusome/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/eusome/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Role:&lt;/strong&gt; Principal Investigator (PI) for ISI/Athena RC.
-&lt;strong&gt;Funding:&lt;/strong&gt; &amp;gt;800k€ (Horizon Europe).&lt;/p&gt;
-&lt;p&gt;The &lt;strong&gt;EUSOME&lt;/strong&gt; project establishes a &amp;ldquo;Living Lab&amp;rdquo; for Advanced Aerial Mobility (AAM). We focus on:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Cooperative Sensing:&lt;/strong&gt; Algorithms for UAV swarms to sense the environment collectively.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Digital Twins:&lt;/strong&gt; Real-time synchronization between physical drones and their digital counterparts.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Experimental Validation:&lt;/strong&gt; Using the Aerial Networks Testbed at ISI.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;This project bridges the gap between theoretical 6G control algorithms and real-world deployment.&lt;/p&gt;
-</description>
     </item>
     
     <item>
@@ -102,6 +129,15 @@
     </item>
     
     <item>
+      <title>Visiting Researcher at the University of Sussex</title>
+      <link>http://localhost:1313/post/sussex-visit/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/sussex-visit/</guid>
+      <description>&lt;p&gt;Dr. Vlachos has joined the School of Engineering and Informatics at the University of Sussex as a Research Fellow for the 2024-2025 academic year.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Integrated Sensing and Communications for Future Wireless Networks: Principles, Advances and Key Enabling Technologies</title>
       <link>http://localhost:1313/publication/vlachos-integrated-2024/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
@@ -111,9 +147,9 @@
     
     <item>
       <title>FIRA-DAV</title>
-      <link>http://localhost:1313/project/firadav/</link>
+      <link>http://localhost:1313/projects/firadav/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/firadav/</guid>
+      <guid>http://localhost:1313/projects/firadav/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Role:&lt;/strong&gt; Principal Investigator (PI).
 &lt;strong&gt;Funding:&lt;/strong&gt; Athena RC Internal PoC (10k€).&lt;/p&gt;
 &lt;p&gt;We developed a prototype database containing synchronized &lt;strong&gt;mmWave Radar&lt;/strong&gt; (TI IWR6843) and &lt;strong&gt;Camera&lt;/strong&gt; data. This dataset is used to train &lt;strong&gt;Deep Unfolding&lt;/strong&gt; networks and other Scientific ML models for:&lt;/p&gt;
@@ -143,9 +179,9 @@
     
     <item>
       <title>SPLASH</title>
-      <link>http://localhost:1313/project/splash/</link>
+      <link>http://localhost:1313/projects/splash/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/splash/</guid>
+      <guid>http://localhost:1313/projects/splash/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Role:&lt;/strong&gt; Principal Investigator (PI).
 &lt;strong&gt;Partner:&lt;/strong&gt; Hellenic U-Space Industry (HUSI).&lt;/p&gt;
 &lt;p&gt;SPLASH investigates the &lt;strong&gt;Co-design&lt;/strong&gt; of control and communication protocols for U-Space services. Key innovations include:&lt;/p&gt;
@@ -379,6 +415,15 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/vlachos-massive-2018/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Platinum Best Paper Award at ICME 2017</title>
+      <link>http://localhost:1313/post/platinum-best-paper/</link>
+      <pubDate>Sat, 15 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/platinum-best-paper/</guid>
+      <description>&lt;p&gt;Our work on efficient graph-based matrix completion on incomplete animated models received the World&amp;rsquo;s FIRST 10K Best Paper Award - Platinum Award at IEEE ICME 2017.&lt;/p&gt;
+</description>
     </item>
     
     <item>

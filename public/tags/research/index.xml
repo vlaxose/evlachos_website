@@ -5,9 +5,9 @@
     <link>http://localhost:1313/tags/research/</link>
       <atom:link href="http://localhost:1313/tags/research/index.xml" rel="self" type="application/rss+xml" />
     <description>Research</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en</language><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/media/icon_hu_2beab1606e98fa9.png</url>
       <title>Research</title>
       <link>http://localhost:1313/tags/research/</link>
     </image>
@@ -34,6 +34,15 @@
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/ntavanelos-regularized-2026/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>EUSOME Horizon Europe project kicks off</title>
+      <link>http://localhost:1313/post/eusome-kickoff/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/eusome-kickoff/</guid>
+      <description>&lt;p&gt;The EUSOME project has officially started. This Horizon Europe Excellence Hub focuses on enabling autonomous aerial systems through operational methods and technological enhancements. Dr. Vlachos serves as Principal Investigator.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -74,6 +83,15 @@
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/vlachos-turning-2025/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Visiting Researcher at the University of Sussex</title>
+      <link>http://localhost:1313/post/sussex-visit/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/sussex-visit/</guid>
+      <description>&lt;p&gt;Dr. Vlachos has joined the School of Engineering and Informatics at the University of Sussex as a Research Fellow for the 2024-2025 academic year.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -314,6 +332,15 @@
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/vlachos-massive-2018/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Platinum Best Paper Award at ICME 2017</title>
+      <link>http://localhost:1313/post/platinum-best-paper/</link>
+      <pubDate>Sat, 15 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/platinum-best-paper/</guid>
+      <description>&lt;p&gt;Our work on efficient graph-based matrix completion on incomplete animated models received the World&amp;rsquo;s FIRST 10K Best Paper Award - Platinum Award at IEEE ICME 2017.&lt;/p&gt;
+</description>
     </item>
     
     <item>

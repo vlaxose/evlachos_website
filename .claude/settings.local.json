@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:localhost)",
+      "Bash(curl:*)",
+      "Bash(su -s /bin/bash vagos -c \"git log --oneline -5\")",
+      "Bash(su -s /bin/bash vagos -c 'git add assets/css/custom.css layouts/partials/custom_head.html hugo.yaml content/authors/admin/_index.md')",
+      "Bash(su -s:*)",
+      "Bash(grep:*)"
+    ]
+  }
+}

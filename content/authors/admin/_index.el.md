@@ -55,7 +55,7 @@ social:
     link: https://github.com/vlaxose
 
 # Link to a PDF of your resume/CV
-url_pdf: "uploads/resume.pdf"
+url_pdf: "uploads/EVlachos_CV.pdf"
 ---
 
 Ο Δρ. Ευάγγελος Βλάχος είναι Εντεταλμένος Ερευνητής στο ΙΝΒΙΣ του ΕΚ «ΑΘΗΝΆ», με ερευνητικό αντικείμενο την Ενιαία Επικοινωνία, Έλεγχο και Ανίχνευση (JC&S).
@@ -63,3 +63,5 @@ url_pdf: "uploads/resume.pdf"
 Εστιάζοντας στα δίκτυα 6G και τα Κυβερνο-Φυσικά Συστήματα, επιδιώκει τη σύνδεση της θεμελιώδους έρευνας με τις πρακτικές εφαρμογές, δοκιμάζοντας θεωρητικά μοντέλα σε πραγματικά περιβάλλοντα.
 
 Έχει διατελέσει Επιστημονικός Υπεύθυνος σε ερευνητικά έργα (όπως τα EUSOME και SPLASH, ύψους >850k€), ενώ το δημοσιευμένο έργο του περιλαμβάνει 47 εργασίες με περισσότερες από 1.100 αναφορές. Είναι Visiting Researcher στο University of Sussex, με προηγούμενη ερευνητική εμπειρία στο University of Edinburgh και στο Πανεπιστήμιο Πατρών.
+
+<a href="/uploads/EVlachos_CV.pdf" target="_blank" rel="noopener" class="pub-action-btn" style="margin-top: 1rem; display: inline-flex;"><i class="fas fa-file-pdf"></i>&nbsp; Λήψη Βιογραφικού</a>

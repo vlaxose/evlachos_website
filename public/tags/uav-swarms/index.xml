@@ -5,9 +5,9 @@
     <link>http://localhost:1313/tags/uav-swarms/</link>
       <atom:link href="http://localhost:1313/tags/uav-swarms/index.xml" rel="self" type="application/rss+xml" />
     <description>UAV Swarms</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en</language><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/media/icon_hu_2beab1606e98fa9.png</url>
       <title>UAV Swarms</title>
       <link>http://localhost:1313/tags/uav-swarms/</link>
     </image>

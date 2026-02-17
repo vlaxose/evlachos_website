@@ -7,6 +7,7 @@ authors: ['Lalos, A. S.', 'Vlachos, E.', 'Arvanitis, G.', 'Moustakas, K.', 'Berb
 publication_types: ["2"]
 abstract: "Nowadays, real-time 3D scanning and reconstruction becomes a requirement for a variety of interactive applications in various ﬁelds, including heritage science, gaming, engineering, landscape topography, and medicine. From the"
 featured: false
+url_pdf: "paper.pdf"
 publication: "*IEEE Access*"
 tags: ["Research", "6G", "UAVs"]
 ---

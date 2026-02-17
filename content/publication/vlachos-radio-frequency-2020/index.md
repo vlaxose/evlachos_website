@@ -7,6 +7,7 @@ authors: ['Vlachos, E.', 'Thompson, J.', 'Kaushik, A.', 'Masouros, C.']
 publication_types: ["2"]
 abstract: ""
 featured: false
+url_pdf: "paper.pdf"
 publication: "*Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences*"
 tags: ["Research", "6G", "UAVs"]
 ---

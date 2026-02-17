@@ -1,0 +1,149 @@
+{{- define "main" -}}
+
+{{ $pub_type_csl := "" }}
+{{ $pub_type_display := "" }}
+{{ if .Params.publication_types }}
+  {{ if reflect.IsSlice .Params.publication_types }}
+    {{ $pub_type_csl = index .Params.publication_types 0 }}
+    {{ $pub_type_display = i18n (printf "pub_%s" (strings.Replace $pub_type_csl "-" "_")) | default (strings.Title $pub_type_csl) }}
+  {{ end }}
+{{ end }}
+
+{{ $is_journal := eq $pub_type_csl "2" }}
+
+{{/* Find PDF */}}
+{{ $pdf := "" }}
+{{ $resource := .Resources.GetMatch "paper.pdf" }}
+{{ with $resource }}
+  {{ $pdf = .RelPermalink }}
+{{ else }}
+  {{ with $.Params.url_pdf }}
+    {{ $pdf = . | relURL }}
+  {{ end }}
+{{ end }}
+
+<div class="pub">
+  <div class="article-container">
+
+    {{/* Header section */}}
+    <div class="pub-header">
+      {{ if $pub_type_display }}
+      <span class="pub-type-tag {{ if $is_journal }}pub-type-journal{{ else }}pub-type-conf{{ end }}">
+        {{ $pub_type_display }}
+      </span>
+      {{ end }}
+      <span class="pub-date-tag">{{ .Date.Format "January 2006" }}</span>
+    </div>
+
+    <h1 class="pub-page-title">{{ .Title }}</h1>
+
+    {{/* Authors */}}
+    {{ with .Params.authors }}
+    <div class="pub-page-authors">
+      {{- range $index, $author := . -}}
+        {{- if gt $index 0 }}, {{ end -}}{{ $author }}
+      {{- end -}}
+    </div>
+    {{ end }}
+
+    {{/* Venue */}}
+    {{ with .Params.publication }}
+    <div class="pub-page-venue">{{ . | markdownify }}</div>
+    {{ end }}
+
+    {{/* Action buttons */}}
+    <div class="pub-page-actions">
+      {{ with $pdf }}
+      <a href="{{ . }}" target="_blank" rel="noopener" class="pub-action-btn pub-action-primary">
+        <i class="fas fa-file-pdf"></i> Download PDF
+      </a>
+      {{ end }}
+
+      {{ with $.Params.doi }}
+      <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener" class="pub-action-btn">
+        {{ if hasPrefix . "10.1109/" }}
+          <i class="fas fa-book-open"></i> IEEE Xplore
+        {{ else }}
+          <i class="fas fa-link"></i> DOI
+        {{ end }}
+      </a>
+      {{ end }}
+
+      {{ $cite := $.Resources.GetMatch "cite.bib" }}
+      {{ with $cite }}
+      <a href="#" class="pub-action-btn js-cite-modal" data-filename="{{ .RelPermalink }}">
+        <i class="fas fa-quote-right"></i> Cite
+      </a>
+      {{ end }}
+
+      {{ with $.Params.url_code }}
+      <a href="{{ . }}" target="_blank" rel="noopener" class="pub-action-btn">
+        <i class="fas fa-code"></i> Code
+      </a>
+      {{ end }}
+    </div>
+
+    <hr class="pub-divider">
+
+    {{/* Abstract */}}
+    {{ if .Params.abstract }}
+    <div class="pub-section">
+      <h3 class="pub-section-title">Abstract</h3>
+      <p class="pub-abstract-text">{{ .Params.abstract | markdownify }}</p>
+    </div>
+    {{ end }}
+
+    {{/* Details grid */}}
+    <div class="pub-details-grid">
+      {{ if $pub_type_display }}
+      <div class="pub-detail-row">
+        <span class="pub-detail-label">Type</span>
+        <span class="pub-detail-value">{{ $pub_type_display }}</span>
+      </div>
+      {{ end }}
+
+      {{ with .Params.publication }}
+      <div class="pub-detail-row">
+        <span class="pub-detail-label">Publication</span>
+        <span class="pub-detail-value">{{ . | markdownify }}</span>
+      </div>
+      {{ end }}
+
+      {{ with .Params.doi }}
+      <div class="pub-detail-row">
+        <span class="pub-detail-label">DOI</span>
+        <span class="pub-detail-value">
+          <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">{{ . }}</a>
+        </span>
+      </div>
+      {{ end }}
+
+      {{ with .Date }}
+      <div class="pub-detail-row">
+        <span class="pub-detail-label">Date</span>
+        <span class="pub-detail-value">{{ .Format "January 2006" }}</span>
+      </div>
+      {{ end }}
+    </div>
+
+    {{/* Tags */}}
+    {{ with .Params.tags }}
+    <div class="pub-tags">
+      {{ range . }}
+        <a href="{{ (urls.Parse (printf "/tags/%s/" (. | urlize))).Path }}" class="pub-tag">{{ . }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{/* Body content */}}
+    {{ with .Content }}
+    <div class="pub-section">
+      <div class="article-style">{{ . }}</div>
+    </div>
+    {{ end }}
+
+    {{ partial "page_footer" . }}
+
+  </div>
+</div>
+{{- end -}}

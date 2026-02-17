@@ -1,7 +1,8 @@
 ---
 widget: experience
 headless: true
-weight: 40
+active: false
+weight: 30
 title: Experience
 date_format: Jan 2006
 

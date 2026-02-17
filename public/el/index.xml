@@ -5,12 +5,40 @@
     <link>http://localhost:1313/el/</link>
       <atom:link href="http://localhost:1313/el/index.xml" rel="self" type="application/rss+xml" />
     <description>Δρ. Ευάγγελος Βλάχος</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>el-gr</language><copyright>© 2026 Evangelos Vlachos</copyright><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>el</language><lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu_43cf117bf1a42c34.png</url>
+      <url>http://localhost:1313/media/icon_hu_2beab1606e98fa9.png</url>
       <title>Δρ. Ευάγγελος Βλάχος</title>
       <link>http://localhost:1313/el/</link>
     </image>
+    
+    <item>
+      <title>EUSOME: Κόμβος Αριστείας για την Προηγμένη Εναέρια Κινητικότητα</title>
+      <link>http://localhost:1313/el/projects/eusome/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/el/projects/eusome/</guid>
+      <description>&lt;h2 id=&#34;επισκόπηση-έργου&#34;&gt;Επισκόπηση Έργου&lt;/h2&gt;
+&lt;p&gt;Το &lt;strong&gt;EUSOME&lt;/strong&gt; (Enabling Autonomous Aerial Systems through Operational Methods and Technological Enhancements) είναι ένα τετραετές ευρωπαϊκό έργο (Excellence Hub) που χρηματοδοτείται από το πρόγραμμα &lt;strong&gt;Ορίζοντας Ευρώπη&lt;/strong&gt; (Horizon Europe - Grant Agreement No. 101187121).&lt;/p&gt;
+&lt;p&gt;Με συνολικό προϋπολογισμό ύψους &lt;strong&gt;6 εκατομμυρίων ευρώ&lt;/strong&gt;, το έργο στοχεύει στον εκσυγχρονισμό του οικοσυστήματος &lt;strong&gt;εναέριας κινητικότητας&lt;/strong&gt; στη Νοτιοανατολική Μεσόγειο. Αντιμετωπίζει κρίσιμες περιφερειακές προκλήσεις, όπως η μεταφορά αγαθών και ανθρώπων, η επιτήρηση σύνθετων τοπίων, η διαχείριση κινδύνου πυρκαγιάς και η παρακολούθηση της κυκλοφοριακής συμφόρησης, μέσω της ενσωμάτωσης μεγάλων συστημάτων drones και έξυπνων τεχνολογιών συντονισμού.&lt;/p&gt;
+&lt;h2 id=&#34;βασικοί-πυλώνες-καινοτομίας&#34;&gt;Βασικοί Πυλώνες Καινοτομίας&lt;/h2&gt;
+&lt;p&gt;Το έργο διαρθρώνεται γύρω από τέσσερις κύριους στόχους για τη γεφύρωση του χάσματος μεταξύ τεχνολογικής ικανότητας και περιφερειακής εφαρμογής:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Υποδομές Έρευνας και Καινοτομίας:&lt;/strong&gt; Ανάπτυξη υποδομών ανοικτής πρόσβασης για την προώθηση τεχνολογικών εξελίξεων στα Αυτόνομα Εναέρια Συστήματα (AAS).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Στρατηγικό Σχέδιο (Masterplan) Κανονισμών:&lt;/strong&gt; Διαμόρφωση ενός ολοκληρωμένου σχεδίου για την περιφερειακή υιοθέτηση των κανονισμών του &lt;strong&gt;EASA&lt;/strong&gt; (Ευρωπαϊκός Οργανισμός Ασφάλειας της Αεροπορίας) σχετικά με την &lt;strong&gt;Προηγμένη Εναέρια Κινητικότητα&lt;/strong&gt; (AAM).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Θεματικός Κόμβος Καινοτομίας (TIH):&lt;/strong&gt; Δημιουργία ενός εξειδικευμένου κόμβου για τη διερεύνηση των δυνατοτήτων της αγοράς, την παροχή συμβουλευτικών υπηρεσιών και την προώθηση πολιτικών ανοικτής πρόσβασης για τα αποτελέσματα του έργου.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Καθοδήγηση και Εξωστρέφεια:&lt;/strong&gt; Ανάπτυξη περιφερειακής τεχνογνωσίας μέσω προγραμμάτων κατάρτισης και δράσεων για την ενίσχυση της κοινωνικής αποδοχής της τεχνολογίας των drones.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;νέα-και-ορόσημα-του-έργου&#34;&gt;Νέα και Ορόσημα του Έργου&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ιανουάριος 2025:&lt;/strong&gt; Πραγματοποιήθηκε στην Κύπρο η επίσημη συνάντηση έναρξης (Kick-off Meeting), με τη συμμετοχή και των 16 εταίρων για τον καθορισμό της πρώτης φάσης του οδικού χάρτη AAM.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Αύγουστος 2025:&lt;/strong&gt; Παρουσίαση του EUSOME στο Mediterranean Drone Forum, με έμφαση στο περιφερειακό σχέδιο για την ενσωμάτωση του U-Space.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;η-κοινοπραξία&#34;&gt;Η Κοινοπραξία&lt;/h2&gt;
+&lt;p&gt;Το έργο συντονίζεται από το &lt;strong&gt;Κέντρο Αριστείας για Έρευνα και Καινοτομία &amp;ldquo;ΚΟΙΟΣ&amp;rdquo;&lt;/strong&gt; του Πανεπιστημίου Κύπρου και ενώνει μια πολυμελή ομάδα 16 εταίρων από την Κύπρο, την Ελλάδα, την Πολωνία και τη Σερβία, συμπεριλαμβανομένων ερευνητικών φορέων (Αθηνά, ΕΔΥΤΕ), αρχών πολιτικής αεροπορίας (ΑΠΑ) και βιομηχανικών εταίρων.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;em&gt;Το έργο αυτό έχει λάβει χρηματοδότηση από το πρόγραμμα έρευνας και καινοτομίας «Ορίζοντας Ευρώπη» της Ευρωπαϊκής Ένωσης, βάσει της συμφωνίας επιχορήγησης αριθ. 101187121.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Αρχική</title>

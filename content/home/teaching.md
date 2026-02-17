@@ -1,7 +1,8 @@
 ---
 widget: featurette
 headless: true
-weight: 45 # Θα μπει ανάμεσα σε Publications και Projects
+active: false
+weight: 35
 title: Teaching & Supervision
 subtitle: Academic contributions
 

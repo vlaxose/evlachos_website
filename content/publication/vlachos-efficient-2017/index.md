@@ -7,6 +7,7 @@ authors: ['Vlachos, E.', 'Lalos, A. S.', 'Moustakas, K.', 'Berberidis, K.']
 publication_types: ["1"]
 abstract: ""
 featured: false
+url_pdf: "paper.pdf"
 publication: "*2017 IEEE International Conference on Multimedia and Expo (ICME)*"
 tags: ["Research", "6G", "UAVs"]
 ---
