@@ -2,7 +2,7 @@
 # Αυτό το αρχείο ελέγχει την ενότητα "Νέα" στην αρχική σελίδα
 widget: collection
 active: true
-weight: 10
+weight: 30
 
 title: News
 subtitle: ''
@@ -14,5 +14,5 @@ content:
     featured_only: false
 
 design:
-  view: 2       # Compact layout, ιδανικό για ακαδημαϊκά νέα
+  view: news
 ---

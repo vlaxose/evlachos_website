@@ -1,7 +1,7 @@
 ---
 widget: collection
 active: true
-weight: 10
+weight: 30
 
 title: Νέα
 subtitle: ''
@@ -13,5 +13,5 @@ content:
     featured_only: false
 
 design:
-  view: 2
+  view: news
 ---

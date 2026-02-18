@@ -3,17 +3,17 @@ widget: contact
 headless: true
 active: true
 weight: 95
-title: Contact
+title: Επικοινωνία
 subtitle: ''
 
 content:
   email: evlachos@athenarc.gr
   address:
-    street: Stadiou Str., Platani
-    city: Patras
-    region: Achaia
+    street: Οδός Σταδίου, Πλατάνι
+    city: Πάτρα
+    region: Αχαΐα
     postcode: '26504'
-    country: Greece
+    country: Ελλάδα
   contact_links:
     - icon: linkedin
       icon_pack: fab

@@ -10,7 +10,7 @@ last_name: Vlachos
 superuser: true
 
 # Role/position
-role: Tenured-track Researcher (Researcher C)
+role: Tenure-track Researcher (Researcher C)
 
 # Organizations/Affiliations
 organizations:
@@ -46,7 +46,7 @@ social:
     link: 'mailto:evlachos@athenarc.gr'
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.com/citations?user=YOUR_ID
+    link: https://scholar.google.com/citations?user=N2ZlmesAAAAJ
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/evangelos-vlachos-b543103a/
