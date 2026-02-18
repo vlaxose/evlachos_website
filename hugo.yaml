@@ -61,11 +61,11 @@ languages:
         - name: Projects
           url: '/projects/'
           weight: 20
-        - name: News
-          url: '#news'
-          weight: 30
         - name: Bio
           url: '#about'
+          weight: 30
+        - name: News
+          url: '#news'
           weight: 40
         - name: Contact
           url: '#contact'
@@ -82,12 +82,12 @@ languages:
         - name: Έργα
           url: '/projects/'
           weight: 20
+        - name: Βιογραφικό
+          url: '#about'
+          weight: 30
         - name: Νέα
           url: '#news'
-          weight: 30
+          weight: 40
         - name: Επικοινωνία
           url: '#contact'
           weight: 50
-        - name: Βιογραφικό
-          url: '#about'
-          weight: 40
