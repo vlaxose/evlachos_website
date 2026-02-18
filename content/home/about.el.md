@@ -1,7 +1,7 @@
 ---
 widget: about
 headless: true
-weight: 10
+weight: 50
 title: Βιογραφικό
 author: admin
 ---

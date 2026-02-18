@@ -2,7 +2,7 @@
 # Αυτό το αρχείο ελέγχει την ενότητα "Νέα" στην αρχική σελίδα
 widget: collection
 active: true
-weight: 30
+weight: 10
 
 title: News
 subtitle: ''

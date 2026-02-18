@@ -1,7 +1,7 @@
 ---
 widget: collection
 active: true
-weight: 30
+weight: 10
 
 title: Νέα
 subtitle: ''

@@ -55,17 +55,17 @@ languages:
     weight: 1
     menu:
       main:
-        - name: Publications
-          url: '#publications'
-          weight: 10
-        - name: Projects
-          url: '/projects/'
-          weight: 20
-        - name: Bio
-          url: '#about'
-          weight: 30
         - name: News
           url: '#news'
+          weight: 10
+        - name: Publications
+          url: '#publications'
+          weight: 20
+        - name: Projects
+          url: '/projects/'
+          weight: 30
+        - name: Bio
+          url: '#about'
           weight: 40
         - name: Contact
           url: '#contact'
@@ -76,17 +76,17 @@ languages:
     title: Δρ. Ευάγγελος Βλάχος
     menu:
       main:
-        - name: Δημοσιεύσεις
-          url: '#publications'
-          weight: 10
-        - name: Έργα
-          url: '/projects/'
-          weight: 20
-        - name: Βιογραφικό
-          url: '#about'
-          weight: 30
         - name: Νέα
           url: '#news'
+          weight: 10
+        - name: Δημοσιεύσεις
+          url: '#publications'
+          weight: 20
+        - name: Έργα
+          url: '/projects/'
+          weight: 30
+        - name: Βιογραφικό
+          url: '#about'
           weight: 40
         - name: Επικοινωνία
           url: '#contact'
