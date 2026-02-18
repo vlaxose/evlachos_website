@@ -8,6 +8,9 @@ public/
 resources/
 .hugo_build.lock
 
+# Python
+__pycache__/
+
 # Operating System files
 .DS_Store
 Thumbs.db

@@ -1,0 +1,26 @@
+{{ $item := .item }}
+{{ $date := $item.Date.Format "Jan 2006" }}
+
+<div class="pub-row">
+  <div class="pub-meta">
+    <span class="news-type">News</span>
+    <span class="pub-year">{{ $date }}</span>
+  </div>
+  <div class="pub-details">
+    <div class="pub-title-line">
+      <a href="{{ $item.RelPermalink }}" class="pub-title">{{ $item.Title }}</a>
+      {{ with $item.Params.tags }}
+        {{ range first 2 . }}
+          <span class="pub-badge">{{ . }}</span>
+        {{ end }}
+      {{ end }}
+    </div>
+    <div class="news-summary-line">
+      {{ with $item.Params.summary }}
+        {{ . }}
+      {{ else }}
+        {{ $item.Summary | plainify | truncate 150 }}
+      {{ end }}
+    </div>
+  </div>
+</div>

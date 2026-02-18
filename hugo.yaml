@@ -22,6 +22,10 @@ params:
     math:
       enable: true
 
+  marketing:
+    seo:
+      description: 'Tenure-track Researcher at ISI, Athena RC, working on Integrated Sensing and Communications (ISAC), UAV swarm coordination, and 6G networks. 47+ publications, 1,100+ citations.'
+
   # Clean Footer
   footer:
     show_powered_by: false
@@ -63,6 +67,9 @@ languages:
         - name: Bio
           url: '#about'
           weight: 40
+        - name: Contact
+          url: '#contact'
+          weight: 50
   el:
     languageName: Ελληνικά
     weight: 2
@@ -78,6 +85,9 @@ languages:
         - name: Νέα
           url: '#news'
           weight: 30
+        - name: Επικοινωνία
+          url: '#contact'
+          weight: 50
         - name: Βιογραφικό
           url: '#about'
           weight: 40
