@@ -1,7 +1,7 @@
 ---
 widget: featurette
 headless: true
-active: false
+active: true
 weight: 40
 title: Teaching & Supervision
 subtitle: Academic contributions

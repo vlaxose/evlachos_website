@@ -381,16 +381,6 @@ a.pub-title:hover {
   font-size: 0.7rem !important;
 }
 
-/* Section dividers */
-.home-section {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
-}
-
-.home-section + .home-section {
-  border-top: 1px solid #e0dbd4;
-}
-
 /* Narrow content width to ~900px */
 .container,
 .container-xl,
