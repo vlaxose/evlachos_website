@@ -7,7 +7,7 @@ title: Experience
 date_format: Jan 2006
 
 experience:
-  - title: Tenured-track Researcher (Researcher C)
+  - title: Tenure-track Researcher (Researcher C)
     company: Industrial Systems Institute, Athena RC
     company_url: 'https://www.isi.gr/'
     location: Patras, Greece

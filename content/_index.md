@@ -1,4 +1,4 @@
 ---
 type: widget_page
-title: "Evangelos Vlachos"
+title: "Dr. Evangelos Vlachos"
 ---
