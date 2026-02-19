@@ -81,7 +81,7 @@
         {{ $count := $.Scratch.Get (printf "cumul_%v" .year) | default 0 }}
         <div class="scholar-bar-group scholar-bar-clickable" data-year="{{ .year }}" title="Filter {{ .year }}">
           <div class="scholar-bar-count">{{ $count }}</div>
-          <div class="scholar-bar" style="height: {{ mul (div (float $count) (float $maxCumul)) 90 }}px;"></div>
+          <div class="scholar-bar" style="height: {{ mul (div (float $count) (float $maxCumul)) 55 }}px;"></div>
           <div class="scholar-bar-year">{{ .year }}</div>
         </div>
         {{ end }}
