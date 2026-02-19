@@ -48,6 +48,22 @@ footer {
 /* Navbar brand size */
 .navbar-brand {
   font-size: 1.15rem !important;
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 0.45rem;
+  white-space: nowrap;
+}
+
+.navbar-avatar {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1.5px solid rgba(26, 58, 92, 0.2);
+  vertical-align: middle;
 }
 
 .navbar .nav-link:hover,

@@ -64,9 +64,6 @@ languages:
         - name: Projects
           url: '/projects/'
           weight: 30
-        - name: Bio
-          url: '#about'
-          weight: 40
         - name: Contact
           url: '#contact'
           weight: 50
@@ -85,9 +82,6 @@ languages:
         - name: Έργα
           url: '/projects/'
           weight: 30
-        - name: Βιογραφικό
-          url: '#about'
-          weight: 40
         - name: Επικοινωνία
           url: '#contact'
           weight: 50
