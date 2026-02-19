@@ -209,6 +209,48 @@ a:hover {
   white-space: nowrap;
 }
 
+.pub-links {
+  flex-shrink: 0;
+  width: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.25rem;
+  padding-top: 0.1rem;
+}
+
+.pub-link-btn {
+  display: block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.2rem;
+  border-radius: 3px;
+  border: 1.5px solid #1a3a5c;
+  color: #1a3a5c !important;
+  background: transparent;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.pub-link-btn:hover {
+  background: #1a3a5c !important;
+  color: #fff !important;
+}
+
+.pub-link-pdf {
+  border-color: #c0392b;
+  color: #c0392b !important;
+}
+
+.pub-link-pdf:hover {
+  background: #c0392b !important;
+  color: #fff !important;
+}
+
 .pub-details {
   flex: 1;
   min-width: 0;

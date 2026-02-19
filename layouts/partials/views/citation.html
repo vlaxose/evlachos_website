@@ -13,22 +13,24 @@
     </span>
     <span class="pub-year">{{ $year }}</span>
   </div>
+  <div class="pub-links">
+    {{ with $item.Params.doi }}
+      <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener" class="pub-link-btn">
+        {{ if hasPrefix . "10.1109/" }}IEEE{{ else if hasPrefix . "10.48550/" }}arXiv{{ else }}DOI{{ end }}
+      </a>
+    {{ end }}
+    {{ $resource := $item.Resources.GetMatch "paper.pdf" }}
+    {{ with $resource }}
+      <a href="{{ .RelPermalink }}" target="_blank" rel="noopener" class="pub-link-btn pub-link-pdf">PDF</a>
+    {{ else }}
+      {{ with $item.Params.url_pdf }}
+        <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link-btn pub-link-pdf">PDF</a>
+      {{ end }}
+    {{ end }}
+  </div>
   <div class="pub-details">
     <div class="pub-title-line">
       <a href="{{ $item.RelPermalink }}" class="pub-title">{{ $item.Title }}</a>
-      {{ with $item.Params.doi }}
-        <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener" class="pub-badge">
-          {{ if hasPrefix . "10.1109/" }}IEEE{{ else if hasPrefix . "10.48550/" }}arXiv{{ else }}DOI{{ end }}
-        </a>
-      {{ end }}
-      {{ $resource := $item.Resources.GetMatch "paper.pdf" }}
-      {{ with $resource }}
-        <a href="{{ .RelPermalink }}" target="_blank" rel="noopener" class="pub-badge">PDF</a>
-      {{ else }}
-        {{ with $item.Params.url_pdf }}
-          <a href="{{ . }}" target="_blank" rel="noopener" class="pub-badge">PDF</a>
-        {{ end }}
-      {{ end }}
     </div>
     <div class="pub-authors-line">
       {{- range $index, $author := $item.Params.authors -}}
