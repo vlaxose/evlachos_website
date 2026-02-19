@@ -158,17 +158,31 @@
 
 <script>
 document.body.addEventListener('click', function (e) {
-  var el = e.target.closest('.pub-type-clickable');
-  if (!el) return;
-  var pubtype = el.dataset.pubtype;
-  var filterVal = '.pubtype-' + pubtype;
-  var select = document.querySelector('.pubtype-select');
-  if (!select) return;
-  var newVal = select.value === filterVal ? '*' : filterVal;
-  select.value = newVal;
-  /* Use jQuery trigger so wowchemy-publication.js picks it up */
-  if (typeof jQuery !== 'undefined') {
-    jQuery(select).trigger('change');
+  /* --- pub-type label click → filter by type --- */
+  var typeEl = e.target.closest('.pub-type-clickable');
+  if (typeEl) {
+    var filterVal = '.pubtype-' + typeEl.dataset.pubtype;
+    var typeSelect = document.querySelector('.pubtype-select');
+    if (typeSelect && typeof jQuery !== 'undefined') {
+      typeSelect.value = typeSelect.value === filterVal ? '*' : filterVal;
+      jQuery(typeSelect).trigger('change');
+    }
+    return;
+  }
+
+  /* --- bar chart click → filter by year --- */
+  var barEl = e.target.closest('.scholar-bar-clickable');
+  if (barEl) {
+    var year = barEl.dataset.year;
+    var filterVal = '.year-' + year;
+    var yearSelect = document.querySelector('select[data-filter-group="year"]');
+    if (yearSelect && typeof jQuery !== 'undefined') {
+      yearSelect.value = yearSelect.value === filterVal ? '*' : filterVal;
+      jQuery(yearSelect).trigger('change');
+      /* Scroll down to the publications list */
+      var pubList = document.getElementById('container-publications');
+      if (pubList) pubList.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 });
 </script>

@@ -389,6 +389,17 @@ a.pub-title:hover {
   align-items: center;
 }
 
+.scholar-bar-clickable {
+  cursor: pointer;
+}
+.scholar-bar-clickable:hover .scholar-bar {
+  background: #e67e22;
+}
+.scholar-bar-clickable:hover .scholar-bar-year {
+  color: #e67e22 !important;
+  font-weight: 700;
+}
+
 .scholar-bar-count {
   font-size: 0.6rem;
   color: #888 !important;
