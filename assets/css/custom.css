@@ -55,6 +55,25 @@ footer {
   white-space: nowrap;
 }
 
+.navbar-brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.navbar-brand-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1a2e !important;
+}
+
+.navbar-brand-title {
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: #666 !important;
+  letter-spacing: 0.02em;
+}
+
 .navbar-avatar {
   display: inline-block;
   width: 18px;
@@ -811,6 +830,155 @@ a.pub-title:hover {
   .contact-page {
     flex-direction: column;
     gap: 2rem;
+  }
+}
+
+/* Teaching page */
+.teaching-page {
+  padding: 1rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.teaching-block {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #e0dbd4;
+}
+
+.teaching-block:last-child {
+  border-bottom: none;
+}
+
+.teaching-block-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.teaching-block-meta {
+  flex-shrink: 0;
+  width: 6rem;
+  padding-top: 0.15rem;
+}
+
+.teaching-period {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #888 !important;
+}
+
+.teaching-block-title-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.teaching-institution {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a2e !important;
+  margin: 0;
+}
+
+.teaching-role {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #fff !important;
+  background: #1a3a5c;
+  border-radius: 3px;
+  padding: 0.1rem 0.45rem;
+}
+
+.teaching-program-box {
+  margin-left: 7.2rem;
+  margin-bottom: 0.9rem;
+  padding: 0.6rem 0.9rem;
+  background: #f8f6f3;
+  border-left: 3px solid #1a3a5c;
+  border-radius: 0 4px 4px 0;
+}
+
+.teaching-program-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #888 !important;
+  margin-bottom: 0.2rem;
+}
+
+.teaching-program-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a3a5c !important;
+  text-decoration: none;
+}
+
+.teaching-program-name:hover {
+  text-decoration: underline;
+}
+
+.teaching-program-spec {
+  font-size: 0.78rem;
+  color: #666 !important;
+  margin-top: 0.2rem;
+}
+
+.teaching-courses {
+  margin-left: 7.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.teaching-course-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1a1a2e !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.teaching-course-name i {
+  color: #1a3a5c !important;
+  width: 1rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.teaching-course-name a {
+  color: #1a3a5c !important;
+  text-decoration: none;
+}
+
+.teaching-course-name a:hover {
+  text-decoration: underline;
+}
+
+.teaching-course-desc {
+  font-size: 0.85rem;
+  color: #555 !important;
+  padding-left: 1.5rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 576px) {
+  .teaching-block-header {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .teaching-program-box,
+  .teaching-courses {
+    margin-left: 0;
   }
 }
 

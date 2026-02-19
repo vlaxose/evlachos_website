@@ -1,4 +1,4 @@
-{{ $custom_css := resources.Get "css/custom.css" }}
+{{ $custom_css := resources.Get "css/custom.css" | fingerprint }}
 {{ if $custom_css }}
-  <link rel="stylesheet" href="{{ $custom_css.RelPermalink }}" />
+  <link rel="stylesheet" href="{{ $custom_css.RelPermalink }}" integrity="{{ $custom_css.Data.Integrity }}" crossorigin="anonymous" />
 {{ end }}
