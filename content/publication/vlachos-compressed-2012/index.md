@@ -11,3 +11,19 @@ url_pdf: "paper.pdf"
 publication: "*IEEE 75th Vehicular Technology Conference (VTC Spring)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Development of compressed sensing-based decision feedback equalization (DFE) schemes for sparse wireless channels.
+- Exploitation of channel sparsity to improve the performance of non-sparsity-aware DFE.
+- Proposing new DFE implementations using basis pursuit and matching pursuit techniques.
+
+## Results & Insights
+
+{{< figure src="fig1.png" caption="Performance comparison of indirect DFE techniques under different SNR conditions." >}}
+The results show that the proposed compressed sensing-based DFE schemes outperform traditional methods, especially at higher SNR levels.
+
+{{< figure src="fig2.png" caption="SER performance of direct equalization schemes as a function of training sequence length." >}}
+The SER performance improves with longer training sequences, indicating the importance of training for accurate channel estimation.
+
+{{< figure src="fig3.png" caption="SER performance of DFE schemes across different SNR values." >}}
+The proposed CS-based DFE schemes demonstrate superior performance across all tested SNR levels, confirming their effectiveness.

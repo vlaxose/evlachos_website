@@ -11,3 +11,13 @@ url_pdf: "paper.pdf"
 publication: "*2019 IEEE 20th International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Development of a robust maximum a posteriori (MAP) estimator based on the Expectation-Maximization (EM) algorithm for symbol estimation in lens-based hybrid MIMO systems with low-resolution ADCs.
+- The proposed estimator effectively mitigates the impairments introduced by low-resolution ADCs and the analog beamformer, improving performance in medium to high signal-to-noise ratio (SNR) regimes.
+- The work demonstrates that lower ADC resolution does not necessarily degrade system performance, offering a pathway to reduce hardware complexity and power consumption in mmWave MIMO systems.
+
+## Results & Insights
+
+{{< figure src="fig1.png" caption="Performance comparison of the proposed MAP-EM estimator versus conventional methods in terms of NMSE for different ADC resolutions." >}}
+This figure shows that the proposed MAP-EM estimator significantly outperforms conventional methods, particularly at medium to high SNR, across various ADC resolutions, demonstrating its robustness and effectiveness.

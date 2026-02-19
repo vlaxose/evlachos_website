@@ -11,3 +11,22 @@ url_pdf: "paper.pdf"
 publication: "*2018 26th European Signal Processing Conference (EUSIPCO)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Proposes an EM-SURE-GAMP algorithm that combines compressed sensing with expectation-maximization and adaptive denoising to exploit channel sparsity.
+- Develops a solution that adapts to low-resolution ADCs by using an additive quantization noise model (AQNM) and minimizes estimation error through Stein's Unbiased Risk Estimate (SURE).
+- Demonstrates significant performance improvements in MSE across various SNR regimes, ADC bit resolutions, and training lengths compared to existing methods like EM-GAMP.
+
+## Results & Insights
+
+{{< figure src="fig2.png" caption="Mean square error (MSE) versus signal-to-noise ratio (SNR) for different channel estimation methods." >}}
+The proposed EM-SURE-GAMP algorithm achieves lower MSE across all SNR regimes compared to the EM-GAMP baseline, particularly at low and high SNR.
+
+{{< figure src="fig3.png" caption="Mean square error (MSE) versus the number of ADC bits for different channel estimation methods." >}}
+EM-SURE-GAMP consistently outperforms EM-GAMP as the number of ADC bits decreases, demonstrating robustness to quantization effects.
+
+{{< figure src="fig4.png" caption="Comparison of channel estimation performance across different training lengths." >}}
+The algorithm maintains superior performance even with shorter training sequences, highlighting its efficiency and adaptability to practical constraints.
+
+{{< figure src="fig5.png" caption="Illustration of convergence behavior for the EM-SURE-GAMP algorithm." >}}
+The EM-SURE-GAMP algorithm converges faster and achieves lower MSE compared to EM-GAMP, indicating its practical suitability for real-time applications.

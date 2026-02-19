@@ -11,3 +11,12 @@ url_pdf: "paper.pdf"
 publication: "*24th European Signal Processing Conference (EUSIPCO)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Development of a privacy-preserving framework for decentralized correlation matrix estimation in wireless sensor networks.
+- Proposal of a novel adaptive rank-one matrix completion technique to handle the constrained cooperation between sensor nodes.
+- Demonstration of significantly faster convergence and lower computational complexity compared to traditional singular value thresholding (SVT) methods.
+
+{{< figure src="fig1.png" caption="Convergence of the proposed algorithm showing the estimation error decreasing rapidly over iterations, reaching the ground-truth value after a small number of steps, while the SVT-based method converges much slower." >}}
+
+The results demonstrate that the proposed adaptive completion technique achieves rapid convergence to the true correlation matrix with substantially lower computational overhead, making it particularly suitable for resource-constrained wireless sensor networks with privacy constraints.

@@ -11,3 +11,12 @@ url_pdf: "paper.pdf"
 publication: "*IEEE Transactions on Multimedia*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Introduces a novel reconstruction technique based on rank minimization theory to address the challenge of highly incomplete dynamic point clouds, ensuring a unique solution to an otherwise ill-posed problem.
+- Extends the rank minimization approach to incorporate spatial coherence, which is essential for accurately reconstructing soft-body animations.
+- Proposes a distributed consolidation method that allows multiple nodes to collaboratively reconstruct point clouds by enforcing temporal coherence between frame clusters, improving scalability and efficiency.
+
+## Results & Insights
+{{< figure src="fig2.png" caption="NMSE comparison of the proposed method against PCA-based reconstruction for different levels of incompleteness." >}}
+The results demonstrate that the proposed rank minimization-based method significantly outperforms the PCA-based approach in terms of reconstruction accuracy, particularly for highly incomplete point clouds, achieving lower NMSE across all tested configurations.

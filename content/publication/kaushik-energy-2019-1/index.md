@@ -11,3 +11,9 @@ url_pdf: "paper.pdf"
 publication: "*IEEE International Conference on Communications (ICC) 2019*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Development of a novel optimization technique combining the Dinkelbach method with subset selection to maximize energy efficiency (EE) in mmWave hybrid MIMO systems with low-resolution DACs.
+- Consideration of the transmitter-side impact of low-resolution DACs, distinguishing this work from literature primarily focused on receiver-side ADCs.
+- Formulation of the EE maximization problem under a predefined power budget, accounting for the power consumption of active RF chains and their associated DACs.
+- Demonstration that the proposed technique achieves near-optimal EE performance with significantly reduced computational complexity compared to an exhaustive search baseline.

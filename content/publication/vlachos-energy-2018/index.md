@@ -11,3 +11,8 @@ url_pdf: "paper.pdf"
 publication: "*2018 IEEE 87th Vehicular Technology Conference (VTC Spring)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Formulated an optimization problem to minimize transmitter power consumption by determining the optimal number of RF chains for mmWave massive MIMO systems.
+- Ensured the system capacity meets a minimum rate requirement while reducing the number of RF chains through a partially connected hybrid architecture.
+- Demonstrated that the proposed transmitter with low-resolution DACs achieves higher spectral efficiency and up to 30% improved energy efficiency compared to conventional systems with the same number of active RF chains.

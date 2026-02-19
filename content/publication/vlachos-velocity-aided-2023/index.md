@@ -11,3 +11,14 @@ url_pdf: "paper.pdf"
 publication: "*31st European Signal Processing Conference (EUSIPCO)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Addresses the challenge of channel estimation in time-varying mmWave massive MIMO channels for moving UAVs, where conventional training-based methods fail due to beam squint and channel dynamics.
+- Proposes a novel channel estimation technique that leverages the UAV's velocity information, obtained from its control module, to compensate for the beam squint effect and improve parameter recovery.
+- Introduces a time-varying channel model specifically designed for mmWave frequencies that incorporates the spatial selectivity (beam squint) effect, enabling more accurate and robust channel state information (CSI) estimation.
+- Demonstrates the effectiveness of the proposed method in providing reliable channel estimates even with short training sequences, essential for real-time UAV communications.
+
+## Results & Insights
+This figure shows that the proposed velocity-aided method significantly outperforms conventional training-based approaches in terms of channel estimation accuracy (lower NMSE), especially at higher UAV velocities and moderate to high SNR levels, validating the effectiveness of incorporating velocity information.
+
+The results indicate that the proposed method achieves lower BER for higher data rates and faster UAV speeds compared to baseline methods, demonstrating its practical benefit for reliable mmWave massive MIMO communication with moving platforms.

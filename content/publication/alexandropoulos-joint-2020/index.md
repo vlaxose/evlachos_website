@@ -11,3 +11,16 @@ url_pdf: "paper.pdf"
 publication: "*2020 54th Asilomar Conference on Signals, Systems, and Computers*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Exploiting the line-of-sight (LOS) propagation conditions and beamspace representation of the wireless channel to estimate the UAV position.
+- Utilizing the estimated UAV position to formulate a matrix completion-based approach for recovering the non-line-of-sight (NLOS) components of the MIMO channel.
+- Demonstrating superior performance compared to baseline methods, requiring fewer channel training resources.
+
+## Results & Insights
+
+{{< figure src="fig1.png" caption="NMSE performance of the proposed LOS channel estimation technique versus baseline methods." >}}
+The proposed method achieves significantly lower estimation error for the line-of-sight channel component across various scenarios, highlighting its effectiveness in leveraging UAV position information.
+
+{{< figure src="fig2.png" caption="NMSE performance of the proposed method as a function of the number of channel training transmits." >}}
+The results demonstrate that the proposed approach maintains low estimation error even with reduced channel training resources, offering a more efficient solution for joint localization and channel estimation in UAV-assisted mmWave systems.

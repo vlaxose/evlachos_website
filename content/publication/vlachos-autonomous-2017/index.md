@@ -11,3 +11,12 @@ url_pdf: "paper.pdf"
 publication: "*2017 IEEE 22nd International Workshop on Computer Aided Modeling and Design of Communication Links and Networks (CAMAD)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Development of an OSIC-based interference cancellation solution for OFDM systems in vehicular environments.
+- Introduction of a CG-based mechanism for efficient equalizer filter estimation, accelerating algorithm convergence.
+- Demonstration of superior performance compared to existing non-banded ICI cancellation methods, achieving lower BER with reduced complexity.
+
+## Results & Insights
+{{< figure src="fig2.png" caption="Bit Error Rate (BER) performance comparison of the proposed OSIC-based equalizer with existing methods for 4QAM modulation in doubly selective channels." >}}
+The results show that the proposed solution achieves significantly lower BER across various signal-to-noise ratio (SNR) conditions compared to existing non-banded ICI cancellation methods, validating its effectiveness in improving communication reliability for V2X systems.

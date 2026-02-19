@@ -11,3 +11,14 @@ url_pdf: "paper.pdf"
 publication: "*ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Introduces a novel hardware architecture for reconfigurable intelligent surfaces (RISs) with minimal active elements, utilizing a single RF chain for baseband measurements.
+- Proposes an alternating optimization approach for explicit channel estimation in the beamspace domain, leveraging the sparsity of wireless channels.
+- Demonstrates that the proposed architecture enables efficient online RIS configuration for specific environments through reduced training periods.
+
+## Results & Insights
+
+The figure shows that the proposed technique achieves superior channel estimation accuracy with fewer training symbols compared to OMP and LS methods, highlighting its efficiency.
+
+The results indicate that while the system achieves a rate of 8.5bps/Hz with perfect channel knowledge, the channel estimation process with T=200 training symbols results in a rate of approximately 7.6bps/Hz, demonstrating a trade-off between estimation accuracy and achievable rate.

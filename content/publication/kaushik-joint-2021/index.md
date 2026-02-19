@@ -11,3 +11,22 @@ url_pdf: "paper.pdf"
 publication: "*IEEE Transactions on Green Communications and Networking*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Introduces a novel decomposition of hybrid precoders and combiners into three matrices representing the analog precoder/combiner, DAC/ADC bit resolution matrix, and baseband precoder/combiner.
+- Proposes a joint optimization framework for hybrid beamforming matrices and DAC/ADC bit resolutions to maximize energy efficiency (EE).
+- Develops an efficient solution based on the alternating direction method of multipliers (ADMM) to solve the optimization problem at both transmitter and receiver.
+
+## Results & Insights
+
+{{< figure src="fig2.png" caption="Convergence behavior of the proposed ADMM solution for hybrid beamforming and bit allocation at the transmitter and receiver." >}}
+The ADMM algorithm converges quickly for both the transmitter and receiver, demonstrating the efficiency of the proposed optimization method.
+
+{{< figure src="fig3.png" caption="Energy efficiency (EE) and spectral efficiency (SE) versus signal-to-noise ratio (SNR) for the proposed dynamic bit allocation approach compared to fixed bit resolution benchmarks." >}}
+The proposed dynamic bit allocation achieves significantly higher energy efficiency (EE) and spectral efficiency (SE) compared to benchmarks with fixed bit resolutions, especially at higher SNR levels.
+
+{{< figure src="fig4.png" caption="Energy efficiency (EE) and spectral efficiency (SE) versus number of transmit antennas (NT) for the proposed dynamic bit allocation approach compared to fixed bit resolution benchmarks." >}}
+The proposed dynamic bit allocation maintains superior energy efficiency (EE) and spectral efficiency (SE) across different numbers of transmit antennas (NT), outperforming fixed bit resolution benchmarks.
+
+{{< figure src="fig5.png" caption="Energy efficiency (EE) performance versus number of bits allocated to the DAC/ADC resolution matrix for different SNR levels." >}}
+Increasing the number of bits allocated to the DAC/ADC resolution matrix improves energy efficiency (EE), with the optimal allocation varying with SNR levels.

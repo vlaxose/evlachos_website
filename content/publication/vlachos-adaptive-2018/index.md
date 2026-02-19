@@ -11,3 +11,18 @@ url_pdf: "paper.pdf"
 publication: "*IEEE Wireless Communications Letters*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Proposed an adaptive windowing technique for ICI mitigation in OFDM systems operating in vehicular environments.
+- The technique tracks time-varying channel statistics to maximize average SINR with linear computational complexity.
+- Demonstrated enhanced robustness to channel estimation errors, which are common in vehicular communication scenarios.
+
+## Results & Insights
+
+The proposed technique shows superior ICI mitigation performance, particularly at high SNR, compared to existing fixed and adaptive windowing methods.
+
+The adaptive windowing technique achieves lower bit error rates across various vehicular speeds, confirming its effectiveness in non-stationary channel conditions.
+
+The algorithm demonstrates stable convergence with appropriate step-size selection, maintaining low computational complexity while adapting to channel variations.
+
+The technique exhibits significantly better performance stability in the presence of channel estimation errors compared to conventional methods.

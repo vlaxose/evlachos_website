@@ -11,3 +11,16 @@ url_pdf: "paper.pdf"
 publication: "*2013 IEEE 24th International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Proposed a distributed blind adaptive algorithm for coordinated beamforming in multi-cell networks with multiple receive antennas.
+- Designed the algorithm to maximize the harmonic sum of SINR, ensuring fairness among users.
+- Achieved significant throughput gains over traditional single-cell beamforming schemes.
+
+## Results & Insights
+
+The proposed algorithm demonstrates substantial performance improvements, achieving 70% and 47% throughput gains for the 10th percentile and median users, respectively, compared to single-cell beamforming.
+
+The algorithm converges quickly, stabilizing SINR values within a few iterations, ensuring practical implementation in real-time systems.
+
+The proposed algorithm maintains superior performance even as the number of receive antennas increases, unlike existing methods which degrade in large-scale MIMO systems.

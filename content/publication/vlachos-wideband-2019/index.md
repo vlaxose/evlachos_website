@@ -11,3 +11,8 @@ url_pdf: "paper.pdf"
 publication: "*IEEE Journal of Selected Topics in Signal Processing*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Development of a novel wideband channel estimation framework for mmWave massive MIMO systems employing hybrid beamforming, addressing the challenges of hardware limitations and short coherence time.
+- Joint exploitation of the low-rank property of the channel and available angular information to enhance channel recovery accuracy, particularly in short beam training scenarios.
+- Formulation of the estimation problem as a convex optimization task, leading to a computationally efficient solution via singular value thresholding and leveraging the inherent structure of the mmWave channel.

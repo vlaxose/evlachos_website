@@ -11,3 +11,13 @@ url_pdf: "paper.pdf"
 publication: "*2019 IEEE Global Communications Conference (GLOBECOM)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Introduces a novel decomposition of the hybrid combiner matrix into three parts: analog combiner, bit resolution matrix, and baseband combiner matrix.
+- Formulates the joint optimization problem as a matrix factorization task to approximate the fully digital combiner matrix.
+- Proposes an efficient solution using the alternating direction method of multipliers (ADMM) to solve the optimization problem.
+- Demonstrates that the approach achieves high energy efficiency by optimizing ADC bit allocation and hybrid combining jointly.
+
+## Results & Insights
+
+No figures containing numerical results were provided.

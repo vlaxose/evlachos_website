@@ -11,3 +11,23 @@ url_pdf: "paper.pdf"
 publication: "*IEEE Journal on Emerging and Selected Topics in Circuits and Systems*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Proposed a novel heuristic algorithm, termed Stochastic Gradient Pursuit, for sparse adaptive equalization.
+- Utilized a decision-feedback equalization structure to effectively handle long multipath channels.
+- Exploited channel sparsity from a compressive sensing perspective, developing an extension for unknown sparsity order.
+- Offered reduced computational complexity while maintaining performance comparable to conventional methods.
+
+## Results & Insights
+
+{{< figure src="fig2.png" caption="Mean-square error (MSE) learning curves comparing the proposed Stochastic Gradient Pursuit algorithm against several benchmark methods." >}}
+These curves demonstrate the fast convergence and improved tracking capabilities of the proposed algorithm compared to conventional and other sparse-aware equalization schemes.
+
+{{< figure src="fig3.png" caption="Mean-square error (MSE) learning curves for different sparsity orders in the proposed Stochastic Gradient Pursuit algorithm." >}}
+These results show the algorithm's effectiveness in tracking sparse multipath channels even when the exact sparsity order is unknown.
+
+{{< figure src="fig4.png" caption="Bit error rate (BER) performance of the proposed Stochastic Gradient Pursuit algorithm compared to benchmark methods." >}}
+The proposed algorithm achieves BER performance comparable to benchmark methods while requiring significantly less computational complexity.
+
+{{< figure src="fig5.png" caption="Bit error rate (BER) performance versus input SNR for the proposed Stochastic Gradient Pursuit algorithm." >}}
+The results indicate that the proposed algorithm maintains good performance across a range of SNR values, demonstrating its robustness.

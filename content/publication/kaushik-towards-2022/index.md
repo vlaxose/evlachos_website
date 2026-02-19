@@ -11,3 +11,8 @@ url_pdf: "paper.pdf"
 publication: "*IET Signal Processing*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Development of a spectral efficiency maximization approach for inclined joint radar-communication systems with hybrid beamforming.
+- Design of an efficient selection algorithm for optimizing the number of RF chains while considering interference between radar and communication operations.
+- Incorporation of hardware impairments in the system model to achieve a practical communication-radar trade-off.

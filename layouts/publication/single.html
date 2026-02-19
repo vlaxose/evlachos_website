@@ -63,6 +63,8 @@
       <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener" class="pub-action-btn">
         {{ if hasPrefix . "10.1109/" }}
           <i class="fas fa-book-open"></i> IEEE Xplore
+        {{ else if hasPrefix . "10.48550/" }}
+          <i class="fas fa-archive"></i> arXiv
         {{ else }}
           <i class="fas fa-link"></i> DOI
         {{ end }}

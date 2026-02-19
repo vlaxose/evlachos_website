@@ -1,11 +1,15 @@
 {{ $item := .item }}
 {{ $year := $item.Date.Format "2006" }}
-{{ $is_journal := eq (index $item.Params.publication_types 0) "2" }}
+{{ $pubtype := index $item.Params.publication_types 0 | default "0" }}
+{{ $is_journal := eq $pubtype "2" }}
+{{ $is_book := or (eq $pubtype "5") (eq $pubtype "6") }}
+{{ $total := len (where site.RegularPages "Section" "publication") }}
 
 <div class="pub-row">
   <div class="pub-meta">
-    <span class="pub-type {{ if $is_journal }}pub-type-journal{{ else }}pub-type-conf{{ end }}">
-      {{ if $is_journal }}Journal{{ else }}Conf{{ end }}
+    <span class="pub-num">{{ sub $total .index }}</span>
+    <span class="pub-type pub-type-clickable {{ if $is_journal }}pub-type-journal{{ else if $is_book }}pub-type-book{{ else }}pub-type-conf{{ end }}" data-pubtype="{{ $pubtype }}" title="Filter by this type">
+      {{ if $is_journal }}Journal{{ else if $is_book }}Book{{ else }}Conf{{ end }}
     </span>
     <span class="pub-year">{{ $year }}</span>
   </div>
@@ -14,7 +18,7 @@
       <a href="{{ $item.RelPermalink }}" class="pub-title">{{ $item.Title }}</a>
       {{ with $item.Params.doi }}
         <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener" class="pub-badge">
-          {{ if hasPrefix . "10.1109/" }}IEEE{{ else }}DOI{{ end }}
+          {{ if hasPrefix . "10.1109/" }}IEEE{{ else if hasPrefix . "10.48550/" }}arXiv{{ else }}DOI{{ end }}
         </a>
       {{ end }}
       {{ $resource := $item.Resources.GetMatch "paper.pdf" }}

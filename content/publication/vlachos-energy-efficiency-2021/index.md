@@ -11,3 +11,16 @@ url_pdf: "paper.pdf"
 publication: "*IEEE Transactions on Wireless Communications*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Introduces an architecture with low-end components (reduced-resolution DACs) for hybrid massive MIMO precoding to maximize energy efficiency (EE) while minimizing the impact on spectral efficiency (SE).
+- Proposes a novel analog precoder design where the number of active RF chains is dynamically selected (RF selection) based on a criterion to balance EE and SE.
+- Develops an optimization framework that jointly designs the analog precoder structure (via RF selection) and the baseband precoding matrix to achieve EE maximization.
+
+## Results & Insights
+
+{{< figure src="fig3.png" caption="Spectral efficiency (bits/sec/Hz/UE) plotted against transmit power (dBm) for different numbers of active RF chains." >}}
+This figure demonstrates that increasing transmit power generally improves spectral efficiency, but the rate of improvement saturates as more RF chains are activated, highlighting the diminishing returns of additional chains.
+
+{{< figure src="fig5.png" caption="Energy efficiency (bits/Joule/UE) plotted against the number of transmission streams (Ns)." >}}
+This plot shows a clear trade-off between energy efficiency and the number of streams; higher energy efficiency is achieved with fewer streams, but the system can support more users or data rates at the cost of reduced EE.

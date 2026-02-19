@@ -11,3 +11,16 @@ url_pdf: "paper.pdf"
 publication: "*2019 IEEE 20th International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Development of a novel wideband channel estimation technique for mmWave massive MIMO systems with hybrid beamforming reception.
+- Capitalization on matrix completion tools to exploit the sparsity and low-rank properties of wireless channels.
+- Proposal of an analog combining architecture featuring an extended combiner and random sub-sampler to enhance estimation accuracy.
+- Demonstration of improved performance in terms of MSE with reduced beam training length.
+
+## Results & Insights
+This figure demonstrates that the proposed algorithm achieves significantly lower channel estimation error (NMSE) compared to benchmark methods, particularly at higher SNR levels, validating its effectiveness.
+
+The results show that the proposed algorithm converges faster and achieves lower steady-state NMSE even with shorter training lengths, highlighting its efficiency in practical scenarios with limited beam training time.
+
+This plot indicates that the proposed algorithm maintains superior performance even as the number of antenna elements increases, showcasing its scalability for massive MIMO systems.

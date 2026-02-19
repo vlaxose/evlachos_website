@@ -11,3 +11,13 @@ url_pdf: "paper.pdf"
 publication: "*IEEE Transactions on Multimedia*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Propose a novel compressed sensing framework for 3D mesh geometry compression using Bayesian learning, enabling aggressive compression ratios without compromising visual quality.
+- Introduce a multivariate Gaussian model for the most significant graph Fourier transform coefficients of each submesh, derived via expectation-maximization.
+- Leverage local smoothness of partitioned surfaces to enhance performance in highly underdetermined problems, reducing encoding complexity while maintaining reconstruction accuracy.
+
+## Results & Insights
+
+{{< figure src="fig5.png" caption="Performance comparison of VNMSE versus compression ratio for the chair model across different methods." >}}
+This plot demonstrates the effectiveness of the proposed method, showing competitive compression ratios with significantly lower encoding complexity compared to state-of-the-art approaches, particularly at higher compression ratios.

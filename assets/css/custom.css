@@ -164,6 +164,14 @@ a:hover {
   padding-top: 0.15rem;
 }
 
+.pub-num {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #bbb !important;
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+
 .pub-type {
   display: inline-block;
   font-size: 0.65rem;
@@ -183,6 +191,15 @@ a:hover {
 .pub-type-conf {
   background: #c8d6e5;
   color: #1a1a2e !important;
+}
+
+.pub-type-clickable {
+  cursor: pointer;
+  transition: filter 0.15s ease, transform 0.1s ease;
+}
+.pub-type-clickable:hover {
+  filter: brightness(0.85);
+  transform: scale(1.07);
 }
 
 .pub-year {
@@ -316,6 +333,34 @@ a.pub-title:hover {
   letter-spacing: 0.05em;
   color: #888 !important;
   font-weight: 600;
+}
+
+.scholar-type-counts {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 0.6rem 0 0.8rem;
+  border-top: 1px solid #e0dbd4;
+  margin-bottom: 0.8rem;
+}
+
+.scholar-type-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.scholar-type-count {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a2e !important;
+}
+
+.pub-type-book {
+  background: #6b8fa3;
+  color: #fff !important;
 }
 
 .scholar-chart {
@@ -583,6 +628,11 @@ a.pub-title:hover {
 .pub-tag:hover {
   background: #e0dbd4 !important;
   color: #2c5a8f !important;
+}
+
+/* Section dividers between consecutive homepage sections */
+.home-section + .home-section {
+  border-top: 1px solid #e0dbd4;
 }
 
 /* Absolute removal of attribution and extra text */

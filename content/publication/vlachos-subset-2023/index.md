@@ -11,3 +11,17 @@ url_pdf: "paper.pdf"
 publication: "*2023 IEEE Wireless Communications and Networking Conference (WCNC)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Proposing a subset selection framework for optimizing beamforming weights in RIS-aided joint radar-communication systems.
+- Developing an efficient algorithm to select the optimal reflecting element subset while considering both radar and communication objectives.
+- Demonstrating significant performance improvements in terms of radar detection probability and communication throughput compared to conventional methods.
+
+## Results & Insights
+The proposed algorithm consistently outperforms baseline methods across all SNR regimes, achieving higher detection probability and communication rate.
+
+The algorithm exhibits rapid convergence even for large subset sizes, validating its computational efficiency.
+
+Increasing the reflection coefficient magnitude improves both radar detection probability and communication rate, with diminishing returns beyond a certain threshold.
+
+System performance improves with more reflecting elements, but the rate of improvement diminishes, indicating an optimal configuration size for the given setup.

@@ -11,3 +11,19 @@ url_pdf: "paper.pdf"
 publication: "*IEEE Transactions on Vehicular Technology*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Proposing an OSIC equalization technique tailored for doubly selective vehicular channels to mitigate ICI effectively.
+- Introducing an iterative Galerkin projection-based algorithm that reduces computational complexity while maintaining performance.
+- Demonstrating the benefits of the proposed scheme in terms of both performance and complexity through simulations in high Doppler environments.
+
+## Results & Insights
+
+{{< figure src="fig4.png" caption="BER comparison versus SNR for low Doppler spread and 4-QAM modulation." >}}
+This figure shows that the proposed OSIC equalizer outperforms existing methods at low SNR, highlighting its effectiveness in mitigating ICI even under less severe channel conditions.
+
+{{< figure src="fig5.png" caption="BER comparison versus SNR for medium Doppler spread and 4-QAM modulation." >}}
+The results indicate that the proposed algorithm maintains a performance advantage over benchmarks at medium Doppler spreads, confirming its robustness.
+
+{{< figure src="fig6.png" caption="BER comparison versus SNR for high Doppler spread and 4-QAM modulation." >}}
+The simulation results demonstrate that the proposed equalizer achieves lower BER values than existing nonbanded ICI cancellation schemes even at high Doppler spreads, validating its superior performance in challenging vehicular environments.

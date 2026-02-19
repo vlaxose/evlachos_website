@@ -11,3 +11,8 @@ url_pdf: "paper.pdf"
 publication: "*33rd European Signal Processing Conference (EUSIPCO)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Development of a unified framework for MIMO channel estimation that explicitly accounts for beam squint at both transmitter and receiver, as well as intersymbol interference (ISI) caused by propagation delays.
+- Proposal of a novel mixed-integer biconvex optimization model that handles diverse delay patterns using a binary vector and decomposes the channel into path-specific matrices, enabling smart environment integration.
+- Introduction of a semi-parametric approach that estimates delays and separates path gains/angles, offering advantages over conventional methods and enabling advanced optimization for dual-wideband fading conditions.

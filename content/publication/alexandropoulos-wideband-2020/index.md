@@ -11,3 +11,15 @@ url_pdf: "paper.pdf"
 publication: "*ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Proposed a matrix-completion-based channel tracking technique for time-correlated wideband mmWave massive MIMO channels with hybrid beamforming reception.
+- Formulated a constrained multi-objective optimization problem incorporating low-rank and group-sparse properties of the mmWave channel.
+- Capitalized on a time correlation model to reduce beam training overhead while maintaining estimation accuracy.
+- Developed an efficient algorithm based on the alternating direction method of multipliers (ADMM) for solving the optimization problem.
+
+## Results & Insights
+
+The figure demonstrates that the proposed technique achieves near-optimal performance with significantly reduced training overhead, converging faster and achieving lower NMSE than OMP and AdaOMP for time-varying channels.
+
+The results show that the proposed technique maintains low NMSE and achieves high achievable spectral efficiency even with short training sequences, highlighting its effectiveness in reducing beam training overhead while preserving channel estimation accuracy.

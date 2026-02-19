@@ -11,3 +11,12 @@ url_pdf: "paper.pdf"
 publication: "*2022 30th Mediterranean Conference on Control and Automation (MED)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Development of an optimal sensor selection technique for mmWave bearing-only localization.
+- Addressing the challenge of low-cost deployment in smart environments through efficient sensor usage.
+- Emphasizing privacy-preserving localization methods compared to traditional RF-based approaches.
+- Providing performance analysis through simulations under various scenarios.
+
+{{< figure src="fig1.png" caption="Performance comparison of the proposed optimal sensor selection method versus baseline approaches across different signal-to-noise ratio (SNR) values." >}}
+The results demonstrate that the proposed method achieves superior localization accuracy with a reduced number of active sensors, highlighting its efficiency in smart environment applications.

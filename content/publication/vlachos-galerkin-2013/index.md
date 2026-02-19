@@ -11,3 +11,18 @@ url_pdf: "paper.pdf"
 publication: "*18th International Conference on Digital Signal Processing (DSP)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Proposing two low-complexity iterative successive interference cancellation (SIC) schemes based on Galerkin projections for ICI cancellation in doubly selective OFDM channels.
+- Deriving a reduced-rank CG-based SIC technique and improving it using Galerkin projections theory to achieve significant complexity reduction.
+- Demonstrating through simulations that the proposed schemes offer improved complexity-performance tradeoffs compared to existing methods, particularly for medium Doppler spread scenarios.
+
+## Results & Insights
+
+This figure illustrates the effectiveness of the proposed Galerkin projection-based SIC schemes in reducing ICI power across different Doppler spreads, showing superior performance compared to benchmark methods.
+
+The convergence plots demonstrate the fast convergence of the proposed iterative schemes, indicating their practical suitability for real-time OFDM receivers even under challenging channel conditions.
+
+This plot highlights the significant complexity reduction achieved by the proposed Galerkin projection-based schemes, particularly evident when the Doppler spread is moderate compared to the OFDM symbol length.
+
+The Bit Error Rate (BER) results confirm that the proposed schemes maintain high performance levels while drastically reducing computational complexity, outperforming traditional methods in the relevant operating regimes.

@@ -11,3 +11,17 @@ url_pdf: "paper.pdf"
 publication: "*IEEE Signal Processing Letters*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Proposes a novel channel estimation algorithm for mmWave massive MIMO systems that jointly exploits both channel sparsity and low-rank properties via matrix completion.
+- Introduces an ADMM-based iterative optimization approach that converges quickly even for very small training lengths.
+- Demonstrates superior performance compared to state-of-the-art techniques, achieving better accuracy with significantly shorter training periods.
+- Enables reliable channel recovery in mmWave systems, which are characterized by high variability and challenging conditions.
+
+## Results & Insights
+
+This figure clearly demonstrates the superior performance of the proposed technique across all training lengths, with the proposed method consistently achieving better accuracy than existing methods like SVT and VAMP, even at the smallest training lengths.
+
+The proposed algorithm converges faster and achieves lower NMSE for all training lengths, indicating its efficiency and effectiveness in channel estimation.
+
+This result highlights the proposed technique's ability to maintain good performance even with very short training sequences, outperforming other methods significantly for all considered training lengths.

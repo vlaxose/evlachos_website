@@ -11,3 +11,9 @@ url_pdf: "paper.pdf"
 publication: "*2022 IFIP/IEEE 30th International Conference on Very Large Scale Integration (VLSI-SoC)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Proposes a quantum computing-assisted framework for channel estimation in massive MIMO mmWave systems, leveraging quantum algorithms to address classical challenges.
+- Introduces a hybrid approach combining quantum computing with classical signal processing techniques to enhance estimation accuracy and reduce computational complexity.
+- Demonstrates the potential of quantum algorithms, such as HHL, to solve linear systems arising in channel estimation more efficiently than classical methods.
+- Provides insights into the practical implementation of quantum-assisted channel estimation, highlighting key performance gains and scalability considerations.

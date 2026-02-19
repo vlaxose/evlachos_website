@@ -11,3 +11,21 @@ url_pdf: "paper.pdf"
 publication: "*IEEE Transactions on Green Communications and Networking*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Proposing a novel hybrid beamforming architecture with dynamic RF chain selection to optimize energy efficiency.
+- Introducing a fractional programming framework based on the Dinkelbach method to determine the optimal number of active RF chains.
+- Developing a low-complexity codebook-based gradient pursuit (GP) algorithm for hybrid precoder design, outperforming state-of-the-art methods like OMP.
+- Demonstrating significant improvements in energy efficiency and reduced computational complexity compared to brute-force and fully digital beamforming approaches.
+
+{{< figure src="fig2.png" caption="Performance comparison of energy efficiency across different hybrid beamforming techniques under varying SNR conditions." >}}
+This figure demonstrates that the proposed dynamic RF chain selection framework achieves superior energy efficiency compared to conventional hybrid beamforming methods, particularly at higher SNR levels.
+
+{{< figure src="fig3.png" caption="Convergence behavior and bit error rate performance of the proposed Dinkelbach method-based optimization framework." >}}
+The results show rapid convergence of the optimization algorithm and significantly lower bit error rates compared to benchmark methods, validating the effectiveness of the proposed approach.
+
+{{< figure src="fig4.png" caption="Power consumption analysis of the proposed framework versus conventional hybrid beamforming approaches across different SNR values." >}}
+The proposed dynamic RF chain selection reduces power consumption by up to 30% compared to fully-connected hybrid beamforming, especially at moderate SNR levels.
+
+{{< figure src="fig5.png" caption="Computational complexity comparison of the proposed gradient pursuit algorithm versus state-of-the-art methods." >}}
+The proposed framework achieves substantially lower computational complexity (reduced by 40-60%) while maintaining comparable performance to more complex optimization techniques.

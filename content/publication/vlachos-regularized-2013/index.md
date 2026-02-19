@@ -11,3 +11,19 @@ url_pdf: "paper.pdf"
 publication: "*IEEE International Symposium on Signal Processing and Information Technology*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Development of a regularized MMSE ICI equalization technique for doubly selective channels to mitigate the effects of Doppler-induced ICI in OFDM systems.
+- Proposing a banded approximation for the channel matrix to reduce computational complexity while maintaining performance.
+- Demonstrating that the regularized estimation can recover performance similar to exact MMSE equalization, offering a balance between performance and computational efficiency.
+
+## Results & Insights
+
+{{< figure src="fig1.png" caption="Comparison of BER versus SNR for different equalization schemes, showing the performance of the proposed regularized MMSE equalizer." >}}
+This figure demonstrates that the proposed regularized MMSE equalizer achieves performance comparable to other advanced methods like iterative MMSE and decision-feedback equalizers, particularly at higher SNR levels.
+
+{{< figure src="fig2.png" caption="Comparison of BER versus normalized Doppler frequency for the proposed regularized MMSE equalizer and other methods." >}}
+This result highlights the robustness of the proposed regularized MMSE equalizer against frequency-selective fading, showing lower BER across different Doppler conditions compared to the benchmark methods.
+
+{{< figure src="fig3.png" caption="Comparison of BER versus the length K of the banded approximation matrix, with SNR fixed at 30 dB." >}}
+This figure confirms that increasing the length K improves the BER performance, approaching the performance of the exact MMSE equalizer, while the banded approximation effectively reduces computational complexity.

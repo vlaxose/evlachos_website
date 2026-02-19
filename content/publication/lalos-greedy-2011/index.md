@@ -11,3 +11,13 @@ url_pdf: "paper.pdf"
 publication: "*IEEE International Symposium on Signal Processing and Information Technology (ISSPIT)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Proposing two novel adaptive greedy algorithms for sparse decision feedback equalization (DFE) in communication channels.
+- Developing a channel estimation-based approach that first identifies significant channel taps using a greedy algorithm and then adaptively computes the equalizer filters.
+- Demonstrating significantly improved performance in convergence speed, tracking capabilities, and reduced complexity compared to non-sparsity-aware methods and prior sparse-aware algorithms.
+- Offering a direct adaptive sparse equalizer based on a steepest descent (SD)-based greedy algorithm.
+
+## Results & Insights
+
+The results demonstrate that the proposed schemes exhibit significantly improved tracking capabilities when channel parameters change dynamically, as shown in Figure 1(c). The algorithms maintain better performance and adapt faster to the evolving channel conditions compared to existing methods like the one in [7].

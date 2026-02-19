@@ -11,3 +11,13 @@ url_pdf: "paper.pdf"
 publication: "*2016 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT-Europe)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Proposed a supervised energy disaggregation method using multi-state finite state machines to model appliance behavior.
+- Introduced a dictionary-based approach where appliance states are represented by power consumption vectors selected via clustering from training data.
+- Utilized state transition probabilities and a reduced trellis structure to efficiently perform disaggregation during operation.
+
+## Results & Insights
+The NMSE performance improves with an increasing number of appliances, demonstrating the method's scalability and effectiveness on real-world data.
+
+The proposed method achieves lower NMSE compared to existing approaches, highlighting its superior accuracy in energy disaggregation.

@@ -11,3 +11,16 @@ url_pdf: "paper.pdf"
 publication: "*ICC 2022 - IEEE International Conference on Communications*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Development of a distributed model-predictive control (DMPC) framework for vehicle platooning, incorporating consensus constraints for safety and coordination.
+- Formulation and solution of the DMPC problem using the Alternating Direction Method of Multipliers (ADMM), enabling low communication overhead and robust performance.
+- Evaluation of the proposed ADMM-based controller through extensive simulations, demonstrating its effectiveness in maintaining safe inter-vehicle distances and tracking the lead vehicle's trajectory.
+
+## Results & Insights
+
+{{< figure src="fig3.png" caption="Trajectories of all vehicles plotted against time, showing the following vehicles' ability to closely track the leading vehicle's path." >}}
+The simulation results in Fig. 3 demonstrate that the ADMM-based controller enables the platoon to maintain close proximity to the lead vehicle, with minimal tracking error across all vehicles, highlighting the controller's effectiveness in achieving coordinated motion.
+
+{{< figure src="fig5.png" caption="CDF plot of the distance between successive vehicles, illustrating the statistical distribution of inter-vehicle distances under the ADMM controller." >}}
+Fig. 5 reveals that the ADMM controller ensures a high probability (100%) of maintaining a safe inter-vehicle distance exceeding 1 meter, whereas other methods like unconstrained MPC and the low-complexity ADMM-L implementation show a significant risk of violating this safety margin.

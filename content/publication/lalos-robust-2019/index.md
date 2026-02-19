@@ -11,3 +11,16 @@ url_pdf: "paper.pdf"
 publication: "*2019 IEEE 17th International Conference on Industrial Informatics (INDIN)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Proposing a privacy-preserving method for reconstructing the PCA subspace from a subset of correlation values, ensuring that the correlation matrices cannot reveal sensitive information.
+- Introducing an adaptive matrix completion approach that solves a rank-one completion problem iteratively, addressing the issue of missing entries in distributed IIoT networks.
+- Demonstrating through extensive simulations that the proposed approach improves privacy preservation, computational efficiency, and robustness against node and link failures.
+
+## Results & Insights
+
+{{< figure src="fig1.png" caption="The evolution of privacy discrepancy ratio with respect to the number of iterations for K = 20 nodes." >}}
+This figure shows that increasing the number of iterations during the reconstruction process significantly enhances privacy preservation, with a notable improvement observed even after a small number of iterations (e.g., 5 iterations).
+
+{{< figure src="fig2.png" caption="The normalized-mean-square-error (NMSE) between the time-averaged data covariance matrix and the time-averaged obfuscated data covariance matrix." >}}
+This figure indicates that the obfuscated data covariance matrix is accurately estimated even in sparse networks, demonstrating the effectiveness of the proposed method in maintaining data utility while preserving privacy.
