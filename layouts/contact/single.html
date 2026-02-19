@@ -1,0 +1,66 @@
+{{- define "main" -}}
+
+{{ partial "page_header.html" . }}
+
+<div class="universal-wrapper">
+  <div class="contact-page">
+
+    <div class="contact-page-form">
+      <h3 class="contact-page-section-title">Send a Message</h3>
+      <form class="contact-form" action="https://formsubmit.co/evlachos@athenarc.gr" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New message from evlachos.space">
+        <input type="hidden" name="_next" value="{{ site.BaseURL }}contact/thank-you/">
+        <div class="contact-form-row">
+          <div class="contact-form-group">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="contact-form-group">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+        <div class="contact-form-group">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" name="_subject_custom" placeholder="What is this about?">
+        </div>
+        <div class="contact-form-group">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="7" placeholder="Write your message here…" required></textarea>
+        </div>
+        <button type="submit" class="contact-form-btn">Send Message</button>
+      </form>
+    </div>
+
+    <div class="contact-page-info">
+      <h3 class="contact-page-section-title">Contact Information</h3>
+
+      <div class="contact-info-block">
+        <div class="contact-info-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:evlachos@athenarc.gr">evlachos@athenarc.gr</a>
+        </div>
+        <div class="contact-info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Stadiou Str., Platani<br>Patras, Achaia 26504<br>Greece</span>
+        </div>
+      </div>
+
+      <h4 class="contact-info-sub-title">Find me on</h4>
+      <div class="contact-info-block">
+        <div class="contact-info-item">
+          <i class="fab fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/evangelos-vlachos-b543103a/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="contact-info-item">
+          <i class="ai ai-google-scholar"></i>
+          <a href="https://scholar.google.com/citations?user=N2ZlmesAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{{- end -}}
