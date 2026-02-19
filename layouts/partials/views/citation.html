@@ -5,6 +5,24 @@
 {{ $is_book := or (eq $pubtype "5") (eq $pubtype "6") }}
 {{ $total := len (where site.RegularPages "Section" "publication") }}
 
+{{/* --- BibTeX generation --- */}}
+{{ $citetype := "misc" }}
+{{ if eq $pubtype "2" }}{{ $citetype = "article" }}
+{{ else if eq $pubtype "1" }}{{ $citetype = "inproceedings" }}
+{{ else if $is_book }}{{ $citetype = "incollection" }}{{ end }}
+{{ $venuekey := cond $is_journal "journal" "booktitle" }}
+{{ $lastname := "" }}
+{{ with index $item.Params.authors 0 }}{{ $lastname = index (split . ",") 0 | lower | replaceRE "[^a-z]" "" }}{{ end }}
+{{ $titlefirst := index (split ($item.Title | lower | replaceRE "[^a-z0-9 ]" "") " ") 0 }}
+{{ $citekey := printf "%s%s%s" $lastname $year $titlefirst }}
+{{ $venue_bib := "" }}
+{{ if $item.Params.publication_short }}{{ $venue_bib = $item.Params.publication_short | replaceRE "\\*" "" }}
+{{ else if $item.Params.publication }}{{ $venue_bib = $item.Params.publication | replaceRE "\\*" "" }}{{ end }}
+{{ $bib := printf "@%s{%s, author={%s}, title={%s}, year={%s}" $citetype $citekey (delimit $item.Params.authors " and ") $item.Title $year }}
+{{ if $venue_bib }}{{ $bib = printf "%s, %s={%s}" $bib $venuekey $venue_bib }}{{ end }}
+{{ if $item.Params.doi }}{{ $bib = printf "%s, doi={%s}" $bib $item.Params.doi }}{{ end }}
+{{ $bib = printf "%s}" $bib }}
+
 <div class="pub-row">
   <div class="pub-meta">
     <span class="pub-num">{{ sub $total .index }}</span>
@@ -29,6 +47,12 @@
       {{ with $item.Params.url_pdf }}
         <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link-btn pub-link-pdf">PDF</a>
       {{ end }}
+    {{ end }}
+  </div>
+  <div class="pub-actions">
+    <a href="#" class="pub-link-btn pub-link-bib js-copy-bib" data-bib="{{ $bib }}" title="Copy BibTeX to clipboard">BibTeX</a>
+    {{ with $item.Params.url_code }}
+      <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link-btn pub-link-code" title="View code on GitHub">Code</a>
     {{ end }}
   </div>
   <div class="pub-details">

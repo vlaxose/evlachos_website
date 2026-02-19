@@ -170,6 +170,32 @@ document.body.addEventListener('click', function (e) {
     return;
   }
 
+  /* --- BibTeX copy to clipboard --- */
+  var bibEl = e.target.closest('.js-copy-bib');
+  if (bibEl) {
+    e.preventDefault();
+    var bib = bibEl.dataset.bib;
+    var orig = bibEl.textContent.trim();
+    function showCopied() {
+      bibEl.textContent = '✓';
+      setTimeout(function () { bibEl.textContent = orig; }, 1500);
+    }
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(bib).then(showCopied).catch(function () {
+        var ta = document.createElement('textarea');
+        ta.value = bib; document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); } catch (err) {}
+        document.body.removeChild(ta); showCopied();
+      });
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = bib; document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); } catch (err) {}
+      document.body.removeChild(ta); showCopied();
+    }
+    return;
+  }
+
   /* --- bar chart click → filter by year --- */
   var barEl = e.target.closest('.scholar-bar-clickable');
   if (barEl) {

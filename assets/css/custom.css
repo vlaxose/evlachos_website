@@ -261,6 +261,36 @@ a:hover {
   color: #fff !important;
 }
 
+.pub-actions {
+  flex-shrink: 0;
+  width: 3.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.25rem;
+  padding-top: 0.1rem;
+}
+
+.pub-link-bib {
+  border-color: #1a7a4a;
+  color: #1a7a4a !important;
+}
+
+.pub-link-bib:hover {
+  background: #1a7a4a !important;
+  color: #fff !important;
+}
+
+.pub-link-code {
+  border-color: #6f42c1;
+  color: #6f42c1 !important;
+}
+
+.pub-link-code:hover {
+  background: #6f42c1 !important;
+  color: #fff !important;
+}
+
 .pub-details {
   flex: 1;
   min-width: 0;
