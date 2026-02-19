@@ -2,6 +2,7 @@
 title: "Adaptive Windowing for ICI Mitigation in Vehicular Communications"
 date: 2018-01-01
 doi: "10.1109/lwc.2018.2842226"
+url_arxiv: "https://arxiv.org/abs/1609.05116"
 publishDate: 2018-01-01
 authors: ['Vlachos, E.', 'Lalos, A. S.', 'Berberidis, K.', 'Thompson, J.']
 publication_types: ["2"]

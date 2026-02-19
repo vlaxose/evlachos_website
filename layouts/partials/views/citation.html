@@ -19,6 +19,9 @@
         {{ if hasPrefix . "10.1109/" }}IEEE{{ else if hasPrefix . "10.48550/" }}arXiv{{ else }}DOI{{ end }}
       </a>
     {{ end }}
+    {{ with $item.Params.url_arxiv }}
+      <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link-btn pub-link-arxiv">arXiv</a>
+    {{ end }}
     {{ $resource := $item.Resources.GetMatch "paper.pdf" }}
     {{ with $resource }}
       <a href="{{ .RelPermalink }}" target="_blank" rel="noopener" class="pub-link-btn pub-link-pdf">PDF</a>

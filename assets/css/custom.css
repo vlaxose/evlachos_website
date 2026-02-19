@@ -251,6 +251,16 @@ a:hover {
   color: #fff !important;
 }
 
+.pub-link-arxiv {
+  border-color: #b7591c;
+  color: #b7591c !important;
+}
+
+.pub-link-arxiv:hover {
+  background: #b7591c !important;
+  color: #fff !important;
+}
+
 .pub-details {
   flex: 1;
   min-width: 0;

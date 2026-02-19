@@ -2,6 +2,7 @@
 title: "Covariance-Based Hybrid Beamforming for Spectrally Efficient Joint Radar-Communications"
 date: 2023-01-01
 doi: "10.1109/icc45041.2023.10279571"
+url_arxiv: "https://arxiv.org/abs/2211.08308"
 publishDate: 2023-01-01
 authors: ['Vlachos, Evangelos', 'Kaushik, Aryan']
 publication_types: ["1"]

@@ -2,6 +2,7 @@
 title: "Energy Efficiency Maximization of Millimeter Wave Hybrid MIMO Systems with Low Resolution DACs"
 date: 2019-01-01
 doi: "10.1109/icc.2019.8761357"
+url_arxiv: "https://arxiv.org/abs/2003.11683"
 publishDate: 2019-01-01
 authors: ['Kaushik, A.', 'Vlachos, E.', 'Thompson, J.']
 publication_types: ["1"]

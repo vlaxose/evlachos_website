@@ -71,6 +71,12 @@
       </a>
       {{ end }}
 
+      {{ with $.Params.url_arxiv }}
+      <a href="{{ . }}" target="_blank" rel="noopener" class="pub-action-btn">
+        <i class="fas fa-archive"></i> arXiv
+      </a>
+      {{ end }}
+
       {{ $cite := $.Resources.GetMatch "cite.bib" }}
       {{ with $cite }}
       <a href="#" class="pub-action-btn js-cite-modal" data-filename="{{ .RelPermalink }}">

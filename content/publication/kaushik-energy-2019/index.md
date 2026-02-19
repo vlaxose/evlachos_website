@@ -2,6 +2,7 @@
 title: "Energy Efficient ADC Bit Allocation and Hybrid Combining for Millimeter Wave MIMO Systems"
 date: 2019-01-01
 doi: "10.1109/globecom38437.2019.9014072"
+url_arxiv: "https://arxiv.org/abs/1909.12170"
 publishDate: 2019-01-01
 authors: ['Kaushik, A.', 'Tsinos, C.', 'Vlachos, E.', 'Thompson, J.']
 publication_types: ["1"]

@@ -2,6 +2,7 @@
 title: "A Hardware Architecture For Reconfigurable Intelligent Surfaces with Minimal Active Elements for Explicit Channel Estimation"
 date: 2020-01-01
 doi: "10.1109/icassp40776.2020.9053976"
+url_arxiv: "https://arxiv.org/abs/2002.10371"
 publishDate: 2020-01-01
 authors: ['Alexandropoulos, G. C.', 'Vlachos, E.']
 publication_types: ["1"]

@@ -2,6 +2,7 @@
 title: "Joint Bit Allocation and Hybrid Beamforming Optimization for Energy Efficient Millimeter Wave MIMO Systems"
 date: 2021-01-01
 doi: "10.1109/tgcn.2020.3026725"
+url_arxiv: "https://arxiv.org/abs/1910.01479"
 publishDate: 2021-01-01
 authors: ['Kaushik, A.', 'Vlachos, E.', 'Tsinos, C.', 'Thompson, J.', 'Chatzinotas, S.']
 publication_types: ["2"]

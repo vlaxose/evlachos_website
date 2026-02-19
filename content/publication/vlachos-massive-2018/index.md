@@ -2,6 +2,7 @@
 title: "Massive MIMO Channel Estimation for Millimeter Wave Systems via Matrix Completion"
 date: 2018-01-01
 doi: "10.1109/lsp.2018.2870533"
+url_arxiv: "https://arxiv.org/abs/1809.01603"
 publishDate: 2018-01-01
 authors: ['Vlachos, E.', 'Alexandropoulos, George C.', 'Thompson, J.']
 publication_types: ["2"]
