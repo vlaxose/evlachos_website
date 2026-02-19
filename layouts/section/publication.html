@@ -79,7 +79,7 @@
         {{ $maxCumul := $running }}
         {{ range .publications_per_year }}
         {{ $count := $.Scratch.Get (printf "cumul_%v" .year) | default 0 }}
-        <div class="scholar-bar-group">
+        <div class="scholar-bar-group scholar-bar-clickable" data-year="{{ .year }}" title="Filter {{ .year }}">
           <div class="scholar-bar-count">{{ $count }}</div>
           <div class="scholar-bar" style="height: {{ mul (div (float $count) (float $maxCumul)) 90 }}px;"></div>
           <div class="scholar-bar-year">{{ .year }}</div>
@@ -157,19 +157,19 @@
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.pub-type-clickable').forEach(function (el) {
-    el.addEventListener('click', function () {
-      var pubtype = this.dataset.pubtype;
-      var filterVal = '.pubtype-' + pubtype;
-      var $select = $('.pubtype-select');
-      if (!$select.length) return;
-
-      // Toggle: clicking the active type resets to all
-      var newVal = $select.val() === filterVal ? '*' : filterVal;
-      $select.val(newVal).trigger('change');
-    });
-  });
+document.body.addEventListener('click', function (e) {
+  var el = e.target.closest('.pub-type-clickable');
+  if (!el) return;
+  var pubtype = el.dataset.pubtype;
+  var filterVal = '.pubtype-' + pubtype;
+  var select = document.querySelector('.pubtype-select');
+  if (!select) return;
+  var newVal = select.value === filterVal ? '*' : filterVal;
+  select.value = newVal;
+  /* Use jQuery trigger so wowchemy-publication.js picks it up */
+  if (typeof jQuery !== 'undefined') {
+    jQuery(select).trigger('change');
+  }
 });
 </script>
 
