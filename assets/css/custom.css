@@ -74,15 +74,18 @@ footer {
   letter-spacing: 0.02em;
 }
 
-.navbar-avatar {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
-  border: 1.5px solid rgba(26, 58, 92, 0.2);
-  vertical-align: middle;
+.navbar-brand img.navbar-avatar,
+.navbar-brand .navbar-avatar {
+  display: inline-block !important;
+  width: 32px !important;
+  height: 32px !important;
+  min-height: unset !important;
+  max-height: unset !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border: 1.5px solid rgba(26, 58, 92, 0.2) !important;
+  vertical-align: middle !important;
 }
 
 .navbar .nav-link:hover,

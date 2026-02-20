@@ -16,8 +16,20 @@
 {{ $titlefirst := index (split ($item.Title | lower | replaceRE "[^a-z0-9 ]" "") " ") 0 }}
 {{ $citekey := printf "%s%s%s" $lastname $year $titlefirst }}
 {{ $venue_bib := "" }}
-{{ if $item.Params.publication_short }}{{ $venue_bib = $item.Params.publication_short | replaceRE "\\*" "" }}
-{{ else if $item.Params.publication }}{{ $venue_bib = $item.Params.publication | replaceRE "\\*" "" }}{{ end }}
+{{ $venueDisplay := "" }}
+{{ if $item.Params.publication_short }}
+  {{ $venue_bib = $item.Params.publication_short | replaceRE "\\*" "" }}
+  {{ $venueDisplay = $item.Params.publication_short }}
+{{ else if $item.Params.publication }}
+  {{ $venue_bib = $item.Params.publication | replaceRE "\\*" "" }}
+  {{ $venueDisplay = $item.Params.publication }}
+{{ end }}
+{{ $venueURL := "" }}
+{{ range site.Data.venue_urls }}
+  {{ if and (not $venueURL) (strings.Contains $venue_bib .pattern) }}
+    {{ $venueURL = .url }}
+  {{ end }}
+{{ end }}
 {{ $bib := printf "@%s{%s, author={%s}, title={%s}, year={%s}" $citetype $citekey (delimit $item.Params.authors " and ") $item.Title $year }}
 {{ if $venue_bib }}{{ $bib = printf "%s, %s={%s}" $bib $venuekey $venue_bib }}{{ end }}
 {{ if $item.Params.doi }}{{ $bib = printf "%s, doi={%s}" $bib $item.Params.doi }}{{ end }}
@@ -101,10 +113,12 @@
       {{- end -}}
     </div>
     <div class="pub-venue-line">
-      {{ if $item.Params.publication_short }}
-        {{- $item.Params.publication_short | markdownify -}}
-      {{ else if $item.Params.publication }}
-        {{- $item.Params.publication | markdownify -}}
+      {{ if $venueDisplay }}
+        {{ if $venueURL }}
+          <a href="{{ $venueURL | safeURL }}" target="_blank" rel="noopener" class="pub-venue-link">{{- $venueDisplay | markdownify -}}</a>
+        {{ else }}
+          {{- $venueDisplay | markdownify -}}
+        {{ end }}
       {{ end }}
     </div>
   </div>

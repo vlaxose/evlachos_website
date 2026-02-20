@@ -232,16 +232,70 @@ Your job: decide if an email describes something **newsworthy** for his professi
   • Social/holiday greetings
   • Mailing-list noise unrelated to his work
 
+═══ CRITICAL RULES — DO NOT HALLUCINATE ═══
+  • Your title and summary MUST be based ONLY on what is explicitly written in the email.
+  • Do NOT invent, assume, or embellish any facts not present in the email text.
+  • Do NOT fabricate awards, rankings, recognitions, or achievements.
+  • If the email is in Greek, translate what it actually says — do not guess.
+  • The "evidence" field must contain a direct quote (copy-paste) from the email that \
+    supports your classification. If you cannot find a direct quote, set newsworthy to false.
+  • If you are unsure what the email is about, set newsworthy to false.
+
 Respond ONLY with a JSON object (no extra text):
 {
   "newsworthy": true/false,
   "confidence": 0.0-1.0,
   "category": "paper|award|grant|talk|defense|appointment|internship|position|event|other",
-  "title": "Short English title for the news post",
-  "summary": "2-3 sentence English summary suitable for a website news section",
+  "title": "Short English title — MUST reflect actual email content",
+  "summary": "2-3 sentence English summary — ONLY facts from the email, nothing invented",
+  "evidence": "Direct quote from the email that supports this classification",
   "tags": ["relevant", "tags"]
 }
 """
+
+
+def verify_ai_response(result, subject, body):
+    """
+    Cross-check the AI response against the actual email to catch hallucinations.
+    Returns (is_valid, reason).
+    """
+    if not result or not result.get("newsworthy"):
+        return True, "not newsworthy — no check needed"
+
+    title = result.get("title", "").lower()
+    summary = result.get("summary", "").lower()
+    evidence = result.get("evidence", "").strip()
+
+    # Combine all email text for checking
+    email_text = f"{subject}\n{body}".lower()
+
+    # 1. Evidence field must exist and not be empty
+    if not evidence or len(evidence) < 10:
+        return False, "no evidence quote provided"
+
+    # 2. Evidence must actually appear in the email (fuzzy: at least 50% of words match)
+    evidence_words = set(re.findall(r'\w+', evidence.lower()))
+    email_words = set(re.findall(r'\w+', email_text))
+    if not evidence_words:
+        return False, "evidence is empty"
+    overlap = len(evidence_words & email_words) / len(evidence_words)
+    if overlap < 0.4:
+        return False, f"evidence quote not found in email (word overlap: {overlap:.0%})"
+
+    # 3. Check for known hallucination patterns
+    hallucination_phrases = [
+        "top 100", "top 50", "top 10", "globally recognized",
+        "world ranking", "clarivate", "highly cited",
+        "times higher education", "qs ranking",
+        "nobel", "fields medal", "turing award",
+    ]
+    for phrase in hallucination_phrases:
+        if phrase in title or phrase in summary:
+            # Only allow if the phrase also appears in the email
+            if phrase not in email_text:
+                return False, f"suspicious phrase '{phrase}' not found in email"
+
+    return True, "passed"
 
 
 def ask_deepseek(subject, body, sender, recipients):
@@ -266,7 +320,7 @@ Analyze and respond with JSON only:"""
         "prompt": prompt,
         "stream": False,
         "options": {
-            "temperature": 0.3,
+            "temperature": 0.1,
             "num_predict": 512,
         },
     }).encode()
@@ -318,10 +372,11 @@ Analyze and respond with JSON only:"""
 # HUGO POST CREATION
 # ──────────────────────────────────────────────
 
-def create_hugo_post(result, date_str):
+def create_hugo_post(result, date_str, source_email=""):
     """Write a Hugo-compatible markdown post from AI analysis."""
     title = result.get("title", "Untitled News").strip('"')
     summary = result.get("summary", "").strip('"')
+    evidence = result.get("evidence", "").strip('"')
     tags = result.get("tags", [])
     category = result.get("category", "other")
 
@@ -350,6 +405,8 @@ date: {date_str}
 summary: "{summary}"
 tags: {tags_str}
 categories: ["{category}"]
+# Source email: {source_email}
+# Evidence: {evidence[:200]}
 ---
 
 {summary}
@@ -512,14 +569,23 @@ def scan_maildir(maildir_path, after_date, dry_run=False):
                 confidence = result.get("confidence", 0)
 
                 if is_newsworthy and confidence >= 0.6:
+                    # ── Hallucination check ──
+                    valid, reason = verify_ai_response(result, full_subject, body)
+                    if not valid:
+                        log.warning(f"   🚫 BLOCKED — likely hallucination: {reason}")
+                        log.warning(f"      AI claimed: {result.get('title', '?')}")
+                        continue
+
                     date_str = dt.strftime("%Y-%m-%d")
-                    slug = create_hugo_post(result, date_str)
+                    slug = create_hugo_post(result, date_str, source_email=fpath)
                     new_posts.append({
                         "slug": slug,
                         "title": result.get("title", ""),
                         "date": date_str,
                         "category": result.get("category", ""),
                         "confidence": confidence,
+                        "evidence": result.get("evidence", ""),
+                        "source": fpath,
                     })
                 else:
                     reason = "not newsworthy" if not is_newsworthy else f"low confidence ({confidence:.2f})"
@@ -594,6 +660,8 @@ def main():
         print("\n📰 New posts:")
         for p in new_posts:
             print(f"   [{p['date']}] {p['title']}  ({p['category']}, conf={p['confidence']:.0%})")
+            print(f"            Evidence: {p.get('evidence', 'n/a')[:100]}")
+            print(f"            Source:   {p.get('source', 'n/a')}")
 
     if args.dry_run:
         print("\n⚠  This was a DRY RUN — no AI calls were made and no posts were created.")
