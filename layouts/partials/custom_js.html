@@ -1,0 +1,91 @@
+{{/* PDF slide panel — injected globally so it works on both the
+     /publication/ section page and the home-page publications widget. */}}
+
+<div id="pdf-overlay" class="pdf-overlay" aria-hidden="true"></div>
+<div id="pdf-panel" class="pdf-panel" aria-hidden="true">
+  <div class="pdf-panel-header">
+    <span class="pdf-panel-title">Paper PDF</span>
+    <div class="pdf-panel-actions">
+      <a id="pdf-open-tab" href="#" target="_blank" rel="noopener" class="pdf-panel-btn" title="Open in new tab"><i class="fas fa-external-link-alt"></i></a>
+      <button id="pdf-close" class="pdf-panel-btn" title="Close">&times;</button>
+    </div>
+  </div>
+  <iframe id="pdf-frame" class="pdf-frame" src="" title="PDF viewer"></iframe>
+</div>
+
+<script>
+/* ── Global publication-action handlers (work on any page) ──────────────── */
+document.body.addEventListener('click', function (e) {
+
+  /* BibTeX copy */
+  var bibEl = e.target.closest('.js-copy-bib');
+  if (bibEl) {
+    e.preventDefault();
+    var bib  = bibEl.dataset.bib;
+    var orig = bibEl.textContent.trim();
+    function showBib() { bibEl.textContent = '✓'; setTimeout(function () { bibEl.textContent = orig; }, 1500); }
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(bib).then(showBib).catch(function () { _fallbackCopy(bib); showBib(); });
+    } else { _fallbackCopy(bib); showBib(); }
+    return;
+  }
+
+  /* Citation copy */
+  var citeEl = e.target.closest('.js-copy-cite');
+  if (citeEl) {
+    e.preventDefault();
+    var cite = citeEl.dataset.citation;
+    var orig = citeEl.textContent.trim();
+    function showCite() { citeEl.textContent = '✓'; setTimeout(function () { citeEl.textContent = orig; }, 1500); }
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(cite).then(showCite).catch(function () { _fallbackCopy(cite); showCite(); });
+    } else { _fallbackCopy(cite); showCite(); }
+    return;
+  }
+
+  /* PDF preview */
+  var pdfEl = e.target.closest('.js-open-pdf');
+  if (pdfEl) {
+    e.preventDefault();
+    var url     = pdfEl.dataset.pdf;
+    var panel   = document.getElementById('pdf-panel');
+    var overlay = document.getElementById('pdf-overlay');
+    var frame   = document.getElementById('pdf-frame');
+    var openTab = document.getElementById('pdf-open-tab');
+    frame.src   = url;
+    openTab.href = url;
+    panel.setAttribute('aria-hidden', 'false');
+    panel.classList.add('pdf-panel--open');
+    overlay.classList.add('pdf-overlay--visible');
+    document.body.classList.add('pdf-panel-active');
+    return;
+  }
+});
+
+function _fallbackCopy(text) {
+  var ta = document.createElement('textarea');
+  ta.value = text; document.body.appendChild(ta); ta.select();
+  try { document.execCommand('copy'); } catch (err) {}
+  document.body.removeChild(ta);
+}
+
+/* PDF panel close */
+(function () {
+  function closePdf() {
+    var panel   = document.getElementById('pdf-panel');
+    var overlay = document.getElementById('pdf-overlay');
+    var frame   = document.getElementById('pdf-frame');
+    if (!panel) return;
+    panel.classList.remove('pdf-panel--open');
+    overlay.classList.remove('pdf-overlay--visible');
+    panel.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('pdf-panel-active');
+    setTimeout(function () { frame.src = ''; }, 350);
+  }
+  var closeBtn  = document.getElementById('pdf-close');
+  var overlayEl = document.getElementById('pdf-overlay');
+  if (closeBtn)  closeBtn.addEventListener('click', closePdf);
+  if (overlayEl) overlayEl.addEventListener('click', closePdf);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closePdf(); });
+})();
+</script>

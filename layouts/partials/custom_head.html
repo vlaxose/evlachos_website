@@ -2,3 +2,54 @@
 {{ if $custom_css }}
   <link rel="stylesheet" href="{{ $custom_css.RelPermalink }}" integrity="{{ $custom_css.Data.Integrity }}" crossorigin="anonymous" />
 {{ end }}
+
+{{/* ── Twitter / X Card — full metadata ───────────────────────────────────── */}}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}" />
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.marketing.seo.description }}{{ end }}" />
+<meta name="twitter:image" content="{{ site.BaseURL }}authors/admin/avatar.jpg" />
+
+{{/* ── Person JSON-LD — establishes researcher entity for Google ───────────── */}}
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Evangelos Vlachos",
+  "givenName": "Evangelos",
+  "familyName": "Vlachos",
+  "honorificPrefix": "Dr.",
+  "url": "{{ site.BaseURL }}",
+  "image": "{{ site.BaseURL }}authors/admin/avatar.jpg",
+  "jobTitle": "Tenure-track Researcher",
+  "description": "{{ site.Params.marketing.seo.description }}",
+  "affiliation": [
+    {
+      "@type": "Organization",
+      "name": "Industrial Systems Institute (ISI)",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "ATHENA Research Center"
+      },
+      "url": "https://www.isi.gr/"
+    }
+  ],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of Patras"
+  },
+  "sameAs": [
+    "https://scholar.google.com/citations?user=N2ZlmesAAAAJ",
+    "https://www.linkedin.com/in/evangelos-vlachos-b543103a/",
+    "https://orcid.org/0000-0002-7369-6506"
+  ],
+  "knowsAbout": [
+    "Integrated Sensing and Communications",
+    "6G Networks",
+    "UAV Swarm Coordination",
+    "Signal Processing",
+    "Machine Learning for Wireless Communications"
+  ]
+}
+</script>
+{{ end }}
