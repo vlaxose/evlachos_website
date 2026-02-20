@@ -63,8 +63,12 @@
       {{ if $is_journal }}Journal{{ else if $is_book }}Book{{ else }}Conf{{ end }}
     </span>
     {{ $slug := path.Base (strings.TrimRight "/" $item.File.Dir) }}
-    {{ $views := index site.Data.ieee_views $slug }}
-    {{ if $views }}<span class="pub-views" title="IEEE Xplore total downloads"><i class="fas fa-download"></i> {{ $views }}</span>{{ end }}
+    {{ $stats := index site.Data.ieee_stats $slug }}
+    {{ with $stats }}
+      {{ with .total_downloads }}<span class="pub-views" title="IEEE Xplore total downloads"><i class="fas fa-download"></i> {{ . }}</span>{{ end }}
+      {{ $spark := $item.Resources.GetMatch "sparkline.png" }}
+      {{ with $spark }}<a href="{{ $item.RelPermalink }}" class="pub-sparkline-link" title="Download trend"><img src="{{ .RelPermalink }}" class="pub-sparkline" alt="download trend" loading="lazy"></a>{{ end }}
+    {{ end }}
   </div>
   <div class="pub-links">
     {{ with $item.Params.doi }}

@@ -486,7 +486,10 @@ def scan_maildir(maildir_path, after_date, dry_run=False):
     evaluated = 0
     skipped_seen = 0
 
-    log.info(f"🔍 Scanning {maildir_path} for emails since {after_date.date()}")
+    if after_date:
+        log.info(f"🔍 Scanning {maildir_path} for emails since {after_date.date()}")
+    else:
+        log.info(f"🔍 Scanning {maildir_path} — ALL emails (no date limit)")
     log.info(f"   Already processed: {len(already_seen)} messages\n")
 
     for root, dirs, files in os.walk(maildir_path):
@@ -512,7 +515,7 @@ def scan_maildir(maildir_path, after_date, dry_run=False):
                     continue
                 if dt.tzinfo is None:
                     dt = dt.replace(tzinfo=timezone.utc)
-                if dt < after_date:
+                if after_date and dt < after_date:
                     continue
 
                 # ── De-duplication ──
@@ -613,15 +616,15 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=dedent("""\
             Examples:
-              %(prog)s                     # scan last 30 days
-              %(prog)s --days 90           # scan last 90 days
+              %(prog)s                     # scan ALL emails (no date limit)
+              %(prog)s --days 90           # scan last 90 days only
               %(prog)s --dry-run           # preview what would be evaluated
               %(prog)s --reset             # clear processing state and rescan
               %(prog)s -v                  # verbose/debug output
         """),
     )
-    parser.add_argument("--days", type=int, default=30,
-                        help="How many days back to scan (default: 30)")
+    parser.add_argument("--days", type=int, default=0,
+                        help="How many days back to scan (default: 0 = all emails, no date limit)")
     parser.add_argument("--dry-run", action="store_true",
                         help="Show which emails would be AI-evaluated without calling Ollama")
     parser.add_argument("--reset", action="store_true",
@@ -644,7 +647,9 @@ def main():
         log.error(f"❌ Maildir not found: {maildir}")
         sys.exit(1)
 
-    after_date = datetime.now(timezone.utc) - timedelta(days=args.days)
+    after_date = None
+    if args.days > 0:
+        after_date = datetime.now(timezone.utc) - timedelta(days=args.days)
 
     new_posts, evaluated, skipped = scan_maildir(maildir, after_date, dry_run=args.dry_run)
 

@@ -1,0 +1,567 @@
+adamidi-scheme-2013:
+  scopus_citations: null
+  total_downloads: 195
+  wos_citations: 0
+  yearly:
+    2014: 57
+    2015: 32
+    2016: 21
+    2017: 14
+    2018: 28
+    2019: 20
+    2020: 13
+    2021: 1
+    2022: 2
+    2024: 1
+    2026: 6
+alexandropoulos-hardware-2020:
+  scopus_citations: null
+  total_downloads: 4378
+  wos_citations: 202
+  yearly:
+    2020: 412
+    2021: 1017
+    2022: 1098
+    2023: 817
+    2024: 602
+    2025: 401
+    2026: 31
+alexandropoulos-joint-2020:
+  scopus_citations: null
+  total_downloads: 559
+  wos_citations: 6
+  yearly:
+    2021: 152
+    2022: 180
+    2023: 83
+    2024: 76
+    2025: 64
+    2026: 4
+alexandropoulos-wideband-2020:
+  scopus_citations: 4
+  total_downloads: 584
+  wos_citations: 3
+  yearly:
+    2020: 198
+    2021: 138
+    2022: 85
+    2023: 60
+    2024: 72
+    2025: 23
+    2026: 8
+kaushik-dynamic-2019:
+  scopus_citations: 76
+  total_downloads: 2333
+  wos_citations: 65
+  yearly:
+    2019: 172
+    2020: 450
+    2021: 323
+    2022: 355
+    2023: 408
+    2024: 348
+    2025: 260
+    2026: 17
+kaushik-energy-2019:
+  scopus_citations: 16
+  total_downloads: 393
+  wos_citations: 6
+  yearly:
+    2020: 137
+    2021: 74
+    2022: 31
+    2023: 48
+    2024: 50
+    2025: 41
+    2026: 12
+kaushik-energy-2019-1:
+  scopus_citations: 26
+  total_downloads: 686
+  wos_citations: 0
+  yearly:
+    2019: 157
+    2020: 163
+    2021: 66
+    2022: 105
+    2023: 109
+    2024: 51
+    2025: 29
+    2026: 6
+kaushik-green-2022:
+  scopus_citations: 26
+  total_downloads: 769
+  wos_citations: 11
+  yearly:
+    2022: 208
+    2023: 312
+    2024: 139
+    2025: 99
+    2026: 11
+kaushik-joint-2021:
+  scopus_citations: 45
+  total_downloads: 1248
+  wos_citations: 41
+  yearly:
+    2020: 76
+    2021: 317
+    2022: 310
+    2023: 223
+    2024: 220
+    2025: 90
+    2026: 12
+kekatos-decentralized-2013:
+  scopus_citations: 7
+  total_downloads: 227
+  wos_citations: 0
+  yearly:
+    2014: 69
+    2015: 29
+    2016: 11
+    2017: 16
+    2018: 19
+    2019: 18
+    2020: 22
+    2021: 10
+    2022: 9
+    2023: 12
+    2024: 6
+    2025: 2
+    2026: 4
+lalos-compressed-2017:
+  scopus_citations: 20
+  total_downloads: 637
+  wos_citations: 17
+  yearly:
+    2016: 72
+    2017: 199
+    2018: 128
+    2019: 48
+    2020: 35
+    2021: 26
+    2022: 41
+    2023: 36
+    2024: 35
+    2025: 11
+    2026: 6
+lalos-energy-2019:
+  scopus_citations: 2
+  total_downloads: 159
+  wos_citations: 2
+  yearly:
+    2019: 52
+    2020: 42
+    2021: 26
+    2022: 5
+    2023: 8
+    2024: 10
+    2025: 13
+    2026: 3
+lalos-greedy-2011:
+  scopus_citations: 5
+  total_downloads: 218
+  wos_citations: 0
+  yearly:
+    2012: 41
+    2013: 35
+    2014: 22
+    2015: 14
+    2016: 12
+    2017: 15
+    2018: 11
+    2019: 10
+    2020: 4
+    2021: 13
+    2022: 23
+    2023: 3
+    2024: 5
+    2025: 7
+    2026: 3
+lalos-robust-2019:
+  scopus_citations: 1
+  total_downloads: 157
+  wos_citations: 0
+  yearly:
+    2020: 89
+    2021: 31
+    2022: 9
+    2023: 11
+    2024: 11
+    2025: 4
+    2026: 2
+lalos-signal-2019:
+  scopus_citations: 11
+  total_downloads: 1684
+  wos_citations: 0
+  yearly:
+    2019: 418
+    2020: 240
+    2021: 244
+    2022: 177
+    2023: 181
+    2024: 256
+    2025: 150
+    2026: 18
+mavrokefalidis-supervised-2016:
+  scopus_citations: 5
+  total_downloads: 235
+  wos_citations: 0
+  yearly:
+    2017: 70
+    2018: 74
+    2019: 28
+    2020: 27
+    2021: 11
+    2022: 11
+    2023: 5
+    2024: 4
+    2025: 2
+    2026: 3
+tsinos-blind-2016:
+  scopus_citations: 2
+  total_downloads: 160
+  wos_citations: 0
+  yearly:
+    2016: 49
+    2017: 31
+    2018: 23
+    2019: 8
+    2020: 7
+    2021: 9
+    2022: 3
+    2023: 15
+    2024: 6
+    2025: 4
+    2026: 5
+tsinos-distributed-2013:
+  scopus_citations: 3
+  total_downloads: 150
+  wos_citations: 0
+  yearly:
+    2013: 6
+    2014: 49
+    2015: 24
+    2016: 10
+    2017: 6
+    2018: 8
+    2019: 2
+    2020: 7
+    2021: 4
+    2022: 10
+    2023: 5
+    2024: 9
+    2025: 6
+    2026: 4
+vlachos-adaptive-2016:
+  scopus_citations: 3
+  total_downloads: 309
+  wos_citations: 0
+  yearly:
+    2016: 16
+    2017: 199
+    2018: 23
+    2019: 7
+    2020: 17
+    2021: 6
+    2022: 1
+    2023: 11
+    2024: 17
+    2025: 7
+    2026: 5
+vlachos-adaptive-2018:
+  scopus_citations: 9
+  total_downloads: 308
+  wos_citations: 6
+  yearly:
+    2018: 80
+    2019: 79
+    2020: 18
+    2021: 29
+    2022: 23
+    2023: 21
+    2024: 36
+    2025: 17
+    2026: 5
+vlachos-admm-based-2022:
+  scopus_citations: 6
+  total_downloads: 323
+  wos_citations: 2
+  yearly:
+    2022: 73
+    2023: 133
+    2024: 71
+    2025: 38
+    2026: 8
+vlachos-autonomous-2017:
+  scopus_citations: 9
+  total_downloads: 892
+  wos_citations: 0
+  yearly:
+    2017: 193
+    2018: 273
+    2019: 96
+    2020: 126
+    2021: 89
+    2022: 29
+    2023: 23
+    2024: 37
+    2025: 22
+    2026: 4
+vlachos-compressed-2012:
+  scopus_citations: 3
+  total_downloads: 302
+  wos_citations: 0
+  yearly:
+    2012: 43
+    2013: 64
+    2014: 41
+    2015: 26
+    2016: 22
+    2017: 23
+    2018: 14
+    2019: 3
+    2020: 3
+    2021: 21
+    2022: 23
+    2023: 5
+    2024: 8
+    2025: 2
+    2026: 4
+vlachos-covariance-based-2023:
+  scopus_citations: 6
+  total_downloads: 168
+  wos_citations: 0
+  yearly:
+    2023: 35
+    2024: 93
+    2025: 34
+    2026: 6
+vlachos-distributed-2018:
+  scopus_citations: 8
+  total_downloads: 352
+  wos_citations: 9
+  yearly:
+    2018: 81
+    2019: 110
+    2020: 33
+    2021: 30
+    2022: 48
+    2023: 22
+    2024: 18
+    2025: 4
+    2026: 6
+vlachos-dithered-2018:
+  scopus_citations: 2
+  total_downloads: 300
+  wos_citations: 0
+  yearly:
+    2018: 65
+    2019: 79
+    2020: 56
+    2021: 22
+    2022: 23
+    2023: 16
+    2024: 21
+    2025: 15
+    2026: 3
+vlachos-efficient-2017:
+  scopus_citations: 6
+  total_downloads: 316
+  wos_citations: 0
+  yearly:
+    2017: 76
+    2018: 116
+    2019: 34
+    2020: 15
+    2021: 22
+    2022: 17
+    2023: 11
+    2024: 13
+    2025: 9
+    2026: 3
+vlachos-energy-2018:
+  scopus_citations: 29
+  total_downloads: 817
+  wos_citations: 0
+  yearly:
+    2018: 49
+    2019: 134
+    2020: 144
+    2021: 117
+    2022: 96
+    2023: 123
+    2024: 101
+    2025: 44
+    2026: 9
+vlachos-energy-efficiency-2021:
+  scopus_citations: 36
+  total_downloads: 1516
+  wos_citations: 30
+  yearly:
+    2020: 82
+    2021: 522
+    2022: 253
+    2023: 235
+    2024: 244
+    2025: 166
+    2026: 14
+vlachos-galerkin-2013:
+  scopus_citations: 2
+  total_downloads: 95
+  wos_citations: 0
+  yearly:
+    2013: 14
+    2014: 21
+    2015: 13
+    2016: 7
+    2017: 12
+    2018: 6
+    2020: 1
+    2021: 1
+    2022: 8
+    2023: 2
+    2024: 1
+    2025: 6
+    2026: 3
+vlachos-hybrid-2019:
+  scopus_citations: null
+  total_downloads: 349
+  wos_citations: 0
+  yearly:
+    2019: 91
+    2020: 100
+    2021: 42
+    2022: 50
+    2023: 23
+    2024: 29
+    2025: 9
+    2026: 5
+vlachos-improving-2025:
+  scopus_citations: 1
+  total_downloads: 287
+  wos_citations: 2
+  yearly:
+    2025: 242
+    2026: 45
+vlachos-low-complexity-2016:
+  scopus_citations: 13
+  total_downloads: 692
+  wos_citations: 0
+  yearly:
+    2016: 69
+    2017: 179
+    2018: 127
+    2019: 77
+    2020: 53
+    2021: 56
+    2022: 35
+    2023: 32
+    2024: 31
+    2025: 26
+    2026: 7
+vlachos-massive-2018:
+  scopus_citations: 89
+  total_downloads: 4022
+  wos_citations: 0
+  yearly:
+    2018: 337
+    2019: 890
+    2020: 689
+    2021: 547
+    2022: 602
+    2023: 400
+    2024: 336
+    2025: 208
+    2026: 13
+vlachos-optimal-2022:
+  scopus_citations: 1
+  total_downloads: 171
+  wos_citations: 0
+  yearly:
+    2022: 67
+    2023: 61
+    2024: 23
+    2025: 17
+    2026: 3
+vlachos-quantum-2022:
+  scopus_citations: 9
+  total_downloads: 462
+  wos_citations: 0
+  yearly:
+    2022: 57
+    2023: 190
+    2024: 129
+    2025: 80
+    2026: 6
+vlachos-regularized-2013:
+  scopus_citations: 3
+  total_downloads: 158
+  wos_citations: 0
+  yearly:
+    2014: 25
+    2015: 14
+    2016: 18
+    2017: 14
+    2018: 10
+    2019: 9
+    2020: 6
+    2021: 11
+    2022: 20
+    2023: 6
+    2024: 13
+    2025: 9
+    2026: 3
+vlachos-robust-2019:
+  scopus_citations: 7
+  total_downloads: 187
+  wos_citations: 0
+  yearly:
+    2019: 79
+    2020: 35
+    2021: 23
+    2022: 16
+    2023: 13
+    2024: 13
+    2025: 5
+    2026: 3
+vlachos-stochastic-2012:
+  scopus_citations: 32
+  total_downloads: 1052
+  wos_citations: 22
+  yearly:
+    2012: 102
+    2013: 255
+    2014: 132
+    2015: 94
+    2016: 64
+    2017: 60
+    2018: 75
+    2019: 41
+    2020: 24
+    2021: 51
+    2022: 44
+    2023: 31
+    2024: 41
+    2025: 27
+    2026: 11
+vlachos-subset-2023:
+  scopus_citations: 9
+  total_downloads: 351
+  wos_citations: 4
+  yearly:
+    2023: 215
+    2024: 90
+    2025: 40
+    2026: 6
+vlachos-wideband-2019:
+  scopus_citations: 92
+  total_downloads: 4087
+  wos_citations: 0
+  yearly:
+    2019: 341
+    2020: 833
+    2021: 671
+    2022: 815
+    2023: 643
+    2024: 540
+    2025: 216
+    2026: 28

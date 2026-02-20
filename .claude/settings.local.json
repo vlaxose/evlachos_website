@@ -76,7 +76,22 @@
       "Bash(# Try the ATHENA en homepage which may have English logo curl -sL --insecure --max-time 15 -A \"\"Mozilla/5.0\"\" \"\"https://www.athenarc.gr/en\"\" 2>&1 grep -i \"\"logo\\\\|img\\\\|favicon\\\\|icon\"\" /tmp/athena_en.html)",
       "Bash(pkill:*)",
       "Bash(pgrep:*)",
-      "Bash(pip3 show:*)"
+      "Bash(pip3 show:*)",
+      "Bash(/home/vagos/www/evlachos_website/scripts/venv/bin/pip install:*)",
+      "WebFetch(domain:business.fritz.com)",
+      "WebFetch(domain:www.designtagebuch.de)",
+      "WebFetch(domain:forum.palemoon.org)",
+      "WebFetch(domain:fonts.google.com)",
+      "WebFetch(domain:userstyles.org)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:fonts.googleapis.com)",
+      "Bash(for dir in /home/vagos/www/evlachos_website/content/publication/*/)",
+      "Bash(do)",
+      "Bash(if [ -f \"$dir/index.md\" ])",
+      "Bash([ ! -f \"$dir/index.el.md\" ])",
+      "Bash(then)",
+      "Bash(fi)"
     ]
   }
 }

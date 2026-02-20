@@ -1,5 +1,5 @@
-/* Import academic fonts: Merriweather for headings, Source Sans 3 for body */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+/* Source Sans 3 — same font as Fritz!Box UI, full Greek + Latin support */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&subset=greek,latin&display=swap');
 
 /* Academic palette: warm ivory background, dark charcoal text */
 :root,
@@ -7,12 +7,18 @@ body,
 html,
 .dark,
 .dark body,
-.home-section,
-section,
 header,
 footer {
   background-color: #faf8f5 !important;
   background: #faf8f5 !important;
+  color: #2d2d2d !important;
+  font-family: "Source Sans 3", sans-serif !important;
+}
+
+/* Base fallback for sections; individual widgets override below */
+.home-section,
+section {
+  background-color: #faf8f5;
   color: #2d2d2d !important;
   font-family: "Source Sans 3", sans-serif !important;
 }
@@ -29,7 +35,7 @@ footer {
 .navbar-brand,
 .dark .navbar-brand {
   color: #1a1a2e !important;
-  font-family: "Merriweather", Georgia, serif !important;
+  font-family: "Source Sans 3", sans-serif !important;
   font-weight: 700 !important;
 }
 
@@ -77,12 +83,15 @@ footer {
 .navbar-brand img.navbar-avatar,
 .navbar-brand .navbar-avatar {
   display: inline-block !important;
-  width: 32px !important;
-  height: 32px !important;
+  width: 42px !important;
+  height: 42px !important;
+  aspect-ratio: 1 / 1 !important;
   min-height: unset !important;
   max-height: unset !important;
   border-radius: 50% !important;
+  clip-path: none !important;
   object-fit: cover !important;
+  object-position: center !important;
   flex-shrink: 0 !important;
   border: 1.5px solid rgba(26, 58, 92, 0.2) !important;
   vertical-align: middle !important;
@@ -109,7 +118,7 @@ footer {
 /* Serif headings for academic feel */
 h1, h2, h3, h4, .section-heading h1 {
   color: #1a1a2e !important;
-  font-family: "Merriweather", Georgia, serif !important;
+  font-family: "Source Sans 3", sans-serif !important;
   font-weight: 700 !important;
 }
 
@@ -138,17 +147,19 @@ h1, h2, h3, h4, .section-heading h1 {
   font-size: 0.85rem !important;
 }
 
-/* Organisation links in bio (horizontal with favicon) */
+/* Organisation links in bio */
+#profile .org-links,
 .org-links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.35em;
   margin: 0.35em 0 0.1em;
-  text-align: left;
+  text-align: left !important;
+  width: 100%;
 }
 .org-link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0.35em;
   font-size: 0.9rem;
@@ -159,10 +170,19 @@ h1, h2, h3, h4, .section-heading h1 {
   color: #1a3a5c !important;
 }
 .org-icon {
-  height: 18px;
-  width: auto;
+  object-fit: contain;
   border-radius: 2px;
   flex-shrink: 0;
+}
+
+.org-icon[alt="ISI"] {
+  width: 30px;
+  height: 30px;
+}
+
+.org-icon[alt="ATHENA RC"] {
+  width: 18px;
+  height: 18px;
 }
 
 /* Section headings */
@@ -311,6 +331,23 @@ a:hover {
   align-items: center;
   gap: 0.25em;
   margin-top: 0.15em;
+}
+
+.pub-sparkline-link {
+  display: block;
+  margin-top: 0.2em;
+}
+
+.pub-sparkline {
+  display: block;
+  width: 54px;
+  height: auto;
+  opacity: 0.75;
+  transition: opacity 0.15s;
+}
+
+.pub-sparkline-link:hover .pub-sparkline {
+  opacity: 1;
 }
 
 .pub-links {
@@ -567,7 +604,7 @@ a.pub-title:hover {
 }
 
 .scholar-metric-value {
-  font-family: "Merriweather", Georgia, serif !important;
+  font-family: "Source Sans 3", sans-serif !important;
   font-size: 1.2rem;
   font-weight: 700;
   color: #1a1a2e !important;
@@ -599,7 +636,7 @@ a.pub-title:hover {
 }
 
 .scholar-type-count {
-  font-family: "Merriweather", Georgia, serif;
+  font-family: "Source Sans 3", sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
   color: #1a1a2e !important;
@@ -1276,9 +1313,65 @@ body.pdf-panel-active {
   }
 }
 
-/* Section dividers between consecutive homepage sections */
+/* ── Mobile navbar: hide brand text to prevent overflow ─────────────────── */
+@media (max-width: 991.98px) {
+  .navbar-brand-text {
+    display: none !important;
+  }
+  .navbar-brand-mobile-wrapper .navbar-brand {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+/* ── Widget section headings: compact ───────────────────────────────────── */
+.home-section .section-heading h1 {
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ── Distinct backgrounds per widget ────────────────────────────────────── */
+/* About  — base ivory */
+.home-section.wg-about,
+section[id="about"] {
+  background: #faf8f5 !important;
+}
+
+/* Experience — very light warm grey */
+.home-section.wg-experience,
+section[id="experience"] {
+  background: #f3f0ec !important;
+}
+
+/* Publications — soft blue-grey tint */
+.home-section.wg-pages,
+section[id="publications"] {
+  background: #f0f4f8 !important;
+}
+
+/* News — light warm tone */
+.home-section.wg-collection,
+section[id="news"] {
+  background: #f5f2ee !important;
+}
+
+/* Teaching — pale sage */
+.home-section.wg-markdown:not(:first-of-type),
+section[id="teaching"] {
+  background: #f2f5f2 !important;
+}
+
+/* Contact — lightest blue */
+.home-section.wg-contact,
+section[id="contact"] {
+  background: #eef2f7 !important;
+}
+
+/* Remove the single-border divider now that sections have distinct bg */
 .home-section + .home-section {
-  border-top: 1px solid #e0dbd4;
+  border-top: none;
 }
 
 /* Absolute removal of attribution and extra text */
