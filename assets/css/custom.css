@@ -1,5 +1,5 @@
-/* Source Sans 3 — same font as Fritz!Box UI, full Greek + Latin support */
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&subset=greek,latin&display=swap');
+/* Fira Sans — humanist sans-serif, full Greek + Latin support */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&subset=greek,latin&display=swap');
 
 /* Academic palette: warm ivory background, dark charcoal text */
 :root,
@@ -12,7 +12,7 @@ footer {
   background-color: #faf8f5 !important;
   background: #faf8f5 !important;
   color: #2d2d2d !important;
-  font-family: "Source Sans 3", sans-serif !important;
+  font-family: "Fira Sans", sans-serif !important;
 }
 
 /* Base fallback for sections; individual widgets override below */
@@ -20,7 +20,7 @@ footer {
 section {
   background-color: #faf8f5;
   color: #2d2d2d !important;
-  font-family: "Source Sans 3", sans-serif !important;
+  font-family: "Fira Sans", sans-serif !important;
 }
 
 /* Navbar: subtle bottom border instead of shadow, ivory background */
@@ -35,7 +35,7 @@ section {
 .navbar-brand,
 .dark .navbar-brand {
   color: #1a1a2e !important;
-  font-family: "Source Sans 3", sans-serif !important;
+  font-family: "Fira Sans", sans-serif !important;
   font-weight: 700 !important;
 }
 
@@ -46,7 +46,7 @@ section {
 #navbar-main .main-menu-item ul li .nav-link,
 .dark #navbar-main .main-menu-item ul li .nav-link {
   color: #2d2d2d !important;
-  font-family: "Source Sans 3", sans-serif !important;
+  font-family: "Fira Sans", sans-serif !important;
   font-weight: 600 !important;
   font-size: 0.95rem !important;
 }
@@ -118,13 +118,14 @@ section {
 /* Serif headings for academic feel */
 h1, h2, h3, h4, .section-heading h1 {
   color: #1a1a2e !important;
-  font-family: "Source Sans 3", sans-serif !important;
+  font-family: "Fira Sans", sans-serif !important;
   font-weight: 700 !important;
 }
 
 /* About widget sidebar: tame font sizes */
 .portrait-title h2 {
-  font-size: 1.3rem !important;
+  font-size: 2.2rem !important;
+  text-shadow: 0 1px 3px rgba(26, 58, 92, 0.18) !important;
 }
 
 .portrait-title h3 {
@@ -534,7 +535,7 @@ a.pub-title:hover {
   background-color: #fff !important;
   border: 1px solid #e0dbd4 !important;
   color: #2d2d2d !important;
-  font-family: "Source Sans 3", sans-serif !important;
+  font-family: "Fira Sans", sans-serif !important;
 }
 
 .filter-search.form-control:focus,
@@ -604,7 +605,7 @@ a.pub-title:hover {
 }
 
 .scholar-metric-value {
-  font-family: "Source Sans 3", sans-serif !important;
+  font-family: "Fira Sans", sans-serif !important;
   font-size: 1.2rem;
   font-weight: 700;
   color: #1a1a2e !important;
@@ -636,7 +637,7 @@ a.pub-title:hover {
 }
 
 .scholar-type-count {
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
   color: #1a1a2e !important;
@@ -847,7 +848,7 @@ a.pub-title:hover {
   color: #888 !important;
   font-weight: 700 !important;
   margin-bottom: 0.5rem;
-  font-family: "Source Sans 3", sans-serif !important;
+  font-family: "Fira Sans", sans-serif !important;
 }
 
 .pub-abstract-text {
