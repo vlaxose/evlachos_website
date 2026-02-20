@@ -66,7 +66,9 @@
       "WebFetch(domain:evlachos.netlify.app)",
       "WebFetch(domain:www.semanticscholar.org)",
       "Bash(head -3 grep -o \"navbar-avatar[^}]*}\" /home/vagos/www/evlachos_website/resources/_gen/assets/scss/main.scss_adc28f460db49f036140dccadcf4d022.content)",
-      "WebFetch(domain:physics.upatras.gr)"
+      "WebFetch(domain:physics.upatras.gr)",
+      "Bash(echo:*)",
+      "Bash(convert:*)"
     ]
   }
 }

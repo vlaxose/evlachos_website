@@ -12,6 +12,10 @@ module:
 
 # --- Appearance (High Density / Fritz!Box Style) ---
 params:
+  header:
+    navbar:
+      align: r
+
   appearance:
     theme: classic
     font: minimal
