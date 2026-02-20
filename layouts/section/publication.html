@@ -114,7 +114,7 @@
         {{ $.Scratch.SetInMap "years" $year $year }}
       {{ end }}
 
-      <div class="form-row mb-4">
+      <div class="form-row pub-filter-bar">
         <div class="col-auto">
           <input type="search" class="filter-search form-control form-control-sm" placeholder="{{ i18n "search_placeholder" }}" autocapitalize="off"
           autocomplete="off" autocorrect="off" role="textbox" spellcheck="false">
@@ -180,11 +180,25 @@ document.body.addEventListener('click', function (e) {
   /* --- pub-type label click → filter by type --- */
   var typeEl = e.target.closest('.pub-type-clickable');
   if (typeEl) {
+    e.preventDefault();
     var filterVal = '.pubtype-' + typeEl.dataset.pubtype;
     var typeSelect = document.querySelector('.pubtype-select');
     if (typeSelect && typeof jQuery !== 'undefined') {
       typeSelect.value = typeSelect.value === filterVal ? '*' : filterVal;
       jQuery(typeSelect).trigger('change');
+    }
+    return;
+  }
+
+  /* --- year label click → filter by year --- */
+  var yearEl = e.target.closest('.pub-year-clickable');
+  if (yearEl) {
+    e.preventDefault();
+    var filterVal = '.year-' + yearEl.dataset.year;
+    var yearSelect = document.querySelector('select[data-filter-group="year"]');
+    if (yearSelect && typeof jQuery !== 'undefined') {
+      yearSelect.value = yearSelect.value === filterVal ? '*' : filterVal;
+      jQuery(yearSelect).trigger('change');
     }
     return;
   }

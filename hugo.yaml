@@ -1,3 +1,9 @@
+server:
+  headers:
+    - for: '/**'
+      values:
+        Cache-Control: no-store
+
 # --- General Settings ---
 baseURL: "https://evlachos.space/"
 title: Dr. Evangelos Vlachos
