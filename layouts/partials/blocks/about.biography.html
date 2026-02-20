@@ -10,7 +10,7 @@
 {{ if .author }}
   {{ $author = .author }}
 {{ else }}
-  {{ $author = $block.Params.author }}
+  {{ $author = $block.content.username }}
 {{end}}
 
 {{ $person_page_path := (printf "/authors/%s" $author) }}
@@ -94,20 +94,25 @@
   <div class="col-12 col-lg-8">
 
     {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
-    {{ if and $block.Params.widget $block.Title }}<h1>{{ $block.Title | markdownify | emojify }}</h1>{{ end }}
+    {{ with $block.content.title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
 
+    {{ with $person_page.Content }}
     <div class="article-style">
-      {{ $person_page.Content }}
+      {{ . }}
     </div>
+    {{ end }}
 
     <div class="row">
 
       {{ with $person.interests }}
       <div class="col-md-5">
         <div class="section-subheading">{{ i18n "interests" | markdownify }}</div>
-        <ul class="ul-interests mb-0">
+        <ul class="ul-interests fa-ul mb-0">
           {{ range . }}
-          <li>{{ . | markdownify | emojify }}</li>
+          <li>
+            <i class="fa-li fa-solid fa-book-open"></i>
+            {{ . | markdownify | emojify }}
+          </li>
           {{ end }}
         </ul>
       </div>
@@ -119,7 +124,7 @@
         <ul class="ul-edu fa-ul mb-0">
           {{ range .courses }}
           <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
+            <i class="fa-li fa-solid fa-graduation-cap"></i>
             <div class="description">
               <p class="course">{{ .course }}{{ with .year }}, {{ . }}{{ end }}</p>
               <p class="institution">{{ .institution }}</p>

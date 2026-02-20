@@ -24,12 +24,17 @@
 {{ $bib = printf "%s}" $bib }}
 
 <div class="pub-row">
-  <div class="pub-meta">
+  <div class="pub-index">
     <span class="pub-num">{{ sub $total .index }}</span>
+  </div>
+  <div class="pub-meta">
     <span class="pub-type pub-type-clickable {{ if $is_journal }}pub-type-journal{{ else if $is_book }}pub-type-book{{ else }}pub-type-conf{{ end }}" data-pubtype="{{ $pubtype }}" title="Filter by this type">
       {{ if $is_journal }}Journal{{ else if $is_book }}Book{{ else }}Conf{{ end }}
     </span>
     <span class="pub-year">{{ $year }}</span>
+    {{ $slug := path.Base (strings.TrimRight "/" $item.File.Dir) }}
+    {{ $views := index site.Data.ieee_views $slug }}
+    {{ if $views }}<span class="pub-views" title="IEEE Xplore total downloads"><i class="fas fa-download"></i> {{ $views }}</span>{{ end }}
   </div>
   <div class="pub-links">
     {{ with $item.Params.doi }}

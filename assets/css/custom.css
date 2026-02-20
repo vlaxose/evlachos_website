@@ -135,6 +135,31 @@ h1, h2, h3, h4, .section-heading h1 {
   font-size: 0.85rem !important;
 }
 
+/* Organisation links in bio (horizontal with favicon) */
+.org-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em 1.0em;
+  margin: 0.25em 0 0.1em;
+}
+.org-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  font-size: 0.9rem;
+  text-decoration: none !important;
+  color: #444 !important;
+}
+.org-link:hover {
+  color: #1a3a5c !important;
+}
+.org-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
 /* Section headings */
 .home-section .section-heading h1 {
   font-size: 1.4rem !important;
@@ -190,21 +215,27 @@ a:hover {
   border-bottom: none;
 }
 
+.pub-index {
+  flex-shrink: 0;
+  width: 1.8rem;
+  text-align: right;
+  padding-top: 0.18rem;
+}
+
+.pub-num {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #bbb !important;
+  line-height: 1;
+}
+
 .pub-meta {
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 4.5rem;
+  width: 3.4rem;
   padding-top: 0.15rem;
-}
-
-.pub-num {
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: #bbb !important;
-  line-height: 1;
-  margin-bottom: 0.2rem;
 }
 
 .pub-type {
@@ -242,6 +273,16 @@ a:hover {
   font-weight: 600;
   color: #888 !important;
   white-space: nowrap;
+}
+
+.pub-views {
+  font-size: 0.72rem;
+  color: #aaa !important;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  margin-top: 0.15em;
 }
 
 .pub-links {
