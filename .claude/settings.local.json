@@ -91,7 +91,11 @@
       "Bash(if [ -f \"$dir/index.md\" ])",
       "Bash([ ! -f \"$dir/index.el.md\" ])",
       "Bash(then)",
-      "Bash(fi)"
+      "Bash(fi)",
+      "Bash(# Check how many publications have an empty abstract grep -rL \"\"abstract:\"\" /home/vagos/www/evlachos_website/content/publication/*/index.md)",
+      "Bash(# Check what % of publications have DOIs grep -rl \"\"doi:\"\" /home/vagos/www/evlachos_website/content/publication/*/index.md)",
+      "Bash(# Check content/_index.md for description cat /home/vagos/www/evlachos_website/content/publication/_index.md cat /home/vagos/www/evlachos_website/content/post/_index.md find /home/vagos/www/evlachos_website/content -name \"\"_index.md\"\")",
+      "Bash(# Check the img directory for og:image / profile photo ls /home/vagos/www/evlachos_website/static/img/ ; ls /home/vagos/www/evlachos_website/assets/media/ ; find /home/vagos/www/evlachos_website -name \"\"avatar*\"\")"
     ]
   }
 }

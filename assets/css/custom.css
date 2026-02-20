@@ -153,14 +153,14 @@ h1, h2, h3, h4, .section-heading h1 {
 .org-links {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.35em;
   margin: 0.35em 0 0.1em;
-  text-align: left !important;
+  text-align: center !important;
   width: 100%;
 }
 .org-link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.35em;
   font-size: 0.9rem;
@@ -177,8 +177,8 @@ h1, h2, h3, h4, .section-heading h1 {
 }
 
 .org-icon[alt="ISI"] {
-  width: 30px;
-  height: 30px;
+  width: 39px;
+  height: 39px;
 }
 
 .org-icon[alt="ATHENA RC"] {
@@ -1314,14 +1314,50 @@ body.pdf-panel-active {
   }
 }
 
-/* ── Mobile navbar: hide brand text to prevent overflow ─────────────────── */
+/* ── Mobile navbar ───────────────────────────────────────────────────────── */
 @media (max-width: 991.98px) {
+  /* Hide desktop brand text so it doesn't push the hamburger off-screen */
   .navbar-brand-text {
     display: none !important;
   }
-  .navbar-brand-mobile-wrapper .navbar-brand {
-    white-space: nowrap;
-    overflow: hidden;
+
+  /* Hamburger icon — must be visible on ivory background */
+  .navbar-toggler {
+    color: #2d2d2d !important;
+    padding: 0.4rem 0.6rem !important;
+    z-index: 1032 !important;
+  }
+  .navbar-toggler i,
+  .navbar-toggler span {
+    color: #2d2d2d !important;
+    font-size: 1.3rem !important;
+  }
+
+  /* Dropdown panel that opens when hamburger is clicked */
+  #navbar-main .navbar-collapse {
+    position: absolute !important;
+    top: 100% !important;       /* sit flush below the navbar bar */
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    background: #faf8f5 !important;
+    border-bottom: 1px solid #e0dbd4 !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+    z-index: 1031 !important;
+    padding: 0.5rem 0 1rem !important;
+  }
+
+  /* Nav links inside the dropdown */
+  #navbar-main .navbar-collapse .nav-link {
+    padding: 0.55rem 1.2rem !important;
+    font-size: 1rem !important;
+    color: #2d2d2d !important;
+    text-align: left !important;
+  }
+
+  /* Keep the navbar itself as a positioning context */
+  #navbar-main {
+    position: relative !important;
   }
 }
 
@@ -1384,3 +1420,220 @@ footer p:nth-child(2),
   visibility: hidden !important;
   opacity: 0 !important;
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   DARK MODE
+   body.dark is set by the theme's Light / Dark / Auto toggle.
+   Uses body.dark prefix (specificity +element) to beat existing .dark rules.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Base — deep navy-dark */
+body.dark,
+body.dark header,
+body.dark footer {
+  background-color: #16162a !important;
+  background: #16162a !important;
+  color: #d8d4ce !important;
+}
+
+/* Widget section backgrounds */
+body.dark .home-section,
+body.dark section { color: #d8d4ce !important; }
+body.dark .home-section.wg-about,
+body.dark section[id="about"]                            { background: #16162a !important; }
+body.dark .home-section.wg-experience,
+body.dark section[id="experience"]                       { background: #1a1a2e !important; }
+body.dark .home-section.wg-pages,
+body.dark section[id="publications"]                     { background: #181c2e !important; }
+body.dark .home-section.wg-collection,
+body.dark section[id="news"]                             { background: #1c1a2e !important; }
+body.dark .home-section.wg-markdown:not(:first-of-type),
+body.dark section[id="teaching"]                         { background: #181c18 !important; }
+body.dark .home-section.wg-contact,
+body.dark section[id="contact"]                          { background: #181a24 !important; }
+
+/* Navbar */
+body.dark .navbar { background: #16162a !important; border-bottom-color: #303048 !important; }
+body.dark .navbar-brand-name { color: #d8d4ce !important; }
+body.dark .navbar-brand-title { color: #60608a !important; }
+/* ID-level specificity needed to beat the light-mode #navbar-main rule */
+body.dark #navbar-main .nav-link,
+body.dark #navbar-main .main-menu-item ul li .nav-link,
+body.dark .navbar .navbar-nav .nav-link,
+body.dark .navbar-light .navbar-nav .nav-link { color: #b8b8d0 !important; }
+body.dark #navbar-main .nav-link:hover,
+body.dark #navbar-main .nav-link:focus,
+body.dark .navbar-light .navbar-nav .nav-link:hover,
+body.dark .navbar-light .navbar-nav .nav-link:focus { color: #80b8f0 !important; }
+body.dark #navbar-main .nav-link.active,
+body.dark .navbar-light .navbar-nav .nav-link.active { color: #a0c8ff !important; }
+body.dark .navbar-toggler,
+body.dark .navbar-toggler i,
+body.dark .navbar-toggler span { color: #d8d4ce !important; }
+body.dark #navbar-main .navbar-collapse {
+  background: #16162a !important;
+  border-bottom-color: #303048 !important;
+}
+body.dark #navbar-main .navbar-collapse .nav-link { color: #b8b8d0 !important; }
+
+/* Headings */
+body.dark h1, body.dark h2, body.dark h3, body.dark h4,
+body.dark .section-heading h1 { color: #d8d4ce !important; text-shadow: none !important; }
+
+/* Links */
+body.dark a { color: #80b8f0 !important; }
+body.dark a:hover { color: #a0c8ff !important; }
+
+/* Cards / Experience */
+body.dark .card { background: #202038 !important; border-color: #303048 !important; }
+body.dark .experience .text-muted { color: #70709a !important; }
+body.dark .experience .card-text,
+body.dark .experience .card-text p { color: #b8b8d0 !important; }
+body.dark .experience .m-2 .border.exp-fill { background-color: #244468 !important; }
+body.dark .experience .m-2 .border,
+body.dark .experience .col.border-right { border-color: #244468 !important; }
+
+/* Bio / About */
+body.dark .portrait-title h2 { color: #d8d4ce !important; text-shadow: none !important; }
+body.dark .portrait-title h3 { color: #9090b8 !important; }
+body.dark .col-md-7 .article-style,
+body.dark .biography-text { color: #b8b8d0 !important; }
+body.dark .ul-interests li,
+body.dark .ul-edu li { color: #b8b8d0 !important; }
+body.dark .org-link { color: #8888a8 !important; }
+body.dark .org-link:hover { color: #80b8f0 !important; }
+
+/* Publication list rows */
+body.dark .pub-row { border-bottom-color: #282840 !important; }
+body.dark .pub-num { color: #404060 !important; }
+body.dark .pub-type-journal { background: #1e4070 !important; color: #d8d4ce !important; }
+body.dark .pub-type-conf { background: #223050 !important; color: #a0b8d8 !important; }
+body.dark .pub-year { background: #222236 !important; color: #70709a !important; }
+body.dark .pub-views { color: #505070 !important; }
+
+/* Publication link buttons */
+body.dark .pub-link-btn { border-color: #3a6898 !important; color: #80b8f0 !important; background: transparent !important; }
+body.dark .pub-link-btn:hover { background: #3a6898 !important; color: #fff !important; }
+body.dark .pub-link-pdf { border-color: #883020 !important; color: #f08080 !important; }
+body.dark .pub-link-pdf:hover { background: #883020 !important; color: #fff !important; }
+body.dark .pub-link-arxiv { border-color: #804018 !important; color: #d89060 !important; }
+body.dark .pub-link-arxiv:hover { background: #804018 !important; color: #fff !important; }
+body.dark .pub-link-bib { border-color: #186838 !important; color: #60c090 !important; }
+body.dark .pub-link-bib:hover { background: #186838 !important; color: #fff !important; }
+body.dark .pub-link-code { border-color: #502898 !important; color: #9878d8 !important; }
+body.dark .pub-link-code:hover { background: #502898 !important; color: #fff !important; }
+body.dark .pub-link-preview { border-color: #306070 !important; color: #60a8c0 !important; }
+body.dark .pub-link-preview:hover { background: #306070 !important; color: #fff !important; }
+
+/* Publication text */
+body.dark a.pub-title { color: #c0d0e8 !important; }
+body.dark a.pub-title:hover { color: #80b8f0 !important; }
+body.dark .pub-authors-line { color: #70709a !important; }
+body.dark .pub-venue-line { color: #80b8f0 !important; }
+body.dark .pub-venue-link { color: #80b8f0 !important; }
+body.dark .pub-badge { color: #80b8f0 !important; border-color: #244468 !important; }
+body.dark .pub-badge:hover { background-color: #1a2e48 !important; color: #a0c8ff !important; }
+
+/* Scholar dashboard */
+body.dark .scholar-dashboard { background: #202038 !important; border-color: #303048 !important; }
+body.dark .scholar-metric-value,
+body.dark .scholar-type-count { color: #d8d4ce !important; }
+body.dark .scholar-metric-label,
+body.dark .scholar-chart-title,
+body.dark .scholar-source { color: #505070 !important; }
+body.dark .scholar-type-counts { border-top-color: #303048 !important; }
+body.dark .scholar-bar { background: #3a6898 !important; }
+body.dark .scholar-bar-group:hover .scholar-bar { background: #80b8f0 !important; }
+body.dark .scholar-bar-clickable:hover .scholar-bar { background: #c06020 !important; }
+body.dark .scholar-bar-count,
+body.dark .scholar-bar-year { color: #505070 !important; }
+body.dark .scholar-source a { color: #80b8f0 !important; }
+
+/* Stats toggle */
+body.dark .stats-toggle { background: #202038 !important; border-color: #303048 !important; }
+body.dark .stats-toggle:hover { background: #28283e !important; }
+body.dark .stats-toggle-label { color: #b8b8d0 !important; }
+body.dark .stats-toggle-chevron { color: #50508a !important; }
+
+/* Search / filter dropdowns */
+body.dark .filter-search.form-control,
+body.dark .pub-filters.form-control {
+  background-color: #202038 !important;
+  border-color: #303048 !important;
+  color: #d8d4ce !important;
+}
+
+/* PDF slide panel */
+body.dark .pdf-panel { background: #16162a !important; }
+body.dark .pdf-panel-header { background: #202038 !important; border-bottom-color: #303048 !important; }
+body.dark .pdf-panel-title { color: #b8b8d0 !important; }
+body.dark .pdf-panel-btn { color: #70709a !important; }
+body.dark .pdf-panel-btn:hover { color: #80b8f0 !important; }
+
+/* Teaching page */
+body.dark .teaching-block { border-bottom-color: #303048 !important; }
+body.dark .teaching-institution { color: #d8d4ce !important; }
+body.dark .teaching-period,
+body.dark .teaching-program-label { color: #50508a !important; }
+body.dark .teaching-program-box { background: #202038 !important; border-left-color: #3a6898 !important; }
+body.dark .teaching-program-name { color: #80b8f0 !important; }
+body.dark .teaching-program-spec { color: #70709a !important; }
+body.dark .teaching-course-name { color: #d8d4ce !important; }
+body.dark .teaching-course-name a,
+body.dark .teaching-course-name i { color: #80b8f0 !important; }
+body.dark .teaching-course-desc { color: #9090b8 !important; }
+
+/* Contact page */
+body.dark .contact-form { background: #202038 !important; border-color: #303048 !important; }
+body.dark .contact-form-group label { color: #80809a !important; }
+body.dark .contact-form-group input,
+body.dark .contact-form-group textarea {
+  background: #16162a !important;
+  border-color: #303048 !important;
+  color: #d8d4ce !important;
+}
+body.dark .contact-form-group input:focus,
+body.dark .contact-form-group textarea:focus { border-color: #80b8f0 !important; }
+body.dark .contact-page-section-title { color: #d8d4ce !important; border-bottom-color: #3a6898 !important; }
+body.dark .contact-info-item { color: #b8b8d0 !important; }
+body.dark .contact-info-item i { color: #80b8f0 !important; }
+body.dark .contact-info-item a { color: #80b8f0 !important; }
+body.dark .contact-info-sub-title { color: #50508a !important; }
+
+/* News */
+body.dark .news-type { background: #906020 !important; }
+body.dark .news-summary-line { color: #70709a !important; }
+
+/* Single publication page */
+body.dark .pub-date-tag,
+body.dark .pub-section-title { color: #50508a !important; }
+body.dark .pub-page-authors { color: #80809a !important; }
+body.dark .pub-page-venue { color: #80b8f0 !important; }
+body.dark .pub-abstract-text { color: #b8b8d0 !important; }
+body.dark .pub-details-grid { background: #202038 !important; border-color: #303048 !important; }
+body.dark .pub-detail-row { border-bottom-color: #282840 !important; }
+body.dark .pub-detail-label { color: #50508a !important; }
+body.dark .pub-detail-value { color: #b8b8d0 !important; }
+body.dark .pub-detail-value a { color: #80b8f0 !important; }
+body.dark .pub-tag { background: #202038 !important; color: #80b8f0 !important; }
+body.dark .pub-tag:hover { background: #28283e !important; }
+body.dark .pub-action-btn {
+  background: #202038 !important;
+  border-color: #303048 !important;
+  color: #80b8f0 !important;
+}
+body.dark .pub-action-btn:hover {
+  background: #243a5a !important;
+  border-color: #3a6898 !important;
+  color: #a0c8ff !important;
+}
+body.dark .pub-action-btn.pub-action-primary {
+  background: #1e4070 !important;
+  border-color: #3a6898 !important;
+  color: #d8d4ce !important;
+}
+body.dark .pub-divider { border-top-color: #303048 !important; }
+
+/* Footer */
+body.dark footer { background: #16162a !important; color: #50508a !important; }
+body.dark footer a { color: #606090 !important; }

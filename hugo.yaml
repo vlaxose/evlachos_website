@@ -26,7 +26,9 @@ params:
     theme: classic
     font: minimal
     font_size: M
-    mode: light      # Force light mode
+    mode: light
+    theme_day: classic
+    theme_night: classic
 
   features:
     math:
@@ -65,7 +67,8 @@ languages:
     weight: 1
     menu:
       main:
-        - name: Home
+        - name: ''
+          pre: '<i class="fas fa-home" title="Home"></i>'
           url: '/'
           weight: 5
         - name: News
@@ -89,7 +92,8 @@ languages:
     title: Δρ. Ευάγγελος Βλάχος
     menu:
       main:
-        - name: Αρχική
+        - name: ''
+          pre: '<i class="fas fa-home" title="Αρχική"></i>'
           url: '/'
           weight: 5
         - name: Νέα
