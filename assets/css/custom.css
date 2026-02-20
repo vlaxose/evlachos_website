@@ -76,8 +76,8 @@ footer {
 
 .navbar-avatar {
   display: inline-block;
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -138,9 +138,11 @@ h1, h2, h3, h4, .section-heading h1 {
 /* Organisation links in bio (horizontal with favicon) */
 .org-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.4em 1.0em;
-  margin: 0.25em 0 0.1em;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35em;
+  margin: 0.35em 0 0.1em;
+  text-align: left;
 }
 .org-link {
   display: inline-flex;
@@ -387,6 +389,16 @@ a:hover {
 
 .pub-link-code:hover {
   background: #6f42c1 !important;
+  color: #fff !important;
+}
+
+.pub-link-preview {
+  border-color: #4a7c8e;
+  color: #4a7c8e !important;
+}
+
+.pub-link-preview:hover {
+  background: #4a7c8e !important;
   color: #fff !important;
 }
 
@@ -1176,6 +1188,88 @@ a.pub-title:hover {
   .contact-form-row {
     flex-direction: column;
     gap: 0;
+  }
+}
+
+/* PDF slide panel */
+.pdf-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1040;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+.pdf-overlay--visible {
+  display: block;
+  opacity: 1;
+}
+
+.pdf-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.18);
+}
+.pdf-panel--open {
+  transform: translateX(0);
+}
+
+.pdf-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #e0dbd4;
+  background: #f5f2ee;
+  flex-shrink: 0;
+}
+.pdf-panel-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #444 !important;
+}
+.pdf-panel-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pdf-panel-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #666 !important;
+  padding: 0.2rem 0.4rem;
+  line-height: 1;
+  text-decoration: none !important;
+  transition: color 0.15s;
+}
+.pdf-panel-btn:hover {
+  color: #1a3a5c !important;
+}
+.pdf-frame {
+  flex: 1;
+  border: none;
+  width: 100%;
+}
+
+body.pdf-panel-active {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .pdf-panel {
+    width: 100%;
   }
 }
 

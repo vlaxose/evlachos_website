@@ -32,29 +32,32 @@ MAILDIR = Path.home() / "Maildir"
 SITE_ROOT = Path(__file__).resolve().parent.parent
 POSTS_DIR = SITE_ROOT / "content" / "post"
 
-# Your email addresses (lowercased for matching)
+# Your email address (lowercased for matching)
 MY_EMAILS = [
     "evlachos@athenarc.gr",
-    "vlachose@upatras.gr",
 ]
 
-# Broader identity tokens — checked in From/To/CC/Delivered-To headers
-IDENTITY_TOKENS = ["evlachos", "vlachose", "athenarc.gr"]
+# Identity tokens — checked in From/To/CC/Delivered-To headers
+IDENTITY_TOKENS = ["evlachos@athenarc.gr"]
 
 # Greek + English keywords that hint at professional/academic relevance.
 # Checked in subject AND body so we catch mailing-list emails too.
 KEYWORDS_SUBJECT = [
-    # Greek
-    "πρακτική", "άσκηση", "άσκησης", "διδασκαλία", "μεταπτυχιακ",
+    # Greek — Internships / Practical Training (high priority)
+    "πρακτική", "άσκηση", "άσκησης", "πρακτικ", "θέση", "θέσεις",
+    "προκήρυξη", "αγγελία", "intern",
+    # Greek — Academic
+    "διδασκαλία", "μεταπτυχιακ",
     "διδακτορ", "ερευνητ", "δημοσίευ", "συνέδρι", "βραβεί",
     "πρόσκληση", "υποτροφ", "χρηματοδότηση", "πρόγραμμα",
-    "αποτελέσμ", "πρακτικ", "εκλογ", "διοικητικ", "συμβούλι",
+    "αποτελέσμ", "εκλογ", "διοικητικ", "συμβούλι",
     "επιτροπ", "πανεπιστημ",
     # English
     "paper", "conference", "journal", "award", "grant", "publication",
     "invited", "keynote", "review", "accepted", "submitted",
     "defense", "thesis", "phd", "proposal", "horizon",
-    "erasmus", "internship", "fellowship",
+    "erasmus", "internship", "fellowship", "position", "opening",
+    "postdoc", "vacancy", "call for",
     # Project-specific
     "isac", "6g", "uav", "swarm",
     # Administrative
@@ -68,7 +71,9 @@ KEYWORDS_BODY = [
     "keynote", "invited talk", "invited speaker",
     "election", "elected", "appointed",
     "εγκρίθηκε", "δημοσιεύτηκε", "βραβείο",
-    "πρακτική άσκηση", "πρακτική",
+    "πρακτική άσκηση", "πρακτική", "θέση εργασίας",
+    "internship position", "intern position", "open position",
+    "call for applications", "θέσεις πρακτικής",
 ]
 
 # Folders to skip entirely
@@ -204,24 +209,34 @@ and the University of Patras, Greece. His fields include wireless communications
 6G, UAVs, machine learning for communications, and ISAC (Integrated Sensing and Communication).
 
 Your job: decide if an email describes something **newsworthy** for his professional website's \
-"News" section. Newsworthy items include:
+"News" section.
+
+═══ NEWSWORTHY (mark as true) ═══
   • Paper accepted / published in a journal or conference
   • Award, distinction, or best-paper prize
   • New funded project or grant (EU Horizon, national, etc.)
   • Invited talk, keynote, or panel participation
   • PhD / MSc defense or graduation of a student he supervises
   • Appointment, election, or board meeting (e.g. ΔΣ / Board of Directors)
-  • Internship / practical training (Πρακτική Άσκηση) announcement he is involved in
+  • Internship positions / Πρακτική Άσκηση — ANY posting, announcement, call for interns, \
+    or update about internship/practical training positions. These are ALWAYS newsworthy.
+  • Open positions: job postings, research assistant calls, postdoc openings
   • Major event organisation (conference, workshop, summer school)
+  • Collaboration announcements, MoUs, new partnerships
 
-NOT newsworthy: routine admin, spam, newsletter digests, general university announcements \
-that don't directly involve him, social events, IT notifications, mailing-list noise.
+═══ NOT NEWSWORTHY (mark as false) ═══
+  • Routine admin (password resets, IT maintenance, room bookings)
+  • Spam or marketing
+  • Newsletter digests with no specific item about him
+  • General university announcements that don't involve his group or field
+  • Social/holiday greetings
+  • Mailing-list noise unrelated to his work
 
 Respond ONLY with a JSON object (no extra text):
 {
   "newsworthy": true/false,
   "confidence": 0.0-1.0,
-  "category": "paper|award|grant|talk|defense|appointment|internship|event|other",
+  "category": "paper|award|grant|talk|defense|appointment|internship|position|event|other",
   "title": "Short English title for the news post",
   "summary": "2-3 sentence English summary suitable for a website news section",
   "tags": ["relevant", "tags"]

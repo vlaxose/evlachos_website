@@ -23,9 +23,28 @@
 {{ if $item.Params.doi }}{{ $bib = printf "%s, doi={%s}" $bib $item.Params.doi }}{{ end }}
 {{ $bib = printf "%s}" $bib }}
 
+{{/* --- Standard citation (IEEE style) --- */}}
+{{ $citeAuthors := slice }}
+{{ range $item.Params.authors }}
+  {{ $parts := split . ", " }}
+  {{ if eq (len $parts) 2 }}
+    {{ $citeAuthors = $citeAuthors | append (printf "%s %s" (index $parts 1) (index $parts 0)) }}
+  {{ else }}
+    {{ $citeAuthors = $citeAuthors | append . }}
+  {{ end }}
+{{ end }}
+{{ $authStr := delimit $citeAuthors ", " }}
+{{ $citeVenuePrefix := "" }}
+{{ if not $is_journal }}{{ $citeVenuePrefix = "in " }}{{ end }}
+{{ $cite := printf "%s, \"%s,\" %s%s, %s" $authStr $item.Title $citeVenuePrefix $venue_bib $year }}
+{{ if $item.Params.doi }}{{ $cite = printf "%s. doi: %s" $cite $item.Params.doi }}{{ end }}
+
 <div class="pub-row">
   <div class="pub-index">
     <span class="pub-num">{{ sub $total .index }}</span>
+  </div>
+  <div class="pub-year-col">
+    <a href="#" class="pub-year pub-year-clickable" data-year="{{ $year }}" title="Filter by {{ $year }}">{{ $year }}</a>
   </div>
   <div class="pub-meta">
     <span class="pub-type pub-type-clickable {{ if $is_journal }}pub-type-journal{{ else if $is_book }}pub-type-book{{ else }}pub-type-conf{{ end }}" data-pubtype="{{ $pubtype }}" title="Filter by this type">
@@ -34,9 +53,6 @@
     {{ $slug := path.Base (strings.TrimRight "/" $item.File.Dir) }}
     {{ $views := index site.Data.ieee_views $slug }}
     {{ if $views }}<span class="pub-views" title="IEEE Xplore total downloads"><i class="fas fa-download"></i> {{ $views }}</span>{{ end }}
-  </div>
-  <div class="pub-year-col">
-    <a href="#" class="pub-year pub-year-clickable" data-year="{{ $year }}" title="Filter by {{ $year }}">{{ $year }}</a>
   </div>
   <div class="pub-links">
     {{ with $item.Params.doi }}
@@ -50,14 +66,17 @@
     {{ $resource := $item.Resources.GetMatch "paper.pdf" }}
     {{ with $resource }}
       <a href="{{ .RelPermalink }}" target="_blank" rel="noopener" class="pub-link-btn pub-link-pdf">PDF</a>
+      <a href="#" class="pub-link-btn pub-link-preview js-open-pdf" data-pdf="{{ .RelPermalink }}" title="Preview PDF">Preview</a>
     {{ else }}
       {{ with $item.Params.url_pdf }}
         <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link-btn pub-link-pdf">PDF</a>
+        <a href="#" class="pub-link-btn pub-link-preview js-open-pdf" data-pdf="{{ . }}" title="Preview PDF">Preview</a>
       {{ end }}
     {{ end }}
   </div>
   <div class="pub-actions">
     <a href="#" class="pub-link-btn pub-link-bib js-copy-bib" data-bib="{{ $bib }}" title="Copy BibTeX to clipboard">BibTeX</a>
+    <a href="#" class="pub-link-btn pub-link-cite js-copy-cite" data-citation="{{ $cite }}" title="Copy citation to clipboard">Cite</a>
     {{ with $item.Params.url_code }}
       <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link-btn pub-link-code" title="View code on GitHub">Code</a>
     {{ end }}
@@ -74,7 +93,9 @@
         {{- if eq (len $parts) 2 -}}
           {{- $display = printf "%s %s" (index $parts 1) (index $parts 0) -}}
         {{- end -}}
-        {{- if strings.Contains $author "Vlachos" -}}<strong>{{- $display -}}</strong>
+        {{- if strings.Contains $author "Vlachos" -}}
+          {{- $display = replace $display "E. Vlachos" "Evangelos Vlachos" -}}
+          <strong>{{- $display -}}</strong>
         {{- else -}}{{- $display -}}
         {{- end -}}
       {{- end -}}

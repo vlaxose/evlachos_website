@@ -73,7 +73,9 @@
       "Bash(DOI=\"10.1109/tgcn.2019.2931613\")",
       "WebFetch(domain:www.isi.gr)",
       "WebFetch(domain:www.athenarc.gr)",
-      "Bash(# Try the ATHENA en homepage which may have English logo curl -sL --insecure --max-time 15 -A \"\"Mozilla/5.0\"\" \"\"https://www.athenarc.gr/en\"\" 2>&1 grep -i \"\"logo\\\\|img\\\\|favicon\\\\|icon\"\" /tmp/athena_en.html)"
+      "Bash(# Try the ATHENA en homepage which may have English logo curl -sL --insecure --max-time 15 -A \"\"Mozilla/5.0\"\" \"\"https://www.athenarc.gr/en\"\" 2>&1 grep -i \"\"logo\\\\|img\\\\|favicon\\\\|icon\"\" /tmp/athena_en.html)",
+      "Bash(pkill:*)",
+      "Bash(pgrep:*)"
     ]
   }
 }
