@@ -1637,3 +1637,99 @@ body.dark .pub-divider { border-top-color: #303048 !important; }
 /* Footer */
 body.dark footer { background: #16162a !important; color: #50508a !important; }
 body.dark footer a { color: #606090 !important; }
+
+/* Dual logo: light/dark mode switching */
+.logo-light { display: inline-block; }
+.logo-dark  { display: none; }
+body.dark .logo-light { display: none; }
+body.dark .logo-dark  { display: inline-block; }
+
+/* ── Settings (gear) dropdown ───────────────────────────────────────────── */
+.settings-toggle {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.3em;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+
+.settings-lang-badge {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #888;
+  line-height: 1;
+}
+
+.settings-menu {
+  min-width: 148px;
+  padding: 0.4rem 0;
+  border: 1px solid #e0dbd4;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.settings-section-header {
+  font-size: 0.58rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #bbb;
+  padding: 0.55rem 1rem 0.2rem;
+  pointer-events: none;
+}
+
+.settings-item-icon {
+  width: 1rem;
+  text-align: center;
+  margin-right: 0.45rem;
+  color: #aaa;
+  font-size: 0.78rem;
+  flex-shrink: 0;
+}
+
+.settings-menu .dropdown-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  padding: 0.3rem 1rem;
+}
+
+.settings-lang-active {
+  cursor: default;
+  font-weight: 600;
+  color: #1a3a5c !important;
+  opacity: 1 !important;
+}
+
+.settings-lang-active .settings-item-icon {
+  color: #1a3a5c;
+}
+
+.settings-menu .dropdown-divider {
+  margin: 0.3rem 0;
+  border-color: #e8e4df;
+}
+
+/* Dark mode overrides */
+body.dark .settings-lang-badge { color: #60608a; }
+
+body.dark .settings-menu {
+  background: #202038 !important;
+  border-color: #303048 !important;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+}
+
+body.dark .settings-section-header { color: #40406a !important; }
+
+body.dark .settings-menu .dropdown-item { color: #b8b8d0 !important; }
+body.dark .settings-menu .dropdown-item:hover {
+  background: #282840 !important;
+  color: #d8d4ce !important;
+}
+body.dark .settings-item-icon { color: #50508a !important; }
+
+body.dark .settings-lang-active { color: #80b8f0 !important; }
+body.dark .settings-lang-active .settings-item-icon { color: #80b8f0 !important; }
+
+body.dark .settings-menu .dropdown-divider { border-color: #303048 !important; }
