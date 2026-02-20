@@ -269,10 +269,16 @@ a:hover {
 }
 
 .pub-year {
-  font-size: 0.8rem;
+  display: inline-block;
+  font-size: 0.65rem;
   font-weight: 600;
-  color: #888 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
   white-space: nowrap;
+  background: #ede9e4;
+  color: #666 !important;
 }
 
 .pub-views {
@@ -459,6 +465,50 @@ a.pub-title:hover {
 .pub-filters.form-control:focus {
   border-color: #c8d6e5 !important;
   box-shadow: 0 0 0 0.15rem rgba(26, 58, 92, 0.15) !important;
+}
+
+/* Stats collapsible toggle */
+.stats-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0;
+  border: 1px solid #e0dbd4;
+  border-radius: 6px;
+  background: #f5f2ee;
+  user-select: none;
+  transition: background 0.15s ease;
+}
+.stats-toggle:hover {
+  background: #ede9e4;
+}
+.stats-toggle-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #444 !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.stats-toggle-chevron {
+  font-size: 0.75rem;
+  color: #888 !important;
+  transition: transform 0.25s ease;
+}
+.stats-toggle[aria-expanded="true"] .stats-toggle-chevron {
+  transform: rotate(180deg);
+}
+
+/* Collapsible panel */
+.stats-panel {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.35s ease;
+}
+.stats-panel--open {
+  max-height: 600px;
 }
 
 /* Scholar metrics dashboard */

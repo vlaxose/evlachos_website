@@ -66,7 +66,15 @@
     </div>
     <div class="pub-authors-line">
       {{- range $index, $author := $item.Params.authors -}}
-        {{- if gt $index 0 }}, {{ end -}}{{ $author }}
+        {{- if gt $index 0 }}, {{ end -}}
+        {{- $parts := split $author ", " -}}
+        {{- $display := $author -}}
+        {{- if eq (len $parts) 2 -}}
+          {{- $display = printf "%s %s" (index $parts 1) (index $parts 0) -}}
+        {{- end -}}
+        {{- if strings.Contains $author "Vlachos" -}}<strong>{{- $display -}}</strong>
+        {{- else -}}{{- $display -}}
+        {{- end -}}
       {{- end -}}
     </div>
     <div class="pub-venue-line">

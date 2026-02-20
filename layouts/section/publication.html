@@ -29,8 +29,13 @@
     {{ $.Scratch.Set (printf "pubs_%s" $year) (add $cur 1) }}
   {{ end }}
 
-  {{/* Scholar Metrics Dashboard */}}
+  {{/* Scholar Metrics Dashboard — collapsible */}}
   {{ with site.Data.scholar }}
+  <div class="stats-toggle" id="stats-toggle" aria-expanded="false" aria-controls="stats-panel">
+    <span class="stats-toggle-label"><i class="fas fa-chart-bar"></i> Publication Statistics</span>
+    <i class="fas fa-chevron-down stats-toggle-chevron"></i>
+  </div>
+  <div class="stats-panel" id="stats-panel" aria-hidden="true">
   <div class="scholar-dashboard">
     <div class="scholar-metrics">
       <div class="scholar-metric">
@@ -93,6 +98,7 @@
       &middot; Updated {{ .last_updated }}
     </div>
   </div>
+  </div><!-- /.stats-panel -->
   {{ end }}
 
   <div class="row">
@@ -157,6 +163,19 @@
 </div>
 
 <script>
+/* --- Stats panel toggle --- */
+(function () {
+  var toggle = document.getElementById('stats-toggle');
+  var panel  = document.getElementById('stats-panel');
+  if (!toggle || !panel) return;
+  toggle.addEventListener('click', function () {
+    var open = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!open));
+    panel.setAttribute('aria-hidden', String(open));
+    panel.classList.toggle('stats-panel--open', !open);
+  });
+})();
+
 document.body.addEventListener('click', function (e) {
   /* --- pub-type label click → filter by type --- */
   var typeEl = e.target.closest('.pub-type-clickable');
