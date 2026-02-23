@@ -23,6 +23,11 @@ section {
   font-family: "Fira Sans", sans-serif !important;
 }
 
+/* Reduce the theme's default 110px vertical padding to something compact */
+.home-section {
+  padding: 40px 0 !important;
+}
+
 /* Navbar: subtle bottom border instead of shadow, ivory background */
 .navbar,
 .dark .navbar {
@@ -481,6 +486,11 @@ a.pub-title:hover {
 }
 
 /* News listing */
+.news-type-milestone {
+  background: #5a7a4a;
+  color: #fff !important;
+}
+
 .news-type {
   display: inline-block;
   font-size: 0.65rem;

@@ -1,9 +1,28 @@
 {{ $item := .item }}
 {{ $date := $item.Date.Format "Jan 2006" }}
 
+{{ $pubType  := $item.Params.pub_type }}
+{{ $category := index ($item.Params.categories | default (slice "")) 0 }}
+
+{{ $labelText  := "News" }}
+{{ $labelClass := "news-type" }}
+{{ if eq $pubType "journal" }}
+  {{ $labelText  = "Journal" }}
+  {{ $labelClass = "pub-type pub-type-journal" }}
+{{ else if eq $pubType "conf" }}
+  {{ $labelText  = "Conf" }}
+  {{ $labelClass = "pub-type pub-type-conf" }}
+{{ else if eq $pubType "book" }}
+  {{ $labelText  = "Book" }}
+  {{ $labelClass = "pub-type pub-type-book" }}
+{{ else if eq $category "milestone" }}
+  {{ $labelText  = "Milestone" }}
+  {{ $labelClass = "news-type news-type-milestone" }}
+{{ end }}
+
 <div class="pub-row">
   <div class="pub-meta">
-    <span class="news-type">News</span>
+    <span class="{{ $labelClass }}">{{ $labelText }}</span>
     <span class="pub-year">{{ $date }}</span>
   </div>
   <div class="pub-details">
