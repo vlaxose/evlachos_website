@@ -2,13 +2,14 @@
 widget: pages
 headless: true
 weight: 20
-title: Πρόσφατες Δημοσιεύσεις
+title: Επιλεγμένες Δημοσιεύσεις
 subtitle:
 content:
   filters:
     folders:
       - publication
-  count: 10
+    featured_only: true
+  count: 6
   offset: 0
   order: desc
 design:

@@ -99,7 +99,14 @@
       "Bash(scripts/venv/bin/python3:*)",
       "Bash(tail:*)",
       "Bash(head:*)",
-      "Bash(grep ^summary::*)"
+      "Bash(grep ^summary::*)",
+      "Bash(crontab:*)",
+      "Bash(echo no user units:*)",
+      "Bash(bash:*)",
+      "Bash(rc-update show)",
+      "Bash(rc-update show default)",
+      "Bash(rc-status --all)",
+      "Bash(sudo rc-service:*)"
     ]
   }
 }

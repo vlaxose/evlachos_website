@@ -4,18 +4,19 @@ MAILDIR="/home/vagos/Maildir"
 TARGET_EMAIL="evlachos@athenarc.gr"
 # Strict list to avoid generic newsletters
 KEYWORDS="submitted|manuscript|submission|peer review|decision|journal|accepted|rejected|revision|deadline|due"
-MODEL="qwen2.5-coder:7b"
-CURRENT_DATE="February 18, 2026"
+MODEL="llama3:latest"
+CURRENT_DATE=$(date '+%B %-d, %Y')
 
-echo "Step 1: Filtering for Athena RC emails from 2026..."
+CURRENT_YEAR=$(date '+%Y')
+echo "Step 1: Filtering for Athena RC emails from $CURRENT_YEAR..."
 
 # 1. Find all files
 # 2. Grep for your email address
-# 3. Grep for the actual year 2026 in the Date header
+# 3. Grep for the current year in the Date header
 # 4. Grep for your keywords
 SUBJECT_LIST=$(find "$MAILDIR/new" "$MAILDIR/cur" -type f -print0 | \
     xargs -0 grep -lEi "$TARGET_EMAIL" | \
-    xargs grep -l "Date: .* 2026" | \
+    xargs grep -l "Date: .* $CURRENT_YEAR" | \
     xargs grep -iE "$KEYWORDS" -l | \
     xargs grep -ih "^Subject: " | \
     sed 's/[Ss]ubject: //g' | \
@@ -23,7 +24,7 @@ SUBJECT_LIST=$(find "$MAILDIR/new" "$MAILDIR/cur" -type f -print0 | \
     sort | uniq)
 
 if [ -z "$SUBJECT_LIST" ]; then
-    echo "No relevant 2026 emails found for $TARGET_EMAIL."
+    echo "No relevant $CURRENT_YEAR emails found for $TARGET_EMAIL."
     exit 0
 fi
 
