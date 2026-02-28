@@ -79,7 +79,18 @@
     {{ with $item.Params.url_arxiv }}
       <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link-btn pub-link-arxiv">arXiv</a>
     {{ end }}
-    {{/* PDF and Preview hidden — IEEE copyright restrictions */}}
+    {{ $pdf := "" }}
+    {{ $pdfRes := $item.Resources.GetMatch "paper.pdf" }}
+    {{ with $pdfRes }}
+      {{ $pdf = .RelPermalink }}
+    {{ else }}
+      {{ with $item.Params.url_pdf }}
+        {{ $pdf = . | relURL }}
+      {{ end }}
+    {{ end }}
+    {{ with $pdf }}
+      <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link-btn pub-link-pdf"><i class="fas fa-file-pdf"></i> PDF</a>
+    {{ end }}
   </div>
   <div class="pub-actions">
     <a href="#" class="pub-link-btn pub-link-bib js-copy-bib" data-bib="{{ $bib }}" title="Copy BibTeX to clipboard">BibTeX</a>
