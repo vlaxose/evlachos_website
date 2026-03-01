@@ -23,6 +23,6 @@ tags: ["Research", "6G", "UAVs"]
 
 These results demonstrate that the proposed matrix completion technique achieves near-optimal performance with significantly fewer known entries (34% for K=10), highlighting its efficiency in recovering the full correlation matrices needed for optimal beamforming.
 
-{{< figure src="fig4.png" caption="Convergence curves for the beamforming vector estimation, showing the approach converging to the optimal beamformer after multiple iterations." >}}
+{{< figure src="fig1.png" caption="Separate NMSE convergence of correlation matrices R(t) (top) and G(t) (bottom), comparing full-entry recovery against logarithmic subsampling strategies." >}}
 
-These curves confirm that the iterative process successfully computes the optimal beamforming vector, leading to substantial SNR improvement and validating the effectiveness of the matrix completion approach in practical scenarios.
+The results show that both matrices converge reliably using only O(K log K) known entries, validating the scalability and practicality of the matrix completion approach for distributed beamforming.

@@ -19,11 +19,11 @@ tags: ["Research", "6G", "UAVs"]
 
 ## Results & Insights
 
-{{< figure src="fig4.png" caption="BER comparison versus SNR for low Doppler spread and 4-QAM modulation." >}}
-This figure shows that the proposed OSIC equalizer outperforms existing methods at low SNR, highlighting its effectiveness in mitigating ICI even under less severe channel conditions.
+{{< figure src="fig4.png" caption="Complexity order of the proposed ICI equalization method versus standard vehicular communication standards (V2V, Wi-Fi, WiMAX, LTE, DVB-T) as a function of Doppler spread and OFDM size N." >}}
+The proposed Galerkin-based equalizer achieves O(N) complexity for typical vehicular channels, making it significantly more efficient than full ICI cancellation approaches that require O(N²) or O(N⁴) operations.
 
-{{< figure src="fig5.png" caption="BER comparison versus SNR for medium Doppler spread and 4-QAM modulation." >}}
-The results indicate that the proposed algorithm maintains a performance advantage over benchmarks at medium Doppler spreads, confirming its robustness.
+{{< figure src="fig1.png" caption="BER versus SNR comparison of the proposed OSIC equalizer against benchmark schemes for low Doppler spread and 4-QAM modulation." >}}
+The proposed method closely tracks the performance of full OSIC while operating at a fraction of the complexity, demonstrating its practical viability for vehicular OFDM systems.
 
-{{< figure src="fig6.png" caption="BER comparison versus SNR for high Doppler spread and 4-QAM modulation." >}}
-The simulation results demonstrate that the proposed equalizer achieves lower BER values than existing nonbanded ICI cancellation schemes even at high Doppler spreads, validating its superior performance in challenging vehicular environments.
+{{< figure src="fig2.png" caption="BER versus SNR comparison for medium and high Doppler spread scenarios, illustrating robustness of the proposed equalizer under severe ICI conditions." >}}
+The results confirm that the Galerkin projection approach maintains performance gains over banded approximation benchmarks even as Doppler spread increases, validating its suitability for high-mobility environments.

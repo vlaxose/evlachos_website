@@ -9,3 +9,8 @@ featured: false
 publication: "*Submitted to IEEE International Conference on Communications (ICC)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Proposes a decentralized MPC framework that jointly optimizes UAV trajectory planning and high-frequency MIMO communication performance under realistic multipath channel conditions.
+- Integrates ergodic spectral efficiency derived from location-dependent channel models into the control cost function, enabling communication-aware path planning.
+- Balances three competing objectives — mission time, probabilistic collision safety under stochastic disturbances, and uplink ergodic rate — within a unified control framework.

@@ -20,14 +20,5 @@ tags: ["Research", "6G", "UAVs"]
 
 ## Results & Insights
 
-{{< figure src="fig2.png" caption="Convergence behavior of the proposed ADMM solution for hybrid beamforming and bit allocation at the transmitter and receiver." >}}
-The ADMM algorithm converges quickly for both the transmitter and receiver, demonstrating the efficiency of the proposed optimization method.
-
-{{< figure src="fig3.png" caption="Energy efficiency (EE) and spectral efficiency (SE) versus signal-to-noise ratio (SNR) for the proposed dynamic bit allocation approach compared to fixed bit resolution benchmarks." >}}
-The proposed dynamic bit allocation achieves significantly higher energy efficiency (EE) and spectral efficiency (SE) compared to benchmarks with fixed bit resolutions, especially at higher SNR levels.
-
-{{< figure src="fig4.png" caption="Energy efficiency (EE) and spectral efficiency (SE) versus number of transmit antennas (NT) for the proposed dynamic bit allocation approach compared to fixed bit resolution benchmarks." >}}
-The proposed dynamic bit allocation maintains superior energy efficiency (EE) and spectral efficiency (SE) across different numbers of transmit antennas (NT), outperforming fixed bit resolution benchmarks.
-
-{{< figure src="fig5.png" caption="Energy efficiency (EE) performance versus number of bits allocated to the DAC/ADC resolution matrix for different SNR levels." >}}
-Increasing the number of bits allocated to the DAC/ADC resolution matrix improves energy efficiency (EE), with the optimal allocation varying with SNR levels.
+{{< figure src="fig1.png" caption="System architecture of the mmWave hybrid MIMO system with low-resolution DACs/ADCs, illustrating the three-part decomposition of the hybrid precoder/combiner and the beam training phase." >}}
+The proposed three-part decomposition enables joint optimization of analog beamforming, bit resolution allocation, and digital combining, forming the foundation of the energy-efficient end-to-end design.

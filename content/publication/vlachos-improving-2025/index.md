@@ -20,11 +20,8 @@ tags: ["Research", "6G", "UAVs"]
 
 ## Results & Insights
 
-{{< figure src="fig2.png" caption="Comparison of channel estimation performance between the proposed state-assisted method and benchmark schemes across different UAV velocities." >}}
+{{< figure src="fig1.png" caption="Simulated UAV flight scenarios and Kalman-based position estimation error across different trajectory profiles." >}}
+The state-space model accurately tracks UAV position across diverse scenarios, confirming that UAV motion data can be reliably incorporated into the channel estimation process.
+
+{{< figure src="fig2.png" caption="Channel estimation NMSE comparison between the proposed state-assisted method and benchmark schemes across different UAV velocities." >}}
 The proposed estimator outperforms benchmark methods, particularly at higher UAV speeds, highlighting the effectiveness of incorporating state-space information for accurate channel estimation.
-
-{{< figure src="fig4.png" caption="Performance of the proposed estimator in tracking channel variations within the coherence time of consecutive OFDM symbols." >}}
-The estimator maintains low error levels even when tracking rapid channel changes, demonstrating its suitability for high-frequency, time-sensitive mMIMO-UAV communications.
-
-{{< figure src="fig5.png" caption="Convergence behaviour of the proposed Algorithm 1 for estimating the channel state under different initialization conditions." >}}
-Algorithm 1 exhibits rapid convergence with stable performance across various initialization scenarios, indicating its robustness and practical applicability for real-time channel estimation.

@@ -10,3 +10,8 @@ featured: false
 publication: "*Book Chapter (submitted)*"
 tags: ["Research", "6G", "UAVs"]
 ---
+
+## Key Contributions
+- Proposes a semi-passive RIS architecture with RF chains that enables active channel estimation via tunable absorption phase profiles, eliminating the need for external pilot injection.
+- Introduces a channel estimation protocol exploiting beamspace sparsity and low-rank structure of extremely large MIMO channels, solved efficiently via ADMM.
+- Demonstrates how RIS-side channel estimates can be leveraged to autonomously optimize phase-quantized reflection coefficients, enabling self-configuring RIS operation.
