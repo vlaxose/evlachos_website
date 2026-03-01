@@ -126,6 +126,7 @@
           {{- $venueDisplay | markdownify -}}
         {{ end }}
       {{ end }}
+      {{ if $item.Params.submitted }}<span class="pub-under-review">Under Review</span>{{ end }}
     </div>
   </div>
 </div>

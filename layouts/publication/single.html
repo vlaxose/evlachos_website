@@ -32,6 +32,7 @@
         {{ $pub_type_display }}
       </span>
       {{ end }}
+      {{ if .Params.submitted }}<span class="pub-under-review-tag">Under Review</span>{{ end }}
       <span class="pub-date-tag">{{ .Date.Format "January 2006" }}</span>
     </div>
 

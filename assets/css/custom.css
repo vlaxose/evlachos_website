@@ -530,6 +530,38 @@ a.pub-title:hover {
   color: #2c5a8f !important;
 }
 
+/* Under Review badge — shown on submitted papers */
+.pub-under-review {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #7a3d00;
+  background: #fff4e0;
+  padding: 0.07rem 0.38rem;
+  margin-left: 0.35rem;
+  border: 1px solid #e8990a;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  vertical-align: middle;
+}
+
+/* Larger variant used on single publication page */
+.pub-under-review-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #7a3d00;
+  background: #fff4e0;
+  padding: 0.15rem 0.55rem;
+  margin-left: 0.4rem;
+  border: 1px solid #e8990a;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}
+
 /* Publication filter bar: centered with vertical spacing */
 .pub-filter-bar {
   justify-content: center !important;
@@ -1543,6 +1575,8 @@ body.dark .pub-venue-line { color: #80b8f0 !important; }
 body.dark .pub-venue-link { color: #80b8f0 !important; }
 body.dark .pub-badge { color: #80b8f0 !important; border-color: #244468 !important; }
 body.dark .pub-badge:hover { background-color: #1a2e48 !important; color: #a0c8ff !important; }
+body.dark .pub-under-review { color: #f0b050 !important; background: #2a1e00 !important; border-color: #a06010 !important; }
+body.dark .pub-under-review-tag { color: #f0b050 !important; background: #2a1e00 !important; border-color: #a06010 !important; }
 
 /* Scholar dashboard */
 body.dark .scholar-dashboard { background: #202038 !important; border-color: #303048 !important; }
