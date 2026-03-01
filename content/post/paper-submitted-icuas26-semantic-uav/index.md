@@ -1,16 +1,18 @@
 ---
-title: "New Paper Submitted: Semantically-Informed Predictive Control for Autonomous UAV Connectivity in Urban Environments"
+title: "Two Papers Submitted to ICUAS 2026"
 date: 2026-02-26
-summary: "We submitted a new paper to ICUAS 2026 proposing a two-layer UAV path planner that fuses 60 GHz mmWave radar with visual semantic classification to maximize reliable throughput in urban environments — achieving 65% improvement over signal-strength baselines and 97.3% of a perfect-knowledge oracle."
+summary: "We submitted two papers to ICUAS 2026: one on semantically-informed UAV path planning for mmWave connectivity in urban environments, and one on hardware-aware SE(3) Control Barrier Functions for counter-UAS interception with directed energy payloads."
 tags: ["publication", "research", "UAV", "mmWave"]
 pub_type: "paper"
 categories: ["paper"]
 ---
 
-We are excited to announce the submission of our new paper to the **2026 International Conference on Unmanned Aircraft Systems (ICUAS)**:
+We are excited to announce the submission of two papers to the **2026 International Conference on Unmanned Aircraft Systems (ICUAS)**:
 
-> **Semantically-Informed Predictive Control for Autonomous UAV Connectivity in Urban Environments**
-> Evangelos Vlachos and Dimitrios Tsourounis
+---
+
+### Semantically-Informed Predictive Control for Autonomous UAV Connectivity in Urban Environments
+*Evangelos Vlachos and Dimitrios Tsourounis*
 
 mmWave UAV links suffer in urban environments because radar cannot tell concrete from vegetation — both attenuate the signal, but only concrete truly blocks it. Our framework fuses 60 GHz radar with a YOLO-based semantic classifier to build an *Effective Capacity* field (C_raw × reliability) and plan through it via a two-layer controller:
 
@@ -19,4 +21,13 @@ mmWave UAV links suffer in urban environments because radar cannot tell concrete
 
 Monte Carlo results over 100 independent urban canyon environments show **+65% effective throughput** vs. signal-strength baselines, **0.96 link reliability**, and **97.3% of an oracle** with perfect global channel knowledge.
 
-This work is supported by the EU Horizon Europe project [EUSOME](https://eusome-project.eu/) (Grant Agreement No. 101187121).
+---
+
+### Hardware-Aware SE(3) Control Barrier Functions for Counter-UAS Interceptors with Directed Energy Payloads
+*Evangelos Vlachos, Panayiotis Kolios, and Christos Skliros*
+
+This paper addresses the safety-critical control problem of keeping a directed-energy phased-array payload's boresight aimed at a target UAS during high-speed interception. We develop SE(3) Control Barrier Functions that enforce a field-of-view constraint on the interceptor's attitude while respecting the physical limits of the onboard hardware, solved efficiently via ADMM at high update rates.
+
+---
+
+Both works are supported by the EU Horizon Europe project [EUSOME](https://eusome-project.eu/) (Grant Agreement No. 101187121).
