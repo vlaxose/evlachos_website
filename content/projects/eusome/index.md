@@ -11,7 +11,7 @@ date: "2025-01-15T00:00:00Z"
 external_link: ""
 
 stats:
-  - value: "€5.99M"
+  - value: "€6M"
     label: "EU Contribution"
   - value: "15"
     label: "Partners"

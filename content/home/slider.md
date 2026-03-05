@@ -13,7 +13,7 @@ design:
 content:
   slides:
     - title: EUSOME — Horizon Europe Excellence Hub
-      content: Enabling autonomous aerial systems and U-Space integration across the SE Mediterranean. €5.99M, 15 partners, 2025–2028.
+      content: Enabling autonomous aerial systems and U-Space integration across the SE Mediterranean. €6M, 15 partners, 2025–2028.
       align: left
       background:
         image:

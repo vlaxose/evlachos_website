@@ -15,7 +15,7 @@ Step 2 — Scrape:
     python3 linkedin_scrape.py --company eusome-project           # company page posts
     python3 linkedin_scrape.py --company eusome-project --json    # company posts (JSON)
     python3 linkedin_scrape.py --company eusome-project \
-        --save-posts ./content/post/eusome                        # save posts + images
+        --save-posts ./content/post/eusome  # save posts as Hugo markdown + images
 
     Session cookies are saved after each run so the next run stays valid.
 """
@@ -212,15 +212,27 @@ def scrape_profile():
 
 
 # ── Image downloading ─────────────────────────────────────────────────────────
+def _upgrade_image_url(url):
+    """Replace LinkedIn's shrink_800 size token with shrink_2048 for higher resolution."""
+    import re
+    # feedshare-shrink_800, feedshare-shrink_800_600, etc.
+    url = re.sub(r'(feedshare-shrink_)\d+(_\d+)?', r'feedshare-shrink_2048', url)
+    # profile/company image shrinks
+    url = re.sub(r'(shrink_)\d+_\d+', r'shrink_2048_2048', url)
+    return url
+
+
 def _download_image(ctx, url, dest_path):
-    """Download a LinkedIn CDN image using the authenticated request context."""
-    try:
-        resp = ctx.request.get(url, timeout=15000)
-        if resp.ok:
-            dest_path.write_bytes(resp.body())
-            return True
-    except Exception as e:
-        print(f"  ⚠ image download failed: {e}", file=sys.stderr)
+    """Download a LinkedIn CDN image at highest available resolution."""
+    hi_res_url = _upgrade_image_url(url)
+    for attempt_url in [hi_res_url, url]:  # fall back to original if hi-res fails
+        try:
+            resp = ctx.request.get(attempt_url, timeout=15000)
+            if resp.ok:
+                dest_path.write_bytes(resp.body())
+                return True
+        except Exception as e:
+            print(f"  ⚠ image download failed ({attempt_url[:60]}...): {e}", file=sys.stderr)
     return False
 
 
@@ -336,6 +348,82 @@ def scrape_company_posts(company_slug, max_scroll=10, image_dir=None):
     return _scrape_posts_from_url(url, max_scroll, image_dir)
 
 
+# ── Hugo post creation ────────────────────────────────────────────────────────
+def _parse_linkedin_date(date_str):
+    """
+    Try to turn a LinkedIn relative date string into YYYY-MM-DD.
+    Falls back to today if unparseable.
+    """
+    from datetime import datetime, timedelta
+    today = datetime.today()
+    if not date_str:
+        return today.strftime("%Y-%m-%d")
+    s = date_str.lower().strip()
+    m = re.search(r'(\d+)\s*(hour|day|week|month|year)', s)
+    if m:
+        n, unit = int(m.group(1)), m.group(2)
+        delta = {
+            'hour': timedelta(hours=n),
+            'day':  timedelta(days=n),
+            'week': timedelta(weeks=n),
+            'month': timedelta(days=n * 30),
+            'year':  timedelta(days=n * 365),
+        }.get(unit, timedelta(0))
+        return (today - delta).strftime("%Y-%m-%d")
+    # Try ISO / month-year formats
+    for fmt in ("%Y-%m-%d", "%B %d, %Y", "%b %d, %Y", "%d %B %Y"):
+        try:
+            return datetime.strptime(date_str.strip(), fmt).strftime("%Y-%m-%d")
+        except ValueError:
+            pass
+    return today.strftime("%Y-%m-%d")
+
+
+def save_posts_to_hugo(posts, output_dir, category="eusome"):
+    """Write scraped LinkedIn posts as Hugo markdown files."""
+    import json as _json
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    created = 0
+    for post in posts:
+        text = post.get("text") or ""
+        if not text:
+            continue
+
+        date_str = _parse_linkedin_date(post.get("date", ""))
+
+        # Derive slug from first ~60 chars of text
+        slug_base = re.sub(r"[^\w\s-]", "", text[:60].lower())
+        slug_base = re.sub(r"[\s_]+", "-", slug_base).strip("-")
+        slug = f"{category}-{date_str}-{slug_base}"[:80]
+
+        folder = output_dir / slug
+        folder.mkdir(parents=True, exist_ok=True)
+        post_path = folder / "index.md"
+        if post_path.exists():
+            continue  # skip duplicates
+
+        summary = text[:200].rstrip() + ("..." if len(text) > 200 else "")
+        # Escape quotes for YAML
+        title = text[:80].replace('"', "'").rstrip()
+        summary_yaml = summary.replace('"', "'")
+
+        images_md = ""
+        for img_path in post.get("images", []):
+            fname = Path(img_path).name
+            import shutil
+            shutil.copy2(img_path, folder / fname)
+            images_md += f"\n![Post image]({fname})\n"
+
+        content = f'---\ntitle: "{title}"\ndate: {date_str}\nsummary: "{summary_yaml}"\ncategories: ["{category}"]\n---\n\n{text}\n{images_md}'
+        post_path.write_text(content, encoding="utf-8")
+        print(f"  + {slug}", file=sys.stderr)
+        created += 1
+
+    print(f"Created {created} new posts in {output_dir}", file=sys.stderr)
+
+
 # ── CLI ───────────────────────────────────────────────────────────────────────
 def _arg(flag):
     """Return value after flag in sys.argv, or None."""
@@ -353,11 +441,18 @@ if __name__ == "__main__":
     as_json      = "--json"    in sys.argv
     get_posts    = "--posts"   in sys.argv
     company_slug = _arg("--company")
-    image_dir    = _arg("--images")   # download images to this dir
+    image_dir    = _arg("--images")    # download images to this dir
+    save_posts   = _arg("--save-posts")  # Hugo output dir; also downloads images there
+
+    # --save-posts implies downloading images into the output dir
+    if save_posts and not image_dir:
+        image_dir = save_posts
 
     if company_slug:
         result = scrape_company_posts(company_slug, image_dir=image_dir)
-        if as_json:
+        if save_posts:
+            save_posts_to_hugo(result, save_posts, category=company_slug.replace("-", "_"))
+        elif as_json:
             print(json.dumps(result, indent=2, ensure_ascii=False))
         else:
             print(f"\n{len(result)} posts from '{company_slug}':\n")
@@ -368,7 +463,9 @@ if __name__ == "__main__":
                 print()
     elif get_posts:
         result = scrape_my_posts(image_dir=image_dir)
-        if as_json:
+        if save_posts:
+            save_posts_to_hugo(result, save_posts, category="news")
+        elif as_json:
             print(json.dumps(result, indent=2, ensure_ascii=False))
         else:
             print(f"\n{len(result)} posts found:\n")
