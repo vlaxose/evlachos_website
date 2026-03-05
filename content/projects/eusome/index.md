@@ -8,11 +8,22 @@ tags:
 - U-Space
 date: "2025-01-15T00:00:00Z"
 
-# Optional: Add an external link if you want the project title to click through to the official site
 external_link: ""
 
+stats:
+  - value: "€5.99M"
+    label: "EU Contribution"
+  - value: "15"
+    label: "Partners"
+  - value: "4 years"
+    label: "2025–2028"
+  - value: "CSA"
+    label: "Horizon Europe"
+  - value: "101187121"
+    label: "Grant Agreement"
+
 image:
-  caption: 'EUSOME: Transforming regional air mobility'
+  caption: 'EUSOME: Transforming regional air mobility in the SE Mediterranean'
   focal_point: Smart
 ---
 

@@ -1,0 +1,79 @@
+---
+widget: slider
+headless: true
+active: true
+weight: 1
+
+design:
+  slide_height: "280px"
+  is_fullscreen: false
+  loop: true
+  interval: 5000
+
+content:
+  slides:
+    - title: EUSOME — Κόμβος Αριστείας Horizon Europe
+      content: Ενεργοποίηση αυτόνομων εναέριων συστημάτων και ενσωμάτωση U-Space στη ΝΑ Μεσόγειο. €5,99M, 15 εταίροι, 2025–2028.
+      align: left
+      background:
+        image:
+          filename: slides/eusome.jpg
+          filters:
+            brightness: 0.55
+          position: center
+          size: cover
+      link:
+        url: /projects/eusome/
+        text: Δείτε το Έργο
+
+    - title: SPLASH — ISAC για U-Space
+      content: Συνσχεδιασμός κυματομορφών για ταυτόχρονη ραντάρ αίσθηση, επικοινωνίες και έλεγχο σμήνους UAV σε 5G/6G.
+      align: left
+      background:
+        image:
+          filename: slides/splash.jpg
+          filters:
+            brightness: 0.5
+          position: center
+          size: cover
+      link:
+        url: /projects/splash/
+        text: Δείτε το Έργο
+
+    - title: FIRA-DAV — Σύντηξη Ραντάρ-Κάμερας για Detect & Avoid
+      content: Συγχρονισμένο dataset mmWave ραντάρ και κάμερας για ανίχνευση εμποδίων με τεχνητή νοημοσύνη σε αυτόνομα UAV.
+      align: left
+      background:
+        image:
+          filename: slides/firadav.jpg
+          filters:
+            brightness: 0.5
+          position: center
+          size: cover
+      link:
+        url: /projects/firadav/
+        text: Δείτε το Έργο
+
+    - title: Κατανεμημένο MPC για Κατευθυντικά Δίκτυα UAV
+      content: Συνσχεδιασμός κίνησης και ευθυγράμμισης υβριδικής δέσμης για σμήνη UAV σε mmWave. Μείωση αποτυχίας ζεύξης 96%. Υποβλήθηκε σε IEEE TCNS.
+      align: left
+      background:
+        video:
+          filename: tcns_demo.mp4
+          brightness: 0.45
+      link:
+        url: /publication/vlachos-distributed-mpc-tcns-2026/
+        text: Δείτε Δημοσίευση
+
+    - title: Φίλτρο CBF SE(3) — Counter-UAS
+      content: Συναρτήσεις Φραγμού Ελέγχου σε SE(3) για αναχαιτιστές κατευθυνόμενης ενέργειας. Επίσημες εγγυήσεις FoV μέσω ADMM. ICUAS 2026.
+      align: left
+      background:
+        video:
+          filename: cbf_demo.mp4
+          brightness: 0.45
+      link:
+        url: /publication/vlachos-cbf-se3-2026/
+        text: Δείτε Δημοσίευση
+
+---
