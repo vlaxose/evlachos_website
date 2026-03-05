@@ -2292,3 +2292,19 @@ body.dark .dropdown-item:focus {
   background: #1e2840 !important;
   color: #e2eaf5 !important;
 }
+
+/*************************************************
+ * Split Slider Widget — zero padding, full bleed
+ *************************************************/
+.home-section.wg-split-slider {
+  padding: 0 !important;
+  animation: none;
+  animation-delay: unset;
+}
+.home-section.wg-split-slider .home-section-bg {
+  padding: 0 !important;
+}
+.home-section.wg-split-slider .carousel-inner .wg-hero {
+  animation: none;
+  clear: none;
+}

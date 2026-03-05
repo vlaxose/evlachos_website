@@ -23,8 +23,8 @@ stats:
     label: "Grant Agreement"
 
 image:
-  caption: 'EUSOME: Transforming regional air mobility in the SE Mediterranean'
-  focal_point: Smart
+  caption: 'EUSOME Kick-off Meeting, January 2025, University of Cyprus'
+  focal_point: Center
 ---
 
 ## Project Overview
@@ -44,7 +44,7 @@ The project is structured around four primary objectives:
 
 ## My Role
 
-As a researcher at **ATHENA Research Center**, I contribute to EUSOME's work on:
+As **Principal Investigator** for **ISI / ATHENA Research Center**, I lead the institute's participation in EUSOME, covering:
 
 - **6G-integrated U-Space communications** — designing ISAC waveforms for UAV swarm coordination and command-and-control links.
 - **UAV path planning under channel uncertainty** — developing MPC frameworks that optimize trajectory and MIMO ergodic rates jointly.
@@ -57,7 +57,7 @@ Coordinated by the **KIOS Research and Innovation Center of Excellence** at the 
 | Partner | Country | Role |
 |---|---|---|
 | KIOS / University of Cyprus | Cyprus | Coordinator |
-| ATHENA Research Center | Greece | Research |
+| ATHENA Research Center (ISI) | Greece | Research — PI: E. Vlachos |
 | Hellenic Civil Aviation Authority | Greece | Regulation |
 | Aviomania Aircraft | Greece | Industry |
 | Hellenic Drones S.A. | Greece | Industry |

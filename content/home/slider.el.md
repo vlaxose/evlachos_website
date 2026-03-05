@@ -1,25 +1,23 @@
 ---
-widget: slider
+widget: split_slider
 headless: true
 active: true
 weight: 1
 
 design:
   slide_height: "280px"
-  is_fullscreen: false
-  loop: true
   interval: 5000
 
 content:
-  slides:
+  left_slides:
     - title: EUSOME — Κόμβος Αριστείας Horizon Europe
-      content: Ενεργοποίηση αυτόνομων εναέριων συστημάτων και ενσωμάτωση U-Space στη ΝΑ Μεσόγειο. €6M, 15 εταίροι, 2025–2028.
+      content: Kick-off συνάντηση με τους 15 εταίρους, Ιανουάριος 2025, Πανεπιστήμιο Κύπρου. €6M, 4 χρόνια, ΝΑ Μεσόγειος.
       align: left
       background:
         image:
           filename: slides/eusome1.jpg
           filters:
-            brightness: 0.5
+            brightness: 0.45
           position: center
           size: cover
       link:
@@ -82,6 +80,7 @@ content:
         url: /projects/firadav/
         text: Δείτε το Έργο
 
+  right_slides:
     - title: Κατανεμημένο MPC για Κατευθυντικά Δίκτυα UAV
       content: Συνσχεδιασμός κίνησης και ευθυγράμμισης υβριδικής δέσμης για σμήνη UAV σε mmWave. Μείωση αποτυχίας ζεύξης 96%. Υποβλήθηκε σε IEEE TCNS.
       align: left
@@ -103,5 +102,4 @@ content:
       link:
         url: /publication/vlachos-cbf-se3-2026/
         text: Δείτε Δημοσίευση
-
 ---
