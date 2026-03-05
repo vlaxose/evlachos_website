@@ -18,6 +18,9 @@
 {{ else if eq $category "milestone" }}
   {{ $labelText  = "Milestone" }}
   {{ $labelClass = "news-type news-type-milestone" }}
+{{ else if eq $category "eusome" }}
+  {{ $labelText  = "EUSOME" }}
+  {{ $labelClass = "news-type news-type-eusome" }}
 {{ end }}
 
 <div class="pub-row">
@@ -36,7 +39,7 @@
     </div>
     <div class="news-summary-line">
       {{ with $item.Params.summary }}
-        {{ . }}
+        {{ . | plainify | truncate 150 }}
       {{ else }}
         {{ $item.Summary | plainify | truncate 150 }}
       {{ end }}

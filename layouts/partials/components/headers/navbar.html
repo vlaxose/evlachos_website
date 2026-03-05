@@ -44,7 +44,7 @@
             {{with site.Params.header.image.height}}height="{{.}}"{{end}}>
           {{- else -}}
             {{ with $navbar_avatar }}<img src="{{ . }}" alt="{{ site.Title }}" class="navbar-avatar">{{ end -}}
-            <span class="navbar-brand-text"><span class="navbar-brand-name">{{- site.Title -}}</span><span class="navbar-brand-title">Tenure-track Researcher · ATHENA RC</span></span>
+            <span class="navbar-brand-text"><span class="navbar-brand-name">{{- site.Title -}}</span><span class="navbar-brand-title">{{ if eq .Lang "el" }}Εντεταλμένος Ερευνητής · Ε.Κ. ΑΘΗΝΆ{{ else }}Tenure-track Researcher · ATHENA RC{{ end }}</span></span>
           {{- end -}}
         </a>
       </div>
@@ -170,7 +170,7 @@
         </ul>
       </div><!-- /.navbar-collapse -->
 
-      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2 nav-icons-separated">
 
         {{/* Display any social links that the superuser chose to display in the header. */}}
         {{ range where (where (where site.Pages "Section" "authors") ".Params.superuser" true) ".Params.social" "!=" nil }}
@@ -195,34 +195,30 @@
         {{ $show_day_night := site.Params.header.navbar.show_day_night | default true }}
         {{ $has_day_night_themes := (and site.Params.appearance.theme_day site.Params.appearance.theme_night) }}
         {{ $show_translations := site.Params.header.navbar.show_translations | default true }}
-        {{ $show_settings := or (and $has_day_night_themes $show_day_night) (and .IsTranslated $show_translations) }}
-        {{ if $show_settings }}
-        <li class="nav-item dropdown settings-dropdown">
-          <a href="#" class="nav-link settings-toggle" data-toggle="dropdown" aria-haspopup="true" aria-label="Settings">
-            <i class="fas fa-cog" aria-hidden="true"></i>
-            <span class="settings-lang-badge">{{ .Lang | upper }}</span>
+
+        {{/* Dark/Light icon — direct toggle, no dropdown */}}
+        {{ if and $has_day_night_themes $show_day_night }}
+        <li class="nav-item theme-toggle">
+          {{/* Moon: visible in light mode, switches to dark */}}
+          <a href="#" class="nav-link js-set-theme-dark theme-icon-light" aria-label="Switch to dark mode">
+            <i class="fas fa-moon" aria-hidden="true"></i>
           </a>
-          <div class="dropdown-menu dropdown-menu-right settings-menu">
+          {{/* Sun: visible in dark mode, switches to light */}}
+          <a href="#" class="nav-link js-set-theme-light theme-icon-dark" aria-label="Switch to light mode">
+            <i class="fas fa-sun" aria-hidden="true"></i>
+          </a>
+          {{/* Hidden: required by vendor JS which checks all three before wiring any handler */}}
+          <a href="#" class="js-set-theme-auto" style="display:none;" aria-hidden="true"></a>
+        </li>
+        {{ end }}
 
-            {{ if and $has_day_night_themes $show_day_night }}
-            <div class="settings-section-header">{{ i18n "theme_selector" | default "Display" }}</div>
-            <a href="#" class="dropdown-item js-set-theme-light">
-              <i class="fas fa-sun settings-item-icon" aria-hidden="true"></i>
-              <span>{{ i18n "theme_light" | default "Light" }}</span>
-            </a>
-            <a href="#" class="dropdown-item js-set-theme-dark">
-              <i class="fas fa-moon settings-item-icon" aria-hidden="true"></i>
-              <span>{{ i18n "theme_dark" | default "Dark" }}</span>
-            </a>
-            <a href="#" class="dropdown-item js-set-theme-auto">
-              <i class="fas fa-adjust settings-item-icon" aria-hidden="true"></i>
-              <span>{{ i18n "theme_auto" | default "Auto" }}</span>
-            </a>
-            {{ end }}
-
-            {{ if and .IsTranslated $show_translations }}
-            {{ if and $has_day_night_themes $show_day_night }}<div class="dropdown-divider"></div>{{ end }}
-            <div class="settings-section-header">{{ i18n "languages" | default "Language" }}</div>
+        {{/* Language icon */}}
+        {{ if and .IsTranslated $show_translations }}
+        <li class="nav-item dropdown lang-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Switch language">
+            <i class="fas fa-globe" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
             <div class="dropdown-item settings-lang-active">
               <i class="fas fa-check settings-item-icon" aria-hidden="true"></i>
               <span>{{ index site.Data.i18n.languages .Lang }}</span>
@@ -233,8 +229,6 @@
               <span>{{ index site.Data.i18n.languages .Lang }}</span>
             </a>
             {{ end }}
-            {{ end }}
-
           </div>
         </li>
         {{ end }}

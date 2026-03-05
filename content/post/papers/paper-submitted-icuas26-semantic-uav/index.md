@@ -30,4 +30,4 @@ This paper addresses the safety-critical control problem of keeping a directed-e
 
 ---
 
-Both works are supported by the EU Horizon Europe project [EUSOME](https://eusome-project.eu/) (Grant Agreement No. 101187121).
+Both works are supported by the EU Horizon Europe project [EUSOME](https://eusome.eu/) (Grant Agreement No. 101187121).

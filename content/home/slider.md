@@ -17,9 +17,37 @@ content:
       align: left
       background:
         image:
-          filename: slides/eusome.jpg
+          filename: slides/eusome1.jpg
           filters:
-            brightness: 0.55
+            brightness: 0.5
+          position: center
+          size: cover
+      link:
+        url: /projects/eusome/
+        text: View Project
+
+    - title: EUSOME — Field Activities & Workshops
+      content: From consortium plenary meetings to international conferences — advancing the U-Space ecosystem across Europe.
+      align: left
+      background:
+        image:
+          filename: slides/eusome2.jpg
+          filters:
+            brightness: 0.5
+          position: center
+          size: cover
+      link:
+        url: /projects/eusome/
+        text: View Project
+
+    - title: EUSOME — Training & Outreach
+      content: Inspiring the next generation of engineers through hands-on drone demonstrations and Advanced Air Mobility education programmes.
+      align: left
+      background:
+        image:
+          filename: slides/eusome3.jpg
+          filters:
+            brightness: 0.5
           position: center
           size: cover
       link:

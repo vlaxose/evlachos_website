@@ -17,12 +17,12 @@ params:
       align: r
 
   appearance:
-    theme: classic
+    theme: minimal
     font: minimal
     font_size: M
     mode: light
-    theme_day: classic
-    theme_night: classic
+    theme_day: minimal
+    theme_night: minimal
 
   features:
     math:

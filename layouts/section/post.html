@@ -11,12 +11,12 @@
       {{ end }}
 
       {{/* Collect distinct years */}}
-      {{ range .Pages.ByDate.Reverse }}
+      {{ range .RegularPagesRecursive.ByDate.Reverse }}
         {{ $year := print (.Date.Format "2006") }}
         {{ $.Scratch.SetInMap "years" $year $year }}
       {{ end }}
 
-      {{ if .Pages }}
+      {{ if .RegularPagesRecursive }}
       {{/* Year filter bar */}}
       <div class="form-row pub-filter-bar">
         <div class="col-auto">
@@ -38,7 +38,7 @@
       </div>
 
       <div id="news-list">
-        {{ range $index, $item := .Pages.ByDate.Reverse }}
+        {{ range $index, $item := .RegularPagesRecursive.ByDate.Reverse }}
           <div class="news-item" data-year="{{ $item.Date.Format "2006" }}">
             {{ partial "functions/render_view" (dict "page" $ "item" $item "view" "news" "index" $index) }}
           </div>

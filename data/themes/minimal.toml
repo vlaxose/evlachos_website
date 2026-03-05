@@ -1,0 +1,33 @@
+# Theme metadata
+name = "Minimal"
+
+[light]
+  # Primary
+  primary = "#1565c0"
+
+  # Menu — warm ivory to match site background
+  menu_primary = "#faf8f5"
+  menu_text = "#2d2d2d"
+  menu_text_active = "#1a3a5c"
+  menu_title = "#1a1a2e"
+
+  # Home sections
+  home_section_odd = "rgb(250, 248, 245)"
+  home_section_even = "rgb(244, 241, 237)"
+
+[dark]
+  # Primary
+  primary = "#7ab8e8"
+
+  link = "#7ab8e8"
+  link_hover = "#a0ccf0"
+
+  # Menu — deep navy to match dark site background
+  menu_primary = "#161c2d"
+  menu_text = "#ccd6e8"
+  menu_text_active = "#7ab8e8"
+  menu_title = "#e2eaf5"
+
+  # Home sections
+  home_section_odd = "hsla(225, 30%, 16%, 1)"
+  home_section_even = "hsla(225, 30%, 18%, 1)"

@@ -17,9 +17,37 @@ content:
       align: left
       background:
         image:
-          filename: slides/eusome.jpg
+          filename: slides/eusome1.jpg
           filters:
-            brightness: 0.55
+            brightness: 0.5
+          position: center
+          size: cover
+      link:
+        url: /projects/eusome/
+        text: Δείτε το Έργο
+
+    - title: EUSOME — Δραστηριότητες & Workshops
+      content: Από ολομέλειες κοινοπραξίας έως διεθνή συνέδρια — προωθώντας το οικοσύστημα U-Space σε όλη την Ευρώπη.
+      align: left
+      background:
+        image:
+          filename: slides/eusome2.jpg
+          filters:
+            brightness: 0.5
+          position: center
+          size: cover
+      link:
+        url: /projects/eusome/
+        text: Δείτε το Έργο
+
+    - title: EUSOME — Εκπαίδευση & Διάδοση
+      content: Εμπνέοντας την επόμενη γενιά μηχανικών μέσω πρακτικών επιδείξεων drone και εκπαιδευτικών προγραμμάτων για την Προηγμένη Αεροπορική Κινητικότητα.
+      align: left
+      background:
+        image:
+          filename: slides/eusome3.jpg
+          filters:
+            brightness: 0.5
           position: center
           size: cover
       link:

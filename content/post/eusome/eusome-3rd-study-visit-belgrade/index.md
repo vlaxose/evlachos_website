@@ -12,4 +12,4 @@ The study visit brought together researchers and stakeholders from across the EU
 
 The event was organized by Dr. Valentina Janev and colleagues at IMP, and took place on **February 3, 2026**.
 
-This visit is part of the ongoing dissemination and knowledge-transfer activities of the [EUSOME](https://eusome-project.eu/) project (EU Horizon Europe, Grant Agreement No. 101187121), which aims to establish an Excellence Hub bridging European 6G research and aviation regulation in the U-Space domain.
+This visit is part of the ongoing dissemination and knowledge-transfer activities of the [EUSOME](https://eusome.eu/) project (EU Horizon Europe, Grant Agreement No. 101187121), which aims to establish an Excellence Hub bridging European 6G research and aviation regulation in the U-Space domain.

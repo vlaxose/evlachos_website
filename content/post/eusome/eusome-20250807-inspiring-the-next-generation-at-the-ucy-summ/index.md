@@ -1,0 +1,12 @@
+---
+title: "Inspiring the Next Generation at the UCY Summer Academies On 4 July 2025, Prof"
+date: 2025-08-07
+summary: "Inspiring the Next Generation at the UCY Summer Academies On 4 July 2025, Prof. Panayiotis Kolios presented the EUSOME Excellence Hub at the University of Cyprus Summer Academi..."
+tags: ["EUSOME", "AAM", "AdvancedAerialMobility", "transportation", "Uspace", "UAV"]
+categories: ["eusome"]
+---
+
+Inspiring the Next Generation at the UCY Summer Academies On 4 July 2025, Prof. Panayiotis Kolios presented the EUSOME Excellence Hub at the University of Cyprus Summer Academies, engaging with high school and technical school students in the Engineering & Technology Applications Academy. The UCY Summer Academies offer high school students a taste of university life and hands‑on exposure to different fields of study, building inspiration for future academic and career paths. During the session, students were introduced to the Advanced Air Mobility (``) concept and the EUSOME Project’s pioneering work on: Safe autonomous flight Drone guidance frameworks City‑wide path planningThese innovations show how new mobility services can reshape both urban and regional environments, making skies safer and smarter. Through this outreach, EUSOME is helping inspire the next generation of researchers and engineers while showcasing the real‑world impact of our work.EUSOME Project partners :KIOS Research and Innovation Center of Excellence, Hellenic U-space Institute, Athena Research Center, Hellenic Ministry of Digital Governance, Cyprus Ministry of Transport, Communications and Works, Hellenic Drones S.A., Hellenic Civil Aviation Authority, Aviomania Aircraft, GRNET - Greek Research & Technology Network, Cyprus Chamber of Commerce & Industry, Adrestia R&D, Centrum Badań Kosmicznych Polskiej Akademii Nauk, SocialTech Lab, Institute Mihajlo Pupin, EPIRUS - Perifereia Ipeirou, and Mediterranean Adventure Ltd.`` `` `` `` `` `` `` `` `` `` `` `` `` ``
+
+---
+*Source: [EUSOME Project on LinkedIn](https://www.linkedin.com/company/eusome-project/)*

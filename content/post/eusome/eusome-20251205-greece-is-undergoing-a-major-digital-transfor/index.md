@@ -1,0 +1,12 @@
+---
+title: "Greece is undergoing a major digital transformation in its tax and finance sector, led by"
+date: 2025-12-05
+summary: "Greece is undergoing a major digital transformation in its tax and finance sector, led by EUSOME project partner, the Hellenic Ministry of Digital Governance! Leveraging big data, ..."
+tags: ["EUSOME", "AAM", "UAV", "DigitalTwin", "USpace", "AdvancedAerialMobility"]
+categories: ["eusome"]
+---
+
+Greece is undergoing a major digital transformation in its tax and finance sector, led by EUSOME project partner, the Hellenic Ministry of Digital Governance! Leveraging big data, drones, and AI , the country is tackling widespread tax evasion and moving beyond past economic challenges.The new high-tech overhaul, at the heart of the system, is centered on an ultramodern digital center where algorithms analyze millions of real-time transactions across electronic payment, customs, and bank records to flag anomalies with a high potential for illegal activity. Complementing this analysis, drones and live surveillance feeds are deployed to monitor remote and physical locations—from island ports and restaurants to hidden grain silos—providing inspectors with real-time visual evidence to execute targeted raids. This sweeping digitalization effort has been credited with generating a budget surplus, increasing government revenues, and successfully restoring Greece's sovereign bonds to investment grade. Such developments illustrate how digital governance, automation, and intelligent monitoring technologies are reshaping public-sector efficiency, aligning with the broader European shift toward data-driven decision making and resilient digital infrastructures, a vision central to the EUSOME Project’s mission.Find out more ⬇ :https://lnkd.in/eky9pa5AΓενική Γραμματεία Τηλεπικοινωνιών και ΤαχυδρομείωνKonstantinos KarantzalosEUSOME Project partners :KIOS Research and Innovation Center of Excellence, Hellenic U-space Institute, Athena Research Center, Hellenic Ministry of Digital Governance, Cyprus Ministry of Transport, Communications and Works, Hellenic Drones S.A., Hellenic Civil Aviation Authority, Aviomania Aircraft, GRNET - Greek Research & Technology Network, Cyprus Chamber of Commerce & Industry, Adrestia R&D, Centrum Badań Kosmicznych Polskiej Akademii Nauk, SocialTech Lab, Institute Mihajlo Pupin, EPIRUS - Perifereia Ipeirou, and Mediterranean Adventure Ltd.`` `` `` `` `` `` `` `` `` `` `` `` `` `` `` `` ``
+
+---
+*Source: [EUSOME Project on LinkedIn](https://www.linkedin.com/company/eusome-project/)*
