@@ -1186,6 +1186,58 @@ a.pub-title:hover {
   line-height: 1.5;
 }
 
+.teaching-course-code {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #5a7a9a;
+  background: #eef3f8;
+  padding: 0.1em 0.5em;
+  border-radius: 3px;
+  margin-left: 0.4em;
+  vertical-align: middle;
+  letter-spacing: 0.03em;
+}
+
+.teaching-course-meta {
+  padding-left: 1.5rem;
+  margin-top: 0.35rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.teaching-semester {
+  color: #888;
+}
+.teaching-semester i {
+  margin-right: 0.3em;
+  color: #aaa;
+}
+
+.teaching-eclass-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  color: #fff !important;
+  background: #2e7d32;
+  padding: 0.15em 0.6em;
+  border-radius: 3px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background 0.15s;
+}
+.teaching-eclass-link:hover {
+  background: #1b5e20;
+}
+
+body.dark .teaching-course-code { background: #283040; color: #80b8f0; }
+body.dark .teaching-semester { color: #70709a; }
+body.dark .teaching-eclass-link { background: #2e6030; }
+body.dark .teaching-eclass-link:hover { background: #3a7a40; }
+
 @media (max-width: 576px) {
   .teaching-block-header {
     flex-direction: column;

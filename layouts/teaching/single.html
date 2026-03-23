@@ -2,171 +2,88 @@
 
 {{ partial "page_header.html" . }}
 
-{{ $el := eq .Lang "el" }}
-
 <div class="universal-wrapper">
   <div class="teaching-page">
 
-    {{/* ---- University of Patras ---- */}}
+    {{/* ---- Institutions & Courses ---- */}}
+    {{ range .Params.institutions }}
     <div class="teaching-block">
       <div class="teaching-block-header">
         <div class="teaching-block-meta">
-          <span class="teaching-period">2023 – 2025</span>
+          <span class="teaching-period">{{ .period }}</span>
         </div>
         <div class="teaching-block-title-wrap">
-          <h3 class="teaching-institution">{{ if $el }}Τμήμα Φυσικής — Πανεπιστήμιο Πατρών{{ else }}Department of Physics — University of Patras{{ end }}</h3>
-          <span class="teaching-role">{{ if $el }}Λέκτορας{{ else }}Lecturer{{ end }}</span>
+          <h3 class="teaching-institution">{{ .name }}</h3>
+          <span class="teaching-role">{{ .role }}</span>
         </div>
       </div>
 
+      {{ with .programme }}
       <div class="teaching-program-box">
-        <div class="teaching-program-label">{{ if $el }}Πρόγραμμα ΠΜΣ{{ else }}MSc Programme{{ end }}</div>
-        <a href="https://physics.upatras.gr/en/msc-homepage/electronics-and-information-processing/" target="_blank" rel="noopener" class="teaching-program-name">
-          {{ if $el }}Εφαρμογές Φυσικής στην Ατμόσφαιρα και στα Ηλεκτρονικά{{ else }}Applications of Physics in the Atmosphere and in Electronics{{ end }}
+        <div class="teaching-program-label">{{ if $.Params.supervision }}MSc Programme{{ else }}MSc Programme{{ end }}</div>
+        <a href="{{ .url }}" target="_blank" rel="noopener" class="teaching-program-name">
+          {{ .name }}
           <i class="fas fa-external-link-alt" style="font-size:0.7em; margin-left:0.3em;"></i>
         </a>
-        <div class="teaching-program-spec">{{ if $el }}Κατεύθυνση: Ηλεκτρονική &amp; Επεξεργασία Πληροφορίας{{ else }}Specialization: Electronics &amp; Information Processing{{ end }}</div>
+        <div class="teaching-program-spec">{{ .specialization }}</div>
       </div>
+      {{ end }}
 
       <div class="teaching-courses">
+        {{ range .courses }}
         <div class="teaching-course">
           <div class="teaching-course-name">
-            <i class="fas fa-signal"></i>
-            {{ if $el }}
-            <a href="https://physics.upatras.gr/en/pms-courses/digital-telecommunications/" target="_blank" rel="noopener">Ψηφιακές Επικοινωνίες</a>
+            <i class="{{ .icon }}"></i>
+            {{ if .url }}
+            <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
             {{ else }}
-            <a href="https://physics.upatras.gr/en/pms-courses/digital-telecommunications/" target="_blank" rel="noopener">Digital Communications</a>
+            {{ .name }}
             {{ end }}
+            {{ with .code }}<span class="teaching-course-code">{{ . }}</span>{{ end }}
           </div>
           <div class="teaching-course-desc">
-            {{ if $el }}
-            Ψηφιακή διαμόρφωση, θεωρία πληροφορίας, OFDM, συστήματα εξαπλωμένου φάσματος και σύγχρονα ασύρματα δίκτυα (5G, IoT).
-            {{ else }}
-            Digital modulation, information theory, OFDM, spread-spectrum systems, and state-of-the-art wireless networks (5G, IoT).
-            {{ end }}
+            {{ .description | markdownify }}
           </div>
+          {{ if or .semester .eclass }}
+          <div class="teaching-course-meta">
+            {{ with .semester }}<span class="teaching-semester"><i class="fas fa-calendar-alt"></i> {{ . }}</span>{{ end }}
+            {{ with .eclass }}<a href="{{ . }}" target="_blank" rel="noopener" class="teaching-eclass-link"><i class="fas fa-chalkboard"></i> eClass</a>{{ end }}
+          </div>
+          {{ end }}
         </div>
-        <div class="teaching-course">
-          <div class="teaching-course-name">
-            <i class="fas fa-mobile-alt"></i>
-            {{ if $el }}Κινητές Επικοινωνίες{{ else }}Mobile Communications{{ end }}
-          </div>
-          <div class="teaching-course-desc">
-            {{ if $el }}
-            Κυψελωτά συστήματα, μοντελοποίηση καναλιών, τεχνικές πολλαπλής πρόσβασης και σύγχρονα πρότυπα έως το 5G&nbsp;NR.
-            {{ else }}
-            Cellular systems, channel modelling, multiple access techniques, and emerging standards through to 5G&nbsp;NR.
-            {{ end }}
-          </div>
-        </div>
+        {{ end }}
       </div>
     </div>
-
-    {{/* ---- University of Edinburgh ---- */}}
-    <div class="teaching-block">
-      <div class="teaching-block-header">
-        <div class="teaching-block-meta">
-          <span class="teaching-period">2019</span>
-        </div>
-        <div class="teaching-block-title-wrap">
-          <h3 class="teaching-institution">{{ if $el }}Σχολή Μηχανικών — Πανεπιστήμιο Εδιμβούργου{{ else }}School of Engineering — University of Edinburgh{{ end }}</h3>
-          <span class="teaching-role">{{ if $el }}Λέκτορας{{ else }}Lecturer{{ end }}</span>
-        </div>
-      </div>
-      <div class="teaching-courses">
-        <div class="teaching-course">
-          <div class="teaching-course-name">
-            <i class="fas fa-code-branch"></i>
-            {{ if $el }}Προηγμένες Τεχνικές Κωδικοποίησης{{ else }}Advanced Coding Techniques{{ end }}
-          </div>
-          <div class="teaching-course-desc">
-            {{ if $el }}
-            Προπτυχιακό μάθημα θεωρίας κωδικοποίησης καναλιού, turbo codes, LDPC codes και σχεδίαση κωδίκων κοντά στο όριο Shannon.
-            {{ else }}
-            Undergraduate course covering channel coding theory, turbo codes, LDPC codes, and capacity-approaching code design.
-            {{ end }}
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {{/* ---- TEI of Patras ---- */}}
-    <div class="teaching-block">
-      <div class="teaching-block-header">
-        <div class="teaching-block-meta">
-          <span class="teaching-period">2011 – 2013</span>
-        </div>
-        <div class="teaching-block-title-wrap">
-          <h3 class="teaching-institution">{{ if $el }}ΤΕΙ Πατρών (νυν Πανεπιστήμιο Πελοποννήσου){{ else }}TEI of Patras (now University of Peloponnese){{ end }}</h3>
-          <span class="teaching-role">{{ if $el }}Εργαστηριακός Διδάσκων{{ else }}Laboratory Instructor{{ end }}</span>
-        </div>
-      </div>
-      <div class="teaching-courses">
-        <div class="teaching-course">
-          <div class="teaching-course-name">
-            <i class="fas fa-wave-square"></i>
-            {{ if $el }}Ψηφιακή Επεξεργασία Σήματος{{ else }}Digital Signal Processing{{ end }}
-          </div>
-          <div class="teaching-course-desc">
-            {{ if $el }}
-            Εργαστηριακές ασκήσεις σε διακριτά συστήματα, αλγορίθμους DFT/FFT, σχεδίαση FIR/IIR φίλτρων και υλοποιήσεις DSP σε πραγματικό χρόνο.
-            {{ else }}
-            Laboratory sessions on discrete-time systems, DFT/FFT algorithms, FIR/IIR filter design, and real-time DSP implementations.
-            {{ end }}
-          </div>
-        </div>
-      </div>
-    </div>
+    {{ end }}
 
     {{/* ---- Supervision ---- */}}
+    {{ with .Params.supervision }}
     <div class="teaching-block">
       <div class="teaching-block-header">
         <div class="teaching-block-meta">
-          <span class="teaching-period">2021 – {{ if $el }}σήμερα{{ else }}present{{ end }}</span>
+          <span class="teaching-period">{{ .period }}</span>
         </div>
         <div class="teaching-block-title-wrap">
-          <h3 class="teaching-institution">{{ if $el }}Επίβλεψη Μεταπτυχιακών{{ else }}Graduate Supervision{{ end }}</h3>
-          <span class="teaching-role">ATHENA RC</span>
+          <h3 class="teaching-institution">{{ .title }}</h3>
+          <span class="teaching-role">{{ .org }}</span>
         </div>
       </div>
       <div class="teaching-courses">
+        {{ range .students }}
         <div class="teaching-course">
           <div class="teaching-course-name">
-            <i class="fas fa-user-graduate"></i>
-            Nikolaos Ntavanelos — {{ if $el }}Υποψήφιος Διδάκτωρ{{ else }}PhD candidate{{ end }}
+            <i class="{{ .icon }}"></i>
+            {{ .name }}{{ with .degree }} — {{ . }}{{ end }}
+            {{ with .note }}<span style="font-weight:400; color:#888;">{{ . }}</span>{{ end }}
           </div>
           <div class="teaching-course-desc">
-            {{ if $el }}
-            <strong>Κύριος Επιβλέπων.</strong> Θέμα: Μηχανική Μάθηση για διαχείριση πόρων σε δίκτυα 6G.
-            {{ else }}
-            <strong>Principal Supervisor.</strong> Topic: Machine Learning for resource management in 6G networks.
-            {{ end }}
+            <strong>{{ .role }}.</strong>{{ with .topic }} {{ . }}{{ end }}
           </div>
         </div>
-        <div class="teaching-course">
-          <div class="teaching-course-name">
-            <i class="fas fa-user-graduate"></i>
-            P. Theodoropoulos — {{ if $el }}Υποψήφιος Διδάκτωρ{{ else }}PhD candidate{{ end }}
-          </div>
-          <div class="teaching-course-desc">
-            {{ if $el }}<strong>Μέλος Τριμελούς Επιτροπής.</strong>{{ else }}<strong>Advisory Committee Member.</strong>{{ end }}
-          </div>
-        </div>
-        <div class="teaching-course">
-          <div class="teaching-course-name">
-            <i class="fas fa-users"></i>
-            {{ if $el }}Μεταπτυχιακοί φοιτητές — Πανεπιστήμιο Πατρών{{ else }}M.Sc. students — University of Patras{{ end }} <span style="font-weight:400; color:#888;">(2021–2022)</span>
-          </div>
-          <div class="teaching-course-desc">
-            {{ if $el }}
-            <strong>Συν-επιβλέπων</strong> μεταπτυχιακών φοιτητών σε συνεργασία με το ATHENA RC.
-            {{ else }}
-            <strong>Co-supervisor</strong> of postgraduate students in collaboration with ATHENA RC.
-            {{ end }}
-          </div>
-        </div>
+        {{ end }}
       </div>
     </div>
+    {{ end }}
 
   </div>
 </div>

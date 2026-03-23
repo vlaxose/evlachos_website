@@ -1,7 +1,7 @@
 ---
 widget: featurette
 headless: true
-active: false
+active: true
 weight: 40
 title: Διδασκαλία & Επίβλεψη
 subtitle: Ακαδημαϊκή συνεισφορά
@@ -9,24 +9,23 @@ subtitle: Ακαδημαϊκή συνεισφορά
 feature:
   - icon: chalkboard-teacher
     icon_pack: fas
-    name: Πανεπιστήμιο Πατρών (2023-2025)
+    name: Πανεπιστήμιο Πατρών (2023–σήμερα)
     description: |
-      **Λέκτορας**, Τμήμα Φυσικής
-      * Ψηφιακές Επικοινωνίες
-      * Κινητές Επικοινωνίες
+      **Λέκτορας**, Τμήμα Φυσικής — ΠΜΣ Ηλεκτρονική & Επεξεργασία Πληροφορίας
+      * [Ψηφιακές Τηλεπικοινωνίες (EIP207)](https://eclass.upatras.gr/courses/PHY2067/) — χώρος σημάτων, matched filter, PSK/QAM, OFDM, 4G/5G
+      * Συστήματα Κινητών Επικοινωνιών (EIP121) — φυσική καναλιού, MIMO, fading, 5G NR
 
   - icon: user-graduate
     icon_pack: fas
-    name: Επίβλεψη Διδακτόρων
+    name: Επίβλεψη Μεταπτυχιακών
     description: |
-      **Κύριος Επιβλέπων**
-      * Νικόλαος Νταβανέλος (Μηχανική Μάθηση στα 6G)
-      * Μέλος Τριμελούς Επιτροπής για τον Π. Θεοδωρόπουλο
+      **Κύριος Επιβλέπων** — Ν. Νταβανέλος, Διδακτορικό (ML για διαχείριση πόρων 6G)
+      **Μέλος Τριμελούς** — Π. Θεοδωρόπουλος, Διδακτορικό
 
   - icon: university
     icon_pack: fas
     name: University of Edinburgh (2019)
     description: |
       **Λέκτορας**, Σχολή Μηχανικής
-      * Προχωρημένες Τεχνικές Κωδικοποίησης
+      * Προηγμένες Τεχνικές Κωδικοποίησης (turbo codes, LDPC, capacity-approaching design)
 ---
