@@ -12,10 +12,8 @@ The objective was to better understand how buildings and other terrestrial obsta
 
 Advancing connectivity awareness is an important step toward enabling scalable drone operations in the smart cities of the future.
 
-![Post image](post_004_img0.jpg)
+![Post image](img0.jpg)
 
-![Post image](post_004_img1.jpg)
+![Post image](img1.jpg)
 
-![Post image](post_004_img2.jpg)
-
-![Post image](post_004_img3.jpg)
+![Post image](img2.jpg)
