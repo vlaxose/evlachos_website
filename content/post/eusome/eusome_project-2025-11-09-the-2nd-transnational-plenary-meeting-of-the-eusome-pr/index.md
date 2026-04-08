@@ -1,0 +1,16 @@
+---
+title: "The 2nd Transnational Plenary Meeting of the EUSOME Project successfully conclud"
+date: 2025-11-09
+summary: "The 2nd Transnational Plenary Meeting of the EUSOME Project successfully concluded in hashtag on October 8, hosted by our partners at the Athena Research Center - Institute of Industrial Systems at th..."
+categories: ["eusome_project"]
+---
+
+The 2nd Transnational Plenary Meeting of the EUSOME Project successfully concluded in hashtag on October 8, hosted by our partners at the Athena Research Center - Institute of Industrial Systems at the University of Patras.1 On our first day, the technical partners presented their work so far on the EUSOME vehicle prototypes, the types of sensors to be integrated on them, and the algorithms enabling our progress into autonomy!2 On the second day, discussions focused on the regulatory aspects for the adoption of hashtag in the Southeast Mediterranean region, as well as the communication and dissemination activities completed so far and those planned for the upcoming period.Joining us from a distance, Dr. Constantinos Dovrolis presented the newly established AI Ethics Board - ensuring that the autonomous aspects of the project remain informed by human-centric and interpretable amongst othersThe meeting concluded with final remarks from Prof. George Ellinas, project coordinator from KIOS Research and Innovation Center of Excellence of the University of Cyprus, who summarized key outcomes and next steps. Over these two productive days, partners had the opportunity to review progress, exchange insights, and plan the next phase of activities. The discussions were highly engaging, the collaboration inspiring, and the atmosphere truly motivating for everyone involved. Of course, the social dinner was another highlight - a perfect way to celebrate teamwork and strengthen our connections beyond the meeting room with traditional Greek food, music, and dancing! Looking forward to our next gathering and the exciting milestones ahead for EUSOME!!EUSOME Project partners :KIOS Research and Innovation Center of Excellence, Hellenic U-space Institute, Athena Research Center, Hellenic Ministry of Digital Governance, Cyprus Ministry of Transport, Communications and Works, Hellenic Drones S.A., Hellenic Civil Aviation Authority, Aviomania Aircraft, GRNET - Greek Research & Technology Network, Cyprus Chamber of Commerce & Industry, Adrestia R&D, Centrum Badań Kosmicznych Polskiej Akademii Nauk, SocialTech Lab, Institute Mihajlo Pupin, EPIRUS - Perifereia Ipeirou, and Mediterranean Adventure Ltd.hashtag hashtag hashtag hashtag hashtag hashtag
+
+![Post image](post_020_img0.jpg)
+
+![Post image](post_020_img1.jpg)
+
+![Post image](post_020_img2.jpg)
+
+![Post image](post_020_img3.jpg)
