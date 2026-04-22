@@ -53,7 +53,7 @@ section {
   color: #2d2d2d !important;
   font-family: "Fira Sans", sans-serif !important;
   font-weight: 600 !important;
-  font-size: 0.95rem !important;
+  font-size: 1.1rem !important;
 }
 
 /* Navbar brand size */
@@ -120,11 +120,57 @@ section {
   background-color: #faf8f5 !important;
 }
 
+/* Brand social icons (LinkedIn/GitHub next to site title) */
+.navbar-brand-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.05rem;
+  margin-left: 0.55rem;
+}
+.navbar-brand-social .brand-social-link {
+  color: #666 !important;
+  font-size: 1rem !important;
+  padding: 0.2rem 0.35rem !important;
+  line-height: 1 !important;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.navbar-brand-social .brand-social-link:hover {
+  color: #1a1a2e !important;
+}
+.dark .navbar-brand-social .brand-social-link {
+  color: #aab0be !important;
+}
+.dark .navbar-brand-social .brand-social-link:hover {
+  color: #e2eaf5 !important;
+}
+
+/* Navbar separator: vertical line between social icons and menu items */
+.navbar-brand-divider {
+  display: inline-block;
+  width: 1px;
+  height: 1.3rem;
+  background: #d4cfc8;
+  margin: 0 0.4rem 0 0.85rem;
+  flex-shrink: 0;
+  align-self: center;
+  vertical-align: middle;
+}
+.dark .navbar-brand-divider {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+
 /* Serif headings for academic feel */
 h1, h2, h3, h4, .section-heading h1 {
   color: #1a1a2e !important;
   font-family: "Fira Sans", sans-serif !important;
   font-weight: 700 !important;
+}
+
+/* Hide org links (ISI / ATHENA RC) below profile picture */
+.portrait-title .org-links {
+  display: none !important;
 }
 
 /* About widget sidebar: tame font sizes */
@@ -1812,6 +1858,11 @@ body.dark .settings-lang-active { color: #80b8f0 !important; }
 body.dark .settings-lang-active .settings-item-icon { color: #80b8f0 !important; }
 
 body.dark .settings-menu .dropdown-divider { border-color: #303048 !important; }
+
+/* --- Project card: smaller banner image --- */
+.view-card .article-banner {
+  height: 150px !important;
+}
 
 /* --- Project card stats pills --- */
 .project-stats {

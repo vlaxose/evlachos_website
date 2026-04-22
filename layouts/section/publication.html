@@ -29,83 +29,80 @@
     {{ $.Scratch.Set (printf "pubs_%s" $year) (add $cur 1) }}
   {{ end }}
 
-  {{/* Scholar Metrics Dashboard — collapsible */}}
-  {{ with site.Data.scholar }}
-  <div class="stats-toggle" id="stats-toggle" aria-expanded="false" aria-controls="stats-panel">
-    <span class="stats-toggle-label"><i class="fas fa-chart-bar"></i> Publication Statistics</span>
-    <i class="fas fa-chevron-down stats-toggle-chevron"></i>
-  </div>
-  <div class="stats-panel" id="stats-panel" aria-hidden="true">
-  <div class="scholar-dashboard">
-    <div class="scholar-metrics">
-      <div class="scholar-metric">
-        <div class="scholar-metric-value">{{ .total_citations }}</div>
-        <div class="scholar-metric-label">Citations</div>
-      </div>
-      <div class="scholar-metric">
-        <div class="scholar-metric-value">{{ .h_index }}</div>
-        <div class="scholar-metric-label">h-index</div>
-      </div>
-      <div class="scholar-metric">
-        <div class="scholar-metric-value">{{ .i10_index }}</div>
-        <div class="scholar-metric-label">i10-index</div>
-      </div>
-      <div class="scholar-metric">
-        <div class="scholar-metric-value">{{ .total_publications }}</div>
-        <div class="scholar-metric-label">Publications</div>
-      </div>
-    </div>
-
-    <div class="scholar-type-counts">
-      <div class="scholar-type-item">
-        <span class="pub-type pub-type-journal">Journal</span>
-        <span class="scholar-type-count">{{ $journals }}</span>
-      </div>
-      <div class="scholar-type-item">
-        <span class="pub-type pub-type-conf">Conference</span>
-        <span class="scholar-type-count">{{ $conferences }}</span>
-      </div>
-      {{ if gt $books 0 }}
-      <div class="scholar-type-item">
-        <span class="pub-type pub-type-book">Book / Chapter</span>
-        <span class="scholar-type-count">{{ $books }}</span>
-      </div>
-      {{ end }}
-    </div>
-
-    <div class="scholar-chart">
-      <div class="scholar-chart-title">Cumulative publications</div>
-      <div class="scholar-bars">
-        {{ $running := 0 }}
-        {{ range .publications_per_year }}
-          {{ $running = add $running .count }}
-          {{ $.Scratch.Set (printf "cumul_%v" .year) $running }}
-        {{ end }}
-        {{ $maxCumul := $running }}
-        {{ range .publications_per_year }}
-        {{ $count := $.Scratch.Get (printf "cumul_%v" .year) | default 0 }}
-        <div class="scholar-bar-group scholar-bar-clickable" data-year="{{ .year }}" title="Filter {{ .year }}">
-          <div class="scholar-bar-count">{{ $count }}</div>
-          <div class="scholar-bar" style="height: {{ mul (div (float $count) (float $maxCumul)) 55 }}px;"></div>
-          <div class="scholar-bar-year">{{ .year }}</div>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-
-    <div class="scholar-source">
-      Source: <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
-      &middot; Updated {{ .last_updated }}
-    </div>
-  </div>
-  </div><!-- /.stats-panel -->
-  {{ end }}
-
   <div class="row">
     <div class="col-lg-12">
 
       {{ with .Content }}
       <div class="article-style">{{ . }}</div>
+      {{ end }}
+
+      {{/* Scholar Metrics Dashboard — collapsible, below carousel */}}
+      {{ with site.Data.scholar }}
+      <div class="stats-toggle" id="stats-toggle" aria-expanded="false" aria-controls="stats-panel">
+        <span class="stats-toggle-label"><i class="fas fa-chart-bar"></i> Publication Statistics</span>
+        <i class="fas fa-chevron-down stats-toggle-chevron"></i>
+      </div>
+      <div class="stats-panel" id="stats-panel" aria-hidden="true">
+      <div class="scholar-dashboard">
+        <div class="scholar-metrics">
+          <div class="scholar-metric">
+            <div class="scholar-metric-value">{{ .total_citations }}</div>
+            <div class="scholar-metric-label">Citations</div>
+          </div>
+          <div class="scholar-metric">
+            <div class="scholar-metric-value">{{ .h_index }}</div>
+            <div class="scholar-metric-label">h-index</div>
+          </div>
+          <div class="scholar-metric">
+            <div class="scholar-metric-value">{{ .i10_index }}</div>
+            <div class="scholar-metric-label">i10-index</div>
+          </div>
+          <div class="scholar-metric">
+            <div class="scholar-metric-value">{{ .total_publications }}</div>
+            <div class="scholar-metric-label">Publications</div>
+          </div>
+        </div>
+        <div class="scholar-type-counts">
+          <div class="scholar-type-item">
+            <span class="pub-type pub-type-journal">Journal</span>
+            <span class="scholar-type-count">{{ $journals }}</span>
+          </div>
+          <div class="scholar-type-item">
+            <span class="pub-type pub-type-conf">Conference</span>
+            <span class="scholar-type-count">{{ $conferences }}</span>
+          </div>
+          {{ if gt $books 0 }}
+          <div class="scholar-type-item">
+            <span class="pub-type pub-type-book">Book / Chapter</span>
+            <span class="scholar-type-count">{{ $books }}</span>
+          </div>
+          {{ end }}
+        </div>
+        <div class="scholar-chart">
+          <div class="scholar-chart-title">Cumulative publications</div>
+          <div class="scholar-bars">
+            {{ $running := 0 }}
+            {{ range .publications_per_year }}
+              {{ $running = add $running .count }}
+              {{ $.Scratch.Set (printf "cumul_%v" .year) $running }}
+            {{ end }}
+            {{ $maxCumul := $running }}
+            {{ range .publications_per_year }}
+            {{ $count := $.Scratch.Get (printf "cumul_%v" .year) | default 0 }}
+            <div class="scholar-bar-group scholar-bar-clickable" data-year="{{ .year }}" title="Filter {{ .year }}">
+              <div class="scholar-bar-count">{{ $count }}</div>
+              <div class="scholar-bar" style="height: {{ mul (div (float $count) (float $maxCumul)) 55 }}px;"></div>
+              <div class="scholar-bar-year">{{ .year }}</div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+        <div class="scholar-source">
+          Source: <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+          &middot; Updated {{ .last_updated }}
+        </div>
+      </div>
+      </div><!-- /.stats-panel -->
       {{ end }}
 
       {{/* Array of distinct years. */}}

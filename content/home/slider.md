@@ -1,8 +1,8 @@
 ---
 widget: split_slider
 headless: true
-active: true
-weight: 1
+active: false
+weight: 3
 
 design:
   slide_height: "280px"

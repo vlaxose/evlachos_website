@@ -14,7 +14,7 @@ module:
 params:
   header:
     navbar:
-      align: r
+      align: l
 
   appearance:
     theme: minimal
@@ -67,6 +67,9 @@ languages:
           pre: '<i class="fas fa-home" title="Home"></i>'
           url: '/'
           weight: 5
+        - name: Bio
+          url: '/bio/'
+          weight: 7
         - name: News
           url: '/post/'
           weight: 10
@@ -92,6 +95,9 @@ languages:
           pre: '<i class="fas fa-home" title="Αρχική"></i>'
           url: '/'
           weight: 5
+        - name: Βιογραφικό
+          url: '/bio/'
+          weight: 7
         - name: Νέα
           url: '/post/'
           weight: 10

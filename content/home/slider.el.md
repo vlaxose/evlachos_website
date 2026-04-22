@@ -1,7 +1,7 @@
 ---
 widget: split_slider
 headless: true
-active: true
+active: false
 weight: 1
 
 design:

@@ -1,7 +1,7 @@
 ---
 widget: about
 headless: true
-weight: 50
+weight: 1
 title: Biography
 author: admin 
 ---

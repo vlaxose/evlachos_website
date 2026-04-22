@@ -3,7 +3,7 @@ total_citations: 1100
 h_index: 18
 i10_index: 27
 total_publications: 49
-last_updated: "2026-02"
+last_updated: "2026-04"
 
 # Publications per year (update from Google Scholar profile)
 publications_per_year:
@@ -30,6 +30,8 @@ publications_per_year:
   - year: 2023
     count: 3
   - year: 2025
+    count: 5
+  - year: 2026
     count: 5
 
 # Citations per year (update from Google Scholar bar chart)

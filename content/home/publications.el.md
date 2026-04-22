@@ -9,7 +9,7 @@ content:
     folders:
       - publication
     featured_only: true
-  count: 6
+  count: 4
   offset: 0
   order: desc
 design:
