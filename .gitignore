@@ -14,3 +14,12 @@ __pycache__/
 # Operating System files
 .DS_Store
 Thumbs.db
+
+# Local Claude settings
+.claude/
+
+# Script runtime state
+scripts/*.json
+
+# Logs
+logs/*.log
