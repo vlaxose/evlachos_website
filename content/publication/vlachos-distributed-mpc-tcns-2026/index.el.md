@@ -1,5 +1,5 @@
 ---
-title: "Κατανεμημένο MPC για Κατευθυντικά Δίκτυα UAV: Συνσχεδιασμός Κίνησης και Ευθυγράμμισης Υβριδικής Δέσμης"
+title: "Distributed MPC for Directional UAV Networks: Co-design of Motion and Hybrid Beam Alignment"
 date: 2026-03-05
 publishDate: 2026-03-05
 authors: ['Vlachos, E.']
@@ -10,14 +10,14 @@ publication: "*IEEE Transactions on Control of Network Systems*"
 tags: ["Έρευνα", "UAVs", "MPC", "mmWave", "ISAC", "Κατανεμημένος Έλεγχος"]
 ---
 
-## Συμπληρωματικό Βίντεο
+## Supplementary Video
 
 {{< video src="demo.mp4" controls="yes" >}}
 
-## Κύριες Συνεισφορές
+## Key Contributions
 
-- **Πλαίσιο Κοινής Κίνησης–Επικοινωνίας**: Κατανεμημένο MPC που βελτιστοποιεί από κοινού τροχιά και μηχανική κατεύθυνση για υβριδικό beamforming, διατηρώντας προληπτικά τους γείτονες εντός του ηλεκτρονικού FoV.
-- **Θεωρητικές Εγγυήσεις**: Ομαλό Gaussian surrogate για το μη-κυρτό κέρδος υβριδικής δέσμης με αποδεδειγμένη σύγκλιση. Αναδρομική εφικτότητα μέσω στρατηγικής θερμής εκκίνησης DARE.
-- **Πειραματική Επαλήθευση**: Μείωση πιθανότητας αποτυχίας ζεύξης κατά ~96%, κλιμάκωση O(1) ανά πράκτορα έως K=16 UAV.
+- **Joint Motion–Communication Framework**: A decentralized MPC that jointly optimizes trajectory and mechanical heading for hybrid mechanical-electronic beamforming, proactively maintaining neighbors within the electronic FoV.
+- **Theoretical Guarantees**: A smooth Gaussian-envelope surrogate for the non-convex hybrid gain with a proven Lipschitz-continuous gradient; a closed-form spectral contraction condition linking tracking weight, communication coupling, and beamwidth into a single tunable inequality guaranteeing convergence. Recursive feasibility established via a DARE-based warm-start strategy.
+- **Experimental Validation**: High-fidelity simulations showing ~96% reduction in link outage probability vs. velocity-aligned heuristics, with O(1) per-agent scaling up to K=16 agents.
 
-*Χρηματοδοτήθηκε από το πρόγραμμα Horizon Europe της Ευρωπαϊκής Ένωσης, Αριθμός Επιχορήγησης 101187121 (EUSOME).*
+*This work was supported by the European Union's Horizon Europe programme under Grant Agreement No. 101187121 (EUSOME).*
