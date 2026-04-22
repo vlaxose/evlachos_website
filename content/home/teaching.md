@@ -3,35 +3,37 @@ widget: featurette
 headless: true
 active: true
 weight: 40
-title: Teaching & Supervision
-subtitle: Academic contributions
+title: Academic Contributions
+subtitle:
 
 feature:
   - icon: user-graduate
     icon_pack: fas
-    name: Graduate Supervision
+    name: PhD Supervision
     description: |
-      **Active PhD Students**
-      * N. Ntavanelos — ML-driven resource management for 6G networks (primary supervisor)
+      **Primary Supervisor**
+      N. Ntavanelos · ML-driven resource management for 6G networks
 
-      **PhD Advisory Committee**
-      * P. Theodoropoulos — wireless signal processing
-
-      **Visiting / Guest**
-      * Guest Lecturer, University of Sussex (2022–present) — signal processing & communications
+      **Advisory Committee**
+      P. Theodoropoulos · wireless signal processing
 
   - icon: chalkboard-teacher
     icon_pack: fas
-    name: University of Patras (2023–present)
+    name: Teaching
     description: |
-      **Lecturer**, MSc Electronics & Information Processing
-      * [Digital Telecommunications (EIP207)](https://eclass.upatras.gr/courses/PHY2067/) — OFDM, matched filtering, 4G/5G, channel estimation
-      * Mobile Communication Systems (EIP121) — MIMO, fading channels, 5G NR
+      **University of Patras** · 2023–present
+      MSc · [Digital Telecommunications (EIP207)](https://eclass.upatras.gr/courses/PHY2067/) · Mobile Communication Systems
+
+      **University of Sussex** · 2022–present
+      Visiting Researcher · Signal processing & communications
 
   - icon: university
     icon_pack: fas
-    name: International Experience
+    name: Past Positions
     description: |
-      **Lecturer**, University of Edinburgh (2019) — Advanced Coding Techniques (LDPC, turbo codes)
-      **Postdoctoral Researcher**, Univ. of Edinburgh & Patras (2015–2022) — signal processing, matrix completion, wireless comms
+      **Lecturer** · University of Edinburgh · 2019
+      Advanced Coding Techniques (LDPC, turbo codes)
+
+      **Postdoctoral Researcher** · 2015–2022
+      University of Edinburgh · University of Patras
 ---

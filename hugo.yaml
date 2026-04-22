@@ -24,6 +24,10 @@ params:
     theme_day: minimal
     theme_night: minimal
 
+  extensions:
+    academicons:
+      enable: true
+
   features:
     math:
       enable: true

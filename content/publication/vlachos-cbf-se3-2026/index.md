@@ -5,7 +5,7 @@ publishDate: 2026-03-05
 authors: ['Vlachos, E.', 'Kolios, P.', 'Skliros, C.']
 publication_types: ["1"]
 abstract: "Drone-mounted directed energy payloads — RF jammers and High Power Microwave (HPM) sources — offer a reusable Counter-UAS capability, but their adoption on small interceptors is constrained by strict onboard power limits. Narrow, high-gain beams can close the engagement link budget with minimal transmit power, yet the tight Field of View (FoV) such beams demand conflicts with the aggressive attitude transients a multi-rotor must execute during pursuit. This paper resolves this conflict through a hardware-aware safety filter based on Control Barrier Functions (CBFs) on the SE(3) manifold. By providing formal pointing guarantees, the filter enables highly directional antennas whose gain would otherwise be sacrificed to tolerate pointing uncertainty. We formulate the electronic steering limits of a phased array as a relative-degree-two safety constraint with analytically verified Lie derivatives, and solve the resulting Quadratic Program via ADMM with a constant-time core factorization. Validation in a nonlinear SE(3) simulation and a PX4 Software-in-the-Loop (SITL) environment shows that the proposed CBF eliminates all FoV violations, recovers significant antenna gain through beam tightening, and reveals that conventional pitch clamping actively worsens pointing errors due to coupled rotational dynamics."
-featured: true
+featured: false
 publication: "*2026 International Conference on Unmanned Aircraft Systems (ICUAS)*"
 tags: ["Research", "UAVs", "Control Barrier Functions", "Counter-UAS", "SE(3)", "ISAC"]
 ---

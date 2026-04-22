@@ -6,7 +6,7 @@ authors: ['Vlachos, E.', 'Kaushik, A.']
 publication_types: ["2"]
 abstract: "In massive MIMO Integrated Sensing and Communications (ISAC), conventional contiguous sub-array partitioning limits spatial degrees of freedom. This paper demonstrates that interleaved beam assignment unlocks multi-functional selection diversity, driven by distinct channel statistics. We analytically prove that while the gain from signal alignment inherently saturates, the gain from proactive spatial decoupling (leakage avoidance) scales logarithmically with the array size, dominating massive MIMO performance. To exploit this, we propose the Diversity-Aware Spatial Partitioning (DASP) algorithm, a covariance-based framework that eliminates instantaneous channel state information (CSI) overhead and solves the combinatorial beam assignment with log-linear per-update complexity. Furthermore, we derive an analytical signal-to-noise ratio (SNR) threshold demarcating where spatial partitioning outperforms orthogonal resource slicing (e.g., time-division multiplexing). Numerical results with up to 256 antennas confirm that flexible partitioning yields near-optimal sum-rates, strictly dominates contiguous approaches, and significantly outperforms resource slicing across standard mmWave link budgets, ceding superiority only under extreme SNR or highly overlapping scattering conditions."
 submitted: true
-featured: true
+featured: false
 publication: "*Submitted to IEEE Transactions on Wireless Communications*"
 tags: ["Research", "ISAC", "Massive MIMO", "Hybrid Beamforming", "6G", "mmWave"]
 ---

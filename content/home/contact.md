@@ -14,16 +14,6 @@ content:
     region: Achaia
     postcode: '26504'
     country: Greece
-  contact_links:
-    - icon: linkedin
-      icon_pack: fab
-      name: LinkedIn
-      link: 'https://www.linkedin.com/in/evangelos-vlachos-b543103a/'
-    - icon: google-scholar
-      icon_pack: ai
-      name: Google Scholar
-      link: 'https://scholar.google.com/citations?user=N2ZlmesAAAAJ'
-
   autolink: true
 
 design:
