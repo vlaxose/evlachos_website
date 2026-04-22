@@ -15,4 +15,5 @@ content:
 
 design:
   view: news
+  columns: '1'
 ---

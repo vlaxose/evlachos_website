@@ -14,4 +14,5 @@ content:
   order: desc
 design:
   view: citation
+  columns: '1'
 ---
