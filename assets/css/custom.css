@@ -292,11 +292,14 @@ a:hover {
   border-bottom: none;
 }
 
-.pub-index {
+.pub-left {
   flex-shrink: 0;
-  width: 1.8rem;
-  text-align: right;
-  padding-top: 0.18rem;
+  width: 4.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding-top: 0.1rem;
 }
 
 .pub-num {
@@ -306,6 +309,7 @@ a:hover {
   line-height: 1;
 }
 
+/* kept for back-compat with any other templates referencing pub-meta */
 .pub-meta {
   flex-shrink: 0;
   display: flex;
@@ -345,14 +349,7 @@ a:hover {
   transform: scale(1.07);
 }
 
-.pub-year-col {
-  flex-shrink: 0;
-  width: 3rem;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 0.15rem;
-}
+/* pub-year-col removed — year is now inside .pub-left */
 
 .pub-year {
   display: inline-block;
@@ -402,18 +399,17 @@ a:hover {
   opacity: 1;
 }
 
-.pub-links {
-  flex-shrink: 0;
-  width: 3.2rem;
+/* pub-links removed — buttons are now inside .pub-btn-row */
+
+.pub-btn-row {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 0.25rem;
-  padding-top: 0.1rem;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.35rem;
 }
 
 .pub-link-btn {
-  display: block;
+  display: inline-block;
   font-size: 0.62rem;
   font-weight: 700;
   text-align: center;
@@ -454,15 +450,7 @@ a:hover {
   color: #fff !important;
 }
 
-.pub-actions {
-  flex-shrink: 0;
-  width: 3.8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 0.25rem;
-  padding-top: 0.1rem;
-}
+/* pub-actions removed — merged into .pub-btn-row */
 
 .pub-link-bib {
   border-color: #1a7a4a;

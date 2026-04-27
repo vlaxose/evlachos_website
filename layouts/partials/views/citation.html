@@ -52,13 +52,9 @@
 {{ if $item.Params.doi }}{{ $cite = printf "%s. doi: %s" $cite $item.Params.doi }}{{ end }}
 
 <div class="pub-row">
-  <div class="pub-index">
+  <div class="pub-left">
     <span class="pub-num">{{ sub $total .index }}</span>
-  </div>
-  <div class="pub-year-col">
     <a href="#" class="pub-year pub-year-clickable" data-year="{{ $year }}" title="Filter by {{ $year }}">{{ $year }}</a>
-  </div>
-  <div class="pub-meta">
     <span class="pub-type pub-type-clickable {{ if $is_journal }}pub-type-journal{{ else if $is_book }}pub-type-book{{ else }}pub-type-conf{{ end }}" data-pubtype="{{ $pubtype }}" title="Filter by this type">
       {{ if $is_journal }}Journal{{ else if $is_book }}Book{{ else }}Conf{{ end }}
     </span>
@@ -68,35 +64,6 @@
       {{ with .total_downloads }}<span class="pub-views" title="IEEE Xplore total downloads"><i class="fas fa-download"></i> {{ . }}</span>{{ end }}
       {{ $spark := $item.Resources.GetMatch "sparkline.png" }}
       {{ with $spark }}<a href="{{ $item.RelPermalink }}" class="pub-sparkline-link" title="Download trend"><img src="{{ .RelPermalink }}" class="pub-sparkline" alt="download trend" loading="lazy"></a>{{ end }}
-    {{ end }}
-  </div>
-  <div class="pub-links">
-    {{ with $item.Params.doi }}
-      <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener" class="pub-link-btn">
-        {{ if hasPrefix . "10.1109/" }}IEEE{{ else if hasPrefix . "10.48550/" }}arXiv{{ else }}DOI{{ end }}
-      </a>
-    {{ end }}
-    {{ with $item.Params.url_arxiv }}
-      <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link-btn pub-link-arxiv">arXiv</a>
-    {{ end }}
-    {{ $pdf := "" }}
-    {{ $pdfRes := $item.Resources.GetMatch "paper.pdf" }}
-    {{ with $pdfRes }}
-      {{ $pdf = .RelPermalink }}
-    {{ else }}
-      {{ with $item.Params.url_pdf }}
-        {{ $pdf = . | relURL }}
-      {{ end }}
-    {{ end }}
-    {{ with $pdf }}
-      <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link-btn pub-link-pdf"><i class="fas fa-file-pdf"></i> PDF</a>
-    {{ end }}
-  </div>
-  <div class="pub-actions">
-    <a href="#" class="pub-link-btn pub-link-bib js-copy-bib" data-bib="{{ $bib }}" title="Copy BibTeX to clipboard">BibTeX</a>
-    <a href="#" class="pub-link-btn pub-link-cite js-copy-cite" data-citation="{{ $cite }}" title="Copy citation to clipboard">Cite</a>
-    {{ with $item.Params.url_code }}
-      <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link-btn pub-link-code" title="View code on GitHub">Code</a>
     {{ end }}
   </div>
   <div class="pub-details">
@@ -127,6 +94,33 @@
         {{ end }}
       {{ end }}
       {{ if $item.Params.submitted }}<span class="pub-under-review">Under Review</span>{{ end }}
+    </div>
+    <div class="pub-btn-row">
+      {{ with $item.Params.doi }}
+        <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener" class="pub-link-btn">
+          {{ if hasPrefix . "10.1109/" }}IEEE{{ else if hasPrefix . "10.48550/" }}arXiv{{ else }}DOI{{ end }}
+        </a>
+      {{ end }}
+      {{ with $item.Params.url_arxiv }}
+        <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link-btn pub-link-arxiv">arXiv</a>
+      {{ end }}
+      {{ $pdf := "" }}
+      {{ $pdfRes := $item.Resources.GetMatch "paper.pdf" }}
+      {{ with $pdfRes }}
+        {{ $pdf = .RelPermalink }}
+      {{ else }}
+        {{ with $item.Params.url_pdf }}
+          {{ $pdf = . | relURL }}
+        {{ end }}
+      {{ end }}
+      {{ with $pdf }}
+        <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link-btn pub-link-pdf"><i class="fas fa-file-pdf"></i> PDF</a>
+      {{ end }}
+      <a href="#" class="pub-link-btn pub-link-bib js-copy-bib" data-bib="{{ $bib }}" title="Copy BibTeX to clipboard">BibTeX</a>
+      <a href="#" class="pub-link-btn pub-link-cite js-copy-cite" data-citation="{{ $cite }}" title="Copy citation to clipboard">Cite</a>
+      {{ with $item.Params.url_code }}
+        <a href="{{ . }}" target="_blank" rel="noopener" class="pub-link-btn pub-link-code" title="View code on GitHub">Code</a>
+      {{ end }}
     </div>
   </div>
 </div>
