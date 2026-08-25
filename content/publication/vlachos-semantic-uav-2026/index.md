@@ -1,7 +1,7 @@
 ---
 title: "Semantically-Informed Predictive Control for Autonomous UAV Connectivity in Urban Environments"
-date: 2026-02-26
-publishDate: 2026-02-26
+date: 2026-08-24
+publishDate: 2026-08-24
 authors: ['Vlachos, E.', 'Tsourounis, D.', 'Kaushik, A.']
 publication_types: ["1"]
 abstract: "Millimeter-wave (mmWave) frequencies enable high-throughput unmanned aerial vehicle (UAV) networks, but their directional links are sensitive to obstacle material composition. Conventional UAV path planners fail in environments with diverse materials. Geometric planners treat obstacles as opaque, while signal-strength planners chase high-SNR zones without distinguishing stable line-of-sight from fragile multipath. This work sits in the sensing-aided branch of integrated sensing and communication (ISAC), where radar and link share the same band, so the radar serves the link rather than a separate detection task. We fuse radar sensing with visual semantic classification to construct an effective capacity metric that decouples signal strength from material-dependent reliability. A two-stage planner generates paths that avoid both hard blockers and unreliable multipath, then optimizes the trajectory to maximize effective throughput. Hardware characterization confirms that radar alone cannot distinguish spectrally distinct materials. Simulations show that the proposed planner substantially improves effective throughput and link reliability over signal-strength baselines, closely approaching an oracle with perfect channel knowledge."

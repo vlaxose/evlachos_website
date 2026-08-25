@@ -1,7 +1,7 @@
 ---
 title: "Consistency-Gated Cooperative Localization for UAV Swarms Under Intermittent GPS"
-date: 2026-05-11
-publishDate: 2026-05-11
+date: 2026-06-02
+publishDate: 2026-06-02
 authors: ['Venetis, D.', 'Vlachos, E.', 'Berberidis, K.']
 publication_types: ["1"]
 abstract: "Cooperative localization under intermittent Global Navigation Satellite System (GNSS) is challenging, as naive cooperation may degrade estimation when relative measurements are inconsistent. This paper proposes a two-stage localization framework for Unmanned Aerial Vehicle (UAV) swarms, where each agent maintains a local Extended Kalman Filter (EKF) estimate using Global Positioning System (GPS) and Inertial Measuring Unit (IMU) data, and applies a distributed refinement based on relative Ultra-Wideband (UWB) range and Angle of Arrival (AoA) direction constraints. Moreover, a lightweight consistency gate is proposed, which relies on residual and consensus indicators and determines whether cooperative refinement is accepted, preventing harmful updates without online ground truth. Simulation results demonstrate consistent improvements in formation-relevant relative accuracy and stable absolute positioning compared to GPS and GPS+EKF baselines under intermittent GPS availability."
