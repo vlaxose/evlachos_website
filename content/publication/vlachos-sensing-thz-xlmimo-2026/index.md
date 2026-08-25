@@ -1,5 +1,5 @@
 ---
-title: "Sensing-Aided THz XL-MIMO Channel Estimation via Biconvex ADMM"
+title: "Biconvex ADMM for Sensing-Aided XL-MIMO Channel Estimation at the THz Frequency Band"
 date: 2026-06-01
 publishDate: 2026-06-01
 authors: ['Vlachos, E.', 'Alexandropoulos, G. C.']

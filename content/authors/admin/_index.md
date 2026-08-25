@@ -10,7 +10,7 @@ last_name: Vlachos
 superuser: true
 
 # Role/position
-role: Tenure-track Researcher
+role: Tenured Researcher
 
 # Organizations/Affiliations
 organizations:

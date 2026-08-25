@@ -2,12 +2,13 @@
 title: "Semantically-Informed Predictive Control for Autonomous UAV Connectivity in Urban Environments"
 date: 2026-02-26
 publishDate: 2026-02-26
-authors: ['Vlachos, E.', 'Tsourounis, D.']
-publication_types: ["3"]
-abstract: "Millimeter-wave (mmWave) frequencies offer the multi-gigabit throughput required by next-generation UAV networks, but their directional propagation makes link quality sensitive to the material composition of nearby obstacles. Geometric planners treat all obstacles as binary blockers, while signal-strength planners chase high-SNR zones without distinguishing stable line-of-sight from fragile multipath. Both fail in urban environments where concrete, metal, glass, and vegetation coexist. We propose a control framework that fuses mmWave radar sensing with visual semantic classification to construct an effective capacity metric that decouples raw signal strength from material-dependent link reliability. A two-layer planner generates collision-free paths that avoid both hard blockers and unreliable multipath zones, then deforms the trajectory via gradient optimization to maximize reliable throughput. Hardware characterization with a 60 GHz sensor confirms that radar returns alone cannot distinguish spectrally distinct materials. Monte Carlo simulations show that the proposed controller improves effective throughput by 65% over signal-strength baselines while maintaining 0.96 link reliability, reaching 97.3% of an oracle with perfect global channel knowledge."
+authors: ['Vlachos, E.', 'Tsourounis, D.', 'Kaushik, A.']
+publication_types: ["1"]
+abstract: "Millimeter-wave (mmWave) frequencies enable high-throughput unmanned aerial vehicle (UAV) networks, but their directional links are sensitive to obstacle material composition. Conventional UAV path planners fail in environments with diverse materials. Geometric planners treat obstacles as opaque, while signal-strength planners chase high-SNR zones without distinguishing stable line-of-sight from fragile multipath. This work sits in the sensing-aided branch of integrated sensing and communication (ISAC), where radar and link share the same band, so the radar serves the link rather than a separate detection task. We fuse radar sensing with visual semantic classification to construct an effective capacity metric that decouples signal strength from material-dependent reliability. A two-stage planner generates paths that avoid both hard blockers and unreliable multipath, then optimizes the trajectory to maximize effective throughput. Hardware characterization confirms that radar alone cannot distinguish spectrally distinct materials. Simulations show that the proposed planner substantially improves effective throughput and link reliability over signal-strength baselines, closely approaching an oracle with perfect channel knowledge."
+submitted: true
 featured: false
-publication: "*Under Development*"
-tags: ["Research", "UAVs", "6G", "mmWave", "Path Planning"]
+publication: "*NextGCom 2026 — Special Session: Integrated Sensing and AI-Driven Communication in 6G Perceptive Mobile Networks*"
+tags: ["Research", "UAVs", "6G", "mmWave", "ISAC", "Path Planning"]
 ---
 
 ## Key Contributions
