@@ -26,7 +26,7 @@ summary: Ευρωπαϊκά έργα (Horizon Europe), βιομηχανική έ
 <h4 style="font-weight:700;margin-bottom:0.4rem;">SPLASH — Σχεδιασμός Κυματομορφής ISAC για U-Space</h4>
 <p style="font-size:0.88rem;margin:0 0 0.75rem;opacity:0.9;max-width:680px;">Συν-σχεδιασμός ανίχνευσης, επικοινωνίας και ελέγχου για υπηρεσίες U-Space επόμενης γενιάς. Βελτιστοποίηση κυματομορφής για συντονισμό σμηνών UAV σε δίκτυα 5G/6G.</p>
 <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.85rem;"><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">Κύριος Ερευνητής</span><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">HUSI</span><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">Βιομηχανικό</span><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">2023–σήμερα</span></div>
-<a href="/el/projects/splash/" class="btn btn-sm btn-outline-light" style="width:fit-content;">Δες το Έργο</a>
+<a href="/projects/splash/" class="btn btn-sm btn-outline-light" style="width:fit-content;">Δες το Έργο</a>
 </div>
 </div>
 <div class="carousel-item" style="height:380px;background-image:url('/media/slides/firadav.jpg');background-size:cover;background-position:center;position:relative;">
@@ -36,7 +36,7 @@ summary: Ευρωπαϊκά έργα (Horizon Europe), βιομηχανική έ
 <h4 style="font-weight:700;margin-bottom:0.4rem;">FIRA-DAV — Σύντηξη Radar-Κάμερας για Ανίχνευση και Αποφυγή</h4>
 <p style="font-size:0.88rem;margin:0 0 0.75rem;opacity:0.9;max-width:680px;">Σύγχρονο σύνολο δεδομένων mmWave radar και κάμερας για ανίχνευση εμποδίων με AI σε αυτόνομα UAV. Ανοιχτό dataset για την ερευνητική κοινότητα.</p>
 <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.85rem;"><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">€10k</span><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">Κύριος Ερευνητής</span><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">Dataset</span><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">6 μήνες</span></div>
-<a href="/el/projects/firadav/" class="btn btn-sm btn-outline-light" style="width:fit-content;">Δες το Έργο</a>
+<a href="/projects/firadav/" class="btn btn-sm btn-outline-light" style="width:fit-content;">Δες το Έργο</a>
 </div>
 </div>
 </div>
