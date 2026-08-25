@@ -5,11 +5,12 @@
 {{ if .Params.publication_types }}
   {{ if reflect.IsSlice .Params.publication_types }}
     {{ $pub_type_csl = index .Params.publication_types 0 }}
-    {{ $pub_type_display = i18n (printf "pub_%s" (strings.Replace $pub_type_csl "-" "_")) | default (strings.Title $pub_type_csl) }}
+    {{ $pub_type_display = i18n (printf "pub_type_%s" (strings.Replace $pub_type_csl "-" "_")) | default (strings.Title $pub_type_csl) }}
   {{ end }}
 {{ end }}
 
 {{ $is_journal := eq $pub_type_csl "2" }}
+{{ $is_book := or (eq $pub_type_csl "5") (eq $pub_type_csl "6") }}
 
 {{/* Find PDF */}}
 {{ $pdf := "" }}
@@ -28,7 +29,7 @@
     {{/* Header section */}}
     <div class="pub-header">
       {{ if $pub_type_display }}
-      <span class="pub-type-tag {{ if $is_journal }}pub-type-journal{{ else }}pub-type-conf{{ end }}">
+      <span class="pub-type-tag {{ if $is_journal }}pub-type-journal{{ else if $is_book }}pub-type-book{{ else }}pub-type-conf{{ end }}">
         {{ $pub_type_display }}
       </span>
       {{ end }}
