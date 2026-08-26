@@ -5,7 +5,7 @@ type: bio
 share: false
 ---
 
-Dr. Evangelos Vlachos is a Tenured Researcher at the Industrial Systems Institute (ISI) of [ATHENA RC](https://www.athenarc.gr/), where he is building a research group on Joint Communication, Control, and Sensing. His research interests include Integrated Sensing and Communications (ISAC), UAV swarm coordination and U-Space resilience, and Scientific Machine Learning (deep unfolding), with a focus on bridging fundamental research with real-world validation in 6G networks and Cyber-Physical Systems.
+Dr. Evangelos Vlachos is a Tenure-track Researcher at the Industrial Systems Institute (ISI) of [ATHENA RC](https://www.athenarc.gr/), where he is building a research group on Joint Communication, Control, and Sensing. His research interests include Integrated Sensing and Communications (ISAC), UAV swarm coordination and U-Space resilience, and Scientific Machine Learning (deep unfolding), with a focus on bridging fundamental research with real-world validation in 6G networks and Cyber-Physical Systems.
 
 He has authored over 47 publications — including articles in IEEE Transactions on Wireless Communications, IEEE JSTSP, and Proceedings of the Royal Society A — accumulating more than 1,100 citations. His work on graph-based matrix completion received the World's FIRST 10K Platinum Best Paper Award in 2017.
 

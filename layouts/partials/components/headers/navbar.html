@@ -44,7 +44,7 @@
             {{with site.Params.header.image.height}}height="{{.}}"{{end}}>
           {{- else -}}
             {{ with $navbar_avatar }}<img src="{{ . }}" alt="{{ site.Title }}" class="navbar-avatar">{{ end -}}
-            <span class="navbar-brand-text"><span class="navbar-brand-name">{{- site.Title -}}</span><span class="navbar-brand-title">{{ if eq .Lang "el" }}Εντεταλμένος Ερευνητής · Ε.Κ. ΑΘΗΝΆ{{ else }}Tenured Researcher · ATHENA RC{{ end }}</span></span>
+            <span class="navbar-brand-text"><span class="navbar-brand-name">{{- site.Title -}}</span><span class="navbar-brand-title">{{ if eq .Lang "el" }}Εντεταλμένος Ερευνητής · Ε.Κ. ΑΘΗΝΆ{{ else }}Tenure-track Researcher · ATHENA RC{{ end }}</span></span>
           {{- end -}}
         </a>
       </div>
