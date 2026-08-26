@@ -21,5 +21,3 @@ AERIAL-EDGE addresses a critical gap for U-Space deployment: the lack of calibra
 - KIOS Research and Innovation Centre, University of Cyprus
 
 This work builds on ATHENA RC's aerial communications experience in the [EUSOME](https://eusome.eu/) project.
-
-*Evaluation results expected in late 2026.*
