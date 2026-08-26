@@ -1,11 +1,14 @@
 # Update these from your Google Scholar profile periodically
-total_citations: 1100
-h_index: 18
-i10_index: 27
-total_publications: 49
-last_updated: "2026-04"
+# Metrics read from https://scholar.google.com/citations?user=N2ZlmesAAAAJ
+total_citations: 1313
+h_index: 17
+i10_index: 28
+total_publications: 51
+last_updated: "2026-08"
 
-# Publications per year (update from Google Scholar profile)
+# Publications per year — counted from the CV catalogue
+# (EVlachos_CV/full_en_1.2026.tex: 15 journals + 34 conferences + 2 book
+# chapters = 51 published works; papers under review are not counted)
 publications_per_year:
   - year: 2011
     count: 1
@@ -29,34 +32,39 @@ publications_per_year:
     count: 5
   - year: 2023
     count: 3
+  - year: 2024
+    count: 1
   - year: 2025
-    count: 5
+    count: 3
   - year: 2026
-    count: 5
+    count: 3
 
-# Citations per year (update from Google Scholar bar chart)
+# Citations per year, read from the Google Scholar bar chart.
+# These sum to 1301; the remaining 12 predate 2014.
 citations_per_year:
   - year: 2014
-    count: 5
-  - year: 2015
     count: 10
+  - year: 2015
+    count: 7
   - year: 2016
-    count: 20
+    count: 9
   - year: 2017
-    count: 45
+    count: 19
   - year: 2018
-    count: 85
+    count: 27
   - year: 2019
-    count: 140
+    count: 63
   - year: 2020
-    count: 160
+    count: 124
   - year: 2021
-    count: 170
+    count: 180
   - year: 2022
-    count: 155
+    count: 220
   - year: 2023
-    count: 140
+    count: 236
   - year: 2024
-    count: 120
+    count: 147
   - year: 2025
-    count: 50
+    count: 188
+  - year: 2026
+    count: 71

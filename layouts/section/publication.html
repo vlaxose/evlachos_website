@@ -16,12 +16,16 @@
     {{ if .Params.publication_types }}
       {{ $pubtype = index .Params.publication_types 0 }}
     {{ end }}
-    {{ if eq $pubtype "2" }}
-      {{ $journals = add $journals 1 }}
-    {{ else if eq $pubtype "1" }}
-      {{ $conferences = add $conferences 1 }}
-    {{ else }}
-      {{ $books = add $books 1 }}
+    {{/* Papers still under review are not counted as publications, so this
+         breakdown agrees with the published total in site.Data.scholar. */}}
+    {{ if not .Params.submitted }}
+      {{ if eq $pubtype "2" }}
+        {{ $journals = add $journals 1 }}
+      {{ else if eq $pubtype "1" }}
+        {{ $conferences = add $conferences 1 }}
+      {{ else }}
+        {{ $books = add $books 1 }}
+      {{ end }}
     {{ end }}
     {{ $year := .Date.Format "2006" }}
     {{ $.Scratch.SetInMap "pubYears" $year $year }}

@@ -61,6 +61,6 @@ social:
 url_pdf: "uploads/EVlachos_CV_en.pdf"
 ---
 
-Evangelos Vlachos is a Tenure-track Researcher at [ISI, ATHENA RC](https://www.athenarc.gr/), where he is building the **Joint Communication, Control & Sensing** research group. His research spans ISAC, UAV swarms, and deep unfolding for 6G systems; his award-winning work — including a 2017 Best Paper Award — covers 47+ publications, 1,100+ citations, and €850k+ in secured funding.
+Evangelos Vlachos is a Tenure-track Researcher at [ISI, ATHENA RC](https://www.athenarc.gr/), where he is building the **Joint Communication, Control & Sensing** research group. His research spans ISAC, UAV swarms, and deep unfolding for 6G systems; his award-winning work — including a 2017 Best Paper Award — covers 51 publications, 1,300+ citations, and €850k+ in secured funding.
 
 <a href="/uploads/EVlachos_CV_en.pdf" target="_blank" rel="noopener" class="pub-action-btn" style="margin-top: 1rem; display: inline-flex;"><i class="fas fa-file-pdf"></i>&nbsp; Download CV</a>
