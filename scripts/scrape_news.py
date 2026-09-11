@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Smart Academic News Scanner for Dr. Evangelos Vlachos
-Scans Maildir for professional emails and uses DeepSeek-R1 (via Ollama)
+Scans Maildir for professional emails and uses the `claude` CLI (headless)
 to identify newsworthy items for the website's news section.
 """
 import argparse
@@ -12,6 +12,7 @@ import json
 import logging
 import os
 import re
+import subprocess
 import sys
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -23,10 +24,16 @@ from textwrap import dedent
 # ──────────────────────────────────────────────
 # CONFIGURATION — adjust these to your setup
 # ──────────────────────────────────────────────
-OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL = "deepseek-r1:8b"
+# LLM backend: the `claude` CLI in headless mode (was DeepSeek-R1 via Ollama,
+# which needed a local Ollama daemon on this box; there isn't one).
+CLAUDE_BIN = os.environ.get("CLAUDE_BIN", "claude")
+MODEL = os.environ.get("SCRAPE_NEWS_MODEL", "claude-haiku-4-5-20251001")
+LLM_TIMEOUT = int(os.environ.get("SCRAPE_NEWS_TIMEOUT", "180"))
 
-MAILDIR = Path.home() / "Maildir"
+# Maildir root. Corrected 2026-09-11: ~/Maildir has never existed on this box;
+# procmail delivers into ~/mail/{athenarc,gmail,upatras,sussex,local}.
+# scan_maildir() os.walk()s recursively, so the root covers every account.
+MAILDIR = Path(os.environ.get("MAILDIR_ROOT", Path.home() / "mail"))
 
 # Hugo site paths
 SITE_ROOT = Path(__file__).resolve().parent.parent
@@ -200,7 +207,7 @@ def message_id_hash(msg):
 
 
 # ──────────────────────────────────────────────
-# AI EVALUATION (DeepSeek-R1 via Ollama)
+# AI EVALUATION (claude CLI, headless)
 # ──────────────────────────────────────────────
 
 SYSTEM_PROMPT = """\
@@ -298,8 +305,8 @@ def verify_ai_response(result, subject, body):
     return True, "passed"
 
 
-def ask_deepseek(subject, body, sender, recipients):
-    """Send email context to DeepSeek-R1 and parse the structured response."""
+def ask_claude(subject, body, sender, recipients):
+    """Send email context to the claude CLI and parse the structured response."""
     # Truncate body to keep within context window
     body_excerpt = body[:2000] if body else "(empty)"
 
@@ -315,30 +322,31 @@ Body:
 
 Analyze and respond with JSON only:"""
 
-    payload = json.dumps({
-        "model": MODEL,
-        "prompt": prompt,
-        "stream": False,
-        "options": {
-            "temperature": 0.1,
-            "num_predict": 512,
-        },
-    }).encode()
-
-    req = urllib.request.Request(
-        OLLAMA_URL, data=payload,
-        headers={"Content-Type": "application/json"},
-    )
-
     try:
-        with urllib.request.urlopen(req, timeout=120) as resp:
-            raw_response = json.loads(resp.read().decode())["response"]
-    except Exception as e:
-        log.warning(f"  ⚠  Ollama request failed: {e}")
+        proc = subprocess.run(
+            [CLAUDE_BIN, "-p", "--output-format", "text", "--model", MODEL],
+            input=prompt,
+            capture_output=True,
+            text=True,
+            timeout=LLM_TIMEOUT,
+            cwd="/tmp",
+        )
+    except subprocess.TimeoutExpired:
+        log.warning(f"  \u26a0  claude CLI timed out after {LLM_TIMEOUT}s")
+        return None
+    except FileNotFoundError:
+        log.error(f"  \u26a0  claude CLI not found (CLAUDE_BIN={CLAUDE_BIN})")
         return None
 
-    # Strip DeepSeek's <think>…</think> reasoning block
-    cleaned = re.sub(r"<think>.*?</think>", "", raw_response, flags=re.DOTALL).strip()
+    if proc.returncode != 0:
+        log.warning(f"  \u26a0  claude CLI exited {proc.returncode}: {proc.stderr.strip()[:200]}")
+        return None
+
+    raw_response = proc.stdout
+
+    # Strip any reasoning block, and the ```json fences the CLI often adds
+    cleaned = re.sub(r"<think>.*?</think>", "", raw_response, flags=re.DOTALL)
+    cleaned = re.sub(r"^\s*```(?:json)?|```\s*$", "", cleaned, flags=re.MULTILINE).strip()
 
     # Try to extract JSON
     # First try: find a JSON object
@@ -556,11 +564,11 @@ def scan_maildir(maildir_path, after_date, dry_run=False):
                 evaluated += 1
 
                 if dry_run:
-                    log.info(f"   [DRY RUN] Would send to DeepSeek")
+                    log.info(f"   [DRY RUN] Would send to claude CLI")
                     already_seen.add(msg_hash)
                     continue
 
-                result = ask_deepseek(full_subject, body, sender, recipients)
+                result = ask_claude(full_subject, body, sender, recipients)
 
                 if result is None:
                     log.warning(f"   ⚠  AI returned no result, skipping")
@@ -612,7 +620,7 @@ def scan_maildir(maildir_path, after_date, dry_run=False):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Scan Maildir for academic news using DeepSeek-R1 AI",
+        description="Scan Maildir for academic news using the claude CLI",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=dedent("""\
             Examples:
@@ -626,7 +634,7 @@ def main():
     parser.add_argument("--days", type=int, default=0,
                         help="How many days back to scan (default: 0 = all emails, no date limit)")
     parser.add_argument("--dry-run", action="store_true",
-                        help="Show which emails would be AI-evaluated without calling Ollama")
+                        help="Show which emails would be AI-evaluated without calling the LLM")
     parser.add_argument("--reset", action="store_true",
                         help="Reset the processing state (re-evaluate all emails)")
     parser.add_argument("--maildir", type=str, default=None,
