@@ -14,7 +14,6 @@ import os
 import re
 import subprocess
 import sys
-import urllib.request
 from datetime import datetime, timedelta, timezone
 from email.header import decode_header
 from email.utils import parsedate_to_datetime
