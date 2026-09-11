@@ -75,6 +75,52 @@ def _escape_yaml(text: str) -> str:
     return text.replace("\\", "\\\\").replace('"', '\\"')
 
 
+# Scholar returns titles as the publisher indexed them, which means ALL-CAPS
+# entries and doubled internal whitespace turn up verbatim in a news post.
+_TITLE_KEEP_LOWER = {
+    "a", "an", "and", "as", "at", "but", "by", "for", "from", "in", "nor", "of",
+    "on", "or", "the", "to", "under", "via", "with", "over", "into",
+}
+
+# Acronyms that must stay upper-case when an all-caps title is title-cased.
+# Without this, "FOR UAV SWARMS UNDER INTERMITTENT GPS" becomes "Uav ... Gps".
+_TITLE_ACRONYMS = {a.upper(): a for a in (
+    "UAV", "UAVs", "UAS", "GPS", "GNSS", "RIS", "IRS", "THz", "MIMO", "mmWave",
+    "ISAC", "CBF", "ADMM", "MPC", "SE3", "LoS", "NLoS", "OFDM", "NOMA", "SNR",
+    "CSI", "AI", "ML", "FL", "IoT", "5G", "6G", "3D", "2D", "RF", "QoS", "URLLC",
+    "MEC", "V2X", "A2G", "SAR", "FMCW", "DoA", "AoA", "TDoA", "EM", "LLM",
+)}
+
+
+def _clean_title(title: str) -> str:
+    """Collapse whitespace, and title-case a title Scholar stored in all caps."""
+    title = re.sub(r"\s+", " ", (title or "").strip())
+    if not title:
+        return title
+
+    letters = [c for c in title if c.isalpha()]
+    # Only rewrite when it is genuinely shouting; leave mixed-case titles alone
+    # so real acronyms (MIMO, GPS, ISAC, 6G) survive untouched.
+    if not letters or not all(c.isupper() for c in letters):
+        return title
+
+    def fix_word(w, first):
+        # Hyphenated compounds are handled piece by piece ("RIS-AIDED").
+        if "-" in w.strip(",:;()"):
+            parts = w.split("-")
+            return "-".join(fix_word(p, first and i == 0) for i, p in enumerate(parts))
+
+        core = w.strip(",:;()")
+        if core.upper() in _TITLE_ACRONYMS:
+            return w.replace(core, _TITLE_ACRONYMS[core.upper()])
+        lw = w.lower()
+        if not first and lw.strip(",:;()") in _TITLE_KEEP_LOWER:
+            return lw
+        return lw[:1].upper() + lw[1:]
+
+    return " ".join(fix_word(w, i == 0) for i, w in enumerate(title.split(" ")))
+
+
 def _slug(text: str, max_len: int = 80) -> str:
     s = re.sub(r"[^\w\s-]", "", text.lower())
     s = re.sub(r"[\s_]+", "-", s).strip("-")
@@ -153,7 +199,7 @@ def get_publications(author, newer_than_year: int | None = None) -> list[dict]:
     for pub in author.get("publications", []):
         bib   = pub.get("bib", {})
         year  = bib.get("pub_year") or bib.get("year")
-        title = bib.get("title", "").strip()
+        title = _clean_title(bib.get("title", ""))
         if not title:
             continue
 
@@ -203,14 +249,16 @@ def process_new_publications(author, state: dict, newer_than_year: int | None,
             continue
 
         title     = pub["title"]
-        year      = pub["year"] or "n/a"
+        year      = pub["year"]
         venue     = pub["venue"]
         venue_str = f" in *{venue}*" if venue else ""
+        year_str  = f" ({year})" if year else ""
 
-        summary = (
-            f'New paper indexed on Google Scholar: "{title}"{venue_str} ({year}). '
-            f"Cited {pub['citations']} time(s)."
-        )
+        summary = f'New paper indexed on Google Scholar: "{title}"{venue_str}{year_str}.'
+        # A freshly indexed paper almost always has 0 citations; saying so on an
+        # announcement post reads badly, so only mention a count worth mentioning.
+        if pub["citations"]:
+            summary += f" Cited {pub['citations']} time(s)."
         tags = ["publication", "research"]
         if "uav" in title.lower() or "unmanned" in title.lower():
             tags.append("UAV")
