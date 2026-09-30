@@ -1,13 +1,13 @@
 ---
 title: "Paper Accepted at IEEE ISAC 2026"
 date: 2026-09-12
-summary: "Our paper on biconvex ADMM for sensing-aided XL-MIMO channel estimation at THz frequencies has been accepted at the 2026 IEEE International Symposium on Joint Communications and Sensing (ISAC 2026)."
+summary: "Our paper on biconvex ADMM for sensing-aided XL-MIMO channel estimation at THz frequencies has been accepted at the 2026 IEEE 1st Annual Integrated Sensing and Communication Conference (ISAC 2026)."
 tags: ["publication", "research", "ISAC", "THz", "XL-MIMO", "channel estimation", "ADMM", "6G"]
 pub_type: "paper"
 categories: ["paper"]
 ---
 
-We are pleased to announce that our paper has been accepted at the **2026 IEEE International Symposium on Joint Communications and Sensing (ISAC 2026)**:
+We are pleased to announce that our paper has been accepted at the **2026 IEEE 1st Annual Integrated Sensing and Communication Conference (ISAC 2026)**:
 
 ---
 
