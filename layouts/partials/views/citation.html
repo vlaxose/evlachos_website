@@ -110,7 +110,12 @@
         {{ $pdf = .RelPermalink }}
       {{ else }}
         {{ with $item.Params.url_pdf }}
-          {{ $pdf = . | relURL }}
+          {{ if or (hasPrefix . "http") (hasPrefix . "/") }}
+            {{ $pdf = . | relURL }}
+          {{ else }}
+            {{ $f := . }}
+            {{ range $item.AllTranslations }}{{ if not $pdf }}{{ with .Resources.GetMatch $f }}{{ $pdf = .RelPermalink }}{{ end }}{{ end }}{{ end }}
+          {{ end }}
         {{ end }}
       {{ end }}
       {{ with $pdf }}

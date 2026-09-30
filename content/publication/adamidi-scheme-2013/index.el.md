@@ -33,6 +33,4 @@ This plot reveals that increasing the number of nonzero elements (sparsity) impr
 
 {{< figure src="fig5.png" caption="Example denoising results showing the improvement in Contrast to Noise Ratio (CNR) and visual quality." >}}
 This figure visually demonstrates the effectiveness of the proposed method in enhancing image contrast and revealing finer details like calcifications.
-
-{{< figure src="fig6.png" caption="Example denoising results showing the improvement in Contrast to Noise Ratio (CNR) and visual quality." >}}
 This figure provides a qualitative assessment of the denoising performance, clearly showing the enhanced clarity and reduced noise in the reconstructed image.

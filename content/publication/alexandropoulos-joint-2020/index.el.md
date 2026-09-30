@@ -21,6 +21,4 @@ tags: ["Research", "6G", "UAVs"]
 
 {{< figure src="fig1.png" caption="NMSE performance of the proposed LOS channel estimation technique versus baseline methods." >}}
 The proposed method achieves significantly lower estimation error for the line-of-sight channel component across various scenarios, highlighting its effectiveness in leveraging UAV position information.
-
-{{< figure src="fig2.png" caption="NMSE performance of the proposed method as a function of the number of channel training transmits." >}}
 The results demonstrate that the proposed approach maintains low estimation error even with reduced channel training resources, offering a more efficient solution for joint localization and channel estimation in UAV-assisted mmWave systems.

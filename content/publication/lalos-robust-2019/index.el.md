@@ -21,6 +21,4 @@ tags: ["Research", "6G", "UAVs"]
 
 {{< figure src="fig1.png" caption="The evolution of privacy discrepancy ratio with respect to the number of iterations for K = 20 nodes." >}}
 This figure shows that increasing the number of iterations during the reconstruction process significantly enhances privacy preservation, with a notable improvement observed even after a small number of iterations (e.g., 5 iterations).
-
-{{< figure src="fig2.png" caption="The normalized-mean-square-error (NMSE) between the time-averaged data covariance matrix and the time-averaged obfuscated data covariance matrix." >}}
 This figure indicates that the obfuscated data covariance matrix is accurately estimated even in sparse networks, demonstrating the effectiveness of the proposed method in maintaining data utility while preserving privacy.

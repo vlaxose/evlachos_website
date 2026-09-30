@@ -140,7 +140,7 @@
     {{ with .Params.tags }}
     <div class="pub-tags">
       {{ range . }}
-        <a href="{{ (urls.Parse (printf "/tags/%s/" (. | urlize))).Path }}" class="pub-tag">{{ . }}</a>
+        <a href="{{ (urls.Parse (printf "%s/tags/%s/" site.LanguagePrefix (. | urlize))).Path }}" class="pub-tag">{{ . }}</a>
       {{ end }}
     </div>
     {{ end }}

@@ -18,8 +18,6 @@ tags: ["Research", "6G", "UAVs"]
 - Formulation of the GSE problem as a distributed optimization problem amenable to the alternating direction method of multipliers (ADMM).
 - Design of a communication-efficient framework that maintains compatibility with existing power system solvers.
 
-{{< figure src="fig2.png" caption="NMSE performance comparison between the centralized and decentralized GSE approaches." >}}
+{{< figure src="fig1.png" caption="The test power system partitioned into four control areas for decentralized state estimation." >}}
 This figure demonstrates that the decentralized algorithm achieves estimation accuracy comparable to the centralized solution within a few iterations.
-
-{{< figure src="fig3.png" caption="Breaker status verification error rate as a function of the number of suspected breakers." >}}
 The results show that the proposed decentralized `2-regularized GSE significantly reduces the number of incorrect breaker status identifications compared to the ordinary GSE approach.

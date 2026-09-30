@@ -17,8 +17,6 @@ tags: ["Research", "6G", "UAVs"]
 - Developed a low-complexity Expectation-Maximization algorithm for sparse channel estimation in hybrid beamforming systems with low-resolution ADCs.
 - Demonstrated that the technique effectively mitigates quantization non-linearities and improves channel estimation performance in mmWave massive MIMO systems.
 
-{{< figure src="fig4.png" caption="Mean squared error (MSE) performance comparison for different quantization resolutions and dithering techniques across various signal-to-noise ratios (SNR)." >}}
+{{< figure src="fig1.png" caption="Hybrid analog-digital receiver with phase dithering in the analog RF combiner and quantization dithering before the ADCs." >}}
 This figure shows that the proposed dithered beamforming technique significantly reduces estimation error compared to non-dithered approaches, achieving near-optimal performance with a 1dB improvement for 2- and 3-bit quantization cases.
-
-{{< figure src="fig3.png" caption="Convergence behavior of the proposed algorithm compared to an oracle-based method for different SNR values." >}}
 The results demonstrate rapid convergence of the proposed algorithm, approaching near-optimal performance even with an approximate solution for the sparse channel estimation problem.
