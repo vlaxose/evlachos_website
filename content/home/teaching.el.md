@@ -25,13 +25,13 @@ feature:
       **Πανεπιστήμιο Πατρών** · 2023–σήμερα
       ΠΜΣ · [Ψηφιακές Τηλεπικοινωνίες (EIP207)](https://eclass.upatras.gr/courses/PHY2067/) · [Συστήματα Κινητών Επικοινωνιών (EIP121)](https://eclass.upatras.gr/courses/PHY2088/)
 
-      **Πανεπιστήμιο Sussex** · 2022–σήμερα
-      Επισκέπτης Ερευνητής · Επεξεργασία σήματος & επικοινωνίες
-
   - icon: university
     icon_pack: fas
-    name: Προηγούμενες Θέσεις
+    name: Άλλες Θέσεις
     description: |
+      **Επιστημονικός Συνεργάτης (Research Fellow / Visiting Research Fellow)** · 2024–2027
+      University of Sussex, UK
+
       **Λέκτορας** · Πανεπιστήμιο Εδιμβούργου · 2019
       Προηγμένες Τεχνικές Κωδικοποίησης (LDPC, turbo codes)
 

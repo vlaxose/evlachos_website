@@ -25,13 +25,13 @@ feature:
       **University of Patras** · 2023–present
       MSc · [Digital Telecommunications (EIP207)](https://eclass.upatras.gr/courses/PHY2067/) · [Mobile Communication Systems (EIP121)](https://eclass.upatras.gr/courses/PHY2088/)
 
-      **University of Sussex** · 2022–present
-      Visiting Researcher · Signal processing & communications
-
   - icon: university
     icon_pack: fas
-    name: Past Positions
+    name: Other Positions
     description: |
+      **Research Fellow / Visiting Research Fellow** · 2024–2027
+      University of Sussex, UK
+
       **Lecturer** · University of Edinburgh · 2019
       Advanced Coding Techniques (LDPC, turbo codes)
 
