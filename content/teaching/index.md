@@ -73,8 +73,8 @@ supervision:
       role: Co-supervisor
       icon: fas fa-user-graduate
       topic: Bilevel optimization for federated learning.
-    - name: Christos Lykoudis
-      degree: Diploma thesis, University of Patras
+    - name: Diploma thesis
+      degree: University of Patras
       role: Co-supervisor (with Prof. K. Berberidis)
       icon: fas fa-user-graduate
       topic: Radar-camera fusion for object detection.

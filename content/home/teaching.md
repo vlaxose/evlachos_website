@@ -16,7 +16,7 @@ feature:
 
       **Co-supervisor**
       P. Theodoropoulos · bilevel optimization for federated learning
-      C. Lykoudis · diploma thesis, radar-camera fusion
+      Diploma thesis (University of Patras) · radar-camera fusion
 
   - icon: chalkboard-teacher
     icon_pack: fas
