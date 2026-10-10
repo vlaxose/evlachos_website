@@ -49,7 +49,7 @@ institutions:
           and capacity-approaching code design.
 
   - name: TEI of Patras (now University of Peloponnese)
-    role: Laboratory Instructor
+    role: Laboratory Associate
     period: "2011 – 2013"
     courses:
       - name: Digital Signal Processing

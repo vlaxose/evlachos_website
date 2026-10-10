@@ -9,20 +9,21 @@ subtitle:
 feature:
   - icon: user-graduate
     icon_pack: fas
-    name: PhD Supervision
+    name: Research Supervision
     description: |
       **Primary Supervisor**
-      N. Ntavanelos · ML-driven resource management for 6G networks
+      N. Ntavanelos · deep-unfolded MIMO-OTFS receivers for ISAC
 
-      **Advisory Committee**
-      P. Theodoropoulos · wireless signal processing
+      **Co-supervisor**
+      P. Theodoropoulos · bilevel optimization for federated learning
+      C. Lykoudis · diploma thesis, radar-camera fusion
 
   - icon: chalkboard-teacher
     icon_pack: fas
     name: Teaching
     description: |
       **University of Patras** · 2023–present
-      MSc · [Digital Telecommunications (EIP207)](https://eclass.upatras.gr/courses/PHY2067/) · Mobile Communication Systems
+      MSc · [Digital Telecommunications (EIP207)](https://eclass.upatras.gr/courses/PHY2067/) · [Mobile Communication Systems (EIP121)](https://eclass.upatras.gr/courses/PHY2088/)
 
       **University of Sussex** · 2022–present
       Visiting Researcher · Signal processing & communications
