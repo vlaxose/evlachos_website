@@ -20,7 +20,7 @@
 
       {{ with .programme }}
       <div class="teaching-program-box">
-        <div class="teaching-program-label">{{ if $.Params.supervision }}MSc Programme{{ else }}MSc Programme{{ end }}</div>
+        <div class="teaching-program-label">{{ if eq $.Lang "el" }}Π.Μ.Σ.{{ else }}MSc Programme{{ end }}</div>
         <a href="{{ .url }}" target="_blank" rel="noopener" class="teaching-program-name">
           {{ .name }}
           <i class="fas fa-external-link-alt" style="font-size:0.7em; margin-left:0.3em;"></i>

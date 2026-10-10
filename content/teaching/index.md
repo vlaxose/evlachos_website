@@ -22,16 +22,20 @@ institutions:
           matched filter & ML detection, PSK/QAM/FSK modulation, pulse shaping & ISI,
           equalization, channel coding, OFDM, synchronization, 4G LTE & 5G NR.
           Weekly MATLAB labs and Monte Carlo BER simulations.
-        semester: Spring 2026–2027
+        semester: Every spring semester · next 2026–2027
         eclass: https://eclass.upatras.gr/courses/PHY2067/
       - name: Mobile Communication Systems
         code: EIP121
         icon: fas fa-mobile-alt
         url: https://eclass.upatras.gr/courses/PHY2088/
         description: >
-          Channel physics & propagation, Shannon capacity, diversity & fading,
-          MIMO, cellular systems, multiple access techniques, and standards through to 5G NR.
-        semester: Fall 2026–2027
+          The wireless channel and the physical layer of mobile systems: propagation, path loss,
+          shadowing and small-scale fading, Doppler, coherence time and bandwidth, the discrete-time
+          baseband model, detection, diversity, coding and channel estimation, cellular systems and
+          multiple access (CDMA, SDMA), capacity and spatial multiplexing (MIMO), and next-generation
+          technologies (massive MIMO, mmWave, beamforming). Assessed through a MATLAB simulation
+          project (BER and capacity vs SNR), a written report and presentation, and an oral exam.
+        semester: Every fall semester · current 2026–2027
         eclass: https://eclass.upatras.gr/courses/PHY2088/
 
   - name: School of Engineering — University of Edinburgh
@@ -55,7 +59,7 @@ institutions:
           FIR/IIR filter design, and real-time DSP implementations.
 
 supervision:
-  title: Graduate Supervision
+  title: Research Supervision
   org: ATHENA RC
   period: "2021 – present"
   students:
@@ -63,11 +67,17 @@ supervision:
       degree: PhD candidate
       role: Principal Supervisor
       icon: fas fa-user-graduate
-      topic: Machine Learning for resource management in 6G networks.
-    - name: P. Theodoropoulos
+      topic: Deep-unfolded MIMO-OTFS receivers for integrated sensing and communication (ISAC).
+    - name: Periklis Theodoropoulos
       degree: PhD candidate
-      role: Advisory Committee Member
+      role: Co-supervisor
       icon: fas fa-user-graduate
+      topic: Bilevel optimization for federated learning.
+    - name: Christos Lykoudis
+      degree: Diploma thesis, University of Patras
+      role: Co-supervisor (with Prof. K. Berberidis)
+      icon: fas fa-user-graduate
+      topic: Radar-camera fusion for object detection.
     - name: M.Sc. students — University of Patras
       degree: ""
       role: Co-supervisor
