@@ -22,7 +22,7 @@ feature:
     icon_pack: fas
     name: Διδασκαλία
     description: |
-      **Πανεπιστήμιο Πατρών** · 2023–σήμερα
+      **Πανεπιστήμιο Πατρών** · 2022–σήμερα
       ΠΜΣ · [Ψηφιακές Τηλεπικοινωνίες (EIP207)](https://eclass.upatras.gr/courses/PHY2067/) · [Συστήματα Κινητών Επικοινωνιών (EIP121)](https://eclass.upatras.gr/courses/PHY2088/)
 
   - icon: university

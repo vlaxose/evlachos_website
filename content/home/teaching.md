@@ -22,7 +22,7 @@ feature:
     icon_pack: fas
     name: Teaching
     description: |
-      **University of Patras** · 2023–present
+      **University of Patras** · 2022–present
       MSc · [Digital Telecommunications (EIP207)](https://eclass.upatras.gr/courses/PHY2067/) · [Mobile Communication Systems (EIP121)](https://eclass.upatras.gr/courses/PHY2088/)
 
   - icon: university

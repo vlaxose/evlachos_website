@@ -7,7 +7,7 @@ show_date: false
 institutions:
   - name: Department of Physics — University of Patras
     role: Lecturer
-    period: "2023 – present"
+    period: "2022 – present"
     programme:
       name: Applications of Physics in the Atmosphere and in Electronics
       url: https://physics.upatras.gr/en/msc-homepage/electronics-and-information-processing/

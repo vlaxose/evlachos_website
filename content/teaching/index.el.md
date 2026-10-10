@@ -7,7 +7,7 @@ show_date: false
 institutions:
   - name: Τμήμα Φυσικής — Πανεπιστήμιο Πατρών
     role: Διδάσκων
-    period: "2023 – σήμερα"
+    period: "2022 – σήμερα"
     programme:
       name: Εφαρμογές Φυσικής στην Ατμόσφαιρα και στα Ηλεκτρονικά
       url: https://physics.upatras.gr/en/msc-homepage/electronics-and-information-processing/
