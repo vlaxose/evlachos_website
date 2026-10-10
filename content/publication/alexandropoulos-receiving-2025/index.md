@@ -1,6 +1,6 @@
 ---
 title: "Receiving RISs: Enabling Channel Estimation and Autonomous Configuration"
-date: 2025-06-12
+date: 2026-04-01
 publishDate: 2025-06-12
 authors: ['Alexandropoulos, G. C.', 'Katsanos, K. D.', 'Vlachos, E.']
 publication_types: ["6"]
