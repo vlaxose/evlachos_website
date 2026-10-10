@@ -22,15 +22,17 @@ institutions:
           matched filter & ML detection, PSK/QAM/FSK modulation, pulse shaping & ISI,
           equalization, channel coding, OFDM, synchronization, 4G LTE & 5G NR.
           Weekly MATLAB labs and Monte Carlo BER simulations.
-        semester: Spring 2025–2026
+        semester: Spring 2026–2027
         eclass: https://eclass.upatras.gr/courses/PHY2067/
       - name: Mobile Communication Systems
         code: EIP121
         icon: fas fa-mobile-alt
+        url: https://eclass.upatras.gr/courses/PHY2088/
         description: >
           Channel physics & propagation, Shannon capacity, diversity & fading,
           MIMO, cellular systems, multiple access techniques, and standards through to 5G NR.
-        semester: Fall 2025–2026
+        semester: Fall 2026–2027
+        eclass: https://eclass.upatras.gr/courses/PHY2088/
 
   - name: School of Engineering — University of Edinburgh
     role: Lecturer

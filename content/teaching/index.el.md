@@ -22,15 +22,17 @@ institutions:
           προσαρμοσμένο φίλτρο & ανίχνευση ML, διαμορφώσεις PSK/QAM/FSK, διαμόρφωση παλμών & ISI,
           ισοστάθμιση, κωδικοποίηση καναλιού, OFDM, συγχρονισμός, 4G LTE & 5G NR.
           Εβδομαδιαίες εργαστηριακές ασκήσεις MATLAB και προσομοιώσεις Monte Carlo BER.
-        semester: Εαρινό 2025–2026
+        semester: Εαρινό 2026–2027
         eclass: https://eclass.upatras.gr/courses/PHY2067/
       - name: Συστήματα Κινητών Επικοινωνιών
         code: EIP121
         icon: fas fa-mobile-alt
+        url: https://eclass.upatras.gr/courses/PHY2088/
         description: >
           Φυσική καναλιού & διάδοση, χωρητικότητα Shannon, ποικιλομορφία & διαλείψεις,
           MIMO, κυψελωτά συστήματα, τεχνικές πολλαπλής πρόσβασης και πρότυπα έως 5G NR.
-        semester: Χειμερινό 2025–2026
+        semester: Χειμερινό 2026–2027
+        eclass: https://eclass.upatras.gr/courses/PHY2088/
 
   - name: Σχολή Μηχανικών — Πανεπιστήμιο Εδιμβούργου
     role: Λέκτορας
