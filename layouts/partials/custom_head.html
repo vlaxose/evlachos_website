@@ -73,3 +73,6 @@
 {{ with .Resources.GetMatch "paper.pdf" }}<meta name="citation_pdf_url" content="{{ .Permalink }}" />{{ end }}
 <meta name="citation_abstract_html_url" content="{{ .Permalink }}" />
 {{ end }}
+
+{{/* ── /home/ duplicates the homepage: keep it out of search results ──────── */}}
+{{ if in (slice "/home/" "/el/home/") .RelPermalink }}<meta name="robots" content="noindex, follow" />{{ end }}
