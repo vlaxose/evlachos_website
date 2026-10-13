@@ -53,3 +53,23 @@
 }
 </script>
 {{ end }}
+
+{{/* ── Highwire Press tags — lets Google Scholar index each paper page + PDF ─ */}}
+{{ if and .IsPage (eq .Type "publication") (eq .Lang "en") }}
+{{ $pt := "" }}
+{{ with .Params.publication_types }}{{ if reflect.IsSlice . }}{{ $pt = index . 0 }}{{ end }}{{ end }}
+{{ $venue := .Params.publication | default "" | markdownify | plainify | htmlUnescape | strings.TrimSpace }}
+<meta name="citation_title" content="{{ .Title }}" />
+{{ range .Params.authors }}<meta name="citation_author" content="{{ . }}" />
+{{ end -}}
+<meta name="citation_publication_date" content="{{ .Date.Format "2006/01/02" }}" />
+{{ with $venue }}
+{{ if eq $pt "2" }}<meta name="citation_journal_title" content="{{ . }}" />
+{{ else if or (eq $pt "5") (eq $pt "6") }}<meta name="citation_inbook_title" content="{{ . }}" />
+{{ else }}<meta name="citation_conference_title" content="{{ . }}" />
+{{ end }}
+{{ end }}
+{{ with .Params.doi }}<meta name="citation_doi" content="{{ . }}" />{{ end }}
+{{ with .Resources.GetMatch "paper.pdf" }}<meta name="citation_pdf_url" content="{{ .Permalink }}" />{{ end }}
+<meta name="citation_abstract_html_url" content="{{ .Permalink }}" />
+{{ end }}
