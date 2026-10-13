@@ -12,10 +12,10 @@ feature:
     name: Research Supervision
     description: |
       **Primary Supervisor**
-      N. Ntavanelos · deep-unfolded MIMO-OTFS receivers for ISAC
+      Deep-unfolded MIMO-OTFS receivers for ISAC
 
       **Co-supervisor**
-      P. Theodoropoulos · bilevel optimization for federated learning
+      Bilevel optimization for federated learning
 
       **Diploma Thesis Co-supervisor**
       University of Patras · radar-camera fusion
