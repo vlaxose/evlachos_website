@@ -37,6 +37,9 @@ feature:
       **Lecturer** · University of Edinburgh · 2019
       Advanced Coding Techniques (LDPC, turbo codes)
 
-      **Postdoctoral Researcher** · 2015–2022
-      University of Edinburgh · University of Patras
+      **Postdoctoral Researcher** · 2017–2019
+      University of Edinburgh, UK
+
+      **Postdoctoral Researcher** · 2015–2017
+      University of Patras
 ---

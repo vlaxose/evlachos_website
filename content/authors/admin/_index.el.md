@@ -20,7 +20,7 @@ organizations:
     url: https://www.athenarc.gr/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Εντεταλμένος Ερευνητής στο ISI, ATHENA RC — αναπτύσσει ερευνητική ομάδα στο ISAC, σμήνη UAV και deep unfolding για 6G.
+bio: Εντεταλμένος Ερευνητής στο ISI, ATHENA RC — ηγείται ερευνητικής ομάδας στο ISAC, σμήνη UAV και deep unfolding για 6G.
 
 # Interests
 interests:
@@ -60,6 +60,6 @@ social:
 url_pdf: "uploads/EVlachos_CV.pdf"
 ---
 
-Ο Ευάγγελος Βλάχος είναι Εντεταλμένος Ερευνητής στο [ISI, ATHENA RC](https://www.athenarc.gr/), όπου αναπτύσσει ερευνητική ομάδα στο πεδίο της **Ενιαίας Επικοινωνίας, Ελέγχου και Ανίχνευσης**. Τα ερευνητικά του ενδιαφέροντα εστιάζουν σε ISAC, σμήνη UAV και deep unfolding για δίκτυα 6G, με το βραβευμένο του έργο (Βραβείο Καλύτερης Δημοσίευσης 2017) να αριθμεί 51 δημοσιεύσεις, άνω των 1.300 αναφορών και €850.000 σε εξασφαλισμένη χρηματοδότηση.
+Ο Ευάγγελος Βλάχος είναι Εντεταλμένος Ερευνητής στο [ISI, ATHENA RC](https://www.athenarc.gr/), όπου ηγείται ερευνητικής ομάδας στο πεδίο της **Ενιαίας Επικοινωνίας, Ελέγχου και Ανίχνευσης**. Τα ερευνητικά του ενδιαφέροντα εστιάζουν σε ISAC, σμήνη UAV και deep unfolding για δίκτυα 6G, με το βραβευμένο του έργο (Βραβείο Καλύτερης Δημοσίευσης 2017) να αριθμεί 54 δημοσιεύσεις, άνω των 1.300 αναφορών και €850.000 σε εξασφαλισμένη χρηματοδότηση.
 
 <a href="/uploads/EVlachos_CV.pdf" target="_blank" rel="noopener" class="pub-action-btn" style="margin-top: 1rem; display: inline-flex;"><i class="fas fa-file-pdf"></i>&nbsp; Λήψη Βιογραφικού</a>
