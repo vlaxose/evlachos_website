@@ -1,50 +1,52 @@
 ---
-title: "SPLASH: Signal Processing for Joint Sensing and Communications in U-Space"
-summary: "Co-design of sensing, communication and control protocols for next-generation U-Space services."
+title: "SPLASH: Joint Sensing, Communication and Control of Aerial Vehicles"
+summary: "Industry-funded research with the Hellenic U-Space Institute (HUSI) on drones that sense, communicate and are controlled with the same radio hardware."
 tags:
 - ISAC
-- 6G
 - U-Space
 - UAV
+- Control
 - Industrial
-date: "2023-01-01"
+date: "2023-09-01"
 
 stats:
   - value: "PI"
     label: "Role"
   - value: "HUSI"
     label: "Partner"
-  - value: "Industrial"
-    label: "Type"
-  - value: "2023"
-    label: "Year"
+  - value: "€45k"
+    label: "Budget"
+  - value: "2023–2027"
+    label: "Period"
+  - value: "Industry"
+    label: "Contract"
 
 image:
-  caption: 'SPLASH: ISAC waveform design for U-Space'
+  caption: 'SPLASH: joint sensing, communication and control for U-Space'
   focal_point: Smart
 ---
 
 ## Project Overview
 
-**SPLASH** (Signal Processing for Joint Sensing, Communication and Control — JC&S) is an industrially funded project in partnership with the **Hellenic U-Space Industry (HUSI)**. As Principal Investigator, I lead research into the joint co-design of waveforms and protocols that simultaneously support radar sensing, reliable communications, and UAV swarm control within U-Space airspace.
+**SPLASH** (*Signal Processing for physicaL-lAyer design of joint Sensing, communication, and control of aerial veHicles*) is an industrial research contract between the Industrial Systems Institute of ATHENA RC and the **Hellenic U-Space Institute (HUSI)**. As Principal Investigator, I lead ATHENA's work on one question: how drones sharing low-altitude airspace can sense their surroundings, keep their communication links and stay under control, using the same radio hardware.
 
-The project targets the convergence of sensing and communications in 5G/6G systems — a key enabler for safe, scalable UAV operations in shared airspace.
+The project started in September 2023 and was extended in 2026.
 
-## Key Research Directions
+## Research Tasks
 
-**ISAC Waveform Design**
-Investigation of OTFS and FMCW waveforms for simultaneous radar sensing and high-throughput data transmission, enabling a single radio front-end to serve both functions with minimal performance trade-off.
+**Detect-and-avoid with camera and mmWave radar fusion**
+Fusing camera images with mmWave radar detections, so a drone can spot and avoid other aircraft and obstacles in conditions where either sensor alone is unreliable.
 
-**GNSS Resilience**
-Development of navigation solutions for GPS-denied environments using cooperative localization among UAV swarm members, combining angle-of-arrival, time-difference-of-arrival, and inertial measurements.
+**Control and communication co-design**
+Designing the flight controller and the wireless link together, so that manoeuvres do not break the link and the link quality is taken into account when the drone plans its motion.
 
-**Risk Modeling for UAV Swarms**
-New probabilistic frameworks for safety assessment of UAV swarms in shared airspace, integrating communication reliability, sensing accuracy, and control latency into unified risk metrics.
+**FMCW joint sensing and communication**
+Using FMCW radar waveforms for both sensing and data transmission, so one radio front end serves both functions.
 
 ## Impact
 
-SPLASH contributes directly to the standardization roadmap for U-Space services and the integration of ISAC into 6G NR specifications. Results are being transferred to HUSI for prototype validation in live U-Space trials.
+SPLASH supports HUSI's U-Space activities, feeds the work of the [EUSOME](/projects/eusome/) Excellence Hub, and informs ATHENA's input to ETSI ISG ISAC on integrated sensing and communication for low-altitude airspace.
 
 ---
 
-*Funded by the Hellenic U-Space Industry (HUSI) under an industrial research contract.*
+*Funded by the Hellenic U-Space Institute (HUSI) under an industrial research contract (€45,000, 2023–2027).*
