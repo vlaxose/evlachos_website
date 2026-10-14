@@ -2,44 +2,35 @@
 title: Ερευνητικά Έργα
 summary: Ευρωπαϊκά έργα (Horizon Europe), βιομηχανική έρευνα και ανοιχτός κώδικας.
 ---
-<div id="projects-carousel-el" class="carousel slide" data-ride="carousel" data-interval="6000" style="border-radius:6px;overflow:hidden;margin-bottom:2rem;">
-<ol class="carousel-indicators">
-<li data-target="#projects-carousel-el" data-slide-to="0" class="active"></li>
-<li data-target="#projects-carousel-el" data-slide-to="1"></li>
-<li data-target="#projects-carousel-el" data-slide-to="2"></li>
-</ol>
-<div class="carousel-inner">
-<div class="carousel-item active" style="height:380px;background-image:url('/media/slides/eusome1.jpg');background-size:cover;background-position:center;position:relative;">
-<div class="position-absolute w-100 h-100" style="backdrop-filter:brightness(0.4);-webkit-backdrop-filter:brightness(0.4);"></div>
-<div class="position-absolute w-100 h-100" style="display:flex;flex-direction:column;justify-content:flex-end;padding:2rem 3rem;z-index:1;color:#fff;">
-<div style="margin-bottom:0.5rem;"><span style="font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;background:rgba(255,255,255,0.2);padding:0.2rem 0.55rem;border-radius:3px;">Horizon Europe</span></div>
-<h4 style="font-weight:700;margin-bottom:0.4rem;">EUSOME — Κόμβος Αριστείας για Προηγμένη Εναέρια Κινητικότητα</h4>
-<p style="font-size:0.88rem;margin:0 0 0.75rem;opacity:0.9;max-width:680px;">Ενεργοποίηση Αυτόνομων Εναέριων Συστημάτων μέσω Επιχειρησιακών Μεθόδων και Τεχνολογικών Βελτιώσεων στη ΝΑ Μεσόγειο. 16 εταίροι, 4 χρόνια, €6M.</p>
-<div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.85rem;"><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">€6M</span><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">16 Εταίροι</span><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">2025–2028</span><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">CSA · ΑΣ 101187121</span></div>
-<a href="/el/projects/eusome/" class="btn btn-sm btn-outline-light" style="width:fit-content;">Δες το Έργο</a>
+<div class="proj-grid">
+<article class="proj-card">
+<a href="/el/projects/eusome/" tabindex="-1" aria-hidden="true"><img class="proj-card-img" src="/media/cards/eusome.jpg" alt="Η κοινοπραξία του EUSOME στην εναρκτήρια συνάντηση, Πανεπιστήμιο Κύπρου" loading="lazy"></a>
+<div class="proj-card-body">
+<span class="proj-card-label">Horizon Europe</span>
+<h3><a href="/el/projects/eusome/">EUSOME: Κόμβος Αριστείας για Προηγμένη Εναέρια Κινητικότητα</a></h3>
+<p>Αυτόνομα εναέρια συστήματα και υπηρεσίες U-Space για τη ΝΑ Μεσόγειο, με 16 εταίρους σε Κύπρο, Ελλάδα, Πολωνία και Σερβία.</p>
+<dl class="proj-card-facts"><dt>Ρόλος</dt><dd>Επιστημονικός Υπεύθυνος ΕΚ ΑΘΗΝΑ</dd><dt>Χρηματοδότηση</dt><dd>Horizon Europe CSA, ΑΣ 101187121</dd><dt>Περίοδος</dt><dd>2025–2028</dd><dt>Προϋπολογισμός</dt><dd>€800k για το ΕΚ ΑΘΗΝΑ (€6M συνολικά)</dd></dl>
+<a class="proj-card-link" href="/el/projects/eusome/">Δες το έργο &rarr;</a>
 </div>
+</article>
+<article class="proj-card">
+<a href="/projects/splash/" tabindex="-1" aria-hidden="true"><img class="proj-card-img" src="/media/cards/splash.jpg" alt="Υλικό UAV με προσομοιωμένες τροχιές drone για τρία σενάρια" loading="lazy"></a>
+<div class="proj-card-body">
+<span class="proj-card-label">Βιομηχανική σύμβαση</span>
+<h3><a href="/projects/splash/">SPLASH: Ενιαία Ανίχνευση, Επικοινωνία και Έλεγχος Εναέριων Οχημάτων</a></h3>
+<p>Ανίχνευση και αποφυγή με κάμερα και ραντάρ mmWave, συν-σχεδιασμός ελέγχου και επικοινωνίας, και ενιαία ανίχνευση και επικοινωνία με κυματομορφές FMCW για drones στο U-Space.</p>
+<dl class="proj-card-facts"><dt>Ρόλος</dt><dd>Επιστημονικός Υπεύθυνος</dd><dt>Χρηματοδότηση</dt><dd>Hellenic U-Space Institute (HUSI)</dd><dt>Περίοδος</dt><dd>2023–2027</dd><dt>Προϋπολογισμός</dt><dd>€45k</dd></dl>
+<a class="proj-card-link" href="/projects/splash/">Δες το έργο &rarr;</a>
 </div>
-<div class="carousel-item" style="height:380px;background-image:url('/media/slides/splash.jpg');background-size:cover;background-position:center;position:relative;">
-<div class="position-absolute w-100 h-100" style="backdrop-filter:brightness(0.4);-webkit-backdrop-filter:brightness(0.4);"></div>
-<div class="position-absolute w-100 h-100" style="display:flex;flex-direction:column;justify-content:flex-end;padding:2rem 3rem;z-index:1;color:#fff;">
-<div style="margin-bottom:0.5rem;"><span style="font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;background:rgba(255,255,255,0.2);padding:0.2rem 0.55rem;border-radius:3px;">Βιομηχανική Έρευνα</span></div>
-<h4 style="font-weight:700;margin-bottom:0.4rem;">SPLASH — Ενιαία Ανίχνευση, Επικοινωνία και Έλεγχος Εναέριων Οχημάτων</h4>
-<p style="font-size:0.88rem;margin:0 0 0.75rem;opacity:0.9;max-width:680px;">Έρευνα με χρηματοδότηση από το Hellenic U-Space Institute: σύντηξη κάμερας και ραντάρ mmWave για αποφυγή εμποδίων, συν-σχεδιασμός ελέγχου και επικοινωνίας, και ενιαία ανίχνευση και επικοινωνία με κυματομορφές FMCW για drones στο U-Space.</p>
-<div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.85rem;"><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">Επιστημονικός Υπεύθυνος</span><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">HUSI</span><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">Βιομηχανικό</span><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">2023–2027</span></div>
-<a href="/projects/splash/" class="btn btn-sm btn-outline-light" style="width:fit-content;">Δες το Έργο</a>
+</article>
+<article class="proj-card">
+<a href="/projects/firadav/" tabindex="-1" aria-hidden="true"><img class="proj-card-img" src="/media/cards/firadav.jpg" alt="Ωφέλιμο φορτίο UAV με ραντάρ mmWave της TI, NVIDIA Jetson Nano, μονάδα 5G και μπαταρία" loading="lazy"></a>
+<div class="proj-card-body">
+<span class="proj-card-label">ΕΚ ΑΘΗΝΑ Proof of Concept</span>
+<h3><a href="/projects/firadav/">FIRA-DAV: Σύντηξη Ραντάρ-Κάμερας για Ανίχνευση και Αποφυγή</a></h3>
+<p>Συγχρονισμένο σύνολο δεδομένων ραντάρ mmWave και κάμερας για ανίχνευση εμποδίων με AI σε UAV, με βιομηχανικό εταίρο την Hellenic Drones.</p>
+<dl class="proj-card-facts"><dt>Ρόλος</dt><dd>Επιστημονικός Υπεύθυνος</dd><dt>Χρηματοδότηση</dt><dd>Εσωτερική χρηματοδότηση ΕΚ ΑΘΗΝΑ</dd><dt>Περίοδος</dt><dd>2023, 6 μήνες</dd><dt>Προϋπολογισμός</dt><dd>€10k</dd></dl>
+<a class="proj-card-link" href="/projects/firadav/">Δες το έργο &rarr;</a>
 </div>
-</div>
-<div class="carousel-item" style="height:380px;background-image:url('/media/slides/firadav.jpg');background-size:cover;background-position:center;position:relative;">
-<div class="position-absolute w-100 h-100" style="backdrop-filter:brightness(0.4);-webkit-backdrop-filter:brightness(0.4);"></div>
-<div class="position-absolute w-100 h-100" style="display:flex;flex-direction:column;justify-content:flex-end;padding:2rem 3rem;z-index:1;color:#fff;">
-<div style="margin-bottom:0.5rem;"><span style="font-size:0.65rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;background:rgba(255,255,255,0.2);padding:0.2rem 0.55rem;border-radius:3px;">Athena RC PoC</span></div>
-<h4 style="font-weight:700;margin-bottom:0.4rem;">FIRA-DAV — Σύντηξη Radar-Κάμερας για Ανίχνευση και Αποφυγή</h4>
-<p style="font-size:0.88rem;margin:0 0 0.75rem;opacity:0.9;max-width:680px;">Σύγχρονο σύνολο δεδομένων mmWave radar και κάμερας για ανίχνευση εμποδίων με AI σε αυτόνομα UAV. Ανοιχτό dataset για την ερευνητική κοινότητα.</p>
-<div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.85rem;"><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">€10k</span><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">Επιστημονικός Υπεύθυνος</span><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">Dataset</span><span style="font-size:0.72rem;background:rgba(255,255,255,0.18);padding:0.15rem 0.55rem;border-radius:3px;">6 μήνες</span></div>
-<a href="/projects/firadav/" class="btn btn-sm btn-outline-light" style="width:fit-content;">Δες το Έργο</a>
-</div>
-</div>
-</div>
-<a class="carousel-control-prev" href="#projects-carousel-el" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
-<a class="carousel-control-next" href="#projects-carousel-el" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+</article>
 </div>
