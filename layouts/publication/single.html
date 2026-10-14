@@ -91,6 +91,16 @@
         <i class="fas fa-code"></i> Code
       </a>
       {{ end }}
+
+      {{/* Funding project(s), e.g. projects: ["eusome"] -> content/projects/eusome/ */}}
+      {{ range $.Params.projects }}
+      {{ $slug := . }}
+      {{ with site.GetPage (printf "projects/%s" $slug) }}
+      <a href="{{ .RelPermalink }}" class="pub-action-btn">
+        <i class="fas fa-project-diagram"></i> {{ upper $slug }}
+      </a>
+      {{ end }}
+      {{ end }}
     </div>
 
     <hr class="pub-divider">

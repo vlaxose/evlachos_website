@@ -8,6 +8,7 @@ abstract: "Drone-mounted directed energy payloads — RF jammers and High Power 
 featured: false
 publication: "*2026 International Conference on Unmanned Aircraft Systems (ICUAS)*"
 tags: ["Research", "UAVs", "Control Barrier Functions", "Counter-UAS", "SE(3)", "ISAC"]
+projects: ["eusome"]
 ---
 
 ## Simulation Demo

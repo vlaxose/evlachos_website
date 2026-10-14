@@ -49,6 +49,9 @@ social:
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?user=N2ZlmesAAAAJ
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0000-0003-1501-0722
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/evangelos-vlachos-b543103a/
