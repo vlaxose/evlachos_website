@@ -9,8 +9,14 @@
 
     <div class="contact-page-form">
       <h3 class="contact-page-section-title">{{ if $el }}Αποστολή Μηνύματος{{ else }}Send a Message{{ end }}</h3>
-      <form class="contact-form" action="https://formsubmit.co/evlachos@athenarc.gr" method="POST">
+      {{/* No action in the HTML: the script below sets the FormSubmit endpoint on submit, so bots that
+           POST straight to a scraped action URL get nothing. Submits within 3 s of page load are dropped. */}}
+      <form class="contact-form" method="POST" data-fs="{{ "evlachos@athenarc.gr" | base64Encode }}">
         <input type="hidden" name="_captcha" value="false">
+        {{/* Spam phrases seen in past submissions; FormSubmit drops messages containing any of them */}}
+        <input type="hidden" name="_blacklist" value="faceapple, We appreciate you, Wayback Machine, Web Archives, PBN, recodecommerce, backlinks, guest post, casino">
+        {{/* Honeypot: hidden from people; FormSubmit discards submissions that fill it */}}
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <input type="hidden" name="_subject" value="New message from evlachos.space">
         <input type="hidden" name="_next" value="https://evlachos.space/{{ if $el }}el/{{ end }}contact/thank-you/">
         <input type="hidden" name="_template" value="table">
@@ -35,6 +41,17 @@
         </div>
         <button type="submit" class="contact-form-btn">{{ if $el }}Αποστολή{{ else }}Send Message{{ end }}</button>
       </form>
+      <noscript><p>{{ if $el }}Η φόρμα χρειάζεται JavaScript. Γράψτε μου στο email δίπλα.{{ else }}The form needs JavaScript. Please use the email address alongside.{{ end }}</p></noscript>
+      <script>
+        (function () {
+          var form = document.querySelector('.contact-form[data-fs]');
+          var shownAt = Date.now();
+          form.addEventListener('submit', function (e) {
+            if (Date.now() - shownAt < 3000) { e.preventDefault(); return; }
+            form.action = 'https://formsubmit.co/' + atob(form.dataset.fs);
+          });
+        })();
+      </script>
     </div>
 
     <div class="contact-page-info">
