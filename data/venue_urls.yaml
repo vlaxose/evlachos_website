@@ -4,16 +4,16 @@
 
 # ── Journals ──────────────────────────────────────────────────────────────────
 - pattern: "Transactions on Wireless Communications"
-  url: "https://www.comsoc.org/publications/journals/ieee-transactions-wireless-communications"
+  url: "https://www.comsoc.org/publications/journals/ieee-twc"
 
 - pattern: "Transactions on Vehicular Technology"
-  url: "https://vts.ieee.org/publication/ieee-transactions-on-vehicular-technology/"
+  url: "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=25"
 
 - pattern: "Transactions on Multimedia"
   url: "https://signalprocessingsociety.org/publications-resources/ieee-transactions-multimedia"
 
 - pattern: "Green Communications and Networking"
-  url: "https://www.comsoc.org/publications/journals/ieee-transactions-green-communications-and-networking"
+  url: "https://www.comsoc.org/publications/journals/ieee-tgcn"
 
 - pattern: "Emerging and Selected Topics in Circuits"
   url: "https://ieee-cas.org/publication/jetcas"
@@ -25,7 +25,7 @@
   url: "https://signalprocessingsociety.org/publications-resources/ieee-signal-processing-letters"
 
 - pattern: "Wireless Communications Letters"
-  url: "https://www.comsoc.org/publications/journals/ieee-wireless-communications-letters"
+  url: "https://www.comsoc.org/publications/journals/ieee-wcl"
 
 - pattern: "IET Signal Processing"
   url: "https://ietresearch.onlinelibrary.wiley.com/journal/17519675"
@@ -38,40 +38,38 @@
 
 # ── Conferences ───────────────────────────────────────────────────────────────
 - pattern: "ICASSP"
-  url: "https://signalprocessingsociety.org/conference-activity/icassp"
+  url: "https://ieeeicassp.org/"
 
 - pattern: "EUSIPCO"
   url: "https://eurasip.org/eusipco/"
 
 - pattern: "SPAWC"
-  url: "https://signalprocessingsociety.org/conference-activity/spawc"
+  url: "https://signalprocessingsociety.org/events/conferences"
 
 - pattern: "GLOBECOM"
-  url: "https://globecom.ieee.org/"
+  url: "https://www.ieee-globecom.org/"
 
 - pattern: "International Conference on Communications"
-  url: "https://icc.ieee.org/"
+  url: "https://www.comsoc.org/conferences-events/portfolio-conferences-events"
 
 - pattern: "WCNC"
-  url: "https://wcnc.ieee.org/"
+  url: "https://www.ieee-wcnc.org/"
 
 - pattern: "Vehicular Technology Conference"
-  url: "https://vts.ieee.org/events/"
+  url: "https://www.ieeevtc.org/"
 
 - pattern: "PIMRC"
-  url: "https://pimrc.ieee.org/"
+  url: "https://www.ieee-pimrc.org/"
 
 - pattern: "ICME"
   url: "https://ieeeicme.org/"
 
 - pattern: "CAMAD"
-  url: "https://camad.ieee.org/"
+  url: "https://www.ieee-camad.org/"
 
 - pattern: "CAMSAP"
-  url: "https://signalprocessingsociety.org/conference-activity/camsap"
+  url: "https://signalprocessingsociety.org/events/conferences"
 
-- pattern: "BIBE"
-  url: "https://ieeebioinformatics.org/"
 
 - pattern: "Signal Processing and Information Technology"
   url: "https://signalprocessingsociety.org/"
@@ -82,14 +80,9 @@
 - pattern: "ISGT-Europe"
   url: "https://ieee-isgt.org/"
 
-- pattern: "Mediterranean Conference on Control"
-  url: "https://ieeemed.eu/"
 
 - pattern: "VLSI-SoC"
-  url: "https://vlsi-soc.org/"
+  url: "https://vlsi-soc.com/"
 
 - pattern: "Asilomar"
   url: "https://www.asilomarsscconf.org/"
-
-- pattern: "Digital Signal Processing (DSP)"
-  url: "https://dsp-conference.org/"
