@@ -1099,13 +1099,31 @@ a.pub-title:hover {
   border-bottom: none;
 }
 
+.teaching-body.has-photo {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.teaching-body-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.teaching-body.has-photo .teaching-program-box,
+.teaching-body.has-photo .teaching-courses {
+  margin-left: 0;
+}
+
 .teaching-photo {
-  position: relative;
-  margin: 0 0 1.2rem;
-  border-radius: 10px;
+  flex: 0 0 6rem;
+  display: block;
+  width: 6rem;
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
   overflow: hidden;
-  aspect-ratio: 1440 / 520;
   background: #e9e4dc;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
 .teaching-photo img {
@@ -1113,22 +1131,21 @@ a.pub-title:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.teaching-photo figcaption {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 0.2rem 0.55rem;
-  font-size: 0.65rem;
-  line-height: 1.3;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.45);
-  border-top-left-radius: 6px;
+.teaching-photo:hover img {
+  transform: scale(1.06);
 }
 
-.teaching-photo figcaption a {
-  color: #fff !important;
+.teaching-photo-credits {
+  margin: 0.5rem 0 0;
+  font-size: 0.7rem;
+  color: #888 !important;
+}
+
+.teaching-photo-credits a {
+  color: inherit !important;
   text-decoration: underline;
 }
 
@@ -1313,6 +1330,10 @@ body.dark .teaching-eclass-link:hover { background: #3a7a40; }
   .teaching-program-box,
   .teaching-courses {
     margin-left: 0;
+  }
+  .teaching-body.has-photo {
+    flex-direction: column;
+    gap: 0.8rem;
   }
 }
 

@@ -6,19 +6,9 @@
   <div class="teaching-page">
 
     {{/* ---- Institutions & Courses ---- */}}
+    {{ $credits := slice }}
     {{ range .Params.institutions }}
     <div class="teaching-block">
-      {{ with .image }}{{ $meta := . }}{{ with resources.Get .src }}
-      {{ $anchor := $meta.anchor | default "Center" }}
-      {{ $sm := .Fill (printf "720x260 webp q78 %s" $anchor) }}
-      {{ $lg := .Fill (printf "1440x520 webp q78 %s" $anchor) }}
-      <figure class="teaching-photo">
-        <img src="{{ $lg.RelPermalink }}" srcset="{{ $sm.RelPermalink }} 720w, {{ $lg.RelPermalink }} 1440w"
-             sizes="(max-width: 800px) 100vw, 800px" width="{{ $lg.Width }}" height="{{ $lg.Height }}"
-             alt="{{ $meta.alt }}" loading="lazy" decoding="async">
-        <figcaption>{{ if eq $.Lang "el" }}Φωτογραφία{{ else }}Photo{{ end }}: <a href="{{ $meta.source }}" target="_blank" rel="noopener">{{ $meta.author }}</a>, <a href="{{ $meta.license_url }}" target="_blank" rel="noopener">{{ $meta.license }}</a>{{ if eq $.Lang "el" }}, μέσω{{ else }}, via{{ end }} Wikimedia Commons</figcaption>
-      </figure>
-      {{ end }}{{ end }}
       <div class="teaching-block-header">
         <div class="teaching-block-meta">
           <span class="teaching-period">{{ .period }}</span>
@@ -29,40 +19,56 @@
         </div>
       </div>
 
-      {{ with .programme }}
-      <div class="teaching-program-box">
-        <div class="teaching-program-label">{{ if eq $.Lang "el" }}Π.Μ.Σ.{{ else }}MSc Programme{{ end }}</div>
-        <a href="{{ .url }}" target="_blank" rel="noopener" class="teaching-program-name">
-          {{ .name }}
-          <i class="fas fa-external-link-alt" style="font-size:0.7em; margin-left:0.3em;"></i>
+      <div class="teaching-body{{ if .image }} has-photo{{ end }}">
+        {{ with .image }}{{ $meta := . }}{{ with resources.Get .src }}
+        {{ $credits = $credits | append $meta }}
+        {{ $sm := .Fill "200x150 webp q80 Center" }}
+        {{ $lg := .Fill "400x300 webp q80 Center" }}
+        <a class="teaching-photo" href="{{ $meta.source }}" target="_blank" rel="noopener"
+           title="{{ if eq $.Lang "el" }}Φωτογραφία{{ else }}Photo{{ end }}: {{ $meta.author }}, {{ $meta.license }}, Wikimedia Commons">
+          <img src="{{ $sm.RelPermalink }}" srcset="{{ $sm.RelPermalink }} 200w, {{ $lg.RelPermalink }} 400w"
+               sizes="6rem" width="{{ $sm.Width }}" height="{{ $sm.Height }}"
+               alt="{{ $meta.alt }}" loading="lazy" decoding="async">
         </a>
-        <div class="teaching-program-spec">{{ .specialization }}</div>
-      </div>
-      {{ end }}
+        {{ end }}{{ end }}
 
-      <div class="teaching-courses">
-        {{ range .courses }}
-        <div class="teaching-course">
-          <div class="teaching-course-name">
-            <i class="{{ .icon }}"></i>
-            {{ if .url }}
-            <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
-            {{ else }}
-            {{ .name }}
-            {{ end }}
-            {{ with .code }}<span class="teaching-course-code">{{ . }}</span>{{ end }}
-          </div>
-          <div class="teaching-course-desc">
-            {{ .description | markdownify }}
-          </div>
-          {{ if or .semester .eclass }}
-          <div class="teaching-course-meta">
-            {{ with .semester }}<span class="teaching-semester"><i class="fas fa-calendar-alt"></i> {{ . }}</span>{{ end }}
-            {{ with .eclass }}<a href="{{ . }}" target="_blank" rel="noopener" class="teaching-eclass-link"><i class="fas fa-chalkboard"></i> eClass</a>{{ end }}
+        <div class="teaching-body-main">
+          {{ with .programme }}
+          <div class="teaching-program-box">
+            <div class="teaching-program-label">{{ if eq $.Lang "el" }}Π.Μ.Σ.{{ else }}MSc Programme{{ end }}</div>
+            <a href="{{ .url }}" target="_blank" rel="noopener" class="teaching-program-name">
+              {{ .name }}
+              <i class="fas fa-external-link-alt" style="font-size:0.7em; margin-left:0.3em;"></i>
+            </a>
+            <div class="teaching-program-spec">{{ .specialization }}</div>
           </div>
           {{ end }}
+
+          <div class="teaching-courses">
+            {{ range .courses }}
+            <div class="teaching-course">
+              <div class="teaching-course-name">
+                <i class="{{ .icon }}"></i>
+                {{ if .url }}
+                <a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a>
+                {{ else }}
+                {{ .name }}
+                {{ end }}
+                {{ with .code }}<span class="teaching-course-code">{{ . }}</span>{{ end }}
+              </div>
+              <div class="teaching-course-desc">
+                {{ .description | markdownify }}
+              </div>
+              {{ if or .semester .eclass }}
+              <div class="teaching-course-meta">
+                {{ with .semester }}<span class="teaching-semester"><i class="fas fa-calendar-alt"></i> {{ . }}</span>{{ end }}
+                {{ with .eclass }}<a href="{{ . }}" target="_blank" rel="noopener" class="teaching-eclass-link"><i class="fas fa-chalkboard"></i> eClass</a>{{ end }}
+              </div>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
         </div>
-        {{ end }}
       </div>
     </div>
     {{ end }}
@@ -94,6 +100,13 @@
         {{ end }}
       </div>
     </div>
+    {{ end }}
+
+    {{ with $credits }}
+    <p class="teaching-photo-credits">
+      {{ if eq $.Lang "el" }}Φωτογραφίες{{ else }}Photos{{ end }}:
+      {{ range $i, $c := . }}{{ if $i }}, {{ end }}<a href="{{ $c.source }}" target="_blank" rel="noopener">{{ $c.author }}</a> (<a href="{{ $c.license_url }}" target="_blank" rel="noopener">{{ $c.license }}</a>){{ end }}{{ if eq $.Lang "el" }}, μέσω{{ else }}, via{{ end }} Wikimedia Commons.
+    </p>
     {{ end }}
 
   </div>
