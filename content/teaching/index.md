@@ -8,6 +8,7 @@ institutions:
   - name: Department of Physics — University of Patras
     role: Lecturer
     period: "2022 – present"
+    url: https://physics.upatras.gr/en/
     image:
       src: media/teaching/upatras.jpg
       alt: Building A, University of Patras campus
@@ -48,6 +49,7 @@ institutions:
   - name: School of Engineering — University of Edinburgh
     role: Lecturer
     period: "2019"
+    url: https://eng.ed.ac.uk/
     image:
       src: media/teaching/edinburgh.jpg
       alt: Old College quadrangle, University of Edinburgh

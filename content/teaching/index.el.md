@@ -8,6 +8,7 @@ institutions:
   - name: Τμήμα Φυσικής — Πανεπιστήμιο Πατρών
     role: Διδάσκων
     period: "2022 – σήμερα"
+    url: https://physics.upatras.gr/
     image:
       src: media/teaching/upatras.jpg
       alt: Το Κτήριο Α στην Πανεπιστημιούπολη της Πάτρας
@@ -49,6 +50,7 @@ institutions:
   - name: Σχολή Μηχανικών — Πανεπιστήμιο Εδιμβούργου
     role: Λέκτορας
     period: "2019"
+    url: https://eng.ed.ac.uk/
     image:
       src: media/teaching/edinburgh.jpg
       alt: Το Old College του Πανεπιστημίου του Εδιμβούργου
