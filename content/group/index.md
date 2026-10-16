@@ -1,5 +1,6 @@
 ---
-title: Team
+title: Research Group
+aliases: ["/team/"]
 summary: The research team at the Industrial Systems Institute, ATHENA RC, Patras.
 date: 2026-10-16
 type: team
