@@ -18,3 +18,7 @@ tags: ["Research", "6G", "UAVs"]
 - Consideration of the transmitter-side impact of low-resolution DACs, distinguishing this work from literature primarily focused on receiver-side ADCs.
 - Formulation of the EE maximization problem under a predefined power budget, accounting for the power consumption of active RF chains and their associated DACs.
 - Demonstration that the proposed technique achieves near-optimal EE performance with significantly reduced computational complexity compared to an exhaustive search baseline.
+
+## Presentation
+
+{{< figure src="talk.jpg" caption="Presenting the paper at IEEE ICC 2019, Shanghai, May 2019." >}}

@@ -12,3 +12,7 @@ url_pdf: "paper.pdf"
 publication: "*2023 IEEE International Conference on Communications Workshops (ICC Workshops)*"
 tags: ["Research", "6G"]
 ---
+
+## Παρουσίαση
+
+{{< figure src="talk.jpg" caption="Παρουσίαση της εργασίας στο IEEE ICC 2023, Ρώμη, 1 Ιουνίου 2023." >}}
