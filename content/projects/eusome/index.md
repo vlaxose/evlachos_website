@@ -110,7 +110,7 @@ Coordinated by the **KIOS Research and Innovation Center of Excellence** at the 
 * **July 2025 — EUSOME at Oshkosh EAA AirVenture:** Aviomania Aircraft showcased the EUSOME eVTOL concept at the world's largest airshow.
 * **July 2025 — UCY Summer Academies:** Outreach to the next generation through drone demonstrations and AAM talks at the University of Cyprus.
 * **June 2025 — WSIS+20 High-Level Event:** SocialTech Lab represented EUSOME at the World Summit on the Information Society.
-* **June 2025 — EUSOME at DEFEA 2025:** Project featured at the Defence Exhibition Athens, demonstrating dual-use potential of AAM technologies.
+* **May 2025 — EUSOME at DEFEA 2025:** Project featured at the Defence Exhibition Athens, demonstrating dual-use potential of AAM technologies.
 * **May 2025 — Mentoring Programme Launch:** The EUSOME mentoring and training programme officially kicked off in Belgrade.
 * **January 2025:** Official Project Kick-off Meeting in Cyprus.
 
