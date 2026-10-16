@@ -68,6 +68,14 @@ institutions:
   - name: ΤΕΙ Πατρών (νυν Πανεπιστήμιο Πελοποννήσου)
     role: Εργαστηριακός Συνεργάτης
     period: "2011 – 2013"
+    url: https://www.uop.gr/
+    image:
+      src: media/teaching/uop.jpg
+      alt: Η είσοδος του Πανεπιστημίου Πελοποννήσου
+      author: Kikisoti
+      license: CC BY-SA 4.0
+      license_url: https://creativecommons.org/licenses/by-sa/4.0/
+      source: https://commons.wikimedia.org/wiki/File:%CE%91%CF%81%CF%87%CE%B5%CE%AF%CE%BF_%CE%A0%CE%B1%CE%BD%CE%B5%CF%80%CE%B9%CF%83%CF%84%CE%AE%CE%BC%CE%B9%CE%BF_%CE%A0%CE%B5%CE%BB%CE%BF%CF%80%CE%BF%CE%BD%CE%BD%CE%AE%CF%83%CE%BF%CF%85_18_%CE%99%CE%B1%CE%BD_2024.jpg
     courses:
       - name: Ψηφιακή Επεξεργασία Σήματος
         icon: fas fa-wave-square
