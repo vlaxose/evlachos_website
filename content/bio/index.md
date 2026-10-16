@@ -12,8 +12,8 @@ photos:
     alt: Evangelos Vlachos at the podium of the SkySense 2025 workshop in Patras
     caption: SkySense 2025 workshop, University of Patras, October 2025
   - src: media/bio/poster.jpg
-    alt: Evangelos Vlachos discussing his poster with a visitor
-    caption: Poster on spectral and energy efficient design for next-generation wireless systems
+    alt: Evangelos Vlachos discussing his poster at the internal ATHENA RC Day
+    caption: Poster presentation at the internal ATHENA RC Day
   - src: media/bio/dronex2023.jpg
     alt: Evangelos Vlachos at the DroneX Trade Show in London
     caption: DroneX Trade Show, ExCeL London, September 2023
