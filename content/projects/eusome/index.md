@@ -22,6 +22,17 @@ stats:
   - value: "101187121"
     label: "Grant Agreement"
 
+photos:
+  - src: media/eusome/fieldtest-2026.jpg
+    alt: Preparing a drone on its case for a field test
+    caption: UAV field test, Athens, January 2026
+  - src: media/eusome/defea-2025.jpg
+    alt: Research drone on display at an exhibition stand
+    caption: DEFEA 2025 exhibition, Athens
+  - src: media/eusome/lab-2025.jpg
+    alt: Drone with radios and sensors on a lab bench
+    caption: Getting a UAV ready for flight tests, July 2025
+
 image:
   caption: 'EUSOME Kick-off Meeting, January 2025, University of Cyprus'
   focal_point: Center
@@ -49,6 +60,8 @@ As **Principal Investigator** for **ISI / ATHENA Research Center**, I lead the i
 - **6G-integrated U-Space communications** — designing ISAC waveforms for UAV swarm coordination and command-and-control links.
 - **UAV path planning under channel uncertainty** — developing MPC frameworks that optimize trajectory and MIMO ergodic rates jointly.
 - **Detect-and-Avoid for BVLOS operations** — radar-camera fusion for obstacle detection in autonomous UAS.
+
+{{< photo-strip >}}
 
 ## Selected Publications
 

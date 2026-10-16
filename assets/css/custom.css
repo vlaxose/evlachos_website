@@ -1328,13 +1328,13 @@ body.dark .teaching-eclass-link:hover { background: #3a7a40; }
 }
 
 /* Team page */
-.group-strip {
+.photo-strip {
   display: flex;
   gap: 0.5rem;
   margin: 0 0 1.5rem;
 }
 
-.group-strip-item {
+.photo-strip-item {
   position: relative;
   margin: 0;
   min-width: 0;
@@ -1343,13 +1343,13 @@ body.dark .teaching-eclass-link:hover { background: #3a7a40; }
   background: #e9e4dc;
 }
 
-.group-strip-item img {
+.photo-strip-item img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.group-strip-item figcaption {
+.photo-strip-item figcaption {
   position: absolute;
   left: 0;
   right: 0;
@@ -1362,17 +1362,17 @@ body.dark .teaching-eclass-link:hover { background: #3a7a40; }
 }
 
 @media (max-width: 576px) {
-  .group-strip {
+  .photo-strip {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
   }
-  .group-strip-item {
+  .photo-strip-item {
     flex: 0 0 auto !important;
     height: 200px;
     scroll-snap-align: start;
   }
-  .group-strip-item img {
+  .photo-strip-item img {
     width: auto;
     height: 100%;
   }
