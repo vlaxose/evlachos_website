@@ -7,6 +7,16 @@ photo:
   src: media/bio/icc2023.jpg
   alt: Evangelos Vlachos presenting at IEEE ICC 2023 in Rome
   caption: Presenting at IEEE ICC 2023, Rome
+photos:
+  - src: media/bio/skysense2025.jpg
+    alt: Evangelos Vlachos at the podium of the SkySense 2025 workshop in Patras
+    caption: SkySense 2025 workshop, University of Patras, October 2025
+  - src: media/bio/poster.jpg
+    alt: Evangelos Vlachos discussing his poster with a visitor
+    caption: Poster on spectral and energy efficient design for next-generation wireless systems
+  - src: media/bio/dronex2023.jpg
+    alt: Evangelos Vlachos at the DroneX Trade Show in London
+    caption: DroneX Trade Show, ExCeL London, September 2023
 ---
 
 Dr. Evangelos Vlachos is a Tenure-track Researcher at the Industrial Systems Institute (ISI) of [ATHENA RC](https://www.athenarc.gr/), where he formed and leads an independent research group on Joint Communication, Control, and Sensing. His research interests include Integrated Sensing and Communications (ISAC), UAV swarm coordination and U-Space resilience, and Scientific Machine Learning (deep unfolding), with a focus on bridging fundamental research with real-world validation in 6G networks and Cyber-Physical Systems.
@@ -18,5 +28,7 @@ As Principal Investigator, he has secured over €850,000 in competitive and ind
 He is a member of the EURASIP Technical Area Committee on Signal Processing for Communications and Networking, and serves as a reviewer for major IEEE journals. He leads the special session "Signal Processing for Integrated Sensing, Communication, and Control in Autonomous Aerial Networks" at ICASSP 2027, chaired special sessions at NextGCom 2026 and IFIP/IEEE VLSI-SoC 2022, and chaired the SkySense 2025 workshop at IEEE ISC2 2025. Recent invited talks include "Cellular ISAC for U-space: Closing the Non-Cooperative Surveillance Gap" at the SkySense workshop of IEEE CAMAD 2026 in Nicosia, and talks at the University of Patras (2026) and the University of Sussex (2022).
 
 He currently teaches at the University of Patras and holds a visiting position at the University of Sussex, with previous postdoctoral and lecturing experience at the University of Edinburgh.
+
+{{< photo-strip >}}
 
 <a href="/uploads/EVlachos_CV_en.pdf" target="_blank" rel="noopener" class="pub-action-btn" style="margin-top:1.5rem;display:inline-flex;"><i class="fas fa-file-pdf"></i>&nbsp; Download CV</a>

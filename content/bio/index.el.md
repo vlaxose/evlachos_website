@@ -7,6 +7,16 @@ photo:
   src: media/bio/icc2023.jpg
   alt: Ο Ευάγγελος Βλάχος παρουσιάζει στο IEEE ICC 2023 στη Ρώμη
   caption: Παρουσίαση στο IEEE ICC 2023, Ρώμη
+photos:
+  - src: media/bio/skysense2025.jpg
+    alt: Ο Ευάγγελος Βλάχος στο βήμα του εργαστηρίου SkySense 2025 στην Πάτρα
+    caption: Εργαστήριο SkySense 2025, Πανεπιστήμιο Πατρών, Οκτώβριος 2025
+  - src: media/bio/poster.jpg
+    alt: Ο Ευάγγελος Βλάχος συζητά την αφίσα του με επισκέπτη
+    caption: Αφίσα για φασματικά και ενεργειακά αποδοτική σχεδίαση ασύρματων συστημάτων νέας γενιάς
+  - src: media/bio/dronex2023.jpg
+    alt: Ο Ευάγγελος Βλάχος στην έκθεση DroneX στο Λονδίνο
+    caption: Έκθεση DroneX, ExCeL Λονδίνο, Σεπτέμβριος 2023
 ---
 
 Ο Ευάγγελος Βλάχος είναι Εντεταλμένος Ερευνητής στο Ινστιτούτο Βιομηχανικών Συστημάτων (ISI) του [Ε.Κ. ΑΘΗΝΑ](https://www.athenarc.gr/), όπου έχει συγκροτήσει και ηγείται αυτοδύναμης ερευνητικής ομάδας στο πεδίο της Ολοκληρωμένης Ανίχνευσης και Επικοινωνιών (ISAC), του συντονισμού σμηνών UAV και της Επιστημονικής Μηχανικής Μάθησης (deep unfolding) για δίκτυα 6G και κυβερνο-φυσικά συστήματα.
@@ -18,5 +28,7 @@ photo:
 Είναι μέλος της Τεχνικής Επιτροπής EURASIP για την Επεξεργασία Σήματος σε Επικοινωνίες και Δίκτυα, και κριτής σε κορυφαία περιοδικά IEEE. Είναι επικεφαλής διοργανωτής της ειδικής συνεδρίας «Signal Processing for Integrated Sensing, Communication, and Control in Autonomous Aerial Networks» στο ICASSP 2027, ενώ έχει προεδρεύσει ειδικών συνεδριών στα NextGCom 2026 και IFIP/IEEE VLSI-SoC 2022 και του workshop SkySense 2025 στο IEEE ISC2 2025. Πρόσφατες προσκεκλημένες ομιλίες του περιλαμβάνουν το «Cellular ISAC for U-space: Closing the Non-Cooperative Surveillance Gap» στο workshop SkySense του IEEE CAMAD 2026 στη Λευκωσία, καθώς και ομιλίες στο Πανεπιστήμιο Πατρών (2026) και στο University of Sussex (2022).
 
 Διδάσκει στο Πανεπιστήμιο Πατρών και κατέχει επισκέπτη θέση στο Πανεπιστήμιο του Sussex, με προηγούμενη μεταδιδακτορική και διδακτική εμπειρία στο Πανεπιστήμιο του Εδιμβούργου.
+
+{{< photo-strip >}}
 
 <a href="/uploads/EVlachos_CV.pdf" target="_blank" rel="noopener" class="pub-action-btn" style="margin-top:1.5rem;display:inline-flex;"><i class="fas fa-file-pdf"></i>&nbsp; Λήψη Βιογραφικού</a>
