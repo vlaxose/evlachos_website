@@ -7,3 +7,5 @@ categories: ["paper"]
 ---
 
 New paper indexed on Google Scholar: "Consistency-Gated Cooperative Localization for UAV Swarms under Intermittent GPS" (2026).
+
+[Publication page]({{< relref "/publication/venetis-consistency-2026" >}})

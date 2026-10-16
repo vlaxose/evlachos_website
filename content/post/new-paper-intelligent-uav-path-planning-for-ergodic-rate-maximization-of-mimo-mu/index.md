@@ -7,3 +7,5 @@ categories: ["paper"]
 ---
 
 New paper indexed on Google Scholar: "Intelligent UAV Path Planning for Ergodic Rate Maximization of MIMO Multipath Channels" (2026).
+
+[Publication page]({{< relref "/publication/vitale-intelligent-2025" >}})

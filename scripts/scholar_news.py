@@ -31,6 +31,7 @@ SCHOLAR_PROFILE_ID = "N2ZlmesAAAAJ"   # Dr. Evangelos Vlachos Google Scholar ID
 
 SITE_ROOT  = Path(__file__).resolve().parent.parent
 POSTS_DIR  = SITE_ROOT / "content" / "post"
+PUBS_DIR   = SITE_ROOT / "content" / "publication"
 STATE_FILE = Path(__file__).resolve().parent / ".scholar_state.json"
 
 # Milestones to announce (every N citations)
@@ -128,8 +129,33 @@ def _slug(text: str, max_len: int = 80) -> str:
     return s.rstrip("-")
 
 
+def _norm_title(text: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", text.lower()).strip()
+
+
+def find_site_publication(title: str) -> str | None:
+    """Return the slug of the site's own publication page for this title, if any.
+
+    Scholar's indexed title often differs a little from ours ("SE(3)" dropped,
+    different capitalisation), so match fuzzily rather than exactly.
+    """
+    from difflib import SequenceMatcher
+
+    want = _norm_title(title)
+    best, best_ratio = None, 0.0
+    for page in PUBS_DIR.glob("*/index.md"):
+        m = re.search(r'^title:\s*"?(.*?)"?\s*$', page.read_text(encoding="utf-8"), re.M)
+        if not m:
+            continue
+        ratio = SequenceMatcher(None, want, _norm_title(m.group(1))).ratio()
+        if ratio > best_ratio:
+            best, best_ratio = page.parent.name, ratio
+    return best if best_ratio >= 0.85 else None
+
+
 def write_post(slug: str, title: str, date_str: str, summary: str,
-               tags: list[str], category: str, dry_run: bool = False) -> Path:
+               tags: list[str], category: str, dry_run: bool = False,
+               body_extra: str = "") -> Path:
     folder = POSTS_DIR / slug
     post_path = folder / "index.md"
 
@@ -149,6 +175,8 @@ def write_post(slug: str, title: str, date_str: str, summary: str,
 
         {summary}
     """)
+    if body_extra:
+        content += f"\n{body_extra}\n"
 
     if dry_run:
         log.info(f"  [DRY RUN] Would create: {post_path}")
@@ -267,8 +295,20 @@ def process_new_publications(author, state: dict, newer_than_year: int | None,
         if "6g" in title.lower() or "6 g" in title.lower():
             tags.append("6G")
 
+        # Every announcement links somewhere: our own publication page when we
+        # have one, otherwise the paper's entry on the Scholar profile.
+        site_pub = find_site_publication(title)
+        if site_pub:
+            link = f'[Publication page]({{{{< relref "/publication/{site_pub}" >}}}})'
+        else:
+            link = ("[View on Google Scholar](https://scholar.google.com/citations?"
+                    f"view_op=view_citation&hl=en&citation_for_view={pub_id})")
+            if pub_id.startswith("title:"):
+                link = f"[View on Google Scholar]({pub['scholar_url']})" if pub["scholar_url"] else ""
+
         slug = _slug(f"new-paper-{title}")
-        write_post(slug, f"New Paper: {title}", today, summary, tags, "paper", dry_run)
+        write_post(slug, f"New Paper: {title}", today, summary, tags, "paper", dry_run,
+                   body_extra=link)
 
         new_seen.add(pub_id)
         created.append(title)
