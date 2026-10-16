@@ -8,6 +8,13 @@ institutions:
   - name: Department of Physics — University of Patras
     role: Lecturer
     period: "2022 – present"
+    image:
+      src: media/teaching/upatras.jpg
+      alt: Building A, University of Patras campus
+      author: Victoria Daskalou
+      license: CC BY-SA 3.0
+      license_url: https://creativecommons.org/licenses/by-sa/3.0/
+      source: https://commons.wikimedia.org/wiki/File:University_of_Patras,_Building_A.JPG
     programme:
       name: Applications of Physics in the Atmosphere and in Electronics
       url: https://physics.upatras.gr/en/msc-homepage/electronics-and-information-processing/
@@ -41,6 +48,13 @@ institutions:
   - name: School of Engineering — University of Edinburgh
     role: Lecturer
     period: "2019"
+    image:
+      src: media/teaching/edinburgh.jpg
+      alt: Old College quadrangle, University of Edinburgh
+      author: Chrysi Chrysochou
+      license: CC BY-SA 3.0
+      license_url: https://creativecommons.org/licenses/by-sa/3.0/
+      source: https://commons.wikimedia.org/wiki/File:Old_College,_Edinburgh_University.jpg
     courses:
       - name: Advanced Coding Techniques
         icon: fas fa-code-branch

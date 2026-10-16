@@ -1099,6 +1099,39 @@ a.pub-title:hover {
   border-bottom: none;
 }
 
+.teaching-photo {
+  position: relative;
+  margin: 0 0 1.2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 1440 / 520;
+  background: #e9e4dc;
+}
+
+.teaching-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teaching-photo figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.65rem;
+  line-height: 1.3;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+  border-top-left-radius: 6px;
+}
+
+.teaching-photo figcaption a {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
 .teaching-block-header {
   display: flex;
   align-items: flex-start;
@@ -1684,6 +1717,7 @@ body.dark .pdf-panel-btn:hover { color: #80b8f0 !important; }
 
 /* Teaching page */
 body.dark .teaching-block { border-bottom-color: #303048 !important; }
+body.dark .teaching-photo { background: #24243a; }
 body.dark .teaching-institution { color: #d8d4ce !important; }
 body.dark .teaching-period,
 body.dark .teaching-program-label { color: #50508a !important; }

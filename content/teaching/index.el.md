@@ -8,6 +8,13 @@ institutions:
   - name: Τμήμα Φυσικής — Πανεπιστήμιο Πατρών
     role: Διδάσκων
     period: "2022 – σήμερα"
+    image:
+      src: media/teaching/upatras.jpg
+      alt: Το Κτήριο Α στην Πανεπιστημιούπολη της Πάτρας
+      author: Victoria Daskalou
+      license: CC BY-SA 3.0
+      license_url: https://creativecommons.org/licenses/by-sa/3.0/
+      source: https://commons.wikimedia.org/wiki/File:University_of_Patras,_Building_A.JPG
     programme:
       name: Εφαρμογές Φυσικής στην Ατμόσφαιρα και στα Ηλεκτρονικά
       url: https://physics.upatras.gr/en/msc-homepage/electronics-and-information-processing/
@@ -42,6 +49,13 @@ institutions:
   - name: Σχολή Μηχανικών — Πανεπιστήμιο Εδιμβούργου
     role: Λέκτορας
     period: "2019"
+    image:
+      src: media/teaching/edinburgh.jpg
+      alt: Το Old College του Πανεπιστημίου του Εδιμβούργου
+      author: Chrysi Chrysochou
+      license: CC BY-SA 3.0
+      license_url: https://creativecommons.org/licenses/by-sa/3.0/
+      source: https://commons.wikimedia.org/wiki/File:Old_College,_Edinburgh_University.jpg
     courses:
       - name: Προηγμένες Τεχνικές Κωδικοποίησης
         icon: fas fa-code-branch

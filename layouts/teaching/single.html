@@ -8,6 +8,17 @@
     {{/* ---- Institutions & Courses ---- */}}
     {{ range .Params.institutions }}
     <div class="teaching-block">
+      {{ with .image }}{{ $meta := . }}{{ with resources.Get .src }}
+      {{ $anchor := $meta.anchor | default "Center" }}
+      {{ $sm := .Fill (printf "720x260 webp q78 %s" $anchor) }}
+      {{ $lg := .Fill (printf "1440x520 webp q78 %s" $anchor) }}
+      <figure class="teaching-photo">
+        <img src="{{ $lg.RelPermalink }}" srcset="{{ $sm.RelPermalink }} 720w, {{ $lg.RelPermalink }} 1440w"
+             sizes="(max-width: 800px) 100vw, 800px" width="{{ $lg.Width }}" height="{{ $lg.Height }}"
+             alt="{{ $meta.alt }}" loading="lazy" decoding="async">
+        <figcaption>{{ if eq $.Lang "el" }}Φωτογραφία{{ else }}Photo{{ end }}: <a href="{{ $meta.source }}" target="_blank" rel="noopener">{{ $meta.author }}</a>, <a href="{{ $meta.license_url }}" target="_blank" rel="noopener">{{ $meta.license }}</a>{{ if eq $.Lang "el" }}, μέσω{{ else }}, via{{ end }} Wikimedia Commons</figcaption>
+      </figure>
+      {{ end }}{{ end }}
       <div class="teaching-block-header">
         <div class="teaching-block-meta">
           <span class="teaching-period">{{ .period }}</span>
