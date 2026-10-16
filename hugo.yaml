@@ -86,6 +86,9 @@ languages:
         - name: Teaching
           url: '/teaching/'
           weight: 40
+        - name: Team
+          url: '/team/'
+          weight: 45
         - name: Contact
           url: '/contact/'
           weight: 50
@@ -114,6 +117,9 @@ languages:
         - name: Διδασκαλία
           url: '/teaching/'
           weight: 40
+        - name: Ομάδα
+          url: '/team/'
+          weight: 45
         - name: Επικοινωνία
           url: '/contact/'
           weight: 50

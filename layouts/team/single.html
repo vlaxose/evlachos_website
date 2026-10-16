@@ -1,0 +1,46 @@
+{{- define "main" -}}
+
+{{ partial "page_header.html" . }}
+
+<div class="universal-wrapper">
+  <div class="team-page">
+
+    {{ with .Params.intro }}<p class="team-intro">{{ . | markdownify }}</p>{{ end }}
+
+    {{ range .Params.groups }}
+    <section class="team-group">
+      <h2 class="team-group-title">{{ .title }}</h2>
+      <div class="team-grid">
+        {{ range .members }}
+        {{ $img := false }}
+        {{ with .author }}{{ with site.GetPage (printf "authors/%s" .) }}{{ $img = .Resources.GetMatch "avatar*" }}{{ end }}{{ end }}
+        {{ with .photo }}{{ $img = resources.Get . }}{{ end }}
+        <article class="team-card">
+          <div class="team-avatar">
+            {{ if $img }}
+            {{ $p := $img.Fill "240x240 webp q82 Center" }}
+            <img src="{{ $p.RelPermalink }}" width="120" height="120" alt="{{ .name }}" loading="lazy" decoding="async">
+            {{ else if .icon }}
+            <i class="{{ .icon }}" aria-hidden="true"></i>
+            {{ else }}
+            <span aria-hidden="true">{{ .initials }}</span>
+            {{ end }}
+          </div>
+          <h3 class="team-name">{{ with .url }}<a href="{{ . }}">{{ end }}{{ .name }}{{ with .url }}</a>{{ end }}</h3>
+          <div class="team-role">{{ .role }}</div>
+          {{ with .topic }}<p class="team-topic">{{ . }}</p>{{ end }}
+          {{ with .links }}
+          <div class="team-links">
+            {{ range . }}<a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}"><i class="{{ .icon }}"></i></a>{{ end }}
+          </div>
+          {{ end }}
+        </article>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+
+  </div>
+</div>
+
+{{- end -}}
