@@ -6,6 +6,17 @@ date: 2026-10-16
 type: team
 show_date: false
 
+photos:
+  - src: media/group/meeting.jpg
+    alt: Συνάντηση EUSOME με φορείς του U-space στο Ε.Κ. ΑΘΗΝΑ
+    caption: Συνάντηση EUSOME για το U-space, Ε.Κ. ΑΘΗΝΑ, Μάιος 2026
+  - src: media/group/fieldtest.jpg
+    alt: Drone πάνω στη θήκη του κατά τη διάρκεια πειράματος πεδίου
+    caption: Πείραμα πεδίου με UAV, Ιανουάριος 2026
+  - src: media/group/whiteboard.jpg
+    alt: Εξισώσεις σε πίνακα
+    caption: Συζήτηση στον πίνακα
+
 intro: >
   Εργαζόμαστε στο Ινστιτούτο Βιομηχανικών Συστημάτων του Ε.Κ. ΑΘΗΝΑ στην Πάτρα, σε θέματα
   Ολοκληρωμένης Ανίχνευσης και Επικοινωνιών (ISAC), σμηνών UAV και 6G. Θέλετε να συμμετάσχετε;

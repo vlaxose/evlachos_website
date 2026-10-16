@@ -6,6 +6,17 @@ date: 2026-10-16
 type: team
 show_date: false
 
+photos:
+  - src: media/group/meeting.jpg
+    alt: EUSOME meeting with U-space stakeholders at ATHENA RC
+    caption: EUSOME U-space meeting, ATHENA RC, May 2026
+  - src: media/group/fieldtest.jpg
+    alt: Drone on its case during a UAV field test
+    caption: UAV field test, January 2026
+  - src: media/group/whiteboard.jpg
+    alt: Working through equations on a whiteboard
+    caption: Whiteboard session
+
 intro: >
   We work at the Industrial Systems Institute of ATHENA RC in Patras, on integrated sensing
   and communication, UAV swarms and 6G. Interested in joining? Get in touch through the

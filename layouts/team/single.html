@@ -5,6 +5,20 @@
 <div class="universal-wrapper">
   <div class="team-page">
 
+    {{ with .Params.photos }}
+    <div class="group-strip">
+      {{ range . }}{{ $meta := . }}{{ with resources.Get .src }}
+      {{ $sm := .Resize "x280 webp q80" }}{{ $lg := .Resize "x560 webp q80" }}
+      <figure class="group-strip-item" style="flex: {{ div (float $lg.Width) $lg.Height }} 1 0">
+        <img src="{{ $lg.RelPermalink }}" srcset="{{ $sm.RelPermalink }} {{ $sm.Width }}w, {{ $lg.RelPermalink }} {{ $lg.Width }}w"
+             sizes="(max-width: 576px) 70vw, 33vw" width="{{ $lg.Width }}" height="{{ $lg.Height }}"
+             alt="{{ $meta.alt }}" loading="eager" decoding="async">
+        {{ with $meta.caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+      </figure>
+      {{ end }}{{ end }}
+    </div>
+    {{ end }}
+
     {{ with .Params.intro }}<p class="team-intro">{{ . | markdownify }}</p>{{ end }}
 
     {{ range .Params.groups }}
