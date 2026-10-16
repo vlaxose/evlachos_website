@@ -40,7 +40,11 @@ groups:
       - name: Konstantinos Asimakopoulos
         initials: KA
         role: Research Associate
-        topic: UAV control and flight experiments.
+        topic: UAV simulation (Gazebo/PX4) and flight experiments.
+      - name: Charalampos Tzanetos
+        initials: CT
+        role: Research Associate
+        topic: Passive Wi-Fi radar and Remote ID for UAV detection.
 
   - title: PhD Students
     members:

@@ -31,7 +31,7 @@ feature:
     icon_pack: fas
     name: Other Positions
     description: |
-      **Research Fellow / Visiting Research Fellow** · 2024–2027
+      **Visiting Research Fellow** · 2024–2027
       University of Sussex, UK
 
       **Lecturer** · University of Edinburgh · 2019

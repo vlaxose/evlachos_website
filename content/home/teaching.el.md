@@ -31,7 +31,7 @@ feature:
     icon_pack: fas
     name: Άλλες Θέσεις
     description: |
-      **Επιστημονικός Συνεργάτης (Research Fellow / Visiting Research Fellow)** · 2024–2027
+      **Επισκέπτης Ερευνητής (Visiting Research Fellow)** · 2024–2027
       University of Sussex, UK
 
       **Λέκτορας** · Πανεπιστήμιο Εδιμβούργου · 2019
