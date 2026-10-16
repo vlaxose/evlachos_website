@@ -4,6 +4,15 @@ date: 2026-09-29
 summary: "I chaired the special session on integrated sensing and AI-driven communication in 6G perceptive mobile networks at NextGCom 2026 in Argostoli, Kefalonia, and presented our paper on semantically-informed predictive control for UAV connectivity."
 tags: ["conference", "ISAC", "UAVs", "6G", "EUSOME"]
 categories: ["news"]
+image:
+  caption: "Presenting our paper in Special Session 3 at NextGCom 2026, Argostoli, 29 September 2026."
+photos:
+  - src: media/news/nextgcom2026/title.jpg
+    alt: Title slide of the paper on semantically-informed predictive control for UAV connectivity
+    caption: Title slide, NextGCom 2026
+  - src: media/news/nextgcom2026/contributions.jpg
+    alt: Evangelos Vlachos explaining the contributions slide at NextGCom 2026
+    caption: Sensing-assisted communication for UAV links
 ---
 
 I attended the **2026 Next Generation Communications conference (NextGCom 2026)**, held on 28-30 September 2026 at the Ionian University in Argostoli, Kefalonia, Greece.
@@ -14,6 +23,8 @@ On 29 September I chaired **Special Session 3: Integrated Sensing and AI-Driven 
 *Evangelos Vlachos, Dimitrios Tsourounis, and Aryan Kaushik*
 
 The work fuses radar sensing with visual semantic classification into an effective capacity metric, so that a UAV path planner avoids both hard blockers and unreliable multipath zones in mmWave urban links.
+
+{{< photo-strip >}}
 
 Our group also presented **Geometry-Aware Regularization for Deep-Unfolded MIMO-OTFS Detection** (Nikolaos Ntavanelos and Evangelos Vlachos) in the technical sessions.
 
