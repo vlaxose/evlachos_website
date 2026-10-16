@@ -1327,6 +1327,26 @@ body.dark .teaching-eclass-link:hover { background: #3a7a40; }
   }
 }
 
+/* Bio page photo */
+.bio-photo {
+  max-width: 270px;
+  margin: 1.5rem auto 0;
+}
+
+.bio-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.bio-photo figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #888 !important;
+}
+
 /* Team page */
 .photo-strip {
   display: flex;

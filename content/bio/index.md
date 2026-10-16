@@ -3,6 +3,10 @@ title: Biography
 date: 2024-01-01
 type: bio
 share: false
+photo:
+  src: media/bio/icc2023.jpg
+  alt: Evangelos Vlachos presenting at IEEE ICC 2023 in Rome
+  caption: Presenting at IEEE ICC 2023, Rome
 ---
 
 Dr. Evangelos Vlachos is a Tenure-track Researcher at the Industrial Systems Institute (ISI) of [ATHENA RC](https://www.athenarc.gr/), where he formed and leads an independent research group on Joint Communication, Control, and Sensing. His research interests include Integrated Sensing and Communications (ISAC), UAV swarm coordination and U-Space resilience, and Scientific Machine Learning (deep unfolding), with a focus on bridging fundamental research with real-world validation in 6G networks and Cyber-Physical Systems.

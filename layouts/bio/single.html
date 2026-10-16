@@ -40,6 +40,13 @@
             </li>
             {{ end }}
           </ul>
+          {{ with .Params.photo }}{{ $meta := . }}{{ with resources.Get .src }}
+          {{ $img := .Resize "540x webp q82" }}
+          <figure class="bio-photo">
+            <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $meta.alt }}" loading="lazy" decoding="async">
+            {{ with $meta.caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+          </figure>
+          {{ end }}{{ end }}
         </div>
       </div>
 
