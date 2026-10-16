@@ -8,3 +8,5 @@ categories: ["paper"]
 ---
 
 Researchers develop an integrated sensing and communication technology to enhance safety and efficiency in advanced air mobility vehicles.
+
+[Publication page]({{< relref "/publication/vlachos-isac-2025" >}})

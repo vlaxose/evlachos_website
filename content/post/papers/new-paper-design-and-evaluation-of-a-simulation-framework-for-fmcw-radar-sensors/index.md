@@ -8,3 +8,5 @@ categories: ["paper"]
 ---
 
 A novel simulation framework is developed to model and evaluate Frequency Modulated Continuous Wave (FMCW) radar sensors integrated with Unmanned Aerial Vehicle (UAV) platforms.
+
+[Publication page]({{< relref "/publication/petroutsos-design-2025" >}})

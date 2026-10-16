@@ -1,8 +1,7 @@
 {{- define "main" -}}
 
-{{ partial "page_header.html" . }}
-
 <div class="universal-wrapper">
+  <h1 class="pt-3">{{ .Title }}</h1>
   <div class="team-page">
 
     {{ partial "photo-strip.html" (dict "photos" .Params.photos "eager" true) }}
