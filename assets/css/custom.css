@@ -1138,16 +1138,6 @@ a.pub-title:hover {
   transform: scale(1.06);
 }
 
-.teaching-photo-credits {
-  margin: 0.5rem 0 0;
-  font-size: 0.7rem;
-  color: #888 !important;
-}
-
-.teaching-photo-credits a {
-  color: inherit !important;
-  text-decoration: underline;
-}
 
 .teaching-block-header {
   display: flex;

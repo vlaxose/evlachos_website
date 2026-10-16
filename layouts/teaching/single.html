@@ -6,7 +6,6 @@
   <div class="teaching-page">
 
     {{/* ---- Institutions & Courses ---- */}}
-    {{ $credits := slice }}
     {{ range $inst := .Params.institutions }}
     <div class="teaching-block">
       <div class="teaching-block-header">
@@ -21,11 +20,10 @@
 
       <div class="teaching-body{{ if .image }} has-photo{{ end }}">
         {{ with .image }}{{ $meta := . }}{{ with resources.Get .src }}
-        {{ $credits = $credits | append $meta }}
         {{ $sm := .Fill "200x150 webp q80 Center" }}
         {{ $lg := .Fill "400x300 webp q80 Center" }}
         <a class="teaching-photo" href="{{ $inst.url | default $meta.source }}" target="_blank" rel="noopener"
-           title="{{ $inst.name }}">
+           title="{{ $inst.name }} · {{ if eq $.Lang "el" }}Φωτογραφία{{ else }}Photo{{ end }}: {{ $meta.author }}, {{ $meta.license }}, Wikimedia Commons">
           <img src="{{ $sm.RelPermalink }}" srcset="{{ $sm.RelPermalink }} 200w, {{ $lg.RelPermalink }} 400w"
                sizes="6rem" width="{{ $sm.Width }}" height="{{ $sm.Height }}"
                alt="{{ $meta.alt }}" loading="lazy" decoding="async">
@@ -102,12 +100,6 @@
     </div>
     {{ end }}
 
-    {{ with $credits }}
-    <p class="teaching-photo-credits">
-      {{ if eq $.Lang "el" }}Φωτογραφίες{{ else }}Photos{{ end }}:
-      {{ range $i, $c := . }}{{ if $i }}, {{ end }}<a href="{{ $c.source }}" target="_blank" rel="noopener">{{ $c.author }}</a> (<a href="{{ $c.license_url }}" target="_blank" rel="noopener">{{ $c.license }}</a>){{ end }}{{ if eq $.Lang "el" }}, μέσω{{ else }}, via{{ end }} Wikimedia Commons.
-    </p>
-    {{ end }}
 
   </div>
 </div>
