@@ -2720,25 +2720,6 @@ body.dark .dropdown-item:focus {
   text-decoration: none !important;
 }
 
-/* Research page: compact text cards for research topics (19 Oct 2026) */
-.topic-grid {
-  gap: 1rem;
-  margin-bottom: 2.5rem;
-}
-
-.topic-card {
-  border-left: 4px solid #2c5a8f;
-}
-
-.topic-card .proj-card-body {
-  padding: 0.9rem 1.1rem 1rem;
-}
-
-.topic-card p,
-.topic-card .proj-card-facts {
-  margin-bottom: 0.6rem;
-}
-
 .research-intro {
   max-width: 48rem;
   font-size: 1rem;
@@ -2747,7 +2728,101 @@ body.dark .dropdown-item:focus {
   margin: 0 0 1.75rem;
 }
 
-.open-topics-callout {
-  margin: -1.25rem 0 2.5rem;
-  font-size: 0.95rem;
+/* Research page: row lists for topics and projects (19 Oct 2026, replaced the card grid) */
+.res-list {
+  list-style: none;
+  margin: 0 0 2.5rem;
+  padding: 0;
+  border-top: 1px solid #dbe4ee;
 }
+
+.res-row {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #dbe4ee;
+}
+
+.res-thumb {
+  flex: 0 0 180px;
+}
+
+.res-thumb img {
+  display: block;
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 0 !important;
+}
+
+.res-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.res-label {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #1a3a5c;
+  background: #e8f0fe;
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  margin-bottom: 0.45rem;
+}
+
+.res-row h3 {
+  font-size: 1.1rem !important;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0 0 0.4rem !important;
+}
+
+.res-row h3 a {
+  color: #1a3a5c !important;
+  text-decoration: none !important;
+}
+
+.res-row h3 a:hover {
+  color: #2c5a8f !important;
+  text-decoration: underline !important;
+}
+
+.res-row p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #444;
+  margin: 0 0 0.4rem;
+}
+
+.res-row .res-facts {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .res-row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .res-thumb {
+    flex-basis: auto;
+  }
+  .res-thumb img {
+    width: 100%;
+    height: 160px;
+  }
+}
+
+body.dark .res-list,
+body.dark .res-row { border-color: #303048 !important; }
+body.dark .res-label { color: #80b8f0 !important; background: #202038 !important; }
+body.dark .res-row h3 a { color: #d0d0e8 !important; }
+body.dark .res-row h3 a:hover { color: #80b8f0 !important; }
+body.dark .res-row p { color: #b8b8d0 !important; }
+body.dark .res-row .res-facts { color: #9090b8 !important; }
+body.dark .research-intro { color: #b8b8d0 !important; }
