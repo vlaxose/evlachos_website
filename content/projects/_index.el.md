@@ -1,6 +1,9 @@
 ---
 title: Ερευνητικά Έργα
 summary: Ευρωπαϊκά έργα (Horizon Europe), βιομηχανική έρευνα και ανοιχτός κώδικας.
+build:
+  render: never
+  list: always
 ---
 <div class="proj-grid">
 <article class="proj-card">

@@ -1,6 +1,9 @@
 ---
 title: Research Projects
 summary: European projects (Horizon Europe), industrial research, and open-source contributions.
+build:
+  render: never
+  list: always
 ---
 <div class="proj-grid">
 <article class="proj-card">
