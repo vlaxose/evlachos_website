@@ -5,11 +5,9 @@ aliases:
 - /el/projects/
 ---
 <h2>Ερευνητικά θέματα</h2>
-<div class="proj-grid">
-<article class="proj-card">
-<a href="/el/research/channel-estimation/" tabindex="-1" aria-hidden="true"><img class="proj-card-img" src="/media/cards/channel-estimation.jpg" alt="Ο Ευάγγελος Βλάχος παρουσιάζει εκτίμηση καναλιού mmWave στο IEEE ICC 2023, Ρώμη" loading="lazy"></a>
+<div class="proj-grid topic-grid">
+<article class="proj-card topic-card">
 <div class="proj-card-body">
-<span class="proj-card-label">Ερευνητικό θέμα</span>
 <h3><a href="/el/research/channel-estimation/">Εκτίμηση Καναλιού για Massive MIMO σε mmWave και THz</a></h3>
 <p>Εκτίμηση του ασύρματου καναλιού με δέκτες χαμηλού κόστους, κινούμενα UAV, αίσθηση 6G και κβαντικούς υπολογιστές.</p>
 <dl class="proj-card-facts"><dt>Από</dt><dd>2018</dd><dt>Δημοσιεύσεις σε</dt><dd>IEEE SPL, JSTSP, TVT, ICASSP</dd></dl>

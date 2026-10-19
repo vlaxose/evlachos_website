@@ -5,11 +5,9 @@ aliases:
 - /projects/
 ---
 <h2>Research topics</h2>
-<div class="proj-grid">
-<article class="proj-card">
-<a href="/research/channel-estimation/" tabindex="-1" aria-hidden="true"><img class="proj-card-img" src="/media/cards/channel-estimation.jpg" alt="Evangelos Vlachos presenting mmWave channel estimation at IEEE ICC 2023, Rome" loading="lazy"></a>
+<div class="proj-grid topic-grid">
+<article class="proj-card topic-card">
 <div class="proj-card-body">
-<span class="proj-card-label">Research topic</span>
 <h3><a href="/research/channel-estimation/">Channel Estimation for mmWave and THz Massive MIMO</a></h3>
 <p>Finding the wireless channel with low-cost receivers, moving UAVs, 6G sensing and quantum computing.</p>
 <dl class="proj-card-facts"><dt>Since</dt><dd>2018</dd><dt>Venues</dt><dd>IEEE SPL, JSTSP, TVT, ICASSP</dd></dl>

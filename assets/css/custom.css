@@ -2719,3 +2719,22 @@ body.dark .dropdown-item:focus {
   color: #2c5a8f !important;
   text-decoration: none !important;
 }
+
+/* Research page: compact text cards for research topics (19 Oct 2026) */
+.topic-grid {
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.topic-card {
+  border-left: 4px solid #2c5a8f;
+}
+
+.topic-card .proj-card-body {
+  padding: 0.9rem 1.1rem 1rem;
+}
+
+.topic-card p,
+.topic-card .proj-card-facts {
+  margin-bottom: 0.6rem;
+}
