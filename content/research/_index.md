@@ -18,6 +18,8 @@ aliases:
 </article>
 </div>
 
+<p class="open-topics-callout"><strong>Students:</strong> open thesis, internship and PhD topics are listed on the <a href="/research/open-topics/">open topics</a> page.</p>
+
 <h2>Projects</h2>
 <div class="proj-grid">
 <article class="proj-card">

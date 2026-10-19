@@ -18,6 +18,8 @@ aliases:
 </article>
 </div>
 
+<p class="open-topics-callout"><strong>Φοιτητές:</strong> τα ανοιχτά θέματα διπλωματικών, πρακτικής άσκησης και διδακτορικών βρίσκονται στη σελίδα <a href="/el/research/open-topics/">ανοιχτά θέματα</a>.</p>
+
 <h2>Έργα</h2>
 <div class="proj-grid">
 <article class="proj-card">

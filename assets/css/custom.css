@@ -2746,3 +2746,8 @@ body.dark .dropdown-item:focus {
   color: #333;
   margin: 0 0 1.75rem;
 }
+
+.open-topics-callout {
+  margin: -1.25rem 0 2.5rem;
+  font-size: 0.95rem;
+}
