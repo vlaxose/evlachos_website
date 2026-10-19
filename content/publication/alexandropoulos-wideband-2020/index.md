@@ -10,6 +10,7 @@ featured: false
 url_pdf: "paper.pdf"
 publication: "*ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)*"
 tags: ["Research", "6G", "UAVs"]
+research: ["channel-estimation"]
 ---
 
 ## Key Contributions

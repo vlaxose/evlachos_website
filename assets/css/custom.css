@@ -2738,3 +2738,11 @@ body.dark .dropdown-item:focus {
 .topic-card .proj-card-facts {
   margin-bottom: 0.6rem;
 }
+
+.research-intro {
+  max-width: 48rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 0 1.75rem;
+}

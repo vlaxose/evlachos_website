@@ -9,6 +9,7 @@ abstract: "This work addresses semi-passive Reconfigurable Intelligent Surface (
 featured: false
 publication: "*Reconfigurable Intelligent Surfaces for Wireless Communications: Modeling, Architectures, and Applications*, Springer Nature, April 2026"
 tags: ["Research", "6G", "RIS", "Channel Estimation"]
+research: ["channel-estimation"]
 ---
 
 ## Key Contributions

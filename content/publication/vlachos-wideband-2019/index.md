@@ -10,6 +10,7 @@ featured: true
 url_pdf: "paper.pdf"
 publication: "*IEEE Journal of Selected Topics in Signal Processing*"
 tags: ["Research", "6G", "UAVs"]
+research: ["channel-estimation"]
 ---
 
 ## Key Contributions

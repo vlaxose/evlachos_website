@@ -8,6 +8,7 @@ abstract: "Terahertz (THz) extremely large-array MIMO is a cornerstone technolog
 featured: false
 publication: "*2026 IEEE 1st Annual Integrated Sensing and Communication Conference (ISAC)*"
 tags: ["Research", "ISAC", "THz", "XL-MIMO", "Channel Estimation", "ADMM", "6G"]
+research: ["channel-estimation"]
 ---
 
 ## Key Contributions

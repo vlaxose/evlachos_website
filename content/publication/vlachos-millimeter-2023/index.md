@@ -11,6 +11,7 @@ featured: false
 url_pdf: "paper.pdf"
 publication: "*2023 IEEE International Conference on Communications Workshops (ICC Workshops)*"
 tags: ["Research", "6G"]
+research: ["channel-estimation"]
 ---
 
 ## Presentation

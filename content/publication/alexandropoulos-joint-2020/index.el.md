@@ -10,6 +10,7 @@ featured: false
 url_pdf: "paper.pdf"
 publication: "*2020 54th Asilomar Conference on Signals, Systems, and Computers*"
 tags: ["Research", "6G", "UAVs"]
+research: ["channel-estimation"]
 ---
 
 ## Key Contributions

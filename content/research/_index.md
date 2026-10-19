@@ -4,6 +4,8 @@ summary: Research topics and funded projects of the Joint Communication, Control
 aliases:
 - /projects/
 ---
+<p class="research-intro">The Joint Communication, Control &amp; Sensing group at ISI, ATHENA RC works on integrated sensing and communication (ISAC), channel estimation for mmWave and THz massive MIMO, and the safe control and coordination of UAV swarms, for 6G networks and advanced air mobility. The topic pages below explain each line of work in plain terms and link to the papers. The projects fund it.</p>
+
 <h2>Research topics</h2>
 <div class="proj-grid topic-grid">
 <article class="proj-card topic-card">

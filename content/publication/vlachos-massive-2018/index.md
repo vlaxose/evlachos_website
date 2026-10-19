@@ -11,6 +11,7 @@ featured: false
 url_pdf: "paper.pdf"
 publication: "*IEEE Signal Processing Letters*"
 tags: ["Research", "6G", "UAVs"]
+research: ["channel-estimation"]
 ---
 
 ## Key Contributions

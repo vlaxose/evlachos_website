@@ -10,6 +10,7 @@ featured: false
 url_pdf: "paper.pdf"
 publication: "*31st European Signal Processing Conference (EUSIPCO)*"
 tags: ["Research", "6G", "UAVs"]
+research: ["channel-estimation"]
 ---
 
 ## Key Contributions

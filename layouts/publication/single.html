@@ -101,6 +101,14 @@
       </a>
       {{ end }}
       {{ end }}
+      {{/* Research topic(s), e.g. research: ["channel-estimation"] -> content/research/channel-estimation/ */}}
+      {{ range $.Params.research }}
+      {{ with site.GetPage (printf "research/%s" .) }}
+      <a href="{{ .RelPermalink }}" class="pub-action-btn">
+        <i class="fas fa-flask"></i> {{ .Params.short_title | default .Title }}
+      </a>
+      {{ end }}
+      {{ end }}
     </div>
 
     <hr class="pub-divider">
@@ -136,6 +144,15 @@
           <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">{{ . }}</a>
         </span>
       </div>
+      {{ end }}
+
+      {{ range .Params.research }}
+      {{ with site.GetPage (printf "research/%s" .) }}
+      <div class="pub-detail-row">
+        <span class="pub-detail-label">{{ if eq $.Lang "el" }}Θέμα{{ else }}Topic{{ end }}</span>
+        <span class="pub-detail-value"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+      </div>
+      {{ end }}
       {{ end }}
 
       {{ with .Date }}

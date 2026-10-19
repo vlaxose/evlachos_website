@@ -10,6 +10,7 @@ featured: false
 url_pdf: "paper.pdf"
 publication: "*2019 IEEE 20th International Workshop on Signal Processing Advances in Wireless Communications (SPAWC)*"
 tags: ["Research", "6G", "UAVs"]
+research: ["channel-estimation"]
 ---
 
 ## Key Contributions

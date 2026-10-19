@@ -10,6 +10,7 @@ featured: false
 url_pdf: "paper.pdf"
 publication: "*2022 IFIP/IEEE 30th International Conference on Very Large Scale Integration (VLSI-SoC)*"
 tags: ["Research", "6G", "UAVs"]
+research: ["channel-estimation"]
 ---
 
 ## Key Contributions
