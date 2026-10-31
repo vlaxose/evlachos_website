@@ -17,23 +17,23 @@ build:
 </div>
 </article>
 <article class="proj-card">
-<a href="/projects/splash/" tabindex="-1" aria-hidden="true"><img class="proj-card-img" src="/media/cards/splash.jpg" alt="Υλικό UAV με προσομοιωμένες τροχιές drone για τρία σενάρια" loading="lazy"></a>
+<a href="/el/projects/splash/" tabindex="-1" aria-hidden="true"><img class="proj-card-img" src="/media/cards/splash.jpg" alt="Υλικό UAV με προσομοιωμένες τροχιές drone για τρία σενάρια" loading="lazy"></a>
 <div class="proj-card-body">
 <span class="proj-card-label">Βιομηχανική σύμβαση</span>
-<h3><a href="/projects/splash/">SPLASH: Ενιαία Ανίχνευση, Επικοινωνία και Έλεγχος Εναέριων Οχημάτων</a></h3>
+<h3><a href="/el/projects/splash/">SPLASH: Ενιαία Ανίχνευση, Επικοινωνία και Έλεγχος Εναέριων Οχημάτων</a></h3>
 <p>Ανίχνευση και αποφυγή με κάμερα και ραντάρ mmWave, συν-σχεδιασμός ελέγχου και επικοινωνίας, και ενιαία ανίχνευση και επικοινωνία με κυματομορφές FMCW για drones στο U-Space.</p>
 <dl class="proj-card-facts"><dt>Ρόλος</dt><dd>Επιστημονικός Υπεύθυνος</dd><dt>Χρηματοδότηση</dt><dd>Hellenic U-Space Institute (HUSI)</dd><dt>Περίοδος</dt><dd>2023–2027</dd><dt>Προϋπολογισμός</dt><dd>€45k</dd></dl>
-<a class="proj-card-link" href="/projects/splash/">Δες το έργο &rarr;</a>
+<a class="proj-card-link" href="/el/projects/splash/">Δες το έργο &rarr;</a>
 </div>
 </article>
 <article class="proj-card">
-<a href="/projects/firadav/" tabindex="-1" aria-hidden="true"><img class="proj-card-img" src="/media/cards/firadav.jpg" alt="Ωφέλιμο φορτίο UAV με ραντάρ mmWave της TI, NVIDIA Jetson Nano, μονάδα 5G και μπαταρία" loading="lazy"></a>
+<a href="/el/projects/firadav/" tabindex="-1" aria-hidden="true"><img class="proj-card-img" src="/media/cards/firadav.jpg" alt="Ωφέλιμο φορτίο UAV με ραντάρ mmWave της TI, NVIDIA Jetson Nano, μονάδα 5G και μπαταρία" loading="lazy"></a>
 <div class="proj-card-body">
 <span class="proj-card-label">ΕΚ ΑΘΗΝΑ Proof of Concept</span>
-<h3><a href="/projects/firadav/">FIRA-DAV: Σύντηξη Ραντάρ-Κάμερας για Ανίχνευση και Αποφυγή</a></h3>
+<h3><a href="/el/projects/firadav/">FIRA-DAV: Σύντηξη Ραντάρ-Κάμερας για Ανίχνευση και Αποφυγή</a></h3>
 <p>Συγχρονισμένο σύνολο δεδομένων ραντάρ mmWave και κάμερας για ανίχνευση εμποδίων με AI σε UAV, με βιομηχανικό εταίρο την Hellenic Drones.</p>
 <dl class="proj-card-facts"><dt>Ρόλος</dt><dd>Επιστημονικός Υπεύθυνος</dd><dt>Χρηματοδότηση</dt><dd>Εσωτερική χρηματοδότηση ΕΚ ΑΘΗΝΑ</dd><dt>Περίοδος</dt><dd>2023, 6 μήνες</dd><dt>Προϋπολογισμός</dt><dd>€10k</dd></dl>
-<a class="proj-card-link" href="/projects/firadav/">Δες το έργο &rarr;</a>
+<a class="proj-card-link" href="/el/projects/firadav/">Δες το έργο &rarr;</a>
 </div>
 </article>
 </div>

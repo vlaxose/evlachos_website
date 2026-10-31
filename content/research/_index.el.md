@@ -38,19 +38,19 @@ aliases:
 </div>
 </li>
 <li class="res-row">
-<a class="res-thumb" href="/projects/splash/" tabindex="-1" aria-hidden="true"><img src="/media/cards/splash.jpg" alt="Υλικό UAV με προσομοιωμένες τροχιές drone για τρία σενάρια" loading="lazy" width="720" height="360"></a>
+<a class="res-thumb" href="/el/projects/splash/" tabindex="-1" aria-hidden="true"><img src="/media/cards/splash.jpg" alt="Υλικό UAV με προσομοιωμένες τροχιές drone για τρία σενάρια" loading="lazy" width="720" height="360"></a>
 <div class="res-body">
 <span class="res-label">Βιομηχανική σύμβαση</span>
-<h3><a href="/projects/splash/">SPLASH: Ενιαία Ανίχνευση, Επικοινωνία και Έλεγχος Εναέριων Οχημάτων</a></h3>
+<h3><a href="/el/projects/splash/">SPLASH: Ενιαία Ανίχνευση, Επικοινωνία και Έλεγχος Εναέριων Οχημάτων</a></h3>
 <p>Ανίχνευση και αποφυγή με κάμερα και ραντάρ mmWave, συν-σχεδιασμός ελέγχου και επικοινωνίας, και ενιαία ανίχνευση και επικοινωνία με κυματομορφές FMCW για drones στο U-Space.</p>
 <p class="res-facts">Επιστημονικός Υπεύθυνος · Hellenic U-Space Institute (HUSI) · 2023–2027 · €45k</p>
 </div>
 </li>
 <li class="res-row">
-<a class="res-thumb" href="/projects/firadav/" tabindex="-1" aria-hidden="true"><img src="/media/cards/firadav.jpg" alt="Ωφέλιμο φορτίο UAV με ραντάρ mmWave της TI, NVIDIA Jetson Nano, μονάδα 5G και μπαταρία" loading="lazy" width="720" height="360"></a>
+<a class="res-thumb" href="/el/projects/firadav/" tabindex="-1" aria-hidden="true"><img src="/media/cards/firadav.jpg" alt="Ωφέλιμο φορτίο UAV με ραντάρ mmWave της TI, NVIDIA Jetson Nano, μονάδα 5G και μπαταρία" loading="lazy" width="720" height="360"></a>
 <div class="res-body">
 <span class="res-label">ΕΚ ΑΘΗΝΑ Proof of Concept</span>
-<h3><a href="/projects/firadav/">FIRA-DAV: Σύντηξη Ραντάρ-Κάμερας για Ανίχνευση και Αποφυγή</a></h3>
+<h3><a href="/el/projects/firadav/">FIRA-DAV: Σύντηξη Ραντάρ-Κάμερας για Ανίχνευση και Αποφυγή</a></h3>
 <p>Συγχρονισμένο σύνολο δεδομένων ραντάρ mmWave και κάμερας για ανίχνευση εμποδίων με AI σε UAV, με βιομηχανικό εταίρο την Hellenic Drones.</p>
 <p class="res-facts">Επιστημονικός Υπεύθυνος · Εσωτερική χρηματοδότηση ΕΚ ΑΘΗΝΑ · 2023, 6 μήνες · €10k</p>
 </div>

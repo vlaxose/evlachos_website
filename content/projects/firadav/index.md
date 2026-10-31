@@ -1,6 +1,6 @@
 ---
 title: "FIRA-DAV: Feature-level Image and Radar Fusion for Detect and Avoid"
-summary: "Synchronized mmWave radar and camera dataset for Detect-and-Avoid in autonomous aerial vehicles, funded by the Athena RC Proof-of-Concept programme."
+summary: "Synchronized mmWave radar and camera dataset for Detect-and-Avoid in autonomous aerial vehicles, funded by the ATHENA RC Proof-of-Concept programme."
 tags:
 - Deep Learning
 - Dataset
@@ -19,7 +19,7 @@ stats:
     label: "Funding"
   - value: "PI"
     label: "Role"
-  - value: "Athena RC PoC"
+  - value: "ATHENA RC PoC"
     label: "Programme"
   - value: "6 months"
     label: "Duration"
@@ -27,13 +27,13 @@ stats:
 
 ## Project Overview
 
-**FIRA-DAV** (*Feature-level Image and Radar Fusion for Improved Detect and Avoid Functionality in Autonomous Aerial Vehicles*) is a Proof-of-Concept project funded by the **Athena Research Center Technology Transfer Office** under the internal PoC programme (ΔΕΜΤ, project No. 80260). The project was competitively selected in June 2023 following evaluation by a three-member expert panel, and ran from **September 2023 for 6 months**.
+**FIRA-DAV** (*Feature-level Image and Radar Fusion for Improved Detect and Avoid Functionality in Autonomous Aerial Vehicles*) is a Proof-of-Concept project funded by the **ATHENA Research Center Technology Transfer Office** under the internal PoC programme (ΔΕΜΤ, project No. 80260). The project was competitively selected in June 2023 following evaluation by a three-member expert panel, and ran from **September 2023 for 6 months**.
 
 As **Principal Investigator**, I led the design, equipment procurement, and dataset construction for radar–camera sensor fusion targeting UAV Detect-and-Avoid (DAA) — a critical safety requirement for beyond-visual-line-of-sight (BVLOS) operations. The project was carried out in collaboration with **Hellenic Drones** (industry partner, Dr. Christos Skliros) and **ROBOSURVEY LTD** (equipment supplier).
 
 ## Team
 
-- **Dr. Evangelos Vlachos** — PI, Athena Research Center / ISI
+- **Dr. Evangelos Vlachos** — PI, ATHENA Research Center / ISI
 - **Hellenic Drones** (Dr. Christos Skliros) — Industry partner
 
 ## Equipment & Dataset
@@ -64,4 +64,4 @@ The proposal was rated positively by all three external reviewers:
 
 ---
 
-*Funded by the Athena Research Center under the internal Proof-of-Concept (PoC) programme (ΔΕΜΤ No. 80260) of the Technology Transfer Office.*
+*Funded by the ATHENA Research Center under the internal Proof-of-Concept (PoC) programme (ΔΕΜΤ No. 80260) of the Technology Transfer Office.*
