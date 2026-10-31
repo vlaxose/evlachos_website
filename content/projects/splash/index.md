@@ -22,6 +22,7 @@ stats:
     label: "Contract"
 
 image:
+  alt_text: "SPLASH: joint sensing, communication and control for U-Space"
   caption: 'SPLASH: joint sensing, communication and control for U-Space'
   focal_point: Smart
 ---

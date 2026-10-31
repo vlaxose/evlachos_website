@@ -5,6 +5,7 @@ summary: "I chaired the special session on integrated sensing and AI-driven comm
 tags: ["conference", "ISAC", "UAVs", "6G", "EUSOME"]
 categories: ["news"]
 image:
+  alt_text: "Presenting our paper in Special Session 3 at NextGCom 2026, Argostoli, 29 September 2026."
   caption: "Presenting our paper in Special Session 3 at NextGCom 2026, Argostoli, 29 September 2026."
 photos:
   - src: media/news/nextgcom2026/title.jpg

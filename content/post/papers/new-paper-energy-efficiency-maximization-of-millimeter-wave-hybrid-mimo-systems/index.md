@@ -7,6 +7,7 @@ tags: ["publication", "research"]
 pub_type: "conf"
 categories: ["paper"]
 image:
+  alt_text: "Presenting the paper at IEEE ICC 2019 in Shanghai, May 2019."
   caption: "Presenting the paper at IEEE ICC 2019 in Shanghai, May 2019."
 ---
 

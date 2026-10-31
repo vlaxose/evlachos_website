@@ -1,5 +1,6 @@
 ---
 title: Teaching
+summary: "Courses taught by Evangelos Vlachos at the University of Patras, the University of Edinburgh and TEI of Patras, and the students he supervises."
 date: 2024-01-01
 type: teaching
 show_date: false

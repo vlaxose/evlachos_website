@@ -4,6 +4,8 @@ date: 2025-10-06
 summary: " The 1st edition of the EUSOME Newsletter has landed! Subscribe now and be part of our journey toward the future of Advanced Aerial Mobility!EUSOME Project partners: KIOS Resea..."
 tags: ["EUSOME", "USpace", "DroneRegulation", "CyprusDrones", "AdvancedAirMobility", "CivilAviation"]
 categories: ["eusome"]
+image:
+  alt_text: "Group photo of EUSOME partners on the steps outside a university building"
 ---
 
  The 1st edition of the EUSOME Newsletter has landed! Subscribe now and be part of our journey toward the future of Advanced Aerial Mobility!EUSOME Project partners: KIOS Research and Innovation Center of Excellence, Hellenic U-space Institute, ATHENA Research Center, Hellenic Ministry of Digital Governance, Cyprus Ministry of Transport, Communications and Works, Hellenic Drones S.A., Hellenic Civil Aviation Authority, Aviomania Aircraft, GRNET - Greek Research & Technology Network, Cyprus Chamber of Commerce & Industry, Adrestia R&D, Centrum Badań Kosmicznych Polskiej Akademii Nauk, SocialTech Lab, Institute Mihajlo Pupin, EPIRUS - Perifereia Ipeirou, and Mediterranean Adventure Ltd.

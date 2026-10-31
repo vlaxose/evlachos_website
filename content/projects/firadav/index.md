@@ -10,6 +10,7 @@ tags:
 date: "2023-09-01"
 
 image:
+  alt_text: "FIRA-DAV: mmWave radar and camera data fusion for UAV perception"
   caption: 'FIRA-DAV: mmWave radar and camera data fusion for UAV perception'
   focal_point: Smart
 

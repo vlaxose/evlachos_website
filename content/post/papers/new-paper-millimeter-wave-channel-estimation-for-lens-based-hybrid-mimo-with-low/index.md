@@ -6,6 +6,7 @@ tags: ["publication", "research"]
 pub_type: "conf"
 categories: ["paper"]
 image:
+  alt_text: "Presenting the paper at IEEE ICC 2023 in Rome, 1 June 2023."
   caption: "Presenting the paper at IEEE ICC 2023 in Rome, 1 June 2023."
 ---
 

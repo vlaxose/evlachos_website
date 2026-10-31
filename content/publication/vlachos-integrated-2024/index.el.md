@@ -1,5 +1,6 @@
 ---
 title: "Flexible Hybrid Precoding for Integrated Sensing and Communications"
+summary: "Ευέλικτη υβριδική προκωδικοποίηση για ολοκληρωμένη αίσθηση και επικοινωνία (ISAC): ταυτόχρονη αίσθηση ραντάρ και μετάδοση δεδομένων από κοινή στοιχειοκεραία. Κεφάλαιο βιβλίου, Elsevier 2024."
 date: 2024-11-09
 publishDate: 2024-11-09
 authors: ['Vlachos, Evangelos', 'Kaushik, Aryan', 'Alexandropoulos, George C.']

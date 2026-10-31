@@ -34,6 +34,7 @@ photos:
     caption: Getting a UAV ready for flight tests, July 2025
 
 image:
+  alt_text: "EUSOME Kick-off Meeting, January 2025, University of Cyprus"
   caption: 'EUSOME Kick-off Meeting, January 2025, University of Cyprus'
   focal_point: Center
 ---

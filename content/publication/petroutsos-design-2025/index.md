@@ -1,5 +1,6 @@
 ---
 title: "Design and Evaluation of a Simulation Framework for FMCW Radar Sensors Deployed on UAV Platforms"
+summary: "A simulation framework for FMCW radar sensors mounted on UAVs, and its evaluation. IEEE ISC2 2025, EUSOME project."
 date: 2025-10-06
 doi: "10.1109/isc266238.2025.11293323"
 publishDate: 2025-10-06
