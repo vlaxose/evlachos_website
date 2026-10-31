@@ -33,6 +33,8 @@ SITE_ROOT  = Path(__file__).resolve().parent.parent
 POSTS_DIR  = SITE_ROOT / "content" / "post"
 PUBS_DIR   = SITE_ROOT / "content" / "publication"
 STATE_FILE = Path(__file__).resolve().parent / ".scholar_state.json"
+SCHOLAR_YAML = SITE_ROOT / "data" / "scholar.yaml"
+CITES_FROM_YEAR = 2014   # first year of the citations bar chart on the site
 
 # Milestones to announce (every N citations)
 CITATION_MILESTONE_STEP = 100
@@ -373,6 +375,52 @@ def process_hindex(author, state: dict, dry_run: bool) -> list[str]:
 
 
 # ──────────────────────────────────────────────
+# SITE METRICS (data/scholar.yaml)
+# ──────────────────────────────────────────────
+def update_scholar_yaml(author, dry_run: bool) -> bool:
+    """Write citations, h-index, i10 and citations per year into data/scholar.yaml.
+
+    Edits the file in place so its comments survive. Publication counts come
+    from the CV, not Scholar, and are left alone. Returns True if it changed.
+    """
+    cites  = author.get("citedby")
+    hindex = author.get("hindex")
+    i10    = author.get("i10index")
+    per_year = author.get("cites_per_year") or {}
+    if not all(isinstance(v, int) and v > 0 for v in (cites, hindex, i10)) or not per_year:
+        log.warning("  scholar.yaml: incomplete Scholar data, not updated")
+        return False
+
+    text = SCHOLAR_YAML.read_text(encoding="utf-8")
+    m = re.search(r"^total_citations:\s*(\d+)", text, re.M)
+    if m and cites < 0.9 * int(m.group(1)):
+        log.warning(f"  scholar.yaml: citations fell {m.group(1)} -> {cites}, looks like a bad scrape, not updated")
+        return False
+
+    years = sorted(int(y) for y in per_year if int(y) >= CITES_FROM_YEAR)
+    shown = sum(per_year[y] for y in years)
+    block = "".join(f"  - year: {y}\n    count: {per_year[y]}\n" for y in years)
+
+    new = text
+    for key, val in (("total_citations", cites), ("h_index", hindex), ("i10_index", i10)):
+        new = re.sub(rf"^{key}:.*$", f"{key}: {val}", new, count=1, flags=re.M)
+    new = re.sub(r"^# These sum to .*$",
+                 f"# These sum to {shown}; the remaining {cites - shown} predate {CITES_FROM_YEAR}.",
+                 new, count=1, flags=re.M)
+    new = re.sub(r"^citations_per_year:\n(?:  - year: \d+\n    count: \d+\n?)+",
+                 "citations_per_year:\n" + block, new, count=1, flags=re.M)
+    if new == text:
+        return False
+    new = re.sub(r'^last_updated:.*$', f'last_updated: "{datetime.now():%Y-%m}"', new, count=1, flags=re.M)
+    if dry_run:
+        log.info(f"  [DRY RUN] scholar.yaml -> {cites} citations, h {hindex}, i10 {i10}")
+        return True
+    SCHOLAR_YAML.write_text(new, encoding="utf-8")
+    log.info(f"  scholar.yaml updated: {cites} citations, h {hindex}, i10 {i10}")
+    return True
+
+
+# ──────────────────────────────────────────────
 # MAIN
 # ──────────────────────────────────────────────
 
@@ -442,6 +490,8 @@ def main():
 
     created = process_hindex(author, state, args.dry_run)
     created_all.extend(created)
+
+    update_scholar_yaml(author, args.dry_run)
 
     if not args.dry_run:
         state["last_run"] = datetime.now(timezone.utc).isoformat()
