@@ -3,6 +3,7 @@ title: "Submitted: AIRMETRY, a COST Action Proposal on Radio Sensing for Low-Alt
 date: 2026-10-28
 summary: "We submitted AIRMETRY, a COST Action proposal led by ATHENA RC on harmonising radio sensing measurements for low-altitude airspace, with 50 proposers from 13 countries."
 tags: ["proposal", "COST", "ISAC", "UAV", "U-Space", "research"]
+draft: true  # publish after the COST decision (feedback due 12 May 2027): double-blind evaluation
 categories: ["news"]
 ---
 
