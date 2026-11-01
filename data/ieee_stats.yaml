@@ -216,6 +216,13 @@ mavrokefalidis-supervised-2016:
     2024: 4
     2025: 2
     2026: 3
+petroutsos-design-2025:
+  scopus_citations: null
+  total_downloads: 97
+  wos_citations: 0
+  yearly:
+    2025: 8
+    2026: 89
 tsinos-blind-2016:
   scopus_citations: 2
   total_downloads: 160
@@ -306,6 +313,12 @@ vlachos-autonomous-2017:
     2024: 37
     2025: 22
     2026: 4
+vlachos-cbf-se3-2026:
+  scopus_citations: null
+  total_downloads: 35
+  wos_citations: 0
+  yearly:
+    2026: 35
 vlachos-compressed-2012:
   scopus_citations: 3
   total_downloads: 302
@@ -442,6 +455,13 @@ vlachos-improving-2025:
   yearly:
     2025: 242
     2026: 45
+vlachos-isac-2025:
+  scopus_citations: null
+  total_downloads: 105
+  wos_citations: 1
+  yearly:
+    2025: 7
+    2026: 98
 vlachos-low-complexity-2016:
   scopus_citations: 13
   total_downloads: 692
@@ -471,6 +491,15 @@ vlachos-massive-2018:
     2023: 400
     2024: 336
     2025: 208
+    2026: 13
+vlachos-millimeter-2023:
+  scopus_citations: null
+  total_downloads: 134
+  wos_citations: 2
+  yearly:
+    2023: 41
+    2024: 55
+    2025: 25
     2026: 13
 vlachos-optimal-2022:
   scopus_citations: 1
